@@ -23,12 +23,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("musicLayout.bal")
-	Else
-		Activity.LoadLayout("musicLayoutDark.bal")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("musicLayout")
+			Else
+				Activity.LoadLayout("musicLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("musicLayout2")
+			Else
+				Activity.LoadLayout("musicLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("musicLayout3")
+			Else
+				Activity.LoadLayout("musicLayoutDark3")
+			End If
+	End Select
     
 	' Populate ListView from service playlist
 	If musicService.mediaPlayer.IsInitialized = False Then

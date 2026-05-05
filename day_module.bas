@@ -57,14 +57,33 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Day_ModuleLayout")
+			Else
+				Activity.LoadLayout("Day_ModuleLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Day_ModuleLayout2")
+			Else
+				Activity.LoadLayout("Day_ModuleLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Day_ModuleLayout3")
+			Else
+				Activity.LoadLayout("Day_ModuleLayoutDark3")
+			End If
+	End Select
+	
 	If Starter.darkMode = False Then
-		Activity.LoadLayout("Day_ModuleLayout")
 		starttimelineSP.DropdownBackgroundColor = Colors.White
 		starttimelineSP.DropdownTextColor = Colors.Black
 		endtimelineSP.DropdownBackgroundColor = Colors.White
 		endtimelineSP.DropdownTextColor = Colors.Black
 	Else
-		Activity.LoadLayout("Day_ModuleLayoutDark")
 		starttimelineSP.DropdownBackgroundColor = Colors.DarkGray
 		starttimelineSP.DropdownTextColor = Colors.White
 		endtimelineSP.DropdownBackgroundColor = Colors.DarkGray

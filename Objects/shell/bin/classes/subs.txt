@@ -86,31 +86,31 @@ starter,service_taskremoved,0,0,59,61
 
 
 
-themeactivity,activity_create,1,0,23,31
-starter,darkmode,,backbtn,,nextbtn,,theme1,,theme2,,titlelbl,,themepage,,xui
+themeactivity,activity_create,1,0,23,47
+starter,themenumber,starter,darkmode,,backbtn,,nextbtn,,theme1,,theme2,,titlelbl,,themepage,,xui
 ,backbtn,,nextbtn,,theme1,,theme2,,titlelbl,,themepage
 ,showthemepage
-themeactivity,showthemepage,0,0,41,61
+themeactivity,showthemepage,0,0,57,77
 ,themepage,,titlelbl,,theme1,,xui,,theme2,,backbtn,,nextbtn
 ,themepage
 
-themeactivity,activity_pause,0,0,37,39
+themeactivity,activity_pause,0,0,53,55
 
 
 
-themeactivity,activity_resume,0,0,33,35
+themeactivity,activity_resume,0,0,49,51
 
 
 
-themeactivity,applybtn_click,0,0,79,92
+themeactivity,applybtn_click,0,0,95,108
 ,themepage,starter,themenumber,starter,themechanged,mainactivity,kvspref
 starter,themenumber,starter,themechanged
 
-themeactivity,backbtn_click,0,0,69,73
+themeactivity,backbtn_click,0,0,85,89
 ,themepage,,titlelbl,,theme1,,xui,,theme2,,backbtn,,nextbtn
 ,themepage
 ,showthemepage
-themeactivity,closehelp_click,0,0,75,77
+themeactivity,closehelp_click,0,0,91,93
 
 
 
@@ -118,7 +118,7 @@ themeactivity,globals,0,1,13,21
 
 
 
-themeactivity,nextbtn_click,0,0,63,67
+themeactivity,nextbtn_click,0,0,79,83
 ,themepage,,titlelbl,,theme1,,xui,,theme2,,backbtn,,nextbtn
 ,themepage
 ,showthemepage
@@ -274,27 +274,27 @@ mainactivity,todolistbtn_longclick,0,0,390,398
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-helpactivity,activity_create,1,0,27,35
-starter,darkmode,,backbtn,,descriptionlbl,,helpimage,,iconbutton1,,iconbutton2,,iconbutton3,,nextbtn,,titlelbl,,helppage,,xui
+helpactivity,activity_create,1,1,27,50
+starter,themenumber,starter,darkmode,,backbtn,,descriptionlbl,,helpimage,,iconbutton1,,iconbutton2,,iconbutton3,,nextbtn,,titlelbl,,helppage,,xui
 ,backbtn,,descriptionlbl,,helpimage,,iconbutton1,,iconbutton2,,iconbutton3,,nextbtn,,titlelbl,,helppage
 ,showhelppage
-helpactivity,showhelppage,0,0,45,208
+helpactivity,showhelppage,0,0,60,223
 ,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
 ,helppage
 
-helpactivity,activity_pause,0,0,41,43
+helpactivity,activity_pause,0,0,56,58
 
 
 
-helpactivity,activity_resume,0,0,37,39
+helpactivity,activity_resume,0,0,52,54
 
 
 
-helpactivity,backbtn_click,0,0,216,220
+helpactivity,backbtn_click,0,0,231,235
 ,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
 ,helppage
 ,showhelppage
-helpactivity,closehelp_click,0,0,222,224
+helpactivity,closehelp_click,0,0,237,239
 
 
 
@@ -302,7 +302,7 @@ helpactivity,globals,0,1,13,25
 
 
 
-helpactivity,nextbtn_click,0,0,210,214
+helpactivity,nextbtn_click,0,0,225,229
 ,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
 ,helppage
 ,showhelppage
@@ -310,39 +310,39 @@ helpactivity,process_globals,0,1,6,11
 ,helppage
 ,helppage
 
-todoactivity,activity_create,1,0,38,62
-starter,darkmode,,addtitletextarea,,listslist,,newlistbtn,,progressbar,,progressnumber,,progresspercent,,taskslist,,kvs,starter,taskkvs,,addtaskbtnpnl,,addtaskbtn
+todoactivity,activity_create,1,1,38,75
+starter,themenumber,starter,darkmode,,addtitletextarea,,listslist,,newlistbtn,,progressbar,,progressnumber,,progresspercent,,taskslist,,kvs,starter,taskkvs,,addtaskbtnpnl,,addtaskbtn
 ,addtitletextarea,,listslist,,newlistbtn,,progressbar,,progressnumber,,progresspercent,,taskslist,,kvs
 ,newaddtaskbtn
-todoactivity,newaddtaskbtn,0,0,72,95
+todoactivity,newaddtaskbtn,0,0,85,108
 starter,darkmode,,addtaskbtnpnl,,addtaskbtn,,taskslist
 
 
-todoactivity,activity_pause,0,0,68,70
+todoactivity,activity_pause,0,0,81,83
 
 
 
-todoactivity,activity_resume,0,0,64,66
+todoactivity,activity_resume,0,0,77,79
 
 
 
-todoactivity,addtaskbtn_click,0,0,333,364
+todoactivity,addtaskbtn_click,0,0,346,377
 ,addtaskbtn,,taskslist,,addtaskpanel,starter,darkmode,,addtasktextarea,,entertaskbtn,,addtaskbtnpnl
 
 
-todoactivity,addtitletextarea_enterpressed,1,0,121,246
+todoactivity,addtitletextarea_enterpressed,1,0,134,259
 ,addtitletextarea,,currentlist,,kvs,,listslist,,newlistbtn,,isaddinglist,,untitledno,,taskslist,,progressnumber,,progresspercent,,progressbar,starter,darkmode,,addtaskbtnpnl,,addtaskbtn
 ,currentlist,,isaddinglist,,untitledno
 ,newaddtaskbtn
-todoactivity,entertaskbtn_click,1,0,366,442
+todoactivity,entertaskbtn_click,1,0,379,455
 ,addtasktextarea,,currentlist,,kvs,,taskslist,,addtaskbtn,starter,darkmode,,addtaskbtnpnl,,progressnumber,,progresspercent,,progressbar
 
 ,taskslistui,,newaddtaskbtn,,updateprogress
-todoactivity,taskslistui,1,0,519,562
+todoactivity,taskslistui,1,0,532,575
 starter,darkmode,,currentlist,,kvs,,taskslist
 
 
-todoactivity,updateprogress,0,0,564,600
+todoactivity,updateprogress,0,0,577,613
 ,currentlist,,progressnumber,,kvs,,progresspercent,,progressbar
 
 
@@ -350,19 +350,19 @@ todoactivity,globals,0,1,13,36
 ,isaddinglist,,currentlist,,untitledno
 ,isaddinglist,,currentlist,,untitledno
 
-todoactivity,listslist_itemclick,1,0,248,274
+todoactivity,listslist_itemclick,1,0,261,287
 ,isaddinglist,,listslist,,currentlist,,addtitletextarea,,taskslist,,kvs,starter,darkmode,,addtaskbtnpnl,,addtaskbtn,,progressnumber,,progresspercent,,progressbar
 ,currentlist
 ,taskslistui,,newaddtaskbtn,,updateprogress
-todoactivity,listslist_itemlongclick,1,0,276,316
+todoactivity,listslist_itemlongclick,1,0,289,329
 ,kvs,,listslist,,currentlist,,taskslist,,addtitletextarea
 ,currentlist
 ,showrenamelistpanel
-todoactivity,showrenamelistpanel,1,0,318,331
+todoactivity,showrenamelistpanel,1,0,331,344
 ,addtitletextarea
 
 
-todoactivity,newlistbtn_click,1,0,97,119
+todoactivity,newlistbtn_click,1,0,110,132
 ,taskslist,,isaddinglist,,progressnumber,,progresspercent,,progressbar,,addtitletextarea,,newlistbtn,,addtaskbtn
 ,isaddinglist
 
@@ -370,55 +370,55 @@ todoactivity,process_globals,0,1,6,11
 
 
 
-todoactivity,showrenametaskpanel,1,0,467,491
+todoactivity,showrenametaskpanel,1,0,480,504
 ,taskslist,,addtaskpanel,,addtasktextarea,,entertaskbtn,,addtaskbtnpnl
 
 
-todoactivity,taskcheckbox_checkedchange,0,0,493,517
+todoactivity,taskcheckbox_checkedchange,0,0,506,530
 starter,darkmode,,currentlist,,kvs,,progressnumber,,progresspercent,,progressbar
 
 ,updateprogress
-todoactivity,taskslist_itemlongclick,1,0,444,465
+todoactivity,taskslist_itemlongclick,1,0,457,478
 ,currentlist,,kvs,,taskslist,,addtaskpanel,,addtasktextarea,,entertaskbtn,,addtaskbtnpnl,,progressnumber,,progresspercent,,progressbar
 
 ,showrenametaskpanel,,updateprogress
-calendaractivity,activity_create,1,0,45,116
-starter,darkmode,,calendarpanel,,menupanel,,month_btn,,monthsp,,weekpanel,,yearsp,,kvs,starter,calkvs,,calendarmap,starter,calendarmap,,months,,day_of_week
+calendaractivity,activity_create,1,1,45,130
+starter,themenumber,starter,darkmode,,calendarpanel,,menupanel,,month_btn,,monthsp,,weekpanel,,yearsp,,kvs,starter,calkvs,,calendarmap,starter,calendarmap,,months,,day_of_week
 ,calendarpanel,,menupanel,,month_btn,,monthsp,,weekpanel,,yearsp,,kvs,,calendarmap,,day_of_week
 ,drawcalendar,,weekday,,daysinamonth,,identifycolor
-calendaractivity,drawcalendar,0,0,123,248
+calendaractivity,drawcalendar,0,0,137,262
 ,calendarpanel,,calendarmap
 
 ,daysinamonth,,identifycolor
-calendaractivity,weekday,0,0,298,314
+calendaractivity,weekday,0,0,312,328
 ,day_of_week
 ,day_of_week
 
-calendaractivity,activity_pause,0,0,320,322
+calendaractivity,activity_pause,0,0,334,336
 
 
 
-calendaractivity,activity_resume,0,0,316,318
+calendaractivity,activity_resume,0,0,330,332
 
 
 
-calendaractivity,cell_click_click,0,0,265,274
+calendaractivity,cell_click_click,0,0,279,288
 day_module,currentdate
 day_module,currentdate
 
-calendaractivity,cleandebugger,0,0,118,121
+calendaractivity,cleandebugger,0,0,132,135
 ,calendarmap,,kvs
 
 
-calendaractivity,day_btn_click,0,0,346,358
+calendaractivity,day_btn_click,0,0,360,372
 day_module,currentdate
 day_module,currentdate
 
-calendaractivity,daysinamonth,0,0,277,296
+calendaractivity,daysinamonth,0,0,291,310
 
 
 
-calendaractivity,identifycolor,0,0,250,262
+calendaractivity,identifycolor,0,0,264,276
 
 
 
@@ -426,15 +426,15 @@ calendaractivity,globals,0,1,16,43
 ,months
 
 
-calendaractivity,menu_btn_click,0,0,337,339
+calendaractivity,menu_btn_click,0,0,351,353
 ,menupanel
 
 
-calendaractivity,month_btn_click,0,0,360,362
+calendaractivity,month_btn_click,0,0,374,376
 ,menupanel
 
 
-calendaractivity,monthsp_itemclick,0,0,325,329
+calendaractivity,monthsp_itemclick,0,0,339,343
 ,calendarpanel,,calendarmap
 
 ,drawcalendar,,daysinamonth,,identifycolor
@@ -442,55 +442,55 @@ calendaractivity,process_globals,0,1,7,14
 
 
 
-calendaractivity,sched_btn_click,0,0,341,344
+calendaractivity,sched_btn_click,0,0,355,358
 
 
 
-calendaractivity,yearsp_itemclick,0,0,331,335
+calendaractivity,yearsp_itemclick,0,0,345,349
 ,monthsp,,calendarpanel,,calendarmap
 
 ,drawcalendar,,daysinamonth,,identifycolor
-card_module,activerecall_click,0,0,137,148
+card_module,activerecall_click,0,0,152,163
 flashcardactivity,deck,flashcardactivity,selecteddeck,subdeck_module,selectedsubdeck
 
 
-card_module,activity_create,1,0,24,40
-starter,darkmode,,deleteconfirmation,,scrollview1,,subdecklabel,subdeck_module,selectedsubdeck,flashcardactivity,deck,flashcardactivity,selecteddeck
+card_module,activity_create,1,1,24,55
+starter,themenumber,starter,darkmode,,deleteconfirmation,,scrollview1,,subdecklabel,subdeck_module,selectedsubdeck,flashcardactivity,deck,flashcardactivity,selecteddeck
 ,deleteconfirmation,,scrollview1,,subdecklabel
 ,showsubdeckcards
-card_module,showsubdeckcards,0,0,42,90
+card_module,showsubdeckcards,0,0,57,105
 ,scrollview1,starter,darkmode
 
 
-card_module,activity_pause,0,0,126,128
+card_module,activity_pause,0,0,141,143
 
 
 
-card_module,activity_resume,0,0,114,124
+card_module,activity_resume,0,0,129,139
 active_recall,praise,flashcardactivity,deck,flashcardactivity,selecteddeck,subdeck_module,selectedsubdeck,,scrollview1,starter,darkmode
 active_recall,praise
 ,showsubdeckcards
-card_module,addbtn_click,0,0,150,154
+card_module,addbtn_click,0,0,165,169
 ,subdeck,subdeck_module,selectedsubdeck
 ,subdeck
 
-card_module,backbtn_click,0,0,132,135
+card_module,backbtn_click,0,0,147,150
 
 
 
-card_module,canceldelete_click,0,0,165,167
+card_module,canceldelete_click,0,0,180,182
 ,deleteconfirmation
 
 
-card_module,confirmdelete_click,0,0,156,163
+card_module,confirmdelete_click,0,0,171,178
 flashcardactivity,deck,flashcardactivity,selecteddeck,subdeck_module,selectedsubdeck,,numtag,,deleteconfirmation,,scrollview1,starter,darkmode
 
 ,showsubdeckcards
-card_module,deletebtn_click,0,0,105,112
+card_module,deletebtn_click,0,0,120,127
 ,numtag,,deleteconfirmation
 ,numtag
 
-card_module,editbtn_click,0,0,93,103
+card_module,editbtn_click,0,0,108,118
 ,subdeck,subdeck_module,selectedsubdeck,,editindex,,isedit
 ,subdeck,,editindex,,isedit
 
@@ -502,79 +502,79 @@ card_module,process_globals,0,1,6,12
 
 
 
-subdeck_module,activerecall_click,0,0,155,169
+subdeck_module,activerecall_click,0,0,174,188
 ,number_of_cards,,alldecks,,selecteddeck,,ar_confirmationpanel,,confirmlabel
 ,number_of_cards
 
-subdeck_module,activity_create,1,0,36,58
-starter,darkmode,,addbtn,,addpanel,,addpanel2,,alterpanel,,ar_confirmationpanel,,confirmlabel,,decknamelabel,,deleteconfirmation,,et1,,lvsubdecks,,renameet,,renamepanel,,selecteddeck,,alldecks
+subdeck_module,activity_create,1,1,36,77
+starter,themenumber,starter,darkmode,,addbtn,,addpanel,,addpanel2,,alterpanel,,ar_confirmationpanel,,confirmlabel,,decknamelabel,,deleteconfirmation,,et1,,lvsubdecks,,renameet,,renamepanel,,selecteddeck,,alldecks
 ,addbtn,,addpanel,,addpanel2,,alterpanel,,ar_confirmationpanel,,confirmlabel,,decknamelabel,,deleteconfirmation,,et1,,lvsubdecks,,renameet,,renamepanel
 ,refresh
-subdeck_module,refresh,0,0,64,73
+subdeck_module,refresh,0,0,83,92
 ,lvsubdecks,,alldecks,,selecteddeck
 
 
-subdeck_module,activity_pause,0,0,83,85
+subdeck_module,activity_pause,0,0,102,104
 
 
 
-subdeck_module,activity_resume,0,0,75,81
+subdeck_module,activity_resume,0,0,94,100
 all_active_recall,praise,,ar_confirmationpanel
 all_active_recall,praise
 
-subdeck_module,addbtn_click,0,0,88,96
+subdeck_module,addbtn_click,0,0,107,115
 ,addpanel2
 
 
-subdeck_module,addcard_click,0,0,98,106
+subdeck_module,addcard_click,0,0,117,125
 flashcardactivity,deck,flashcardactivity,selecteddeck
 
 
-subdeck_module,addsub_click,0,0,108,111
+subdeck_module,addsub_click,0,0,127,130
 ,addpanel
 
 
-subdeck_module,backbtn_click,0,0,192,194
+subdeck_module,backbtn_click,0,0,211,213
 
 
 
-subdeck_module,cancel_click,1,0,113,117
+subdeck_module,cancel_click,1,0,132,136
 ,addpanel,,et1
 
 
-subdeck_module,cancelalter_click,0,0,206,208
+subdeck_module,cancelalter_click,0,0,225,227
 ,alterpanel
 
 
-subdeck_module,cancelconfirmation_click,0,0,180,183
+subdeck_module,cancelconfirmation_click,0,0,199,202
 ,ar_confirmationpanel
 
 
-subdeck_module,canceldelete_click,0,0,254,256
+subdeck_module,canceldelete_click,0,0,273,275
 ,deleteconfirmation
 
 
-subdeck_module,cancelrename_click,1,0,215,218
+subdeck_module,cancelrename_click,1,0,234,237
 ,renamepanel,,renameet
 
 
-subdeck_module,confirmdelete_click,0,0,246,252
+subdeck_module,confirmdelete_click,0,0,265,271
 flashcardactivity,deck,flashcardactivity,selecteddeck,,selectedsubdeck,,deleteconfirmation,flashcardactivity,kvs,,lvsubdecks,,alldecks,,selecteddeck
 
 ,savedecks,,refresh
-subdeck_module,savedecks,0,0,60,62
+subdeck_module,savedecks,0,0,79,81
 flashcardactivity,kvs,flashcardactivity,deck
 
 
-subdeck_module,confirmrename_click,1,0,220,244
+subdeck_module,confirmrename_click,1,0,239,263
 flashcardactivity,deck,flashcardactivity,selecteddeck,,renameet,,selectedsubdeck,,renamepanel,flashcardactivity,kvs,,lvsubdecks,,alldecks,,selecteddeck
 
 ,savedecks,,refresh
-subdeck_module,create_click,1,0,119,148
+subdeck_module,create_click,1,0,138,167
 ,alldecks,,selecteddeck,,et1,,addpanel,,lvsubdecks,flashcardactivity,kvs,flashcardactivity,deck
 
 ,savedecks
-subdeck_module,deletesubdeck_click,0,0,196,199
+subdeck_module,deletesubdeck_click,0,0,215,218
 ,alterpanel,,deleteconfirmation
 
 
@@ -582,15 +582,15 @@ subdeck_module,globals,0,1,14,34
 ,alldecks,flashcardactivity,deck,,selecteddeck,flashcardactivity,selecteddeck,,number_of_cards
 ,alldecks,,selecteddeck,,number_of_cards
 
-subdeck_module,goback_click,0,0,150,153
+subdeck_module,goback_click,0,0,169,172
 
 
 
-subdeck_module,lvsubdecks_itemclick,0,0,185,190
+subdeck_module,lvsubdecks_itemclick,0,0,204,209
 ,selectedsubdeck
 ,selectedsubdeck
 
-subdeck_module,lvsubdecks_itemlongclick,0,0,210,213
+subdeck_module,lvsubdecks_itemlongclick,0,0,229,232
 ,alterpanel,,selectedsubdeck
 ,selectedsubdeck
 
@@ -598,119 +598,119 @@ subdeck_module,process_globals,0,1,6,12
 
 
 
-subdeck_module,renamesubdeck_click,0,0,201,204
+subdeck_module,renamesubdeck_click,0,0,220,223
 ,alterpanel,,renamepanel
 
 
-subdeck_module,startarbtn_click,0,0,171,178
+subdeck_module,startarbtn_click,0,0,190,197
 ,number_of_cards
 
 
-day_module,activity_create,1,0,53,75
-starter,darkmode,,addeventtl_panel,,addpanel,,addtask_btn,,addtl_et,,birthdayrb,,date_todaylbl,,datetoday_lbl,,day_btn,,deletepanel,,deletetlevent_confirmationpanel,,editdescription_et,,editinfopanel,,edittitle_et,,endtimelinesp,,eventdescription_lbl,,eventinfo_panel,,eventrb,,eventtitle_lbl,,menupanel,,ooorb,,starttimelinesp,,svevents,,svtimeline,,tags_lbl,,taskrb,,timelabel,,currentdate,add_events_module,currentdate
+day_module,activity_create,1,1,53,94
+starter,themenumber,starter,darkmode,,addeventtl_panel,,addpanel,,addtask_btn,,addtl_et,,birthdayrb,,date_todaylbl,,datetoday_lbl,,day_btn,,deletepanel,,deletetlevent_confirmationpanel,,editdescription_et,,editinfopanel,,edittitle_et,,endtimelinesp,,eventdescription_lbl,,eventinfo_panel,,eventrb,,eventtitle_lbl,,menupanel,,ooorb,,starttimelinesp,,svevents,,svtimeline,,tags_lbl,,taskrb,,timelabel,,currentdate,add_events_module,currentdate
 ,addeventtl_panel,,addpanel,,addtask_btn,,addtl_et,,birthdayrb,,date_todaylbl,,datetoday_lbl,,day_btn,,deletepanel,,deletetlevent_confirmationpanel,,editdescription_et,,editinfopanel,,edittitle_et,,endtimelinesp,,eventdescription_lbl,,eventinfo_panel,,eventrb,,eventtitle_lbl,,menupanel,,ooorb,,starttimelinesp,,svevents,,svtimeline,,tags_lbl,,taskrb,,timelabel,add_events_module,currentdate
 ,setdate,,setupspinners,,gettimestring
-day_module,setdate,0,0,379,416
+day_module,setdate,0,0,398,435
 
 
 
-day_module,setupspinners,0,0,77,85
+day_module,setupspinners,0,0,96,104
 ,starttimelinesp,,endtimelinesp
 
 ,gettimestring
-day_module,activity_pause,0,0,426,428
+day_module,activity_pause,0,0,445,447
 
 
 
-day_module,activity_resume,0,0,418,424
+day_module,activity_resume,0,0,437,443
 ,addeventsfeedback,,svevents,calendaractivity,calendarmap,,currentdate,,svtimeline,starter,darkmode
 ,addeventsfeedback
 ,updatetimeline,,drawmainevents,,drawhourlabels,,drawtimelineevents,,identifycolor,,gettimestring
-day_module,updatetimeline,0,0,148,152
+day_module,updatetimeline,0,0,167,171
 ,svevents,calendaractivity,calendarmap,,currentdate,,svtimeline,starter,darkmode
 
 ,drawmainevents,,drawhourlabels,,drawtimelineevents,,identifycolor,,gettimestring
-day_module,addevent_btn_click,0,0,449,453
+day_module,addevent_btn_click,0,0,468,472
 ,addpanel,add_events_module,eventtype
 add_events_module,eventtype
 
-day_module,addnew_btn_click,0,0,455,464
+day_module,addnew_btn_click,0,0,474,483
 ,addpanel
 
 
-day_module,addtask_btn_click,0,0,466,470
+day_module,addtask_btn_click,0,0,485,489
 ,addpanel,add_events_module,eventtype
 add_events_module,eventtype
 
-day_module,birthday_btn_click,0,0,472,476
+day_module,birthday_btn_click,0,0,491,495
 ,addpanel,add_events_module,eventtype
 add_events_module,eventtype
 
-day_module,birthdayrb_checkedchange,0,0,577,579
+day_module,birthdayrb_checkedchange,0,0,596,598
 ,eventtype
 ,eventtype
 
-day_module,canceldelete_btn_click,0,0,526,528
+day_module,canceldelete_btn_click,0,0,545,547
 ,deletepanel
 
 
-day_module,canceledit_btn_click,0,0,499,501
+day_module,canceledit_btn_click,0,0,518,520
 ,editinfopanel
 
 
-day_module,canceltldelete_btn_click,0,0,549,551
+day_module,canceltldelete_btn_click,0,0,568,570
 ,deletetlevent_confirmationpanel
 
 
-day_module,confirmdelete_btn_click,0,0,530,538
+day_module,confirmdelete_btn_click,0,0,549,557
 calendaractivity,calendarmap,,currentdate,,currentindex,,deletepanel,,eventinfo_panel,calendaractivity,kvs,,svevents
 
 ,savecalendar,,drawmainevents,,identifycolor
-day_module,savecalendar,0,0,87,89
+day_module,savecalendar,0,0,106,108
 calendaractivity,kvs,calendaractivity,calendarmap
 
 
-day_module,drawmainevents,0,0,91,116
+day_module,drawmainevents,0,0,110,135
 ,svevents,calendaractivity,calendarmap,,currentdate
 
 ,identifycolor
-day_module,day_btn_click,0,0,440,442
+day_module,day_btn_click,0,0,459,461
 ,menupanel
 
 
-day_module,deleteevent_btn_click,0,0,495,497
+day_module,deleteevent_btn_click,0,0,514,516
 ,deletepanel
 
 
-day_module,deletetlconfirm_btn_click,1,0,553,570
+day_module,deletetlconfirm_btn_click,1,0,572,589
 calendaractivity,calendarmap,,currentdate,,currentevid,,addtl_et,,deletetlevent_confirmationpanel,,addeventtl_panel,calendaractivity,kvs,,svevents,,svtimeline,starter,darkmode
 
 ,savecalendar,,updatetimeline,,drawmainevents,,drawhourlabels,,drawtimelineevents,,identifycolor,,gettimestring
-day_module,deletetlevent_btn_click,0,0,545,547
+day_module,deletetlevent_btn_click,0,0,564,566
 ,deletetlevent_confirmationpanel
 
 
-day_module,drawhourlabels,0,0,154,194
+day_module,drawhourlabels,0,0,173,213
 ,svtimeline,starter,darkmode
 
 ,gettimestring
-day_module,gettimestring,0,0,196,219
+day_module,gettimestring,0,0,215,238
 
 
 
-day_module,identifycolor,0,0,134,146
+day_module,identifycolor,0,0,153,165
 
 
 
-day_module,drawtimelineevents,0,0,221,257
+day_module,drawtimelineevents,0,0,240,276
 calendaractivity,calendarmap,,currentdate,,svtimeline
 
 ,identifycolor
-day_module,editeventinfo_btn_click,1,0,484,488
+day_module,editeventinfo_btn_click,1,0,503,507
 ,editinfopanel,,edittitle_et,,currenttaggedevent,,editdescription_et
 
 
-day_module,eventrb_checkedchange,0,0,581,583
+day_module,eventrb_checkedchange,0,0,600,602
 ,eventtype
 ,eventtype
 
@@ -718,31 +718,31 @@ day_module,globals,0,1,15,51
 
 
 
-day_module,hour_click,1,0,282,309
+day_module,hour_click,1,0,301,328
 ,timeindex,,addeventtl_panel,calendaractivity,calendarmap,,currentdate,,starttimelinesp,,endtimelinesp,,eventrb
 ,timeindex
 ,mapinitializer
-day_module,mapinitializer,0,0,313,329
+day_module,mapinitializer,0,0,332,348
 calendaractivity,calendarmap,,currentdate
 
 
-day_module,mainevent_click,0,0,118,132
+day_module,mainevent_click,0,0,137,151
 calendaractivity,calendarmap,,currentdate,,currenttaggedevent,,currentindex,,eventinfo_panel,,datetoday_lbl,,eventtitle_lbl,,eventdescription_lbl,,tags_lbl
 ,currenttaggedevent,,currentindex
 
-day_module,menu_btn_click,0,0,431,433
+day_module,menu_btn_click,0,0,450,452
 ,menupanel
 
 
-day_module,month_btn_click,0,0,444,447
+day_module,month_btn_click,0,0,463,466
 
 
 
-day_module,ooo_btn_click,0,0,478,482
+day_module,ooo_btn_click,0,0,497,501
 ,addpanel,add_events_module,eventtype
 add_events_module,eventtype
 
-day_module,ooorb_checkedchange,0,0,573,575
+day_module,ooorb_checkedchange,0,0,592,594
 ,eventtype
 ,eventtype
 
@@ -750,59 +750,59 @@ day_module,process_globals,0,1,6,13
 
 
 
-day_module,saveedit_btn_click,0,0,503,524
+day_module,saveedit_btn_click,0,0,522,543
 ,starttimelinesp,,endtimelinesp,,edittitle_et,,currenttaggedevent,,editdescription_et,,eventtitle_lbl,,eventdescription_lbl,,eventinfo_panel,,editinfopanel,calendaractivity,kvs,calendaractivity,calendarmap,,svevents,,currentdate
 
 ,x_eventinfo_btn_click,,savecalendar,,drawmainevents,,identifycolor
-day_module,x_eventinfo_btn_click,0,0,490,493
+day_module,x_eventinfo_btn_click,0,0,509,512
 ,eventinfo_panel,,editinfopanel
 
 
-day_module,savetl_btn_click,0,0,331,376
+day_module,savetl_btn_click,0,0,350,395
 ,starttimelinesp,,endtimelinesp,calendaractivity,calendarmap,,currentdate,,addtl_et,,eventtype,,addeventtl_panel,calendaractivity,kvs,,svevents,,svtimeline,starter,darkmode
 
 ,mapinitializer,,savecalendar,,updatetimeline,,drawmainevents,,drawhourlabels,,drawtimelineevents,,identifycolor,,gettimestring
-day_module,sched_btn_click,0,0,435,438
+day_module,sched_btn_click,0,0,454,457
 
 
 
-day_module,taskrb_checkedchange,0,0,585,587
+day_module,taskrb_checkedchange,0,0,604,606
 ,eventtype
 ,eventtype
 
-day_module,timelineevent_click,1,0,259,280
+day_module,timelineevent_click,1,0,278,299
 ,currenttaggedevent,,currentevid,,addeventtl_panel,,addtl_et,,starttimelinesp,,endtimelinesp,,taskrb,,eventrb,,birthdayrb,,ooorb
 ,currenttaggedevent,,currentevid
 
-day_module,x_tlevent_btn_click,1,0,540,543
+day_module,x_tlevent_btn_click,1,0,559,562
 ,addeventtl_panel,,addtl_et
 
 
-active_recall,activity_create,1,0,29,53
-starter,darkmode,,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,flashcardactivity,deck,flashcardactivity,selecteddeck,,cards,subdeck_module,selectedsubdeck,,currentindex
+active_recall,activity_create,1,1,29,67
+starter,themenumber,starter,darkmode,,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,flashcardactivity,deck,flashcardactivity,selecteddeck,,cards,subdeck_module,selectedsubdeck,,currentindex
 ,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,,cards,,currentindex
 ,shufflecards,,showprogress,,showcard
-active_recall,shufflecards,0,0,63,72
+active_recall,shufflecards,0,0,77,86
 
 
 
-active_recall,showprogress,0,0,55,61
+active_recall,showprogress,0,0,69,75
 ,cards,,currentindex,,pb,,progress
 
 
-active_recall,showcard,0,0,74,81
+active_recall,showcard,0,0,88,95
 ,cards,,currentindex,,question,,answer
 
 
-active_recall,activity_pause,0,0,88,90
+active_recall,activity_pause,0,0,102,104
 
 
 
-active_recall,activity_resume,0,0,84,86
+active_recall,activity_resume,0,0,98,100
 
 
 
-active_recall,backbtn_click,0,0,134,144
+active_recall,backbtn_click,0,0,148,158
 ,showanswerbtn,,currentindex,,cards,,question,,answer
 ,currentindex
 ,showcard
@@ -810,11 +810,11 @@ active_recall,globals,0,1,12,27
 
 
 
-active_recall,goback_click,0,0,129,132
+active_recall,goback_click,0,0,143,146
 
 
 
-active_recall,nextbtn_click,0,0,112,127
+active_recall,nextbtn_click,0,0,126,141
 ,nextbtn,,showanswerbtn,,currentindex,,cards,,praise,,question,,answer,,pb,,progress
 ,currentindex,,praise
 ,shufflecards,,showcard,,showprogress
@@ -822,23 +822,23 @@ active_recall,process_globals,0,1,6,10
 ,praise
 ,praise
 
-active_recall,showanswerbtn_click,0,0,93,110
+active_recall,showanswerbtn_click,0,0,107,124
 ,cards,,currentindex,,showanswerbtn,,answer,,nextbtn
 
 
-add_card_module,activity_create,1,0,22,40
-starter,darkmode,,answeret,,questionet,,spsubdecks,flashcardactivity,deck,flashcardactivity,selecteddeck
+add_card_module,activity_create,1,1,22,54
+starter,themenumber,starter,darkmode,,answeret,,questionet,,spsubdecks,flashcardactivity,deck,flashcardactivity,selecteddeck
 ,answeret,,questionet,,spsubdecks
 
-add_card_module,activity_pause,0,0,46,48
+add_card_module,activity_pause,0,0,60,62
 
 
 
-add_card_module,activity_resume,0,0,42,44
+add_card_module,activity_resume,0,0,56,58
 
 
 
-add_card_module,backbtn_click,0,0,91,94
+add_card_module,backbtn_click,0,0,105,108
 
 
 
@@ -850,27 +850,27 @@ add_card_module,process_globals,0,1,6,10
 
 
 
-add_card_module,savecard_click,1,0,54,89
+add_card_module,savecard_click,1,0,68,103
 flashcardactivity,deck,flashcardactivity,selecteddeck,,questionet,,answeret,,spsubdecks,flashcardactivity,kvs
 
 ,savedecks
-add_card_module,savedecks,0,0,49,51
+add_card_module,savedecks,0,0,63,65
 flashcardactivity,kvs,flashcardactivity,deck
 
 
-add_card_module2,activity_create,1,0,22,42
-starter,darkmode,,answeret,,questionet,,subdeckname,flashcardactivity,deck,flashcardactivity,selecteddeck,card_module,subdeck,card_module,isedit,card_module,editindex
+add_card_module2,activity_create,1,1,22,57
+starter,themenumber,starter,darkmode,,answeret,,questionet,,subdeckname,flashcardactivity,deck,flashcardactivity,selecteddeck,card_module,subdeck,card_module,isedit,card_module,editindex
 ,answeret,,questionet,,subdeckname
 
-add_card_module2,activity_pause,1,0,52,56
+add_card_module2,activity_pause,1,0,67,71
 card_module,isedit,,questionet,,answeret
 card_module,isedit
 
-add_card_module2,activity_resume,0,0,48,50
+add_card_module2,activity_resume,0,0,63,65
 
 
 
-add_card_module2,backbtn_click,0,0,59,62
+add_card_module2,backbtn_click,0,0,74,77
 
 
 
@@ -882,31 +882,31 @@ add_card_module2,process_globals,0,1,6,10
 
 
 
-add_card_module2,savecard_click,1,0,64,118
+add_card_module2,savecard_click,1,0,79,133
 flashcardactivity,deck,flashcardactivity,selecteddeck,card_module,isedit,,questionet,,answeret,card_module,subdeck,card_module,editindex,flashcardactivity,kvs
 card_module,isedit
 ,savedecks
-add_card_module2,savedecks,0,0,44,46
+add_card_module2,savedecks,0,0,59,61
 flashcardactivity,kvs,flashcardactivity,deck
 
 
-add_events_module,activity_create,1,0,26,36
-starter,darkmode,,birthdayrb,,description_et,,eventrb,,ooorb,,taskrb,,timelbl,,title_et,,currentdate
+add_events_module,activity_create,1,1,26,50
+starter,themenumber,starter,darkmode,,birthdayrb,,description_et,,eventrb,,ooorb,,taskrb,,timelbl,,title_et,,currentdate
 ,birthdayrb,,description_et,,eventrb,,ooorb,,taskrb,,timelbl,,title_et
 
-add_events_module,activity_pause,1,0,50,56
+add_events_module,activity_pause,1,0,64,70
 ,eventrb,,taskrb,,birthdayrb,,ooorb
 
 
-add_events_module,activity_resume,1,0,38,48
+add_events_module,activity_resume,1,0,52,62
 ,eventtype,,eventrb,,taskrb,,birthdayrb,,ooorb
 
 
-add_events_module,birthdayrb_checkedchange,0,0,115,117
+add_events_module,birthdayrb_checkedchange,0,0,129,131
 ,eventtype
 ,eventtype
 
-add_events_module,eventrb_checkedchange,0,0,119,121
+add_events_module,eventrb_checkedchange,0,0,133,135
 ,eventtype
 ,eventtype
 
@@ -914,11 +914,11 @@ add_events_module,globals,0,1,13,24
 
 
 
-add_events_module,mapinitializer,0,0,67,83
+add_events_module,mapinitializer,0,0,81,97
 calendaractivity,calendarmap,day_module,currentdate
 
 
-add_events_module,ooorb_checkedchange,0,0,111,113
+add_events_module,ooorb_checkedchange,0,0,125,127
 ,eventtype
 ,eventtype
 
@@ -926,47 +926,47 @@ add_events_module,process_globals,0,1,6,11
 
 
 
-add_events_module,save_btn_click,0,0,85,109
+add_events_module,save_btn_click,0,0,99,123
 ,title_et,calendaractivity,calendarmap,day_module,currentdate,,description_et,,eventtype,day_module,addeventsfeedback,calendaractivity,kvs
 day_module,addeventsfeedback
 ,mapinitializer,,savecalendar
-add_events_module,savecalendar,0,0,63,65
+add_events_module,savecalendar,0,0,77,79
 calendaractivity,kvs,calendaractivity,calendarmap
 
 
-add_events_module,taskrb_checkedchange,0,0,123,125
+add_events_module,taskrb_checkedchange,0,0,137,139
 ,eventtype
 ,eventtype
 
-add_events_module,x_btn_click,0,0,59,61
+add_events_module,x_btn_click,0,0,73,75
 
 
 
-all_active_recall,activity_create,1,0,26,56
-starter,darkmode,,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,,cards,flashcardactivity,deck,flashcardactivity,selecteddeck,,currentindex
+all_active_recall,activity_create,1,1,26,71
+starter,themenumber,starter,darkmode,,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,,cards,flashcardactivity,deck,flashcardactivity,selecteddeck,,currentindex
 ,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,,currentindex
 ,shufflecards,,showcard,,showprogress
-all_active_recall,shufflecards,0,0,66,75
+all_active_recall,shufflecards,0,0,81,90
 
 
 
-all_active_recall,showcard,0,0,77,83
+all_active_recall,showcard,0,0,92,98
 ,cards,,currentindex,,question,,answer,,deckname_label
 
 
-all_active_recall,showprogress,0,0,58,64
+all_active_recall,showprogress,0,0,73,79
 ,cards,,currentindex,,pb,,progress
 
 
-all_active_recall,activity_pause,0,0,89,91
+all_active_recall,activity_pause,0,0,104,106
 
 
 
-all_active_recall,activity_resume,0,0,85,87
+all_active_recall,activity_resume,0,0,100,102
 
 
 
-all_active_recall,backbtn_click,0,0,108,117
+all_active_recall,backbtn_click,0,0,123,132
 ,showanswerbtn,,currentindex,,cards,,question,,answer,,deckname_label
 ,currentindex
 ,showcard
@@ -974,11 +974,11 @@ all_active_recall,globals,0,1,12,24
 
 
 
-all_active_recall,goback_click,0,0,135,137
+all_active_recall,goback_click,0,0,150,152
 
 
 
-all_active_recall,nextbtn_click,0,0,119,133
+all_active_recall,nextbtn_click,0,0,134,148
 ,nextbtn,,showanswerbtn,,currentindex,,cards,,praise,,question,,answer,,deckname_label,,pb,,progress
 ,currentindex,,praise
 ,showcard,,showprogress
@@ -986,35 +986,35 @@ all_active_recall,process_globals,0,1,6,10
 ,praise
 ,praise
 
-all_active_recall,showanswerbtn_click,0,0,94,106
+all_active_recall,showanswerbtn_click,0,0,109,121
 ,cards,,currentindex,,showanswerbtn,,answer,,nextbtn
 
 
-clockactivity,activity_create,1,0,40,54
-starter,darkmode,,playbtn,,pomocounter,,pomotimerlbl,,sessionlbl,,settingsbtn,,timercount,,counter,,secondsremain,,timerstate,,break
+clockactivity,activity_create,1,1,40,69
+starter,themenumber,starter,darkmode,,playbtn,,pomocounter,,pomotimerlbl,,sessionlbl,,settingsbtn,,timercount,,counter,,secondsremain,,timerstate,,break
 ,playbtn,,pomocounter,,pomotimerlbl,,sessionlbl,,settingsbtn
 ,updatelbl
-clockactivity,updatelbl,0,0,123,138
+clockactivity,updatelbl,0,0,138,153
 ,secondsremain,,pomotimerlbl,,pomocounter,,counter,,timerstate,,sessionlbl,,break
 
 
-clockactivity,activity_pause,0,0,60,62
+clockactivity,activity_pause,0,0,75,77
 
 
 
-clockactivity,activity_resume,0,0,56,58
+clockactivity,activity_resume,0,0,71,73
 
 
 
-clockactivity,closel_click,0,0,229,231
+clockactivity,closel_click,0,0,244,246
 ,settingspnl
 
 
-clockactivity,exitbtn_click,0,0,64,66
+clockactivity,exitbtn_click,0,0,79,81
 
 
 
-clockactivity,formatbtn_click,0,0,68,79
+clockactivity,formatbtn_click,0,0,83,94
 mainactivity,format24h,mainactivity,clockbtn,mainactivity,clocklightbtn
 mainactivity,format24h
 mainactivity,timerclock_tick
@@ -1022,19 +1022,19 @@ clockactivity,globals,0,1,16,38
 ,timerstate,,counter,,pomodef,,shortdef,,longdef,,centerleft,,centertop,,playing,,break
 ,timerstate,,counter,,pomodef,,shortdef,,longdef,,centerleft,,centertop,,playing,,break
 
-clockactivity,longbtn_click,0,0,216,222
+clockactivity,longbtn_click,0,0,231,237
 ,secondsremain,,longdef,,timerstate,,break,,timercount,,playing,,playbtn,,pomotimerlbl,,pomocounter,,counter,,sessionlbl
 ,secondsremain,,timerstate,,break,,playing
 ,timerstop,,updatelbl
-clockactivity,timerstop,0,0,275,279
+clockactivity,timerstop,0,0,290,294
 ,timercount,,playing,,playbtn
 ,playing
 
-clockactivity,playbtn_click,0,0,81,93
+clockactivity,playbtn_click,0,0,96,108
 ,secondsremain,,timercount,,playing,,playbtn
 ,playing
 ,timerstop
-clockactivity,pomobtn_click,0,0,201,206
+clockactivity,pomobtn_click,0,0,216,221
 ,secondsremain,,pomodef,,timerstate,,timercount,,playing,,playbtn,,pomotimerlbl,,pomocounter,,counter,,sessionlbl,,break
 ,secondsremain,,timerstate,,playing
 ,timerstop,,updatelbl
@@ -1042,79 +1042,79 @@ clockactivity,process_globals,0,1,6,13
 ,secondsremain
 ,secondsremain
 
-clockactivity,savebtn_click,0,0,233,251
+clockactivity,savebtn_click,0,0,248,266
 ,pomotxt,,pomodef,,shorttxt,,shortdef,,longtxt,,longdef,,timerstate,,secondsremain,,break,,settingspnl,,pomotimerlbl,,pomocounter,,counter,,sessionlbl
 ,pomodef,,shortdef,,longdef,,secondsremain
 ,updatelbl
-clockactivity,settingsbtn_click,1,0,224,227
+clockactivity,settingsbtn_click,1,0,239,242
 ,settingspnl,,xui,,centerleft,,centertop,,pomotxt,,pomodef,,shorttxt,,shortdef,,longtxt,,longdef
 ,settingspnl
 ,settingswindow
-clockactivity,settingswindow,1,0,140,199
+clockactivity,settingswindow,1,0,155,214
 ,settingspnl,,xui,,centerleft,,centertop,,pomotxt,,pomodef,,shorttxt,,shortdef,,longtxt,,longdef
 ,settingspnl
 
-clockactivity,shortbtn_click,0,0,208,214
+clockactivity,shortbtn_click,0,0,223,229
 ,secondsremain,,shortdef,,timerstate,,break,,timercount,,playing,,playbtn,,pomotimerlbl,,pomocounter,,counter,,sessionlbl
 ,secondsremain,,timerstate,,break,,playing
 ,timerstop,,updatelbl
-clockactivity,skipbtn_click,0,0,253,273
+clockactivity,skipbtn_click,0,0,268,288
 ,timerstate,,counter,,secondsremain,,longdef,,break,,shortdef,,pomodef,,pomotimerlbl,,pomocounter,,sessionlbl,,timercount,,playing,,playbtn
 ,counter,,secondsremain,,break,,timerstate,,playing
 ,updatelbl,,timerstop
-clockactivity,tmr_tick,0,0,95,121
+clockactivity,tmr_tick,0,0,110,136
 ,secondsremain,,timerstate,,counter,,longdef,,break,,shortdef,,pomodef,,pomotimerlbl,,pomocounter,,sessionlbl,,timercount,,playing,,playbtn
 ,secondsremain,,counter,,break,,timerstate,,playing
 ,updatelbl,,timerstop
-corkactivity,activity_create,1,0,55,151
-starter,darkmode,,addpnl,,boardpnl,,canvabtn,,deletelbl,,imgbtn,,penspnr,,place1,,place10,,place11,,place12,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,stickybtn,,imgpicker,,width,,height,,ddn,,ddi,,ddc,main,kvs,,isloading,,notecount,,r,,g,,b,,imgcount,,canvascount
+corkactivity,activity_create,1,1,55,169
+starter,themenumber,starter,darkmode,,addpnl,,boardpnl,,canvabtn,,deletelbl,,imgbtn,,penspnr,,place1,,place10,,place11,,place12,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,stickybtn,,imgpicker,,width,,height,,ddn,,ddi,,ddc,main,kvs,,isloading,,notecount,,r,,g,,b,,imgcount,,canvascount
 ,addpnl,,boardpnl,,canvabtn,,deletelbl,,imgbtn,,penspnr,,place1,,place10,,place11,,place12,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,stickybtn,,width,,height,,isloading,,notecount,,r,,g,,b,,imgcount,,canvascount
 ,addstickynote
-corkactivity,addstickynote,1,0,165,199
+corkactivity,addstickynote,1,0,183,217
 ,r,,g,,b,,boardpnl,,ddn,,place1,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,place10,,place11,,place12,,deletelbl,,isloading,,notecount,main,kvs
 ,notecount
 
-corkactivity,activity_pause,0,0,159,161
+corkactivity,activity_pause,0,0,177,179
 
 
 
-corkactivity,activity_resume,0,0,153,157
+corkactivity,activity_resume,0,0,171,175
 ,canvascount,,penspnr
 
 
-corkactivity,addcanvas,0,0,233,266
+corkactivity,addcanvas,0,0,251,284
 ,boardpnl,,width,,height,,ddc,,place1,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,place10,,place11,,place12,,deletelbl,,isloading,,canvascount,main,kvs
 ,canvascount
 
-corkactivity,addcbtn_click,0,0,342,348
+corkactivity,addcbtn_click,0,0,360,366
 ,canvaspnl,,canvabtn,,stickybtn,,imgbtn,,boardpnl,,width,,height,,ddc,,place1,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,place10,,place11,,place12,,deletelbl,,isloading,,canvascount,main,kvs
 ,canvascount
 ,addcanvas
-corkactivity,addnbtn_click,1,0,331,340
+corkactivity,addnbtn_click,1,0,349,358
 ,notepnl,,r,,g,,b,,stickybtn,,canvabtn,,imgbtn,,boardpnl,,ddn,,place1,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,place10,,place11,,place12,,deletelbl,,isloading,,notecount,main,kvs
 ,r,,g,,b,,notecount
 ,addstickynote
-corkactivity,canvabtn_click,0,0,364,371
+corkactivity,canvabtn_click,0,0,382,389
 ,canvaspnl,,penspnr,,stickybtn,,canvabtn,,imgbtn,,xui,,sizespnr
 ,canvaspnl
 ,canvaswindow
-corkactivity,canvaswindow,0,0,311,329
+corkactivity,canvaswindow,0,0,329,347
 ,canvaspnl,,xui,,sizespnr
 ,canvaspnl
 
-corkactivity,canvasdrag_placedview,0,0,494,521
+corkactivity,canvasdrag_placedview,0,0,512,539
 main,kvs,,canvascount,,penspnr
 ,canvascount
 
-corkactivity,canvaspanel_touch,0,0,268,287
+corkactivity,canvaspanel_touch,0,0,286,305
 ,lastx,,lasty,,r2,,g2,,b2
 ,lastx,,lasty
 
-corkactivity,cc_result,0,0,208,231
+corkactivity,cc_result,0,0,226,249
 ,imgview,,boardpnl,,ddi,,place1,,place2,,place3,,place4,,place5,,place6,,place7,,place8,,place9,,place10,,place11,,place12,,deletelbl,,imgcount,main,kvs
 ,imgcount
 
-corkactivity,colorsspnr_itemclick,0,0,398,413
+corkactivity,colorsspnr_itemclick,0,0,416,431
 ,r,,g,,b
 ,r,,g,,b
 
@@ -1122,27 +1122,27 @@ corkactivity,globals,0,1,13,53
 ,r,,g,,b,,notecount,,imgcount,,canvascount,,isloading
 ,r,,g,,b,,notecount,,imgcount,,canvascount,,isloading
 
-corkactivity,imgbtn_click,0,0,360,362
+corkactivity,imgbtn_click,0,0,378,380
 ,imgpicker
 
 
-corkactivity,imgdrag_placedview,0,0,470,492
+corkactivity,imgdrag_placedview,0,0,488,510
 main,kvs
 
 
-corkactivity,notedrag_placedview,0,0,446,468
+corkactivity,notedrag_placedview,0,0,464,486
 main,kvs
 
 
-corkactivity,notetext_textchanged,0,0,201,206
+corkactivity,notetext_textchanged,0,0,219,224
 main,kvs
 
 
-corkactivity,notewindow,0,0,291,309
+corkactivity,notewindow,0,0,309,327
 ,notepnl,,xui
 ,notepnl
 
-corkactivity,penspnr_itemclick,0,0,415,442
+corkactivity,penspnr_itemclick,0,0,433,460
 ,r2,,g2,,b2
 ,r2,,g2,,b2
 
@@ -1150,35 +1150,35 @@ corkactivity,process_globals,0,1,6,11
 
 
 
-corkactivity,sizespnr_itemclick,0,0,375,396
+corkactivity,sizespnr_itemclick,0,0,393,414
 ,width,,height
 ,width,,height
 
-corkactivity,stickybtn_click,0,0,352,358
+corkactivity,stickybtn_click,0,0,370,376
 ,notepnl,,stickybtn,,canvabtn,,imgbtn,,xui
 ,notepnl
 ,notewindow
-deck_all_cards,activity_create,1,0,20,48
-starter,darkmode,,deckname,,scrollview1,flashcardactivity,item_longclick,,cards,flashcardactivity,deck,flashcardactivity,selecteddeck
+deck_all_cards,activity_create,1,1,20,60
+starter,themenumber,starter,darkmode,,deckname,,scrollview1,flashcardactivity,item_longclick,,cards,flashcardactivity,deck,flashcardactivity,selecteddeck
 ,deckname,,scrollview1
 ,showallcards
-deck_all_cards,showallcards,0,0,50,87
+deck_all_cards,showallcards,0,0,62,99
 ,scrollview1
 
 
-deck_all_cards,activity_pause,0,0,93,95
+deck_all_cards,activity_pause,0,0,105,107
 
 
 
-deck_all_cards,activity_resume,0,0,89,91
+deck_all_cards,activity_resume,0,0,101,103
 ,cards,,scrollview1
 
 ,showallcards
-deck_all_cards,addbtn_click,0,0,98,100
+deck_all_cards,addbtn_click,0,0,110,112
 
 
 
-deck_all_cards,backbtn_click,0,0,102,104
+deck_all_cards,backbtn_click,0,0,114,116
 
 
 
@@ -1190,15 +1190,15 @@ deck_all_cards,process_globals,0,1,6,10
 
 
 
-editnote,activity_create,1,0,22,37
-starter,darkmode,,contenttxt,,savebtn,,tagstxt,,titletxt,,activenote
+editnote,activity_create,1,1,22,51
+starter,themenumber,starter,darkmode,,contenttxt,,savebtn,,tagstxt,,titletxt,,activenote
 ,contenttxt,,savebtn,,tagstxt,,titletxt
 
-editnote,activity_pause,0,0,43,45
+editnote,activity_pause,0,0,57,59
 ,activenote
 
 
-editnote,activity_resume,0,0,39,41
+editnote,activity_resume,0,0,53,55
 
 
 
@@ -1210,83 +1210,83 @@ editnote,process_globals,0,1,6,10
 
 
 
-editnote,savebtn_click,0,0,47,72
+editnote,savebtn_click,0,0,61,86
 ,titletxt,,activenote,,tagstxt,,contenttxt,mainactivity,kvs
 
 
-flashcardactivity,activity_create,1,0,38,71
-starter,darkmode,,addbtn,,addpanel,,decknamelabel,,decksettingpanel,,deleteconfirmation,,et1,,lvdecks,,newdeckname,,newsubdecket,,newsubdeckpanel,,renamepanel,,kvs,starter,deckkvs,,deck,starter,deck
+flashcardactivity,activity_create,1,1,38,86
+starter,themenumber,starter,darkmode,,addbtn,,addpanel,,decknamelabel,,decksettingpanel,,deleteconfirmation,,et1,,lvdecks,,newdeckname,,newsubdecket,,newsubdeckpanel,,renamepanel,,kvs,starter,deckkvs,,deck,starter,deck
 ,addbtn,,addpanel,,decknamelabel,,decksettingpanel,,deleteconfirmation,,et1,,lvdecks,,newdeckname,,newsubdecket,,newsubdeckpanel,,renamepanel,,kvs,,deck
 ,refreshbtn_click
-flashcardactivity,refreshbtn_click,0,0,133,139
+flashcardactivity,refreshbtn_click,0,0,148,154
 ,lvdecks,,deck
 
 
-flashcardactivity,activity_pause,0,0,77,79
+flashcardactivity,activity_pause,0,0,92,94
 
 
 
-flashcardactivity,activity_resume,0,0,73,75
+flashcardactivity,activity_resume,0,0,88,90
 
 
 
-flashcardactivity,addbtn_click,0,0,85,91
+flashcardactivity,addbtn_click,0,0,100,106
 ,addpanel
 
 
-flashcardactivity,addcards_click,0,0,156,164
+flashcardactivity,addcards_click,0,0,171,179
 ,deck,,item_longclick,,decksettingpanel
 
 
-flashcardactivity,browse_cards_click,0,0,181,184
+flashcardactivity,browse_cards_click,0,0,196,199
 ,decksettingpanel
 
 
-flashcardactivity,cancel_click,1,0,93,98
+flashcardactivity,cancel_click,1,0,108,113
 ,addpanel,,et1
 
 
-flashcardactivity,cancelbtn_click,0,0,186,188
+flashcardactivity,cancelbtn_click,0,0,201,203
 ,decksettingpanel
 
 
-flashcardactivity,canceldelete_click,0,0,249,251
+flashcardactivity,canceldelete_click,0,0,264,266
 ,deleteconfirmation
 
 
-flashcardactivity,cancelnew_click,1,0,211,214
+flashcardactivity,cancelnew_click,1,0,226,229
 ,newdeckname,,renamepanel
 
 
-flashcardactivity,cancelnewsubdeck_click,1,0,237,240
+flashcardactivity,cancelnewsubdeck_click,1,0,252,255
 ,newsubdecket,,newsubdeckpanel
 
 
-flashcardactivity,confirmdelete_click,0,0,242,247
+flashcardactivity,confirmdelete_click,0,0,257,262
 ,deck,,item_longclick,,decksettingpanel,,deleteconfirmation,,lvdecks
 
 ,refreshbtn_click
-flashcardactivity,confirmnew_click,1,0,190,209
+flashcardactivity,confirmnew_click,1,0,205,224
 ,newdeckname,,deck,,item_longclick,,renamepanel,,kvs,,lvdecks
 
 ,savedecks,,refreshbtn_click
-flashcardactivity,savedecks,0,0,81,83
+flashcardactivity,savedecks,0,0,96,98
 ,kvs,,deck
 
 
-flashcardactivity,create_click,1,0,101,131
+flashcardactivity,create_click,1,0,116,146
 ,deck,,et1,,addpanel,,lvdecks,,kvs
 
 ,savedecks
-flashcardactivity,create_subdeck_click,0,0,176,179
+flashcardactivity,create_subdeck_click,0,0,191,194
 ,newsubdeckpanel,,decksettingpanel
 
 
-flashcardactivity,createnewsubdeck_click,1,0,216,235
+flashcardactivity,createnewsubdeck_click,1,0,231,250
 ,newsubdecket,,deck,,item_longclick,,newsubdeckpanel,,kvs
 
 ,savedecks
-flashcardactivity,delete_deck_click,0,0,171,174
+flashcardactivity,delete_deck_click,0,0,186,189
 ,decksettingpanel,,deleteconfirmation
 
 
@@ -1294,11 +1294,11 @@ flashcardactivity,globals,0,1,19,36
 
 
 
-flashcardactivity,lvdecks_itemclick,0,0,141,145
+flashcardactivity,lvdecks_itemclick,0,0,156,160
 ,selecteddeck
 ,selecteddeck
 
-flashcardactivity,lvdecks_itemlongclick,0,0,147,152
+flashcardactivity,lvdecks_itemlongclick,0,0,162,167
 ,decksettingpanel,,item_longclick,,selecteddeck
 ,item_longclick,,selecteddeck
 
@@ -1306,23 +1306,23 @@ flashcardactivity,process_globals,0,1,6,17
 
 
 
-flashcardactivity,rename_deck_click,0,0,166,169
+flashcardactivity,rename_deck_click,0,0,181,184
 ,decksettingpanel,,renamepanel
 
 
-musicactivity,activity_create,1,0,19,43
-starter,darkmode,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,musicservice,mediaplayer,musicservice,musicplaylist,,uitimer
+musicactivity,activity_create,1,1,19,57
+starter,themenumber,starter,darkmode,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,musicservice,mediaplayer,musicservice,musicplaylist,,uitimer
 ,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle
 
-musicactivity,activity_pause,0,0,49,51
+musicactivity,activity_pause,0,0,63,65
 
 
 
-musicactivity,activity_resume,0,0,45,47
+musicactivity,activity_resume,0,0,59,61
 
 
 
-musicactivity,formatsongdur,0,0,53,58
+musicactivity,formatsongdur,0,0,67,72
 
 
 
@@ -1330,19 +1330,19 @@ musicactivity,globals,0,1,11,17
 
 
 
-musicactivity,listview1_itemclick,0,0,99,101
+musicactivity,listview1_itemclick,0,0,113,115
 musicservice,currentsong,musicservice,mediaplayer,musicservice,musicplaylist
 musicservice,currentsong
 musicservice,setsong,musicservice,playsong
-musicactivity,nextbtn_click,0,0,87,89
+musicactivity,nextbtn_click,0,0,101,103
 musicservice,currentsong,musicservice,musicplaylist,musicservice,mediaplayer
 musicservice,currentsong
 musicservice,nextsong,musicservice,playsong
-musicactivity,pausebtn_click,0,0,95,97
+musicactivity,pausebtn_click,0,0,109,111
 musicservice,mediaplayer
 
 musicservice,pausetoggle
-musicactivity,prevbtn_click,0,0,91,93
+musicactivity,prevbtn_click,0,0,105,107
 musicservice,currentsong,musicservice,musicplaylist,musicservice,mediaplayer
 musicservice,currentsong
 musicservice,prevsong,musicservice,playsong
@@ -1350,11 +1350,11 @@ musicactivity,process_globals,0,1,6,9
 
 
 
-musicactivity,seekbar1_valuechanged,0,0,81,85
+musicactivity,seekbar1_valuechanged,0,0,95,99
 musicservice,mediaplayer
 
 
-musicactivity,uitimer_tick,0,0,61,79
+musicactivity,uitimer_tick,0,0,75,93
 musicservice,mediaplayer,musicservice,musicplaylist,musicservice,currentsong,,seekbar1,,songruntime,,songtitle,,pausebtn
 
 ,formatsongdur
@@ -1402,35 +1402,35 @@ musicservice,songtimer_tick,0,0,76,84
 ,mediaplayer,,currentsong,,musicplaylist
 ,currentsong
 ,nextsong,,playsong
-navactivity,activity_create,1,0,18,26
-starter,darkmode
+navactivity,activity_create,1,1,18,45
+starter,themenumber,starter,darkmode
 
 
-navactivity,activity_pause,0,0,32,34
-
-
-
-navactivity,activity_resume,0,0,28,30
+navactivity,activity_pause,0,0,51,53
 
 
 
-navactivity,calendarbtn_click,0,0,37,39
+navactivity,activity_resume,0,0,47,49
 
 
 
-navactivity,clkbtn_click,0,0,41,43
+navactivity,calendarbtn_click,0,0,56,58
 
 
 
-navactivity,corkpadbtn_click,0,0,45,47
+navactivity,clkbtn_click,0,0,60,62
 
 
 
-navactivity,exitbtn_click,0,0,73,75
+navactivity,corkpadbtn_click,0,0,64,66
 
 
 
-navactivity,flashbtn_click,0,0,49,51
+navactivity,exitbtn_click,0,0,92,94
+
+
+
+navactivity,flashbtn_click,0,0,68,70
 
 
 
@@ -1438,15 +1438,15 @@ navactivity,globals,0,1,12,16
 
 
 
-navactivity,helpbtn_click,0,0,65,67
+navactivity,helpbtn_click,0,0,84,86
 
 
 
-navactivity,musicbtn_click,0,0,53,55
+navactivity,musicbtn_click,0,0,72,74
 
 
 
-navactivity,ntpdbtn_click,0,0,57,59
+navactivity,ntpdbtn_click,0,0,76,78
 
 
 
@@ -1454,31 +1454,31 @@ navactivity,process_globals,0,1,6,10
 
 
 
-navactivity,themebtn_click,0,0,69,71
+navactivity,themebtn_click,0,0,88,90
 
 
 
-navactivity,todobtn_click,0,0,61,63
+navactivity,todobtn_click,0,0,80,82
 
 
 
-noteactivity,activity_create,1,0,21,29
-starter,darkmode,,addbtn,,noteclv
+noteactivity,activity_create,1,1,21,43
+starter,themenumber,starter,darkmode,,addbtn,,noteclv
 ,addbtn,,noteclv
 
-noteactivity,activity_pause,0,0,35,37
+noteactivity,activity_pause,0,0,49,51
 
 
 
-noteactivity,activity_resume,0,0,31,33
+noteactivity,activity_resume,0,0,45,47
 ,noteclv,mainactivity,kvs
 
 ,refreshlist
-noteactivity,refreshlist,0,0,61,88
+noteactivity,refreshlist,0,0,75,102
 ,noteclv,mainactivity,kvs
 
 
-noteactivity,addbtn_click,0,0,94,96
+noteactivity,addbtn_click,0,0,108,110
 
 
 
@@ -1486,15 +1486,15 @@ noteactivity,globals,0,1,13,19
 
 
 
-noteactivity,noteclv_itemclick,0,0,39,47
+noteactivity,noteclv_itemclick,0,0,53,61
 editnote,activenote
 editnote,activenote
 
-noteactivity,noteclv_itemlongclick,0,0,49,59
+noteactivity,noteclv_itemlongclick,0,0,63,73
 mainactivity,kvs,,noteclv
 
 ,refreshlist
-noteactivity,notecvl_itemclick,0,0,98,99
+noteactivity,notecvl_itemclick,0,0,112,113
 
 
 
@@ -1502,12 +1502,12 @@ noteactivity,process_globals,0,1,6,11
 
 
 
-noteactivity,searchtxt_textchanged,0,0,90,92
+noteactivity,searchtxt_textchanged,0,0,104,106
 ,noteclv,mainactivity,kvs
 
 ,refreshlist
 schedule_module,activity_create,1,0,22,33
-starter,darkmode,,menupanel,,noschedlabel,,sched_btn,,schedulesv,calendaractivity,calendarmap
+starter,themenumber,starter,darkmode,,menupanel,,noschedlabel,,sched_btn,,schedulesv,calendaractivity,calendarmap
 ,menupanel,,noschedlabel,,sched_btn,,schedulesv
 ,drawschedule,,setdate,,identifycolor,,gettimestring
 schedule_module,drawschedule,0,0,35,98

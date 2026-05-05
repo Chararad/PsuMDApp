@@ -27,11 +27,27 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("themeLayout")
-	Else
-		Activity.LoadLayout("themeLayoutDark")
-	End If
+	
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("themeLayout")
+			Else
+				Activity.LoadLayout("themeLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("themeLayout2")
+			Else
+				Activity.LoadLayout("themeLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("themeLayout3")
+			Else
+				Activity.LoadLayout("themeLayoutDark3")
+			End If
+	End Select
 
 	showThemePage(0)
 End Sub

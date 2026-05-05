@@ -59,13 +59,31 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("corkboardLayout")
+			Else
+				Activity.LoadLayout("corkboardLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("corkboardLayout2")
+			Else
+				Activity.LoadLayout("corkboardLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("corkboardLayout3")
+			Else
+				Activity.LoadLayout("corkboardLayoutDark3")
+			End If
+	End Select
 	
 	If Starter.darkMode = False Then
-		Activity.LoadLayout("corkboardLayout")
 		penSpnr.DropdownBackgroundColor = Colors.DarkGray
 		penSpnr.DropdownTextColor = Colors.White
 	Else
-		Activity.LoadLayout("corkboardLayoutDark")
 		penSpnr.DropdownTextColor = Colors.Black
 	End If
 	

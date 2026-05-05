@@ -40,12 +40,31 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Subdeck_ModuleLayout")
+			Else
+				Activity.LoadLayout("Subdeck_ModuleLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Subdeck_ModuleLayout2")
+			Else
+				Activity.LoadLayout("Subdeck_ModuleLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Subdeck_ModuleLayout3")
+			Else
+				Activity.LoadLayout("Subdeck_ModuleLayoutDark3")
+			End If
+	End Select
+	
 	If Starter.darkMode = False Then
-		Activity.LoadLayout("Subdeck_ModuleLayout")
 		'to change the color of label etxt for each lit view for visibility
 		LVSubdecks.SingleLineLayout.Label.textColor = Colors.black
 	Else
-		Activity.LoadLayout("Subdeck_ModuleLayoutDark")
 		LVSubdecks.SingleLineLayout.Label.textColor = Colors.White
 	End If
 	

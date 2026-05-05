@@ -28,12 +28,26 @@ End Sub
 Sub Activity_Create(FirstTime As Boolean)
 	'Do not forget to load the layout file created with the visual designer. For example:
 	'Activity.LoadLayout("Layout1")
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("ACMLayout")
-	Else
-		Activity.LoadLayout("ACMLayoutDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("ACMLayout")
+			Else
+				Activity.LoadLayout("ACMLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("ACMLayout2")
+			Else
+				Activity.LoadLayout("ACMLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("ACMLayout3")
+			Else
+				Activity.LoadLayout("ACMLayoutDark3")
+			End If
+	End Select
 	
 	'recovering all the subdecks
 	Dim tappeddeck As Map =  FlashcardActivity.deck.Get(FlashcardActivity.selecteddeck) 'main. means its from the main activity/module

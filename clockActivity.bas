@@ -44,12 +44,27 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("clocklayout")
-	Else
-		Activity.LoadLayout("clocklayoutDark")
-	End If
-	
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("clocklayout")
+			Else
+				Activity.LoadLayout("clocklayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("clocklayout2")
+			Else
+				Activity.LoadLayout("clocklayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("clocklayout3")
+			Else
+				Activity.LoadLayout("clocklayoutDark3")
+			End If
+	End Select
+
 	If FirstTime Then
 		timerCount.Initialize("tmr", 1000)
 	End If

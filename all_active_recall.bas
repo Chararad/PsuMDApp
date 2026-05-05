@@ -31,11 +31,26 @@ End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	'Do not forget to load the layout file created with the visual designer. For example:
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("AARLayout")
-	Else
-		Activity.LoadLayout("AARLayoutDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("AARLayout")
+			Else
+				Activity.LoadLayout("AEMLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("AARLayout2")
+			Else
+				Activity.LoadLayout("AARLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("AARLayout3")
+			Else
+				Activity.LoadLayout("AARLayoutDark3")
+			End If
+	End Select
 
 	cards.Initialize
 	RndSeed(DateTime.Now) 'seeding randomizer

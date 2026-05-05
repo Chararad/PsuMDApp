@@ -24,14 +24,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	'Do not forget to load the layout file created with the visual designer. For example:
-	'Activity.LoadLayout("Layout1")
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("DACLayout")
-	Else
-		Activity.LoadLayout("DACLayoutDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("DACLayout")
+			Else
+				Activity.LoadLayout("DACLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("DACLayout2")
+			Else
+				Activity.LoadLayout("DACLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("DACLayout3")
+			Else
+				Activity.LoadLayout("DACLayoutDark3")
+			End If
+	End Select
 	
 	deckname.Text = FlashcardActivity.item_longclick
 	cards.Initialize

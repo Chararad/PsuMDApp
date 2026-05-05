@@ -42,13 +42,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	'Do not forget to load the layout file created with the visual designer. For example:
-	'Activity.LoadLayout("Layout1")
-	If Starter.darkMode Then
-		Activity.LoadLayout("todoListLayoutDark.bal")
-	Else
-		Activity.LoadLayout("todoListLayout.bal")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("todoListLayout")
+			Else
+				Activity.LoadLayout("todoListLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("todoListLayout2")
+			Else
+				Activity.LoadLayout("todoListLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("todoListLayout3")
+			Else
+				Activity.LoadLayout("todoListLayoutDark3")
+			End If
+	End Select
 	
 	addTitleTextArea.Tag = Null
 	addTitleTextArea.Background = Null

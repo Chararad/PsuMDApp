@@ -30,12 +30,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("AEMLayout")
-	Else
-		Activity.LoadLayout("AEMLayoutDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("AEMLayout")
+			Else
+				Activity.LoadLayout("AEMLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("AEMLayout2")
+			Else
+				Activity.LoadLayout("AEMLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("AEMLayout3")
+			Else
+				Activity.LoadLayout("AEMLayoutDark3")
+			End If
+	End Select
 	
 	timelbl.Text = currentDate
 

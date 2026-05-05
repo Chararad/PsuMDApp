@@ -26,12 +26,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("editnoteLayout")
-	Else
-		Activity.LoadLayout("editnoteLayoutDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("editnoteLayout")
+			Else
+				Activity.LoadLayout("editnoteLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("editnoteLayout2")
+			Else
+				Activity.LoadLayout("editnoteLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("editnoteLayout3")
+			Else
+				Activity.LoadLayout("editnoteLayoutDark3")
+			End If
+	End Select
 	
 	contentTxt.Background = Null
 	contentTxt.Gravity = Bit.Or(Gravity.TOP, Gravity.LEFT)

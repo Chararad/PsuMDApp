@@ -382,22 +382,55 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
 RDebugUtils.currentLine=917504;
  //BA.debugLineNum = 917504;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=917505;
- //BA.debugLineNum = 917505;BA.debugLine="If Starter.darkMode = False Then";
-if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
 RDebugUtils.currentLine=917506;
- //BA.debugLineNum = 917506;BA.debugLine="Activity.LoadLayout(\"themeLayout\")";
+ //BA.debugLineNum = 917506;BA.debugLine="Select Starter.themeNumber";
+switch (BA.switchObjectToInt(mostCurrent._starter._themenumber /*int*/ ,(int) (0),(int) (1),(int) (2))) {
+case 0: {
+RDebugUtils.currentLine=917508;
+ //BA.debugLineNum = 917508;BA.debugLine="If Starter.darkMode = False Then";
+if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
+RDebugUtils.currentLine=917509;
+ //BA.debugLineNum = 917509;BA.debugLine="Activity.LoadLayout(\"themeLayout\")";
 mostCurrent._activity.LoadLayout("themeLayout",mostCurrent.activityBA);
  }else {
-RDebugUtils.currentLine=917508;
- //BA.debugLineNum = 917508;BA.debugLine="Activity.LoadLayout(\"themeLayoutDark\")";
+RDebugUtils.currentLine=917511;
+ //BA.debugLineNum = 917511;BA.debugLine="Activity.LoadLayout(\"themeLayoutDark\")";
 mostCurrent._activity.LoadLayout("themeLayoutDark",mostCurrent.activityBA);
  };
-RDebugUtils.currentLine=917511;
- //BA.debugLineNum = 917511;BA.debugLine="showThemePage(0)";
+ break; }
+case 1: {
+RDebugUtils.currentLine=917514;
+ //BA.debugLineNum = 917514;BA.debugLine="If Starter.darkMode = False Then";
+if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
+RDebugUtils.currentLine=917515;
+ //BA.debugLineNum = 917515;BA.debugLine="Activity.LoadLayout(\"themeLayout2\")";
+mostCurrent._activity.LoadLayout("themeLayout2",mostCurrent.activityBA);
+ }else {
+RDebugUtils.currentLine=917517;
+ //BA.debugLineNum = 917517;BA.debugLine="Activity.LoadLayout(\"themeLayoutDark2\")";
+mostCurrent._activity.LoadLayout("themeLayoutDark2",mostCurrent.activityBA);
+ };
+ break; }
+case 2: {
+RDebugUtils.currentLine=917520;
+ //BA.debugLineNum = 917520;BA.debugLine="If Starter.darkMode = False Then";
+if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
+RDebugUtils.currentLine=917521;
+ //BA.debugLineNum = 917521;BA.debugLine="Activity.LoadLayout(\"themeLayout3\")";
+mostCurrent._activity.LoadLayout("themeLayout3",mostCurrent.activityBA);
+ }else {
+RDebugUtils.currentLine=917523;
+ //BA.debugLineNum = 917523;BA.debugLine="Activity.LoadLayout(\"themeLayoutDark3\")";
+mostCurrent._activity.LoadLayout("themeLayoutDark3",mostCurrent.activityBA);
+ };
+ break; }
+}
+;
+RDebugUtils.currentLine=917527;
+ //BA.debugLineNum = 917527;BA.debugLine="showThemePage(0)";
 _showthemepage((int) (0));
-RDebugUtils.currentLine=917512;
- //BA.debugLineNum = 917512;BA.debugLine="End Sub";
+RDebugUtils.currentLine=917528;
+ //BA.debugLineNum = 917528;BA.debugLine="End Sub";
 return "";
 }
 public static String  _showthemepage(int _page) throws Exception{

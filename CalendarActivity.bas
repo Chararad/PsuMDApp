@@ -49,12 +49,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("CalendarActivityLayout")
-	Else
-		Activity.LoadLayout("CalendarActivityLayoutDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("CalendarActivityLayout")
+			Else
+				Activity.LoadLayout("CalendarActivityLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("CalendarActivityLayout2")
+			Else
+				Activity.LoadLayout("CalendarActivityLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("CalendarActivityLayout3")
+			Else
+				Activity.LoadLayout("CalendarActivityLayoutDark3")
+			End If
+	End Select
 	
 	Month_btn.Color = Colors.LightGray
 	

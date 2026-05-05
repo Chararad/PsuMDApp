@@ -22,12 +22,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("navAct")
-	Else
-		Activity.LoadLayout("navActDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("navAct")
+			Else
+				Activity.LoadLayout("navActDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("navAct2")
+			Else
+				Activity.LoadLayout("navActDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("navAct3")
+			Else
+				Activity.LoadLayout("navActDark3")
+			End If
+	End Select
 
 End Sub
 

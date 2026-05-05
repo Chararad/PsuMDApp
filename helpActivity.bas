@@ -31,11 +31,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("helpAct")
-	Else
-		Activity.LoadLayout("helpActDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("helpAct")
+			Else
+				Activity.LoadLayout("helpActDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("helpAct2")
+			Else
+				Activity.LoadLayout("helpActDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("helpAct3")
+			Else
+				Activity.LoadLayout("helpActDark3")
+			End If
+	End Select
 
 	showHelpPage(0)
 End Sub

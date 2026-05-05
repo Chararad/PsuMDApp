@@ -26,12 +26,26 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	
-	If Starter.darkMode = False Then
-		Activity.LoadLayout("Schedule_ModuleLayout")
-	Else
-		Activity.LoadLayout("Schedule_ModuleLayoutDark")
-	End If
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Schedule_ModuleLayout")
+			Else
+				Activity.LoadLayout("Schedule_ModuleLayoutDark")
+			End If
+		Case 1
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Schedule_ModuleLayout2")
+			Else
+				Activity.LoadLayout("Schedule_ModuleLayoutDark2")
+			End If
+		Case 2
+			If Starter.darkMode = False Then
+				Activity.LoadLayout("Schedule_ModuleLayout3")
+			Else
+				Activity.LoadLayout("Schedule_ModuleLayoutDark3")
+			End If
+	End Select
 	
 	sched_btn.Color = Colors.LightGray
 	DrawSchedule
