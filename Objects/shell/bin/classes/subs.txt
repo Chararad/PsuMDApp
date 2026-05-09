@@ -86,71 +86,71 @@ starter,service_taskremoved,0,0,59,61
 
 
 
-mainactivity,activity_create,1,0,34,84
+mainactivity,activity_create,1,0,34,85
 ,hsv,,kvs,starter,noteskvs,,kvspref,starter,prefkvs,,timerclock,,size,,reglayout,,xui,,darkmodelayout,starter,themenumber,,clocklightbtn,,computergif,,notebook,,notesopen,,clockbtn,,dcomputergif,,dnotesopen,,curtain,,dcurtain,starter,darkmode
 ,hsv,,kvs,,kvspref,,reglayout,,darkmodelayout,,clocklightbtn,,computergif,,notebook,,notesopen,,clockbtn,,dcomputergif,,dnotesopen,,curtain,,dcurtain
 b4xgifview,setgif,b4xgifview,setgif2,b4xgifview,setbitmap,b4xgifview,resizebasedonimage
-mainactivity,activity_pause,0,0,121,123
+mainactivity,activity_pause,0,0,122,124
 
 
 
-mainactivity,activity_resume,1,0,86,119
+mainactivity,activity_resume,1,0,87,120
 ,format24h,starter,themechanged,,reglayout,,darkmodelayout,starter,themenumber,,clocklightbtn,,computergif,,notebook,,notesopen,,clockbtn,,dcomputergif,,dnotesopen,,curtain,,dcurtain
 ,clocklightbtn,,computergif,,notebook,,notesopen,,clockbtn,,dcomputergif,,dnotesopen,,curtain,,dcurtain,starter,themechanged
 b4xgifview,setgif,b4xgifview,setgif2,b4xgifview,setbitmap,b4xgifview,resizebasedonimage
-mainactivity,bookie_click,0,0,253,255
+mainactivity,bookie_click,0,0,254,256
 
 
 
-mainactivity,bookie_longclick,0,0,360,368
+mainactivity,bookie_longclick,0,0,361,369
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,showinfopopup,0,0,155,185
+mainactivity,showinfopopup,0,0,156,186
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopage
-mainactivity,showinfopage,0,0,187,223
+mainactivity,showinfopage,0,0,188,224
 ,infopage,,infotitlelbl,,infodesclbl
 ,infopage
 
-mainactivity,calendar_click,0,0,257,259
+mainactivity,calendar_click,0,0,258,260
 
 
 
-mainactivity,calendar_longclick,0,0,320,328
+mainactivity,calendar_longclick,0,0,321,329
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,clockbtn_click,0,0,225,227
+mainactivity,clockbtn_click,0,0,226,228
 
 
 
-mainactivity,clockbtn_longclick,0,0,330,338
+mainactivity,clockbtn_longclick,0,0,331,339
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,clocklightbtn_click,0,0,229,231
+mainactivity,clocklightbtn_click,0,0,230,232
 
 
 
-mainactivity,clocklightbtn_longclick,0,0,340,348
+mainactivity,clocklightbtn_longclick,0,0,341,349
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,corkie_click,0,0,311,313
+mainactivity,corkie_click,0,0,312,314
 
 
 
-mainactivity,corkie_longclick,0,0,350,358
+mainactivity,corkie_longclick,0,0,351,359
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,dlamp_click,0,0,137,147
+mainactivity,dlamp_click,0,0,138,148
 starter,darkmode,,kvspref,,reglayout,,darkmodelayout
 starter,darkmode
 
-mainactivity,dlamp_longclick,0,0,420,428
+mainactivity,dlamp_longclick,0,0,421,429
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
@@ -158,63 +158,63 @@ mainactivity,globals,0,1,14,32
 ,size,,infopage
 ,size,,infopage
 
-mainactivity,helpbtn_click,0,0,237,239
+mainactivity,helpbtn_click,0,0,238,240
 
 
 
-mainactivity,infopnlclose_click,0,0,241,243
+mainactivity,infopnlclose_click,0,0,242,244
 ,infopnl
 
 
-mainactivity,lamp_click,0,0,125,135
+mainactivity,lamp_click,0,0,126,136
 starter,darkmode,,kvspref,,darkmodelayout,,reglayout
 starter,darkmode
 
-mainactivity,lamp_longclick,0,0,410,418
+mainactivity,lamp_longclick,0,0,411,419
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,mp_click,0,0,249,251
+mainactivity,mp_click,0,0,250,252
 
 
 
-mainactivity,mp_longclick,0,0,370,378
+mainactivity,mp_longclick,0,0,371,379
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,navbtn_click,0,0,233,235
+mainactivity,navbtn_click,0,0,234,236
 
 
 
-mainactivity,navbtn_longclick,0,0,430,438
+mainactivity,navbtn_longclick,0,0,431,439
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,notebook_click,0,0,261,270
+mainactivity,notebook_click,0,0,262,271
 starter,themenumber,,notesopen,,dnotesopen,,notebook
 
 ,notestransition1,,notestransition2,,notestransition3,b4xgifview,setgif,b4xgifview,setgif2,b4xgifview,setbitmap,b4xgifview,resizebasedonimage
-mainactivity,notestransition1,0,0,272,283
+mainactivity,notestransition1,0,0,273,284
 ,notesopen,,dnotesopen,,notebook
 
 b4xgifview,setgif,b4xgifview,setgif2,b4xgifview,setbitmap,b4xgifview,resizebasedonimage
-mainactivity,notestransition2,0,0,285,296
+mainactivity,notestransition2,0,0,286,297
 ,notesopen,,dnotesopen,,notebook
 
 b4xgifview,setgif,b4xgifview,setgif2,b4xgifview,setbitmap,b4xgifview,resizebasedonimage
-mainactivity,notestransition3,0,0,298,309
+mainactivity,notestransition3,0,0,299,310
 ,notesopen,,dnotesopen,,notebook
 
 b4xgifview,setgif,b4xgifview,setgif2,b4xgifview,setbitmap,b4xgifview,resizebasedonimage
-mainactivity,notebook_longclick,0,0,380,388
+mainactivity,notebook_longclick,0,0,381,389
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
-mainactivity,plant_click,0,0,315,317
+mainactivity,plant_click,0,0,316,318
 
 
 
-mainactivity,plant_longclick,0,0,400,408
+mainactivity,plant_longclick,0,0,401,409
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
@@ -222,15 +222,15 @@ mainactivity,process_globals,0,1,6,12
 ,format24h
 ,format24h
 
-mainactivity,timerclock_tick,0,0,149,152
+mainactivity,timerclock_tick,0,0,150,153
 ,clockbtn,,clocklightbtn
 
 
-mainactivity,todolistbtn_click,0,0,245,247
+mainactivity,todolistbtn_click,0,0,246,248
 
 
 
-mainactivity,todolistbtn_longclick,0,0,390,398
+mainactivity,todolistbtn_longclick,0,0,391,399
 ,infopnl,,xui,,infotitlelbl,,infodesclbl,,infopagelbl,,infopage
 ,infopnl,,infopage
 ,showinfopopup,,showinfopage
@@ -582,7 +582,7 @@ clockactivity,activity_resume,0,0,71,73
 
 
 
-clockactivity,closel_click,0,0,297,299
+clockactivity,closel_click,0,0,318,320
 ,settingspnl
 
 
@@ -598,11 +598,11 @@ clockactivity,globals,0,1,16,38
 ,timerstate,,counter,,pomodef,,shortdef,,longdef,,centerleft,,centertop,,playing,,break
 ,timerstate,,counter,,pomodef,,shortdef,,longdef,,centerleft,,centertop,,playing,,break
 
-clockactivity,longbtn_click,0,0,284,290
+clockactivity,longbtn_click,0,0,305,311
 ,secondsremain,,longdef,,timerstate,,break,,timercount,,playing,,playbtn,,pomotimerlbl,,pomocounter,,counter,,sessionlbl
 ,secondsremain,,timerstate,,break,,playing
 ,timerstop,,updatelbl
-clockactivity,timerstop,0,0,343,347
+clockactivity,timerstop,0,0,364,368
 ,timercount,,playing,,playbtn
 ,playing
 
@@ -610,7 +610,7 @@ clockactivity,playbtn_click,0,0,96,108
 ,secondsremain,,timercount,,playing,,playbtn
 ,playing
 ,timerstop
-clockactivity,pomobtn_click,0,0,269,274
+clockactivity,pomobtn_click,0,0,290,295
 ,secondsremain,,pomodef,,timerstate,,timercount,,playing,,playbtn,,pomotimerlbl,,pomocounter,,counter,,sessionlbl,,break
 ,secondsremain,,timerstate,,playing
 ,timerstop,,updatelbl
@@ -618,23 +618,23 @@ clockactivity,process_globals,0,1,6,13
 ,secondsremain
 ,secondsremain
 
-clockactivity,savebtn_click,0,0,301,319
+clockactivity,savebtn_click,0,0,322,340
 ,pomotxt,,pomodef,,shorttxt,,shortdef,,longtxt,,longdef,,timerstate,,secondsremain,,break,,settingspnl,,pomotimerlbl,,pomocounter,,counter,,sessionlbl
 ,pomodef,,shortdef,,longdef,,secondsremain
 ,updatelbl
-clockactivity,settingsbtn_click,1,0,292,295
+clockactivity,settingsbtn_click,1,0,313,316
 ,settingspnl,,xui,,centerleft,,centertop,starter,themenumber,starter,darkmode,,pomotxt,,pomodef,,shorttxt,,shortdef,,longtxt,,longdef
 ,settingspnl
 ,settingswindow
-clockactivity,settingswindow,1,1,155,267
+clockactivity,settingswindow,1,0,155,288
 ,settingspnl,,xui,,centerleft,,centertop,starter,themenumber,starter,darkmode,,pomotxt,,pomodef,,shorttxt,,shortdef,,longtxt,,longdef
 ,settingspnl
 
-clockactivity,shortbtn_click,0,0,276,282
+clockactivity,shortbtn_click,0,0,297,303
 ,secondsremain,,shortdef,,timerstate,,break,,timercount,,playing,,playbtn,,pomotimerlbl,,pomocounter,,counter,,sessionlbl
 ,secondsremain,,timerstate,,break,,playing
 ,timerstop,,updatelbl
-clockactivity,skipbtn_click,0,0,321,341
+clockactivity,skipbtn_click,0,0,342,362
 ,timerstate,,counter,,secondsremain,,longdef,,break,,shortdef,,pomodef,,pomotimerlbl,,pomocounter,,sessionlbl,,timercount,,playing,,playbtn
 ,counter,,secondsremain,,break,,timerstate,,playing
 ,updatelbl,,timerstop

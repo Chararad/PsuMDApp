@@ -39,6 +39,7 @@ End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	Activity.LoadLayout("Layouthsv")
+
 	If FirstTime Then
 		kvs = Starter.notesKvs
 		kvsPref = Starter.prefKvs
