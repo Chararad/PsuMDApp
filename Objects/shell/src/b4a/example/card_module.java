@@ -64,28 +64,28 @@ public static RemoteObject _deleteconfirmation = RemoteObject.declareNull("anywh
 public static RemoteObject _numtag = RemoteObject.createImmutable(0);
 public static b4a.example.main _main = null;
 public static b4a.example.starter _starter = null;
-public static b4a.example.themeactivity _themeactivity = null;
 public static b4a.example.mainactivity _mainactivity = null;
-public static b4a.example.helpactivity _helpactivity = null;
-public static b4a.example.todoactivity _todoactivity = null;
-public static b4a.example.calendaractivity _calendaractivity = null;
-public static b4a.example.subdeck_module _subdeck_module = null;
-public static b4a.example.day_module _day_module = null;
 public static b4a.example.active_recall _active_recall = null;
 public static b4a.example.add_card_module _add_card_module = null;
 public static b4a.example.add_card_module2 _add_card_module2 = null;
 public static b4a.example.add_events_module _add_events_module = null;
 public static b4a.example.all_active_recall _all_active_recall = null;
+public static b4a.example.calendaractivity _calendaractivity = null;
 public static b4a.example.clockactivity _clockactivity = null;
 public static b4a.example.corkactivity _corkactivity = null;
+public static b4a.example.day_module _day_module = null;
 public static b4a.example.deck_all_cards _deck_all_cards = null;
 public static b4a.example.editnote _editnote = null;
 public static b4a.example.flashcardactivity _flashcardactivity = null;
+public static b4a.example.helpactivity _helpactivity = null;
 public static b4a.example.musicactivity _musicactivity = null;
 public static b4a.example.musicservice _musicservice = null;
 public static b4a.example.navactivity _navactivity = null;
 public static b4a.example.noteactivity _noteactivity = null;
 public static b4a.example.schedule_module _schedule_module = null;
+public static b4a.example.subdeck_module _subdeck_module = null;
+public static b4a.example.themeactivity _themeactivity = null;
+public static b4a.example.todoactivity _todoactivity = null;
   public Object[] GetGlobals() {
 		return new Object[] {"active_recall",Debug.moduleToString(b4a.example.active_recall.class),"Activity",card_module.mostCurrent._activity,"Add_card_module",Debug.moduleToString(b4a.example.add_card_module.class),"add_card_module2",Debug.moduleToString(b4a.example.add_card_module2.class),"add_events_module",Debug.moduleToString(b4a.example.add_events_module.class),"all_active_recall",Debug.moduleToString(b4a.example.all_active_recall.class),"CalendarActivity",Debug.moduleToString(b4a.example.calendaractivity.class),"clockActivity",Debug.moduleToString(b4a.example.clockactivity.class),"corkActivity",Debug.moduleToString(b4a.example.corkactivity.class),"day_module",Debug.moduleToString(b4a.example.day_module.class),"deck_all_cards",Debug.moduleToString(b4a.example.deck_all_cards.class),"deleteconfirmation",card_module.mostCurrent._deleteconfirmation,"editindex",card_module._editindex,"editnote",Debug.moduleToString(b4a.example.editnote.class),"FlashcardActivity",Debug.moduleToString(b4a.example.flashcardactivity.class),"helpActivity",Debug.moduleToString(b4a.example.helpactivity.class),"isEdit",card_module._isedit,"Main",Debug.moduleToString(b4a.example.main.class),"MainActivity",Debug.moduleToString(b4a.example.mainactivity.class),"musicActivity",Debug.moduleToString(b4a.example.musicactivity.class),"musicService",Debug.moduleToString(b4a.example.musicservice.class),"navActivity",Debug.moduleToString(b4a.example.navactivity.class),"noteActivity",Debug.moduleToString(b4a.example.noteactivity.class),"numtag",card_module._numtag,"Schedule_module",Debug.moduleToString(b4a.example.schedule_module.class),"ScrollView1",card_module.mostCurrent._scrollview1,"Starter",Debug.moduleToString(b4a.example.starter.class),"subdeck",card_module._subdeck,"Subdeck_Module",Debug.moduleToString(b4a.example.subdeck_module.class),"subdecklabel",card_module.mostCurrent._subdecklabel,"themeActivity",Debug.moduleToString(b4a.example.themeactivity.class),"todoActivity",Debug.moduleToString(b4a.example.todoactivity.class)};
 }
