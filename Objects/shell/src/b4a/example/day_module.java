@@ -91,28 +91,28 @@ public static RemoteObject _birthdayrb = RemoteObject.declareNull("anywheresoftw
 public static RemoteObject _ooorb = RemoteObject.declareNull("anywheresoftware.b4a.objects.CompoundButtonWrapper.RadioButtonWrapper");
 public static b4a.example.main _main = null;
 public static b4a.example.starter _starter = null;
-public static b4a.example.themeactivity _themeactivity = null;
 public static b4a.example.mainactivity _mainactivity = null;
-public static b4a.example.helpactivity _helpactivity = null;
-public static b4a.example.todoactivity _todoactivity = null;
-public static b4a.example.calendaractivity _calendaractivity = null;
-public static b4a.example.card_module _card_module = null;
-public static b4a.example.subdeck_module _subdeck_module = null;
 public static b4a.example.active_recall _active_recall = null;
 public static b4a.example.add_card_module _add_card_module = null;
 public static b4a.example.add_card_module2 _add_card_module2 = null;
 public static b4a.example.add_events_module _add_events_module = null;
 public static b4a.example.all_active_recall _all_active_recall = null;
+public static b4a.example.calendaractivity _calendaractivity = null;
+public static b4a.example.card_module _card_module = null;
 public static b4a.example.clockactivity _clockactivity = null;
 public static b4a.example.corkactivity _corkactivity = null;
 public static b4a.example.deck_all_cards _deck_all_cards = null;
 public static b4a.example.editnote _editnote = null;
 public static b4a.example.flashcardactivity _flashcardactivity = null;
+public static b4a.example.helpactivity _helpactivity = null;
 public static b4a.example.musicactivity _musicactivity = null;
 public static b4a.example.musicservice _musicservice = null;
 public static b4a.example.navactivity _navactivity = null;
 public static b4a.example.noteactivity _noteactivity = null;
 public static b4a.example.schedule_module _schedule_module = null;
+public static b4a.example.subdeck_module _subdeck_module = null;
+public static b4a.example.themeactivity _themeactivity = null;
+public static b4a.example.todoactivity _todoactivity = null;
   public Object[] GetGlobals() {
 		return new Object[] {"active_recall",Debug.moduleToString(b4a.example.active_recall.class),"Activity",day_module.mostCurrent._activity,"Add_card_module",Debug.moduleToString(b4a.example.add_card_module.class),"add_card_module2",Debug.moduleToString(b4a.example.add_card_module2.class),"add_events_module",Debug.moduleToString(b4a.example.add_events_module.class),"addeventsfeedback",day_module._addeventsfeedback,"addEventTL_panel",day_module.mostCurrent._addeventtl_panel,"addpanel",day_module.mostCurrent._addpanel,"Addtask_btn",day_module.mostCurrent._addtask_btn,"addTL_et",day_module.mostCurrent._addtl_et,"all_active_recall",Debug.moduleToString(b4a.example.all_active_recall.class),"birthdayrb",day_module.mostCurrent._birthdayrb,"CalendarActivity",Debug.moduleToString(b4a.example.calendaractivity.class),"Card_Module",Debug.moduleToString(b4a.example.card_module.class),"clockActivity",Debug.moduleToString(b4a.example.clockactivity.class),"corkActivity",Debug.moduleToString(b4a.example.corkactivity.class),"currentDate",day_module._currentdate,"currentevId",day_module._currentevid,"currentIndex",day_module._currentindex,"currenttaggedEvent",day_module.mostCurrent._currenttaggedevent,"date_todaylbl",day_module.mostCurrent._date_todaylbl,"dateToday_lbl",day_module.mostCurrent._datetoday_lbl,"Day_btn",day_module.mostCurrent._day_btn,"deck_all_cards",Debug.moduleToString(b4a.example.deck_all_cards.class),"deletepanel",day_module.mostCurrent._deletepanel,"deleteTLevent_confirmationpanel",day_module.mostCurrent._deletetlevent_confirmationpanel,"editDescription_et",day_module.mostCurrent._editdescription_et,"EditInfoPanel",day_module.mostCurrent._editinfopanel,"editnote",Debug.moduleToString(b4a.example.editnote.class),"editTitle_et",day_module.mostCurrent._edittitle_et,"endtimelineSP",day_module.mostCurrent._endtimelinesp,"eventdescription_lbl",day_module.mostCurrent._eventdescription_lbl,"eventInfo_panel",day_module.mostCurrent._eventinfo_panel,"eventrb",day_module.mostCurrent._eventrb,"eventTitle_lbl",day_module.mostCurrent._eventtitle_lbl,"eventtype",day_module.mostCurrent._eventtype,"FlashcardActivity",Debug.moduleToString(b4a.example.flashcardactivity.class),"helpActivity",Debug.moduleToString(b4a.example.helpactivity.class),"Main",Debug.moduleToString(b4a.example.main.class),"MainActivity",Debug.moduleToString(b4a.example.mainactivity.class),"menupanel",day_module.mostCurrent._menupanel,"musicActivity",Debug.moduleToString(b4a.example.musicactivity.class),"musicService",Debug.moduleToString(b4a.example.musicservice.class),"navActivity",Debug.moduleToString(b4a.example.navactivity.class),"noteActivity",Debug.moduleToString(b4a.example.noteactivity.class),"ooorb",day_module.mostCurrent._ooorb,"Schedule_module",Debug.moduleToString(b4a.example.schedule_module.class),"schedules",day_module._schedules,"Starter",Debug.moduleToString(b4a.example.starter.class),"starttimelineSP",day_module.mostCurrent._starttimelinesp,"Subdeck_Module",Debug.moduleToString(b4a.example.subdeck_module.class),"svEvents",day_module.mostCurrent._svevents,"Svtimeline",day_module.mostCurrent._svtimeline,"tags_lbl",day_module.mostCurrent._tags_lbl,"taskrb",day_module.mostCurrent._taskrb,"themeActivity",Debug.moduleToString(b4a.example.themeactivity.class),"timeIndex",day_module._timeindex,"timelabel",day_module.mostCurrent._timelabel,"todoActivity",Debug.moduleToString(b4a.example.todoactivity.class)};
 }

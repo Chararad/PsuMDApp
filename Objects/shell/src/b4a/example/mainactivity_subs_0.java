@@ -8,7 +8,7 @@ public class mainactivity_subs_0 {
 
 public static void  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,34);
+		Debug.PushSubsStack("Activity_Create (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,34);
 if (RapidSub.canDelegate("activity_create")) { b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","activity_create", _firsttime); return;}
 ResumableSub_Activity_Create rsub = new ResumableSub_Activity_Create(null,_firsttime);
 rsub.resume(null, null);
@@ -31,7 +31,7 @@ RemoteObject _firsttime;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,34);
+		Debug.PushSubsStack("Activity_Create (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,34);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -245,7 +245,7 @@ finally {
 }
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,121);
+		Debug.PushSubsStack("Activity_Pause (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,121);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 121;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -262,7 +262,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,86);
+		Debug.PushSubsStack("Activity_Resume (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,86);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","activity_resume");}
  BA.debugLineNum = 86;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(2097152);
@@ -355,7 +355,7 @@ finally {
 		}}
 public static RemoteObject  _bookie_click() throws Exception{
 try {
-		Debug.PushSubsStack("bookie_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,253);
+		Debug.PushSubsStack("bookie_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,253);
 if (RapidSub.canDelegate("bookie_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","bookie_click");}
  BA.debugLineNum = 253;BA.debugLine="Private Sub bookie_Click";
 Debug.ShouldStop(268435456);
@@ -374,7 +374,7 @@ finally {
 		}}
 public static RemoteObject  _bookie_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("bookie_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,360);
+		Debug.PushSubsStack("bookie_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,360);
 if (RapidSub.canDelegate("bookie_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","bookie_longclick");}
  BA.debugLineNum = 360;BA.debugLine="Private Sub bookie_LongClick";
 Debug.ShouldStop(128);
@@ -409,7 +409,7 @@ finally {
 		}}
 public static RemoteObject  _calendar_click() throws Exception{
 try {
-		Debug.PushSubsStack("calendar_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,257);
+		Debug.PushSubsStack("calendar_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,257);
 if (RapidSub.canDelegate("calendar_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","calendar_click");}
  BA.debugLineNum = 257;BA.debugLine="Private Sub calendar_Click";
 Debug.ShouldStop(1);
@@ -428,7 +428,7 @@ finally {
 		}}
 public static RemoteObject  _calendar_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("calendar_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,320);
+		Debug.PushSubsStack("calendar_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,320);
 if (RapidSub.canDelegate("calendar_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","calendar_longclick");}
  BA.debugLineNum = 320;BA.debugLine="Private Sub calendar_LongClick";
 Debug.ShouldStop(-2147483648);
@@ -463,7 +463,7 @@ finally {
 		}}
 public static RemoteObject  _clockbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("clockBtn_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,225);
+		Debug.PushSubsStack("clockBtn_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,225);
 if (RapidSub.canDelegate("clockbtn_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","clockbtn_click");}
  BA.debugLineNum = 225;BA.debugLine="Private Sub clockBtn_Click";
 Debug.ShouldStop(1);
@@ -482,7 +482,7 @@ finally {
 		}}
 public static RemoteObject  _clockbtn_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("clockBtn_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,330);
+		Debug.PushSubsStack("clockBtn_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,330);
 if (RapidSub.canDelegate("clockbtn_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","clockbtn_longclick");}
  BA.debugLineNum = 330;BA.debugLine="Private Sub clockBtn_LongClick";
 Debug.ShouldStop(512);
@@ -517,7 +517,7 @@ finally {
 		}}
 public static RemoteObject  _clocklightbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("clockLightBtn_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,229);
+		Debug.PushSubsStack("clockLightBtn_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,229);
 if (RapidSub.canDelegate("clocklightbtn_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","clocklightbtn_click");}
  BA.debugLineNum = 229;BA.debugLine="Private Sub  clockLightBtn_Click";
 Debug.ShouldStop(16);
@@ -536,7 +536,7 @@ finally {
 		}}
 public static RemoteObject  _clocklightbtn_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("clockLightBtn_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,340);
+		Debug.PushSubsStack("clockLightBtn_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,340);
 if (RapidSub.canDelegate("clocklightbtn_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","clocklightbtn_longclick");}
  BA.debugLineNum = 340;BA.debugLine="Private Sub clockLightBtn_LongClick";
 Debug.ShouldStop(524288);
@@ -571,7 +571,7 @@ finally {
 		}}
 public static RemoteObject  _corkie_click() throws Exception{
 try {
-		Debug.PushSubsStack("corkie_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,311);
+		Debug.PushSubsStack("corkie_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,311);
 if (RapidSub.canDelegate("corkie_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","corkie_click");}
  BA.debugLineNum = 311;BA.debugLine="Private Sub corkie_Click";
 Debug.ShouldStop(4194304);
@@ -590,7 +590,7 @@ finally {
 		}}
 public static RemoteObject  _corkie_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("corkie_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,350);
+		Debug.PushSubsStack("corkie_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,350);
 if (RapidSub.canDelegate("corkie_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","corkie_longclick");}
  BA.debugLineNum = 350;BA.debugLine="Private Sub corkie_LongClick";
 Debug.ShouldStop(536870912);
@@ -625,7 +625,7 @@ finally {
 		}}
 public static void  _dlamp_click() throws Exception{
 try {
-		Debug.PushSubsStack("dlamp_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,137);
+		Debug.PushSubsStack("dlamp_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,137);
 if (RapidSub.canDelegate("dlamp_click")) { b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","dlamp_click"); return;}
 ResumableSub_dlamp_Click rsub = new ResumableSub_dlamp_Click(null);
 rsub.resume(null, null);
@@ -646,7 +646,7 @@ b4a.example.mainactivity parent;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("dlamp_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,137);
+		Debug.PushSubsStack("dlamp_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,137);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -706,7 +706,7 @@ finally {
 }
 public static RemoteObject  _dlamp_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("dlamp_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,420);
+		Debug.PushSubsStack("dlamp_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,420);
 if (RapidSub.canDelegate("dlamp_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","dlamp_longclick");}
  BA.debugLineNum = 420;BA.debugLine="Private Sub dlamp_LongClick";
 Debug.ShouldStop(8);
@@ -781,7 +781,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _helpbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("helpBtn_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,237);
+		Debug.PushSubsStack("helpBtn_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,237);
 if (RapidSub.canDelegate("helpbtn_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","helpbtn_click");}
  BA.debugLineNum = 237;BA.debugLine="Private Sub helpBtn_Click";
 Debug.ShouldStop(4096);
@@ -800,7 +800,7 @@ finally {
 		}}
 public static RemoteObject  _infopnlclose_click() throws Exception{
 try {
-		Debug.PushSubsStack("infoPnlClose_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,241);
+		Debug.PushSubsStack("infoPnlClose_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,241);
 if (RapidSub.canDelegate("infopnlclose_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","infopnlclose_click");}
  BA.debugLineNum = 241;BA.debugLine="Private Sub infoPnlClose_Click";
 Debug.ShouldStop(65536);
@@ -819,7 +819,7 @@ finally {
 		}}
 public static void  _lamp_click() throws Exception{
 try {
-		Debug.PushSubsStack("lamp_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,125);
+		Debug.PushSubsStack("lamp_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,125);
 if (RapidSub.canDelegate("lamp_click")) { b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","lamp_click"); return;}
 ResumableSub_lamp_Click rsub = new ResumableSub_lamp_Click(null);
 rsub.resume(null, null);
@@ -840,7 +840,7 @@ b4a.example.mainactivity parent;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("lamp_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,125);
+		Debug.PushSubsStack("lamp_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,125);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -900,7 +900,7 @@ finally {
 }
 public static RemoteObject  _lamp_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("lamp_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,410);
+		Debug.PushSubsStack("lamp_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,410);
 if (RapidSub.canDelegate("lamp_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","lamp_longclick");}
  BA.debugLineNum = 410;BA.debugLine="Private Sub lamp_LongClick";
 Debug.ShouldStop(33554432);
@@ -935,7 +935,7 @@ finally {
 		}}
 public static RemoteObject  _mp_click() throws Exception{
 try {
-		Debug.PushSubsStack("mP_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,249);
+		Debug.PushSubsStack("mP_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,249);
 if (RapidSub.canDelegate("mp_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","mp_click");}
  BA.debugLineNum = 249;BA.debugLine="Private Sub mP_Click";
 Debug.ShouldStop(16777216);
@@ -954,7 +954,7 @@ finally {
 		}}
 public static RemoteObject  _mp_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("mP_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,370);
+		Debug.PushSubsStack("mP_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,370);
 if (RapidSub.canDelegate("mp_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","mp_longclick");}
  BA.debugLineNum = 370;BA.debugLine="Private Sub mP_LongClick";
 Debug.ShouldStop(131072);
@@ -989,7 +989,7 @@ finally {
 		}}
 public static RemoteObject  _navbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("navBtn_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,233);
+		Debug.PushSubsStack("navBtn_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,233);
 if (RapidSub.canDelegate("navbtn_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","navbtn_click");}
  BA.debugLineNum = 233;BA.debugLine="Private Sub navBtn_Click";
 Debug.ShouldStop(256);
@@ -1008,7 +1008,7 @@ finally {
 		}}
 public static RemoteObject  _navbtn_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("navBtn_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,430);
+		Debug.PushSubsStack("navBtn_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,430);
 if (RapidSub.canDelegate("navbtn_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","navbtn_longclick");}
  BA.debugLineNum = 430;BA.debugLine="Private Sub navBtn_LongClick";
 Debug.ShouldStop(8192);
@@ -1043,7 +1043,7 @@ finally {
 		}}
 public static RemoteObject  _notebook_click() throws Exception{
 try {
-		Debug.PushSubsStack("noteBook_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,261);
+		Debug.PushSubsStack("noteBook_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,261);
 if (RapidSub.canDelegate("notebook_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","notebook_click");}
  BA.debugLineNum = 261;BA.debugLine="Private Sub noteBook_Click";
 Debug.ShouldStop(16);
@@ -1079,7 +1079,7 @@ finally {
 		}}
 public static RemoteObject  _notebook_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("noteBook_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,380);
+		Debug.PushSubsStack("noteBook_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,380);
 if (RapidSub.canDelegate("notebook_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","notebook_longclick");}
  BA.debugLineNum = 380;BA.debugLine="Private Sub noteBook_LongClick";
 Debug.ShouldStop(134217728);
@@ -1114,7 +1114,7 @@ finally {
 		}}
 public static RemoteObject  _notestransition1() throws Exception{
 try {
-		Debug.PushSubsStack("NotesTransition1 (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,272);
+		Debug.PushSubsStack("NotesTransition1 (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,272);
 if (RapidSub.canDelegate("notestransition1")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","notestransition1");}
 ResumableSub_NotesTransition1 rsub = new ResumableSub_NotesTransition1(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1137,7 +1137,7 @@ b4a.example.mainactivity parent;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("NotesTransition1 (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,272);
+		Debug.PushSubsStack("NotesTransition1 (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,272);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1194,7 +1194,7 @@ finally {
 }
 public static RemoteObject  _notestransition2() throws Exception{
 try {
-		Debug.PushSubsStack("NotesTransition2 (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,285);
+		Debug.PushSubsStack("NotesTransition2 (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,285);
 if (RapidSub.canDelegate("notestransition2")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","notestransition2");}
 ResumableSub_NotesTransition2 rsub = new ResumableSub_NotesTransition2(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1217,7 +1217,7 @@ b4a.example.mainactivity parent;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("NotesTransition2 (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,285);
+		Debug.PushSubsStack("NotesTransition2 (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,285);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1274,7 +1274,7 @@ finally {
 }
 public static RemoteObject  _notestransition3() throws Exception{
 try {
-		Debug.PushSubsStack("NotesTransition3 (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,298);
+		Debug.PushSubsStack("NotesTransition3 (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,298);
 if (RapidSub.canDelegate("notestransition3")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","notestransition3");}
 ResumableSub_NotesTransition3 rsub = new ResumableSub_NotesTransition3(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1297,7 +1297,7 @@ b4a.example.mainactivity parent;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("NotesTransition3 (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,298);
+		Debug.PushSubsStack("NotesTransition3 (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,298);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1354,7 +1354,7 @@ finally {
 }
 public static RemoteObject  _plant_click() throws Exception{
 try {
-		Debug.PushSubsStack("plant_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,315);
+		Debug.PushSubsStack("plant_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,315);
 if (RapidSub.canDelegate("plant_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","plant_click");}
  BA.debugLineNum = 315;BA.debugLine="Private Sub plant_Click";
 Debug.ShouldStop(67108864);
@@ -1373,7 +1373,7 @@ finally {
 		}}
 public static RemoteObject  _plant_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("plant_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,400);
+		Debug.PushSubsStack("plant_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,400);
 if (RapidSub.canDelegate("plant_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","plant_longclick");}
  BA.debugLineNum = 400;BA.debugLine="Private Sub plant_LongClick";
 Debug.ShouldStop(32768);
@@ -1423,7 +1423,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _showinfopage(RemoteObject _page) throws Exception{
 try {
-		Debug.PushSubsStack("showInfoPage (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,187);
+		Debug.PushSubsStack("showInfoPage (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,187);
 if (RapidSub.canDelegate("showinfopage")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","showinfopage", _page);}
 Debug.locals.put("page", _page);
  BA.debugLineNum = 187;BA.debugLine="Private Sub showInfoPage(page As Int)";
@@ -1528,7 +1528,7 @@ finally {
 		}}
 public static RemoteObject  _showinfopopup() throws Exception{
 try {
-		Debug.PushSubsStack("showInfoPopup (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,155);
+		Debug.PushSubsStack("showInfoPopup (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,155);
 if (RapidSub.canDelegate("showinfopopup")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","showinfopopup");}
 RemoteObject _closebtn = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
  BA.debugLineNum = 155;BA.debugLine="Private Sub showInfoPopup";
@@ -1611,7 +1611,7 @@ finally {
 		}}
 public static RemoteObject  _timerclock_tick() throws Exception{
 try {
-		Debug.PushSubsStack("timerClock_Tick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,149);
+		Debug.PushSubsStack("timerClock_Tick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,149);
 if (RapidSub.canDelegate("timerclock_tick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","timerclock_tick");}
  BA.debugLineNum = 149;BA.debugLine="Sub timerClock_Tick";
 Debug.ShouldStop(1048576);
@@ -1633,7 +1633,7 @@ finally {
 		}}
 public static RemoteObject  _todolistbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("todolistBtn_Click (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,245);
+		Debug.PushSubsStack("todolistBtn_Click (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,245);
 if (RapidSub.canDelegate("todolistbtn_click")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","todolistbtn_click");}
  BA.debugLineNum = 245;BA.debugLine="Private Sub todolistBtn_Click";
 Debug.ShouldStop(1048576);
@@ -1652,7 +1652,7 @@ finally {
 		}}
 public static RemoteObject  _todolistbtn_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("todolistBtn_LongClick (mainactivity) ","mainactivity",3,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,390);
+		Debug.PushSubsStack("todolistBtn_LongClick (mainactivity) ","mainactivity",2,mainactivity.mostCurrent.activityBA,mainactivity.mostCurrent,390);
 if (RapidSub.canDelegate("todolistbtn_longclick")) { return b4a.example.mainactivity.remoteMe.runUserSub(false, "mainactivity","todolistbtn_longclick");}
  BA.debugLineNum = 390;BA.debugLine="Private Sub todolistBtn_LongClick";
 Debug.ShouldStop(32);
