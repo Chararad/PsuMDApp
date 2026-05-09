@@ -73,28 +73,28 @@ public static RemoteObject _newsubdecket = RemoteObject.declareNull("anywheresof
 public static RemoteObject _deleteconfirmation = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
 public static b4a.example.main _main = null;
 public static b4a.example.starter _starter = null;
-public static b4a.example.themeactivity _themeactivity = null;
 public static b4a.example.mainactivity _mainactivity = null;
-public static b4a.example.helpactivity _helpactivity = null;
-public static b4a.example.todoactivity _todoactivity = null;
-public static b4a.example.calendaractivity _calendaractivity = null;
-public static b4a.example.card_module _card_module = null;
-public static b4a.example.subdeck_module _subdeck_module = null;
-public static b4a.example.day_module _day_module = null;
 public static b4a.example.active_recall _active_recall = null;
 public static b4a.example.add_card_module _add_card_module = null;
 public static b4a.example.add_card_module2 _add_card_module2 = null;
 public static b4a.example.add_events_module _add_events_module = null;
 public static b4a.example.all_active_recall _all_active_recall = null;
+public static b4a.example.calendaractivity _calendaractivity = null;
+public static b4a.example.card_module _card_module = null;
 public static b4a.example.clockactivity _clockactivity = null;
 public static b4a.example.corkactivity _corkactivity = null;
+public static b4a.example.day_module _day_module = null;
 public static b4a.example.deck_all_cards _deck_all_cards = null;
 public static b4a.example.editnote _editnote = null;
+public static b4a.example.helpactivity _helpactivity = null;
 public static b4a.example.musicactivity _musicactivity = null;
 public static b4a.example.musicservice _musicservice = null;
 public static b4a.example.navactivity _navactivity = null;
 public static b4a.example.noteactivity _noteactivity = null;
 public static b4a.example.schedule_module _schedule_module = null;
+public static b4a.example.subdeck_module _subdeck_module = null;
+public static b4a.example.themeactivity _themeactivity = null;
+public static b4a.example.todoactivity _todoactivity = null;
   public Object[] GetGlobals() {
 		return new Object[] {"active_recall",Debug.moduleToString(b4a.example.active_recall.class),"Activity",flashcardactivity.mostCurrent._activity,"Add_card_module",Debug.moduleToString(b4a.example.add_card_module.class),"add_card_module2",Debug.moduleToString(b4a.example.add_card_module2.class),"add_events_module",Debug.moduleToString(b4a.example.add_events_module.class),"Addbtn",flashcardactivity.mostCurrent._addbtn,"addpanel",flashcardactivity.mostCurrent._addpanel,"all_active_recall",Debug.moduleToString(b4a.example.all_active_recall.class),"CalendarActivity",Debug.moduleToString(b4a.example.calendaractivity.class),"Card_Module",Debug.moduleToString(b4a.example.card_module.class),"clockActivity",Debug.moduleToString(b4a.example.clockactivity.class),"corkActivity",Debug.moduleToString(b4a.example.corkactivity.class),"day_module",Debug.moduleToString(b4a.example.day_module.class),"deck",flashcardactivity._deck,"deck_all_cards",Debug.moduleToString(b4a.example.deck_all_cards.class),"decknamelabel",flashcardactivity.mostCurrent._decknamelabel,"decksettingpanel",flashcardactivity.mostCurrent._decksettingpanel,"deleteconfirmation",flashcardactivity.mostCurrent._deleteconfirmation,"editnote",Debug.moduleToString(b4a.example.editnote.class),"et1",flashcardactivity.mostCurrent._et1,"helpActivity",Debug.moduleToString(b4a.example.helpactivity.class),"item_longclick",flashcardactivity._item_longclick,"kvs",flashcardactivity._kvs,"LVdecks",flashcardactivity.mostCurrent._lvdecks,"Main",Debug.moduleToString(b4a.example.main.class),"MainActivity",Debug.moduleToString(b4a.example.mainactivity.class),"musicActivity",Debug.moduleToString(b4a.example.musicactivity.class),"musicService",Debug.moduleToString(b4a.example.musicservice.class),"navActivity",Debug.moduleToString(b4a.example.navactivity.class),"newdeckname",flashcardactivity.mostCurrent._newdeckname,"newsubdecket",flashcardactivity.mostCurrent._newsubdecket,"newsubdeckpanel",flashcardactivity.mostCurrent._newsubdeckpanel,"noteActivity",Debug.moduleToString(b4a.example.noteactivity.class),"renamepanel",flashcardactivity.mostCurrent._renamepanel,"Schedule_module",Debug.moduleToString(b4a.example.schedule_module.class),"selecteddeck",flashcardactivity._selecteddeck,"Starter",Debug.moduleToString(b4a.example.starter.class),"Subdeck_Module",Debug.moduleToString(b4a.example.subdeck_module.class),"themeActivity",Debug.moduleToString(b4a.example.themeactivity.class),"todoActivity",Debug.moduleToString(b4a.example.todoactivity.class),"xui",flashcardactivity._xui};
 }

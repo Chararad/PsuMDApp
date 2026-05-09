@@ -60,28 +60,28 @@ public static RemoteObject _scrollview1 = RemoteObject.declareNull("anywheresoft
 public static RemoteObject _deckname = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 public static b4a.example.main _main = null;
 public static b4a.example.starter _starter = null;
-public static b4a.example.themeactivity _themeactivity = null;
 public static b4a.example.mainactivity _mainactivity = null;
-public static b4a.example.helpactivity _helpactivity = null;
-public static b4a.example.todoactivity _todoactivity = null;
-public static b4a.example.calendaractivity _calendaractivity = null;
-public static b4a.example.card_module _card_module = null;
-public static b4a.example.subdeck_module _subdeck_module = null;
-public static b4a.example.day_module _day_module = null;
 public static b4a.example.active_recall _active_recall = null;
 public static b4a.example.add_card_module _add_card_module = null;
 public static b4a.example.add_card_module2 _add_card_module2 = null;
 public static b4a.example.add_events_module _add_events_module = null;
 public static b4a.example.all_active_recall _all_active_recall = null;
+public static b4a.example.calendaractivity _calendaractivity = null;
+public static b4a.example.card_module _card_module = null;
 public static b4a.example.clockactivity _clockactivity = null;
 public static b4a.example.corkactivity _corkactivity = null;
+public static b4a.example.day_module _day_module = null;
 public static b4a.example.editnote _editnote = null;
 public static b4a.example.flashcardactivity _flashcardactivity = null;
+public static b4a.example.helpactivity _helpactivity = null;
 public static b4a.example.musicactivity _musicactivity = null;
 public static b4a.example.musicservice _musicservice = null;
 public static b4a.example.navactivity _navactivity = null;
 public static b4a.example.noteactivity _noteactivity = null;
 public static b4a.example.schedule_module _schedule_module = null;
+public static b4a.example.subdeck_module _subdeck_module = null;
+public static b4a.example.themeactivity _themeactivity = null;
+public static b4a.example.todoactivity _todoactivity = null;
   public Object[] GetGlobals() {
 		return new Object[] {"active_recall",Debug.moduleToString(b4a.example.active_recall.class),"Activity",deck_all_cards.mostCurrent._activity,"Add_card_module",Debug.moduleToString(b4a.example.add_card_module.class),"add_card_module2",Debug.moduleToString(b4a.example.add_card_module2.class),"add_events_module",Debug.moduleToString(b4a.example.add_events_module.class),"all_active_recall",Debug.moduleToString(b4a.example.all_active_recall.class),"CalendarActivity",Debug.moduleToString(b4a.example.calendaractivity.class),"Card_Module",Debug.moduleToString(b4a.example.card_module.class),"cards",deck_all_cards.mostCurrent._cards,"clockActivity",Debug.moduleToString(b4a.example.clockactivity.class),"corkActivity",Debug.moduleToString(b4a.example.corkactivity.class),"day_module",Debug.moduleToString(b4a.example.day_module.class),"deckname",deck_all_cards.mostCurrent._deckname,"editnote",Debug.moduleToString(b4a.example.editnote.class),"FlashcardActivity",Debug.moduleToString(b4a.example.flashcardactivity.class),"helpActivity",Debug.moduleToString(b4a.example.helpactivity.class),"Main",Debug.moduleToString(b4a.example.main.class),"MainActivity",Debug.moduleToString(b4a.example.mainactivity.class),"musicActivity",Debug.moduleToString(b4a.example.musicactivity.class),"musicService",Debug.moduleToString(b4a.example.musicservice.class),"navActivity",Debug.moduleToString(b4a.example.navactivity.class),"noteActivity",Debug.moduleToString(b4a.example.noteactivity.class),"Schedule_module",Debug.moduleToString(b4a.example.schedule_module.class),"ScrollView1",deck_all_cards.mostCurrent._scrollview1,"Starter",Debug.moduleToString(b4a.example.starter.class),"Subdeck_Module",Debug.moduleToString(b4a.example.subdeck_module.class),"themeActivity",Debug.moduleToString(b4a.example.themeactivity.class),"todoActivity",Debug.moduleToString(b4a.example.todoactivity.class)};
 }

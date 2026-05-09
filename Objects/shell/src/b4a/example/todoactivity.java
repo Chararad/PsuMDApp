@@ -74,28 +74,28 @@ public static RemoteObject _progresspercent = RemoteObject.declareNull("anywhere
 public static RemoteObject _progressbar = RemoteObject.declareNull("anywheresoftware.b4a.objects.ProgressBarWrapper");
 public static b4a.example.main _main = null;
 public static b4a.example.starter _starter = null;
-public static b4a.example.themeactivity _themeactivity = null;
 public static b4a.example.mainactivity _mainactivity = null;
-public static b4a.example.helpactivity _helpactivity = null;
-public static b4a.example.calendaractivity _calendaractivity = null;
-public static b4a.example.card_module _card_module = null;
-public static b4a.example.subdeck_module _subdeck_module = null;
-public static b4a.example.day_module _day_module = null;
 public static b4a.example.active_recall _active_recall = null;
 public static b4a.example.add_card_module _add_card_module = null;
 public static b4a.example.add_card_module2 _add_card_module2 = null;
 public static b4a.example.add_events_module _add_events_module = null;
 public static b4a.example.all_active_recall _all_active_recall = null;
+public static b4a.example.calendaractivity _calendaractivity = null;
+public static b4a.example.card_module _card_module = null;
 public static b4a.example.clockactivity _clockactivity = null;
 public static b4a.example.corkactivity _corkactivity = null;
+public static b4a.example.day_module _day_module = null;
 public static b4a.example.deck_all_cards _deck_all_cards = null;
 public static b4a.example.editnote _editnote = null;
 public static b4a.example.flashcardactivity _flashcardactivity = null;
+public static b4a.example.helpactivity _helpactivity = null;
 public static b4a.example.musicactivity _musicactivity = null;
 public static b4a.example.musicservice _musicservice = null;
 public static b4a.example.navactivity _navactivity = null;
 public static b4a.example.noteactivity _noteactivity = null;
 public static b4a.example.schedule_module _schedule_module = null;
+public static b4a.example.subdeck_module _subdeck_module = null;
+public static b4a.example.themeactivity _themeactivity = null;
   public Object[] GetGlobals() {
 		return new Object[] {"active_recall",Debug.moduleToString(b4a.example.active_recall.class),"Activity",todoactivity.mostCurrent._activity,"Add_card_module",Debug.moduleToString(b4a.example.add_card_module.class),"add_card_module2",Debug.moduleToString(b4a.example.add_card_module2.class),"add_events_module",Debug.moduleToString(b4a.example.add_events_module.class),"addTaskBtn",todoactivity.mostCurrent._addtaskbtn,"addTaskBtnPNL",todoactivity.mostCurrent._addtaskbtnpnl,"addTaskPanel",todoactivity.mostCurrent._addtaskpanel,"addTaskTextArea",todoactivity.mostCurrent._addtasktextarea,"addTitleTextArea",todoactivity.mostCurrent._addtitletextarea,"all_active_recall",Debug.moduleToString(b4a.example.all_active_recall.class),"CalendarActivity",Debug.moduleToString(b4a.example.calendaractivity.class),"Card_Module",Debug.moduleToString(b4a.example.card_module.class),"clockActivity",Debug.moduleToString(b4a.example.clockactivity.class),"corkActivity",Debug.moduleToString(b4a.example.corkactivity.class),"currentList",todoactivity.mostCurrent._currentlist,"day_module",Debug.moduleToString(b4a.example.day_module.class),"deck_all_cards",Debug.moduleToString(b4a.example.deck_all_cards.class),"editnote",Debug.moduleToString(b4a.example.editnote.class),"enterTaskBtn",todoactivity.mostCurrent._entertaskbtn,"FlashcardActivity",Debug.moduleToString(b4a.example.flashcardactivity.class),"helpActivity",Debug.moduleToString(b4a.example.helpactivity.class),"isAddingList",todoactivity._isaddinglist,"kvs",todoactivity._kvs,"listsList",todoactivity.mostCurrent._listslist,"Main",Debug.moduleToString(b4a.example.main.class),"MainActivity",Debug.moduleToString(b4a.example.mainactivity.class),"musicActivity",Debug.moduleToString(b4a.example.musicactivity.class),"musicService",Debug.moduleToString(b4a.example.musicservice.class),"navActivity",Debug.moduleToString(b4a.example.navactivity.class),"newListBtn",todoactivity.mostCurrent._newlistbtn,"noteActivity",Debug.moduleToString(b4a.example.noteactivity.class),"progressBar",todoactivity.mostCurrent._progressbar,"progressNumber",todoactivity.mostCurrent._progressnumber,"progressPercent",todoactivity.mostCurrent._progresspercent,"Schedule_module",Debug.moduleToString(b4a.example.schedule_module.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"Subdeck_Module",Debug.moduleToString(b4a.example.subdeck_module.class),"tasksList",todoactivity.mostCurrent._taskslist,"themeActivity",Debug.moduleToString(b4a.example.themeactivity.class),"untitledNo",todoactivity._untitledno,"xui",todoactivity._xui};
 }
