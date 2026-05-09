@@ -71,12 +71,12 @@ Sub showHelpPage(page As Int)
 			titleLbl.Text = "Welcome"
 			descriptionLbl.Text = "This app is tailor-made for students—or anyone who wants to learn. It has all the features you'll need in order to learn effectively!"
 			If Starter.darkMode = False Then
-				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "wreath.png", helpimage.Width, helpimage.Height, True)
-				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star.png", helpimage.Width, helpimage.Height, True)
-				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star.png", helpimage.Width, helpimage.Height, True)
-				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star.png", helpimage.Width, helpimage.Height, True)
+				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "wreath2.png", helpimage.Width, helpimage.Height, True)
+				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star2.png", helpimage.Width, helpimage.Height, True)
+				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star2.png", helpimage.Width, helpimage.Height, True)
+				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star2.png", helpimage.Width, helpimage.Height, True)
 			Else
-				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dwreath.png", helpimage.Width, helpimage.Height, True)
+				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "wreath3.png", helpimage.Width, helpimage.Height, True)
 				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
 				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
 				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
@@ -213,12 +213,12 @@ Sub showHelpPage(page As Int)
 			If Starter.darkMode = False Then
 				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "navigationui.png", helpimage.Width, helpimage.Height, True)
 				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star.png", helpimage.Width, helpimage.Height, True)
-				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "Navbtn.png", helpimage.Width, helpimage.Height, True)
+				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "menu.png", helpimage.Width, helpimage.Height, True)
 				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star.png", helpimage.Width, helpimage.Height, True)
 			Else
 				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dnavigationui.png", helpimage.Width, helpimage.Height, True)
 				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
-				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "Navbtn.png", helpimage.Width, helpimage.Height, True)
+				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "menu.png", helpimage.Width, helpimage.Height, True)
 				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
 			End If
 	End Select
