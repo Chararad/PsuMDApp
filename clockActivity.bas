@@ -184,7 +184,7 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 				settingsPnl.SetColorAndBorder(xui.Color_RGB(231, 213, 179), 2dip, xui.Color_RGB(73, 43, 50), 3dip)
 			Else
 				settingsPnl.Color = xui.Color_RGB(50, 50, 50)
-				settingsPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				settingsPnl.SetColorAndBorder(xui.Color_RGB(24, 20, 37), 2dip, xui.Color_white, 3dip)
 			End If
 	End Select
 
@@ -199,6 +199,9 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 	pomoTxt.Text = pomoDef / 60
 	pomoTxt.Gravity = Gravity.CENTER_HORIZONTAL
 	settingsPnl.AddView(pomoTxt, 10dip, 40dip, 70dip, 40dip)
+	If Starter.themeNumber = 2 And Starter.darkMode = True Then
+		pomoTxt.HintColor = Colors.ARGB(50, 255, 255, 255)
+	End If
 
 	shortTxt.Initialize("shortTxt")
 	shortTxt.Hint = "Short"
@@ -206,6 +209,9 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 	shortTxt.Text = shortDef / 60
 	shortTxt.Gravity = Gravity.CENTER_HORIZONTAL
 	settingsPnl.AddView(shortTxt, 90dip, 40dip, 70dip, 40dip)
+	If Starter.themeNumber = 2 And Starter.darkMode = True Then
+		shortTxt.HintColor = Colors.ARGB(50, 255, 255, 255)
+	End If
 
 	longTxt.Initialize("longTxt")
 	longTxt.Hint = "Long"
@@ -213,6 +219,9 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 	longTxt.Text = longDef / 60
 	longTxt.Gravity = Gravity.CENTER_HORIZONTAL
 	settingsPnl.AddView(longTxt, 170dip, 40dip, 70dip, 40dip)
+	If Starter.themeNumber = 2 And Starter.darkMode = True Then
+		longTxt.HintColor = Colors.ARGB(50, 255, 255, 255)
+	End If
 	
 	Dim lblP, lblS, lblL As Label
 	
@@ -221,23 +230,35 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 	lblP.TextSize = 12
 	lblP.Gravity = Gravity.CENTER_HORIZONTAL
 	settingsPnl.AddView(lblP, 10dip, 80dip, 70dip, 20dip)
+	If Starter.themeNumber = 2 And Starter.darkMode = True Then
+		lblP.TextColor = Colors.White
+	End If
 	
 	lblS.Initialize("")
 	lblS.Text = "Short"
 	lblS.TextSize = 12
 	lblS.Gravity = Gravity.CENTER_HORIZONTAL
 	settingsPnl.AddView(lblS, 90dip, 80dip, 70dip, 20dip)
+	If Starter.themeNumber = 2 And Starter.darkMode = True Then
+		lblS.TextColor = Colors.White
+	End If
 	
 	lblL.Initialize("")
 	lblL.Text = "Long"
 	lblL.TextSize = 12
 	lblL.Gravity = Gravity.CENTER_HORIZONTAL
 	settingsPnl.AddView(lblL, 170dip, 80dip, 70dip, 20dip)
+	If Starter.themeNumber = 2 And Starter.darkMode = True Then
+		lblL.TextColor = Colors.White
+	End If
 	
 	Dim closeL As Label
 	closeL.Initialize("closeL")
 	settingsPnl.AddView(closeL, 10dip, 10dip, 20dip, 20dip)
 	closeL.Text = "X"
+	If Starter.themeNumber = 2 And Starter.darkMode = True Then
+		closeL.TextColor = Colors.White
+	End If
 	
 	Dim saveBtn As Button
 	saveBtn.Initialize("saveBtn")
@@ -264,8 +285,8 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 				saveBtn.TextColor = Colors.RGB(231, 213, 179)
 				saveBtn.Color = Colors.RGB(115,62,57)
 			Else
-				saveBtn.TextColor = Colors.RGB(231, 213, 179)
-				saveBtn.Color = Colors.RGB(115,62,57)
+				saveBtn.TextColor = Colors.RGB(24, 20, 37)
+				saveBtn.Color = Colors.RGB(90,105,136)
 			End If
 	End Select
 	settingsPnl.AddView(saveBtn, 10dip, 130dip, 230dip, 40dip)
