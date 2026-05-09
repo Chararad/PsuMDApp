@@ -92,8 +92,10 @@ Private Sub formatBtn_Click
 	
 	If MainActivity.format24h Then
 		DateTime.TimeFormat = "HH:mm"
+		ToastMessageShow("Time Format Changed",True)
 	Else
 		DateTime.TimeFormat = "hh:mm a"
+		ToastMessageShow("Time Format Changed",True)
 	End If
 	CallSub(MainActivity, "timerClock_Tick")
 	

@@ -54,7 +54,11 @@ Sub Activity_Create(FirstTime As Boolean)
 		title = title.SubString2(0, title.Length - 4)  ' remove .mp3
 		title = title.SubString(7)                      ' remove "tracks/"
 		ListView1.AddSingleLine((i + 1) & "   " & title)
-		ListView1.SingleLineLayout.Label.TextColor = Colors.Black
+		If Starter.themeNumber = 2 And Starter.darkMode = True Then
+			ListView1.SingleLineLayout.Label.TextColor = Colors.White
+			Else
+			ListView1.SingleLineLayout.Label.TextColor = Colors.RGB(24, 20, 37)
+		End If
 	Next
     
 	' UI update timer
@@ -94,6 +98,7 @@ Sub uiTimer_Tick
 			pauseBtn.Text = "❚❚"
 		Else
 			pauseBtn.Text = "▶"
+			pauseBtn.TextSize = 24
 		End If
 	End If
 End Sub
