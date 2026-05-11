@@ -73,6 +73,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Visual Designer,notepadlayoutDark3.bal,-100,6,Visual Designer,notepadlayout3.bal,-100,6,corkActivity,Globals,42,0,Visual Designer,corkboardLayoutDark3.bal,-100,6,Visual Designer,corkboardlayout3.bal,-100,6,Visual Designer,todolistlayout3.bal,-100,1,noteActivity,noteClv_ItemLongClick,65,0,noteActivity,noteClv_ItemClick,57,0,musicActivity,SeekBar1_ValueChanged,100,0,musicActivity,uiTimer_Tick,95,0
+NavigationStack=Visual Designer,notepadlayout3.bal,-100,6,corkActivity,Globals,42,0,Visual Designer,corkboardLayoutDark3.bal,-100,6,Visual Designer,corkboardlayout3.bal,-100,6,Visual Designer,todolistlayout3.bal,-100,1,noteActivity,noteClv_ItemLongClick,65,0,noteActivity,noteClv_ItemClick,57,0,musicActivity,SeekBar1_ValueChanged,100,0,Visual Designer,AARLayout2.bal,-100,2,musicActivity,uiTimer_Tick,98,0
 SelectedBuild=0
 VisibleModules=21,15,6,8,16
