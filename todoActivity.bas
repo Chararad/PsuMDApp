@@ -14,6 +14,8 @@ Sub Process_Globals
 	'These variables can be accessed from all modules.
 	Private xui As XUI
 	Public kvs As KeyValueStore
+	Dim pixeltf As Typeface
+	pixeltf = Typeface.LoadFromAssets("minecraft.ttf")
 End Sub
 
 Sub Globals
@@ -89,28 +91,28 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 Sub newAddTaskBtn
-	If Starter.darkMode Then
-		addTaskBtnPNL.Initialize("addTaskBtnPNL")
-		addTaskBtnPNL.SetLayout(0, 0, 235dip, 50dip)
-		addTaskBtnPNL.Color = Colors.ARGB(255, 17, 17, 17)
-	
-		addTaskBtn.Initialize("addTaskBtn")
-		addTaskBtn.Text = "+ add a task "
-		addTaskBtn.TextColor = Colors.DarkGray
-		addTaskBtnPNL.AddView(addTaskBtn, -10dip, 0dip, addTaskBtnPNL.Width, addTaskBtnPNL.Height)
-	
-		tasksList.Add(addTaskBtnPNL, "")
-	Else
 	addTaskBtnPNL.Initialize("addTaskBtnPNL")
-	addTaskBtnPNL.SetLayout(0, 0, 235dip, 50dip)
-	addTaskBtnPNL.Color = Colors.ARGB(255, 250, 250, 250)
-	
+	addTaskBtnPNL.SetLayout(10dip, 0dip, 200dip, 50dip)
+	addTaskBtnPNL.Color = Colors.ARGB(0, 255, 255, 255)
 	addTaskBtn.Initialize("addTaskBtn")
 	addTaskBtn.Text = "+ add a task "
-	addTaskBtnPNL.AddView(addTaskBtn, -10dip, 0dip, addTaskBtnPNL.Width, addTaskBtnPNL.Height)
-	
+	addTaskBtnPNL.AddView(addTaskBtn, 10dip, 0dip, addTaskBtnPNL.Width, addTaskBtnPNL.Height)
 	tasksList.Add(addTaskBtnPNL, "")
+	
+	If Starter.darkMode Then
+		addTaskBtn.TextColor = Colors.DarkGray
+	Else
+		addTaskBtnPNL.Color = Colors.ARGB(0, 232, 213, 179)
+		If Starter.themeNumber = 2 Then
+			
+			addTaskBtn.Typeface = pixeltf
+    
+			Dim cd As ColorDrawable
+			cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+			addTaskBtn.Background = cd
+		End If
 	End If
+	
 End Sub
 
 Sub newListBtn_Click
@@ -356,12 +358,7 @@ Sub addTaskBtn_Click
 	
 	addTaskPanel.Initialize("addTaskPanel")
 	addTaskPanel.SetLayout(10dip, 0, 250dip, 100dip)
-	If Starter.darkMode Then
-		addTaskPanel.Color = Colors.ARGB(255, 17, 17, 17)
-	Else
-		addTaskPanel.Color = Colors.ARGB(255, 247, 247, 247)
-	End If
-	
+		addTaskPanel.Color = Colors.ARGB(0, 255, 255, 255)
 	
 	addTaskTextArea.Initialize("addTodoText")
 	addTaskTextArea.Hint = "Add a task..."
@@ -373,6 +370,11 @@ Sub addTaskBtn_Click
 	addTaskTextArea.Tag = Null
 		
 	enterTaskBtn.Initialize("enterTaskBtn")
+	If Starter.darkMode = False And Starter.themeNumber = 2 Then
+		Dim cd As ColorDrawable
+		cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+		enterTaskBtn.Background = cd
+	End If
 	enterTaskBtn.Text = "Enter task"
 	
 	addTaskPanel.AddView(addTaskTextArea, 0, 0, addTaskBtnPNL.Width, 60dip)
