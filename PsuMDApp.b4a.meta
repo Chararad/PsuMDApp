@@ -73,6 +73,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Visual Designer,AEMLayout2.bal,-100,1,Visual Designer,FlashCardLayout2.bal,-100,6,Visual Designer,editnotelayout2.bal,-100,5,Visual Designer,CalendarActivityLayout2.bal,-100,6,Visual Designer,Card_ModuleLayout2.bal,-100,6,Visual Designer,clocklayout2.bal,-100,6,Visual Designer,corkboardlayout2.bal,-100,6,Visual Designer,DACLayout2.bal,-100,6,Visual Designer,Day_ModuleLayout2.bal,-100,6,todoActivity,addTaskBtn_Click,347,0,todoActivity,showRenameListPanel,332,0
+NavigationStack=todoActivity,showRenameListPanel,332,0,Visual Designer,themeLayout2.bal,-100,6,Visual Designer,themeLayoutDark2.bal,-100,1,Visual Designer,todolistlayout2.bal,-100,6,Visual Designer,AARLayout2.bal,-100,2,Visual Designer,AEMLayoutDark2.bal,-100,1,Visual Designer,Layout2.bal,-100,5,Visual Designer,ACMLayout2.bal,-100,3,Visual Designer,helpAct2.bal,-100,6,todoActivity,listsList_ItemLongClick,310,0
 SelectedBuild=0
 VisibleModules=21,15,6,8,16,24
