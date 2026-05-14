@@ -73,6 +73,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Visual Designer,Schedule_moduleLayout2.bal,-100,1,Visual Designer,Subdeck_ModuleLayout2.bal,-100,2,Visual Designer,themeLayout2.bal,-100,1,Visual Designer,todolistlayout2.bal,-100,2,Visual Designer,AARLayout2.bal,-100,2,Visual Designer,AARLayoutDark2.bal,-100,6,Visual Designer,ACM2LayoutDark2.bal,-100,6,Visual Designer,ACMLayoutDark2.bal,-100,6,Visual Designer,AEMLayoutDark2.bal,-100,6,todoActivity,addTitleTextArea_EnterPressed,207,0
+NavigationStack=Visual Designer,ACM2LayoutDark2.bal,-100,6,Visual Designer,ACMLayoutDark2.bal,-100,6,Visual Designer,AEMLayoutDark2.bal,-100,6,Visual Designer,Card_ModuleLayoutDark2.bal,-100,6,Visual Designer,CalendarActivityLayoutDark2.bal,-100,6,Visual Designer,clocklayoutdark2.bal,-100,6,Visual Designer,corkboardLayoutDark2.bal,-100,6,Visual Designer,DACLayoutDark2.bal,-100,6,Visual Designer,Day_ModuleLayoutDark2.bal,-100,2,todoActivity,addTitleTextArea_EnterPressed,207,0
 SelectedBuild=0
 VisibleModules=21,15,6,8,16,24
