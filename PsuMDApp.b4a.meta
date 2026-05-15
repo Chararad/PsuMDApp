@@ -73,6 +73,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Visual Designer,musicLayoutDark2.bal,-100,6,Visual Designer,navActDark2.bal,-100,6,Visual Designer,notepadlayoutDark2.bal,-100,5,Visual Designer,Subdeck_ModuleLayout2.bal,-100,1,Visual Designer,Subdeck_ModuleLayoutDark2.bal,-100,6,Visual Designer,Schedule_moduleLayoutDark2.bal,-100,6,Visual Designer,themeLayoutDark2.bal,-100,6,Visual Designer,todoListLayoutDark2.bal,-100,5,todoActivity,addTitleTextArea_EnterPressed,231,0,clockActivity,exitBtn_Click,80,0,clockActivity,settingsWindow,171,1
+NavigationStack=Visual Designer,helpAct.bal,-100,6,Visual Designer,Layout.bal,-100,1,Visual Designer,musicLayout.bal,-100,6,Visual Designer,navAct.bal,-100,6,Visual Designer,notepadlayout.bal,-100,6,Visual Designer,Schedule_moduleLayout.bal,-100,6,Visual Designer,Subdeck_ModuleLayout.bal,-100,6,Visual Designer,themeLayout.bal,-100,6,Visual Designer,todolistlayout.bal,-100,6,todoActivity,newAddTaskBtn,100,1,todoActivity,Activity_Resume,78,0
 SelectedBuild=0
 VisibleModules=21,15,6,8,16,24
