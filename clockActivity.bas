@@ -174,11 +174,11 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 			End If
 		Case 1
 			If Starter.darkMode = False Then
-				settingsPnl.Color = xui.Color_RGB(50, 50, 50)
-				settingsPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				settingsPnl.Color = xui.Color_RGB(1, 130, 237)
+				settingsPnl.SetColorAndBorder(xui.Color_RGB(1, 130, 237), 2dip, xui.Color_RGB(102, 213, 100), 3dip)
 			Else
-				settingsPnl.Color = xui.Color_RGB(50, 50, 50)
-				settingsPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				settingsPnl.Color = xui.Color_RGB(40, 106, 193)
+				settingsPnl.SetColorAndBorder(xui.Color_RGB(69, 132, 204), 2dip, xui.Color_RGB(40, 106, 193),3dip)
 			End If
 		Case 2
 			If Starter.darkMode = False Then
@@ -277,10 +277,10 @@ Private Sub settingsWindow(pW As Int, pH As Int)
 		Case 1
 			If Starter.darkMode = False Then
 				saveBtn.TextColor = Colors.RGB(231, 213, 179)
-				saveBtn.Color = Colors.RGB(115,62,57)
+				saveBtn.Color = Colors.RGB(102, 213, 100)
 			Else
-				saveBtn.TextColor = Colors.RGB(231, 213, 179)
-				saveBtn.Color = Colors.RGB(115,62,57)
+				saveBtn.TextColor = Colors.Black
+				saveBtn.Color = Colors.RGB(102, 213, 100)
 			End If
 		Case 2
 			If Starter.darkMode = False Then
