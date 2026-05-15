@@ -170,6 +170,7 @@ Private Sub LVdecks_ItemLongClick (Position As Int, Value As Object)
 	decksettingpanel.Visible = True
 	item_longclick = Value
 	selecteddeck = Value
+	decknamelabel.Text = Value
 End Sub
 
 
