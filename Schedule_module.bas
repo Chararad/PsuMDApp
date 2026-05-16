@@ -98,8 +98,33 @@ Sub DrawSchedule
 		lbldate.initialize("")
 		lbldate.Text = SetDate(date)
 		lbldate.TextSize = 16
-		lbldate.Color = Colors.LightGray
-		lbldate.TextColor = Colors.Black
+		Select Starter.themeNumber
+			Case 0
+				If Starter.darkMode Then
+					lbldate.Color = Colors.ARGB(120, 23, 20, 36)
+					lbldate.TextColor = Colors.Cyan
+				Else
+					lbldate.Color = Colors.ARGB(120, 23, 20, 36)
+					lbldate.TextColor = Colors.Cyan
+				End If
+			Case 1
+				If Starter.darkMode Then
+					lbldate.Color = Colors.ARGB(120, 23, 20, 36)
+					lbldate.TextColor = Colors.Cyan
+				Else
+					lbldate.Color = Colors.ARGB(120, 23, 20, 36)
+					lbldate.TextColor = Colors.Cyan
+				End If
+			Case 2
+				If Starter.darkMode Then
+					lbldate.Color = Colors.ARGB(120, 0, 0, 0)
+					lbldate.TextColor = Colors.Cyan
+				Else
+					lbldate.Color = Colors.ARGB(120, 255, 255, 255)
+					lbldate.TextColor = Colors.RGB(79, 46, 46)
+				End If
+		End Select
+		
 		
 		If allevents.Size = 0 And timeline.size = 0 Then
 			Continue
@@ -166,13 +191,13 @@ End Sub
 Sub IdentifyColor (typeofevent As String) As Int
 	Dim mycolor As Int
 	If typeofevent = "Task" Then
-		mycolor = Colors.ARGB(255, 0, 191, 255)
+		mycolor = Colors.ARGB(190, 0, 191, 255)
 	Else if typeofevent = "Event" Then
-		mycolor = Colors.ARGB(255, 152, 255, 152)
+		mycolor = Colors.ARGB(190, 152, 255, 152)
 	Else if typeofevent = "Birthday" Then
-		mycolor = Colors.ARGB(255, 255, 182, 193)
+		mycolor = Colors.ARGB(190, 255, 182, 193)
 	Else if typeofevent = "OOO" Then
-		mycolor = Colors.ARGB(255, 255, 215, 0)
+		mycolor = Colors.ARGB(190, 255, 215, 0)
 		
 	End If
 	Return mycolor
