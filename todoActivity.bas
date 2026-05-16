@@ -14,8 +14,6 @@ Sub Process_Globals
 	'These variables can be accessed from all modules.
 	Private xui As XUI
 	Public kvs As KeyValueStore
-	Dim pixeltf As Typeface
-	pixeltf = Typeface.LoadFromAssets("minecraft.ttf")
 End Sub
 
 Sub Globals
@@ -41,6 +39,9 @@ Sub Globals
 	Private progressNumber As Label
 	Private progressPercent As Label
 	Private progressBar As ProgressBar
+	
+	Dim pixeltf As Typeface
+	pixeltf = Typeface.LoadFromAssets("minecraft.ttf")
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
