@@ -65,12 +65,7 @@ Sub Activity_Create(FirstTime As Boolean)
 				Activity.LoadLayout("FlashCardLayoutDark3")
 			End If
 	End Select
-	
-	'Resizing Add button (dont mind)
-	Dim radius As Int = Addbtn.Width/2
-	Dim cd As ColorDrawable
-	cd.Initialize(Colors.Gray, radius)
-	Addbtn.Background = cd
+
 	
 	'recoloring label color for each list view (default color is gray - not visible)
 	If Starter.darkMode = False Then
