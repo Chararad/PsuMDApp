@@ -56,6 +56,9 @@ Sub Globals
 	Private imgCount As Int = 0
 	Private canvasCount As Int = 0
 	Private isLoading As Boolean = False
+	
+	Dim pixeltf As Typeface
+	pixeltf = Typeface.LoadFromAssets("minecraft.ttf")
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -315,8 +318,7 @@ End Sub
 Private Sub noteWindow(pW As Int, pH As Int)
 	notePnl = xui.CreatePanel("notePnl")
 	Activity.AddView(notePnl, 100dip, 225dip, pW, pH)
-	notePnl.Color = xui.Color_RGB(50, 50, 50)
-	notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+	
 
 	Dim colorsSpnr As Spinner
 	colorsSpnr.Initialize("colorsSpnr")
@@ -330,13 +332,59 @@ Private Sub noteWindow(pW As Int, pH As Int)
 	
 	notePnl.Enabled = False
 	notePnl.Visible = False
+	
+	Dim bd As BitmapDrawable
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode Then
+				notePnl.Color = xui.Color_RGB(50, 50, 50)
+				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addnBtn.Background = bd
+				addnBtn.TextColor = Colors.White
+			Else
+				notePnl.Color = xui.Color_RGB(50, 50, 50)
+				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addnBtn.Background = bd
+				addnBtn.TextColor = Colors.White
+			End If
+		Case 1
+			If Starter.darkMode Then
+				notePnl.Color = xui.Color_RGB(50, 50, 50)
+				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addnBtn.Background = bd
+				addnBtn.TextColor = Colors.White
+			Else
+				notePnl.Color = xui.Color_RGB(50, 50, 50)
+				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addnBtn.Background = bd
+				addnBtn.TextColor = Colors.White
+			End If
+		Case 2
+			addnBtn.Typeface = pixeltf
+			If Starter.darkMode Then
+				notePnl.Color = xui.Color_RGB(50, 50, 50)
+				notePnl.SetColorAndBorder(xui.Color_RGB(37, 57, 94), 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addnBtn.Background = bd
+				addnBtn.TextColor = Colors.White
+			Else
+				notePnl.Color = xui.Color_RGB(50, 50, 50)
+				notePnl.SetColorAndBorder(xui.Color_RGB(234, 212, 179), 2dip, xui.Color_RGB(79, 46, 46), 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addnBtn.Background = bd
+				addnBtn.TextColor = Colors.White
+			End If
+	End Select
 End Sub
 
 Private Sub canvasWindow(pW As Int, pH As Int)
 	canvasPnl = xui.CreatePanel("canvasPanel")
 	Activity.AddView(canvasPnl, 100dip, 225dip, pW, pH)
-	canvasPnl.Color = xui.Color_RGB(50, 50, 50)
-	canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+	
 
 
 	sizeSpnr.Initialize("sizeSpnr")
@@ -350,6 +398,54 @@ Private Sub canvasWindow(pW As Int, pH As Int)
 	
 	canvasPnl.Enabled = False
 	canvasPnl.Visible = False
+	
+	Dim bd As BitmapDrawable
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode Then
+				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
+				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addcBtn.Background = bd
+				addcBtn.TextColor = Colors.White
+			Else
+				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
+				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addcBtn.Background = bd
+				addcBtn.TextColor = Colors.White
+			End If
+		Case 1
+			If Starter.darkMode Then
+				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
+				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addcBtn.Background = bd
+				addcBtn.TextColor = Colors.White
+			Else
+				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
+				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addcBtn.Background = bd
+				addcBtn.TextColor = Colors.White
+			End If
+		Case 2
+			addcBtn.Typeface = pixeltf
+			If Starter.darkMode Then
+				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
+				canvasPnl.SetColorAndBorder(xui.Color_RGB(37, 57, 94), 2dip, xui.Color_White, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addcBtn.Background = bd
+				addcBtn.TextColor = Colors.White
+			Else
+				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
+				canvasPnl.SetColorAndBorder(xui.Color_RGB(234, 212, 179), 2dip, xui.Color_RGB(79, 46, 46), 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				addcBtn.Background = bd
+				addcBtn.TextColor = Colors.White
+			End If
+	End Select
+	
 End Sub
 
 Private Sub addnBtn_Click

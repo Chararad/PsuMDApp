@@ -57,24 +57,44 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	
+	Dim bd As BitmapDrawable
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Day_ModuleLayout")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Day_btn.Background = bd
+				Day_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Day_ModuleLayoutDark")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Day_btn.Background = bd
+				Day_btn.TextColor = Colors.White
 			End If
 		Case 1
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Day_ModuleLayout2")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Day_btn.Background = bd
+				Day_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Day_ModuleLayoutDark2")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Day_btn.Background = bd
+				Day_btn.TextColor = Colors.White
 			End If
 		Case 2
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Day_ModuleLayout3")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Day_btn.Background = bd
+				Day_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Day_ModuleLayoutDark3")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtnd.png"))
+				Day_btn.Background = bd
+				Day_btn.TextColor = Colors.White
 			End If
 	End Select
 	
@@ -90,7 +110,6 @@ Sub Activity_Create(FirstTime As Boolean)
 		endtimelineSP.DropdownTextColor = Colors.White
 	End If
 	
-	Day_btn.Color = Colors.LightGray
 	date_todaylbl.Text = SetDate(currentDate)
 	add_events_module.currentDate = SetDate(currentDate)
 	SetUpSpinners
