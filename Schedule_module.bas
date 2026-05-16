@@ -26,28 +26,47 @@ Sub Globals
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	
+	Dim bd As BitmapDrawable
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Schedule_ModuleLayout")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				sched_btn.Background = bd
+				sched_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Schedule_ModuleLayoutDark")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				sched_btn.Background = bd
+				sched_btn.TextColor = Colors.White
 			End If
 		Case 1
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Schedule_ModuleLayout2")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				sched_btn.Background = bd
+				sched_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Schedule_ModuleLayoutDark2")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				sched_btn.Background = bd
+				sched_btn.TextColor = Colors.White
 			End If
 		Case 2
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Schedule_ModuleLayout3")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				sched_btn.Background = bd
+				sched_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Schedule_ModuleLayoutDark3")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtnd.png"))
+				sched_btn.Background = bd
+				sched_btn.TextColor = Colors.White
 			End If
 	End Select
 	
-	sched_btn.Color = Colors.LightGray
 	DrawSchedule
 
 End Sub
