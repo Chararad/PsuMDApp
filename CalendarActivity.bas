@@ -46,31 +46,51 @@ Sub Globals
 	Private YearSP As Spinner
 	Private menupanel As Panel
 	Private Month_btn As Button
+	Dim xOffset As Int = 2dip
+	
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	
+	Dim bd As BitmapDrawable
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("CalendarActivityLayout")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Month_btn.Background = bd
+				Month_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("CalendarActivityLayoutDark")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Month_btn.Background = bd
+				Month_btn.TextColor = Colors.White
 			End If
 		Case 1
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("CalendarActivityLayout2")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Month_btn.Background = bd
+				Month_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("CalendarActivityLayoutDark2")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Month_btn.Background = bd
+				Month_btn.TextColor = Colors.White
 			End If
 		Case 2
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("CalendarActivityLayout3")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				Month_btn.Background = bd
+				Month_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("CalendarActivityLayoutDark3")
+				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtnd.png"))
+				Month_btn.Background = bd
+				Month_btn.TextColor = Colors.White
 			End If
 	End Select
-	
-	Month_btn.Color = Colors.LightGray
 	
 	kvs = Starter.calKvs
 	CalendarMap = Starter.calendarMap
@@ -112,7 +132,27 @@ Sub Activity_Create(FirstTime As Boolean)
 	
 	'table for weeks
 	Dim cd As ColorDrawable
-	cd.Initialize2(Colors.White, 0, 2dip, Colors.Black)
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode Then
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			Else
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			End If
+		Case 1
+			If Starter.darkMode Then
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			Else
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			End If
+		Case 2
+			If Starter.darkMode Then
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(201, 205, 211))
+			Else
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(73, 44, 46))
+			End If
+	End Select
+	
 	
 	Dim column As Int = 7
 	Dim cellW As Int = calendarpanel.Width/column
@@ -123,14 +163,21 @@ Sub Activity_Create(FirstTime As Boolean)
 		Weekday(c)
 		celllabel.Text = day_of_week
 		celllabel.TextSize = 14
-		celllabel.Color = Colors.black
-		weekpanel.AddView(celllabel, c*cellW, 0, cellW, cellH)
+		
+		If Starter.darkMode = False Then
+			celllabel.TextColor = Colors.black
+		Else
+			celllabel.TextColor = Colors.White
+		End If
+		
+		celllabel.Gravity = Gravity.CENTER
+		weekpanel.AddView(celllabel, c*cellW + xOffset, xOffset, cellW, cellH)
 		
 		
 		celllabel.Background = cd
 	Next
 	'table for weeks (end)
-	
+
 	
 	
 End Sub
@@ -167,7 +214,26 @@ Sub DrawCalendar (month As Int, year As Int)
 	
 	'creating tables
 	Dim cd As ColorDrawable
-	cd.Initialize2(Colors.White, 0, 2dip, Colors.Black)
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode Then
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			Else
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			End If
+		Case 1
+			If Starter.darkMode Then
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			Else
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+			End If
+		Case 2
+			If Starter.darkMode Then
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(201, 205, 211))
+			Else
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(73, 44, 46))
+			End If
+	End Select
 	
 	Dim rows As Int = 6  'number of rows (days)
 	Dim column As Int = 7 'number of columns (the weeks)
@@ -186,7 +252,7 @@ Sub DrawCalendar (month As Int, year As Int)
 			cell.Initialize("cell_click")
 			cell.Enabled  =True
 			
-			calendarpanel.AddView(cell, c * cellW, r * cellH, cellW, cellH)
+			calendarpanel.AddView(cell, (c * cellW) + xOffset, (r * cellH) + xOffset, cellW, cellH)
 			cell.Background = cd
 			
 			Dim lbl As Label
@@ -206,7 +272,13 @@ Sub DrawCalendar (month As Int, year As Int)
 				datestr = prevyear & "-" & NumberFormat(prevmonth,2,0) & "-" & NumberFormat(displayday,2 ,0 )
 			Else if index >= startDay And index < startDay + daysInmonth Then
 				displayday = index - startDay + 1
-				lbl.TextColor = Colors.Black
+				
+				If Starter.darkMode = False Then
+					lbl.TextColor = Colors.Black
+				Else
+					lbl.TextColor = Colors.White
+				End If
+				
 				datestr = year&"-"&NumberFormat(month,2,0)&"-"&NumberFormat(displayday,2,0)
 			Else
 				displayday = index - (startDay + daysInmonth) + 1
