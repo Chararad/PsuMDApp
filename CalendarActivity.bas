@@ -316,7 +316,7 @@ Sub DrawCalendar (month As Int, year As Int)
 					dot.Initialize("")
 					dot.Text = ev.Get("Title")
 					dot.TextSize = 8
-					dot.TextColor = Colors.white
+					dot.TextColor = Colors.black
 					dot.Color = IdentifyColor(ev.Get("Tags"))
 					dot.Gravity = Gravity.CENTER_VERTICAL
 					dot.SingleLine = True

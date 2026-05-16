@@ -73,6 +73,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=CalendarActivity,Activity_Create,176,6,Visual Designer,CalendarActivityLayoutDark3.bal,-100,6,Visual Designer,CalendarActivityLayout3.bal,-100,6,Visual Designer,clocklayout3.bal,-100,2,CalendarActivity,DrawCalendar,272,1,Visual Designer,Day_ModuleLayout.bal,-100,1,Visual Designer,Day_ModuleLayout2.bal,-100,1,Visual Designer,Day_ModuleLayoutDark3.bal,-100,1,Visual Designer,Day_ModuleLayout3.bal,-100,6,day_module,Activity_Create,59,0
+NavigationStack=day_module,Activity_Create,59,0,CalendarActivity,DrawCalendar,312,1,Schedule_module,IdentifyColor,193,0,Visual Designer,Schedule_moduleLayout3.bal,-100,6,Schedule_module,DrawSchedule,117,3,CalendarActivity,Activity_Create,76,0,Visual Designer,Schedule_moduleLayoutDark3.bal,-100,6,Visual Designer,Day_ModuleLayoutDark3.bal,-100,6,Visual Designer,Day_ModuleLayout3.bal,-100,6,day_module,Globals,24,0
 SelectedBuild=0
 VisibleModules=21,15,24,6,20,10
