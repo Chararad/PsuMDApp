@@ -48,6 +48,8 @@ Sub Globals
 	Private Month_btn As Button
 	Dim xOffset As Int = 2dip
 	
+	Private Day_btn As Button
+	Private sched_btn As Button
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -69,12 +71,12 @@ Sub Activity_Create(FirstTime As Boolean)
 		Case 1
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("CalendarActivityLayout2")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				bd.Initialize(LoadBitmap(File.DirAssets, "Skeumorphic Pink .png"))
 				Month_btn.Background = bd
 				Month_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("CalendarActivityLayoutDark2")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				bd.Initialize(LoadBitmap(File.DirAssets, "pink Skeumorphic Button DARK.png"))
 				Month_btn.Background = bd
 				Month_btn.TextColor = Colors.White
 			End If
@@ -141,9 +143,9 @@ Sub Activity_Create(FirstTime As Boolean)
 			End If
 		Case 1
 			If Starter.darkMode Then
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(2, 26, 84))
 			Else
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(137, 162, 185))
 			End If
 		Case 2
 			If Starter.darkMode Then
@@ -223,9 +225,9 @@ Sub DrawCalendar (month As Int, year As Int)
 			End If
 		Case 1
 			If Starter.darkMode Then
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(2, 26, 84))
 			Else
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(137, 162, 185))
 			End If
 		Case 2
 			If Starter.darkMode Then

@@ -73,6 +73,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Visual Designer,corkboardlayout3.bal,-100,1,Visual Designer,corkboardLayoutDark3.bal,-100,2,corkActivity,imgBtn_Click,378,0,corkActivity,canvaBtn_Click,384,0,CalendarActivity,Activity_Create,53,0,todoActivity,Process_Globals,9,0,todoActivity,Globals,36,0,corkActivity,Globals,54,0,corkActivity,canvasWindow,426,3,corkActivity,noteWindow,368,2
+NavigationStack=Visual Designer,Day_ModuleLayout2.bal,-100,5,Visual Designer,editnotelayout2.bal,-100,1,CalendarActivity,Activity_Create,54,0,corkActivity,canvasWindow,419,0,Visual Designer,notepadlayout2.bal,-100,6,todoActivity,Process_Globals,9,0,Visual Designer,notepadlayoutDark2.bal,-100,4,Visual Designer,Schedule_moduleLayout2.bal,-100,2,Visual Designer,Schedule_moduleLayoutDark2.bal,-100,2,Schedule_module,DrawSchedule,107,2
 SelectedBuild=0
 VisibleModules=21,15,24,6,20,10,13,9

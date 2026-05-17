@@ -75,12 +75,12 @@ Sub Activity_Create(FirstTime As Boolean)
 		Case 1
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Day_ModuleLayout2")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				bd.Initialize(LoadBitmap(File.DirAssets, "Skeumorphic Pink .png"))
 				Day_btn.Background = bd
 				Day_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Day_ModuleLayoutDark2")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				bd.Initialize(LoadBitmap(File.DirAssets, "pink Skeumorphic Button DARK.png"))
 				Day_btn.Background = bd
 				Day_btn.TextColor = Colors.White
 			End If
