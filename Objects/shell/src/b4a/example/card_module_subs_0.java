@@ -8,7 +8,7 @@ public class card_module_subs_0 {
 
 public static RemoteObject  _activerecall_click() throws Exception{
 try {
-		Debug.PushSubsStack("activerecall_Click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,158);
+		Debug.PushSubsStack("activerecall_Click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,158);
 if (RapidSub.canDelegate("activerecall_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","activerecall_click");}
 RemoteObject _tappeddeck = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _subdeckcards = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -51,7 +51,7 @@ finally {
 		}}
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,29);
+		Debug.PushSubsStack("Activity_Create (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,29);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","activity_create", _firsttime);}
 RemoteObject _tappeddeck = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _subdeckcards = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -131,7 +131,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,147);
+		Debug.PushSubsStack("Activity_Pause (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,147);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 147;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -148,7 +148,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,135);
+		Debug.PushSubsStack("Activity_Resume (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,135);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","activity_resume");}
 RemoteObject _tappeddeck = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _subdeckcards = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -187,7 +187,7 @@ finally {
 		}}
 public static RemoteObject  _addbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("addbtn_Click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,171);
+		Debug.PushSubsStack("addbtn_Click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,171);
 if (RapidSub.canDelegate("addbtn_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","addbtn_click");}
  BA.debugLineNum = 171;BA.debugLine="Private Sub addbtn_Click";
 Debug.ShouldStop(1024);
@@ -209,7 +209,7 @@ finally {
 		}}
 public static RemoteObject  _backbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("backbtn_Click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,153);
+		Debug.PushSubsStack("backbtn_Click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,153);
 if (RapidSub.canDelegate("backbtn_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","backbtn_click");}
  BA.debugLineNum = 153;BA.debugLine="Private Sub backbtn_Click";
 Debug.ShouldStop(16777216);
@@ -228,7 +228,7 @@ finally {
 		}}
 public static RemoteObject  _canceldelete_click() throws Exception{
 try {
-		Debug.PushSubsStack("canceldelete_Click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,186);
+		Debug.PushSubsStack("canceldelete_Click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,186);
 if (RapidSub.canDelegate("canceldelete_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","canceldelete_click");}
  BA.debugLineNum = 186;BA.debugLine="Private Sub canceldelete_Click";
 Debug.ShouldStop(33554432);
@@ -247,7 +247,7 @@ finally {
 		}}
 public static RemoteObject  _cc_result(RemoteObject _success,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("CC_RESULT (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,194);
+		Debug.PushSubsStack("CC_RESULT (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,194);
 if (RapidSub.canDelegate("cc_result")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","cc_result", _success, _dir, _filename);}
 Debug.locals.put("Success", _success);
 Debug.locals.put("dir", _dir);
@@ -259,16 +259,16 @@ Debug.ShouldStop(8);
 if (_success.<Boolean>get().booleanValue()) { 
  BA.debugLineNum = 197;BA.debugLine="Log(\"Dir: \" & dir)";
 Debug.ShouldStop(16);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329491203",RemoteObject.concat(RemoteObject.createImmutable("Dir: "),_dir),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319857411",RemoteObject.concat(RemoteObject.createImmutable("Dir: "),_dir),0);
  BA.debugLineNum = 198;BA.debugLine="Log(\"File: \" & fileName)";
 Debug.ShouldStop(32);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329491204",RemoteObject.concat(RemoteObject.createImmutable("File: "),_filename),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319857412",RemoteObject.concat(RemoteObject.createImmutable("File: "),_filename),0);
  BA.debugLineNum = 200;BA.debugLine="File.Copy(dir, fileName, File.DirInternal, \"temp";
 Debug.ShouldStop(128);
 card_module.mostCurrent.__c.getField(false,"File").runVoidMethod ("Copy",(Object)(_dir),(Object)(_filename),(Object)(card_module.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirInternal")),(Object)(RemoteObject.createImmutable("temp.pdf")));
  BA.debugLineNum = 201;BA.debugLine="Log(\"PDF saved as temp.pdf\")";
 Debug.ShouldStop(256);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329491207",RemoteObject.createImmutable("PDF saved as temp.pdf"),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319857415",RemoteObject.createImmutable("PDF saved as temp.pdf"),0);
  BA.debugLineNum = 203;BA.debugLine="File.Copy(dir, fileName, File.DirInternal, \"temp";
 Debug.ShouldStop(1024);
 card_module.mostCurrent.__c.getField(false,"File").runVoidMethod ("Copy",(Object)(_dir),(Object)(_filename),(Object)(card_module.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirInternal")),(Object)(RemoteObject.createImmutable("temp.pdf")));
@@ -278,7 +278,7 @@ _generateflashcardsfrompdf();
  }else {
  BA.debugLineNum = 207;BA.debugLine="Log(\"User Cancelled\")";
 Debug.ShouldStop(16384);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329491213",RemoteObject.createImmutable("User Cancelled"),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319857421",RemoteObject.createImmutable("User Cancelled"),0);
  };
  BA.debugLineNum = 209;BA.debugLine="End Sub";
 Debug.ShouldStop(65536);
@@ -292,7 +292,7 @@ finally {
 		}}
 public static RemoteObject  _confirmdelete_click() throws Exception{
 try {
-		Debug.PushSubsStack("confirmdelete_Click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,177);
+		Debug.PushSubsStack("confirmdelete_Click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,177);
 if (RapidSub.canDelegate("confirmdelete_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","confirmdelete_click");}
 RemoteObject _tappeddeck = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _cards = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -327,7 +327,7 @@ finally {
 		}}
 public static RemoteObject  _deletebtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("deletebtn_click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,126);
+		Debug.PushSubsStack("deletebtn_click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,126);
 if (RapidSub.canDelegate("deletebtn_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","deletebtn_click");}
 RemoteObject _b = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
 RemoteObject _index = RemoteObject.createImmutable(0);
@@ -358,7 +358,7 @@ finally {
 		}}
 public static RemoteObject  _editbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("editbtn_Click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,114);
+		Debug.PushSubsStack("editbtn_Click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,114);
 if (RapidSub.canDelegate("editbtn_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","editbtn_click");}
 RemoteObject _b = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
 RemoteObject _index = RemoteObject.createImmutable(0);
@@ -395,7 +395,7 @@ finally {
 		}}
 public static RemoteObject  _ftf_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("ftf_btn_Click (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,190);
+		Debug.PushSubsStack("ftf_btn_Click (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,190);
 if (RapidSub.canDelegate("ftf_btn_click")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","ftf_btn_click");}
  BA.debugLineNum = 190;BA.debugLine="Private Sub ftf_btn_Click";
 Debug.ShouldStop(536870912);
@@ -414,7 +414,7 @@ finally {
 		}}
 public static RemoteObject  _generateflashcardsfrompdf() throws Exception{
 try {
-		Debug.PushSubsStack("GenerateFlashCardsFromPDF (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,211);
+		Debug.PushSubsStack("GenerateFlashCardsFromPDF (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,211);
 if (RapidSub.canDelegate("generateflashcardsfrompdf")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","generateflashcardsfrompdf");}
 RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.InputStreamWrapper");
 RemoteObject _bytes = null;
@@ -533,10 +533,10 @@ Debug.ShouldStop(4194304);
 _json = _gen.runMethod(true,"ToString");Debug.locals.put("json", _json);Debug.locals.put("json", _json);
  BA.debugLineNum = 281;BA.debugLine="Log(\"AUTO PDF REQUEST: \")";
 Debug.ShouldStop(16777216);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329556806",RemoteObject.createImmutable("AUTO PDF REQUEST: "),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319923014",RemoteObject.createImmutable("AUTO PDF REQUEST: "),0);
  BA.debugLineNum = 282;BA.debugLine="Log(json)";
 Debug.ShouldStop(33554432);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329556807",_json,0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319923015",_json,0);
  BA.debugLineNum = 284;BA.debugLine="Dim URL As String = \"https://generativelanguage.g";
 Debug.ShouldStop(134217728);
 _url = RemoteObject.concat(RemoteObject.createImmutable("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key="),card_module.mostCurrent._myapikey);Debug.locals.put("URL", _url);Debug.locals.put("URL", _url);
@@ -587,7 +587,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _jobdone(RemoteObject _job) throws Exception{
 try {
-		Debug.PushSubsStack("JobDone (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,293);
+		Debug.PushSubsStack("JobDone (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,293);
 if (RapidSub.canDelegate("jobdone")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","jobdone", _job);}
 RemoteObject _response = RemoteObject.createImmutable("");
 RemoteObject _jp = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.JSONParser");
@@ -614,10 +614,10 @@ Debug.ShouldStop(128);
 _response = _job.runClassMethod (b4a.example.httpjob.class, "_getstring" /*RemoteObject*/ );Debug.locals.put("response", _response);
  BA.debugLineNum = 297;BA.debugLine="Log(\"RAW RESPONSE: \")";
 Debug.ShouldStop(256);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329622276",RemoteObject.createImmutable("RAW RESPONSE: "),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319988484",RemoteObject.createImmutable("RAW RESPONSE: "),0);
  BA.debugLineNum = 298;BA.debugLine="Log(response)";
 Debug.ShouldStop(512);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329622277",_response,0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319988485",_response,0);
  BA.debugLineNum = 300;BA.debugLine="Dim jp As JSONParser";
 Debug.ShouldStop(2048);
 _jp = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.JSONParser");Debug.locals.put("jp", _jp);
@@ -653,10 +653,10 @@ Debug.ShouldStop(67108864);
 _aitext = BA.ObjectToString(_firstpart.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("text")))));Debug.locals.put("aiText", _aitext);Debug.locals.put("aiText", _aitext);
  BA.debugLineNum = 317;BA.debugLine="Log(\"AI JSON:\")";
 Debug.ShouldStop(268435456);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329622296",RemoteObject.createImmutable("AI JSON:"),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319988504",RemoteObject.createImmutable("AI JSON:"),0);
  BA.debugLineNum = 318;BA.debugLine="Log(aiText)";
 Debug.ShouldStop(536870912);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329622297",_aitext,0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319988505",_aitext,0);
  BA.debugLineNum = 319;BA.debugLine="File.WriteString(File.DirInternal, \"cached_ai.tx";
 Debug.ShouldStop(1073741824);
 card_module.mostCurrent.__c.getField(false,"File").runVoidMethod ("WriteString",(Object)(card_module.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirInternal")),(Object)(BA.ObjectToString("cached_ai.txt")),(Object)(_aitext));
@@ -677,10 +677,10 @@ _showsubdeckcards(_subdeckcards);
  }else {
  BA.debugLineNum = 329;BA.debugLine="Log(\"ERROR: \")";
 Debug.ShouldStop(256);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329622308",RemoteObject.createImmutable("ERROR: "),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319988516",RemoteObject.createImmutable("ERROR: "),0);
  BA.debugLineNum = 330;BA.debugLine="Log(job.ErrorMessage)";
 Debug.ShouldStop(512);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329622309",_job.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","319988517",_job.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  BA.debugLineNum = 331;BA.debugLine="Msgbox(\"Error Parsing your PDF file\", \"Error\")";
 Debug.ShouldStop(1024);
 card_module.mostCurrent.__c.runVoidMethodAndSync ("Msgbox",(Object)(BA.ObjectToCharSequence("Error Parsing your PDF file")),(Object)(BA.ObjectToCharSequence(RemoteObject.createImmutable("Error"))),card_module.mostCurrent.activityBA);
@@ -700,7 +700,7 @@ finally {
 		}}
 public static RemoteObject  _parseflashcard(RemoteObject _jsontext) throws Exception{
 try {
-		Debug.PushSubsStack("ParseFlashcard (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,337);
+		Debug.PushSubsStack("ParseFlashcard (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,337);
 if (RapidSub.canDelegate("parseflashcard")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","parseflashcard", _jsontext);}
 RemoteObject _tappeddeck = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _subdeckcards = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -772,13 +772,13 @@ Debug.ShouldStop(256);
 _subdeckcards.runVoidMethod ("Add",(Object)((_cards.getObject())));
  BA.debugLineNum = 363;BA.debugLine="Log(\"===================\")";
 Debug.ShouldStop(1024);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329687834",RemoteObject.createImmutable("==================="),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","320054042",RemoteObject.createImmutable("==================="),0);
  BA.debugLineNum = 364;BA.debugLine="Log(\"QUESTION: \" & question)";
 Debug.ShouldStop(2048);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329687835",RemoteObject.concat(RemoteObject.createImmutable("QUESTION: "),_question),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","320054043",RemoteObject.concat(RemoteObject.createImmutable("QUESTION: "),_question),0);
  BA.debugLineNum = 365;BA.debugLine="Log(\"ANSWER: \" & answer)";
 Debug.ShouldStop(4096);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329687836",RemoteObject.concat(RemoteObject.createImmutable("ANSWER: "),_answer),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","320054044",RemoteObject.concat(RemoteObject.createImmutable("ANSWER: "),_answer),0);
  }
 }Debug.locals.put("card", _card);
 ;
@@ -787,7 +787,7 @@ card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329687836",RemoteObject.co
        catch (Exception e21) {
 			BA.rdebugUtils.runVoidMethod("setLastException",card_module.processBA, e21.toString()); BA.debugLineNum = 371;BA.debugLine="Log(\"INVALID JSON\")";
 Debug.ShouldStop(262144);
-card_module.mostCurrent.__c.runVoidMethod ("LogImpl","329687842",RemoteObject.createImmutable("INVALID JSON"),0);
+card_module.mostCurrent.__c.runVoidMethod ("LogImpl","320054050",RemoteObject.createImmutable("INVALID JSON"),0);
  };
  BA.debugLineNum = 375;BA.debugLine="End Sub";
 Debug.ShouldStop(4194304);
@@ -812,7 +812,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _showsubdeckcards(RemoteObject _cardslist) throws Exception{
 try {
-		Debug.PushSubsStack("ShowSubdeckCards (card_module) ","card_module",23,card_module.mostCurrent.activityBA,card_module.mostCurrent,63);
+		Debug.PushSubsStack("ShowSubdeckCards (card_module) ","card_module",24,card_module.mostCurrent.activityBA,card_module.mostCurrent,63);
 if (RapidSub.canDelegate("showsubdeckcards")) { return b4a.example.card_module.remoteMe.runUserSub(false, "card_module","showsubdeckcards", _cardslist);}
 RemoteObject _toppos = RemoteObject.createImmutable(0);
 RemoteObject _cardheight = RemoteObject.createImmutable(0);

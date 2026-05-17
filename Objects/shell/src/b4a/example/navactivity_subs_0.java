@@ -8,7 +8,7 @@ public class navactivity_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,18);
+		Debug.PushSubsStack("Activity_Create (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,18);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 18;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -69,7 +69,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,46);
+		Debug.PushSubsStack("Activity_Pause (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,46);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 46;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -86,7 +86,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,42);
+		Debug.PushSubsStack("Activity_Resume (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,42);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","activity_resume");}
  BA.debugLineNum = 42;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(512);
@@ -102,7 +102,7 @@ finally {
 		}}
 public static RemoteObject  _calendarbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("calendarBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,51);
+		Debug.PushSubsStack("calendarBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,51);
 if (RapidSub.canDelegate("calendarbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","calendarbtn_click");}
  BA.debugLineNum = 51;BA.debugLine="Private Sub calendarBtn_Click";
 Debug.ShouldStop(262144);
@@ -121,7 +121,7 @@ finally {
 		}}
 public static RemoteObject  _clkbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("clkBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,55);
+		Debug.PushSubsStack("clkBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,55);
 if (RapidSub.canDelegate("clkbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","clkbtn_click");}
  BA.debugLineNum = 55;BA.debugLine="Private Sub clkBtn_Click";
 Debug.ShouldStop(4194304);
@@ -140,7 +140,7 @@ finally {
 		}}
 public static RemoteObject  _corkpadbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("corkpadBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,59);
+		Debug.PushSubsStack("corkpadBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,59);
 if (RapidSub.canDelegate("corkpadbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","corkpadbtn_click");}
  BA.debugLineNum = 59;BA.debugLine="Private Sub corkpadBtn_Click";
 Debug.ShouldStop(67108864);
@@ -159,7 +159,7 @@ finally {
 		}}
 public static RemoteObject  _exitbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("exitBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,87);
+		Debug.PushSubsStack("exitBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,87);
 if (RapidSub.canDelegate("exitbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","exitbtn_click");}
  BA.debugLineNum = 87;BA.debugLine="Private Sub exitBtn_Click";
 Debug.ShouldStop(4194304);
@@ -178,7 +178,7 @@ finally {
 		}}
 public static RemoteObject  _flashbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("flashBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,63);
+		Debug.PushSubsStack("flashBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,63);
 if (RapidSub.canDelegate("flashbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","flashbtn_click");}
  BA.debugLineNum = 63;BA.debugLine="Private Sub flashBtn_Click";
 Debug.ShouldStop(1073741824);
@@ -202,7 +202,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _helpbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("helpBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,79);
+		Debug.PushSubsStack("helpBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,79);
 if (RapidSub.canDelegate("helpbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","helpbtn_click");}
  BA.debugLineNum = 79;BA.debugLine="Private Sub helpBtn_Click";
 Debug.ShouldStop(16384);
@@ -221,7 +221,7 @@ finally {
 		}}
 public static RemoteObject  _musicbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("musicBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,67);
+		Debug.PushSubsStack("musicBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,67);
 if (RapidSub.canDelegate("musicbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","musicbtn_click");}
  BA.debugLineNum = 67;BA.debugLine="Private Sub musicBtn_Click";
 Debug.ShouldStop(4);
@@ -240,7 +240,7 @@ finally {
 		}}
 public static RemoteObject  _ntpdbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("ntpdBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,71);
+		Debug.PushSubsStack("ntpdBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,71);
 if (RapidSub.canDelegate("ntpdbtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","ntpdbtn_click");}
  BA.debugLineNum = 71;BA.debugLine="Private Sub ntpdBtn_Click";
 Debug.ShouldStop(64);
@@ -264,7 +264,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _themebtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("themeBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,83);
+		Debug.PushSubsStack("themeBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,83);
 if (RapidSub.canDelegate("themebtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","themebtn_click");}
  BA.debugLineNum = 83;BA.debugLine="Private Sub themeBtn_Click";
 Debug.ShouldStop(262144);
@@ -283,7 +283,7 @@ finally {
 		}}
 public static RemoteObject  _todobtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("todoBtn_Click (navactivity) ","navactivity",18,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,75);
+		Debug.PushSubsStack("todoBtn_Click (navactivity) ","navactivity",22,navactivity.mostCurrent.activityBA,navactivity.mostCurrent,75);
 if (RapidSub.canDelegate("todobtn_click")) { return b4a.example.navactivity.remoteMe.runUserSub(false, "navactivity","todobtn_click");}
  BA.debugLineNum = 75;BA.debugLine="Private Sub todoBtn_Click";
 Debug.ShouldStop(1024);

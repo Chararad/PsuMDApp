@@ -357,21 +357,21 @@ public b4a.example.schedule_module _schedule_module = null;
 public b4a.example.day_module _day_module = null;
 public b4a.example.flashcardactivity _flashcardactivity = null;
 public b4a.example.corkactivity _corkactivity = null;
+public b4a.example.subdeck_module _subdeck_module = null;
+public b4a.example.add_card_module _add_card_module = null;
+public b4a.example.noteactivity _noteactivity = null;
+public b4a.example.editnote _editnote = null;
 public b4a.example.active_recall _active_recall = null;
+public b4a.example.add_card_module2 _add_card_module2 = null;
 public b4a.example.add_events_module _add_events_module = null;
 public b4a.example.all_active_recall _all_active_recall = null;
 public b4a.example.clockactivity _clockactivity = null;
-public b4a.example.editnote _editnote = null;
 public b4a.example.helpactivity _helpactivity = null;
 public b4a.example.musicactivity _musicactivity = null;
 public b4a.example.musicservice _musicservice = null;
 public b4a.example.navactivity _navactivity = null;
-public b4a.example.noteactivity _noteactivity = null;
 public b4a.example.themeactivity _themeactivity = null;
-public b4a.example.subdeck_module _subdeck_module = null;
-public b4a.example.add_card_module _add_card_module = null;
 public b4a.example.card_module _card_module = null;
-public b4a.example.add_card_module2 _add_card_module2 = null;
 public b4a.example.httputils2service _httputils2service = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="deck_all_cards";
@@ -382,64 +382,64 @@ String _subdeckname = "";
 anywheresoftware.b4a.objects.collections.List _subcards = null;
 anywheresoftware.b4a.objects.collections.Map _card = null;
 anywheresoftware.b4a.objects.collections.Map _newcard = null;
-RDebugUtils.currentLine=17956864;
- //BA.debugLineNum = 17956864;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=17956865;
- //BA.debugLineNum = 17956865;BA.debugLine="Select Starter.themeNumber";
+RDebugUtils.currentLine=25559040;
+ //BA.debugLineNum = 25559040;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=25559041;
+ //BA.debugLineNum = 25559041;BA.debugLine="Select Starter.themeNumber";
 switch (BA.switchObjectToInt(mostCurrent._starter._themenumber /*int*/ ,(int) (0),(int) (1),(int) (2))) {
 case 0: {
-RDebugUtils.currentLine=17956867;
- //BA.debugLineNum = 17956867;BA.debugLine="If Starter.darkMode = False Then";
+RDebugUtils.currentLine=25559043;
+ //BA.debugLineNum = 25559043;BA.debugLine="If Starter.darkMode = False Then";
 if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=17956868;
- //BA.debugLineNum = 17956868;BA.debugLine="Activity.LoadLayout(\"DACLayout\")";
+RDebugUtils.currentLine=25559044;
+ //BA.debugLineNum = 25559044;BA.debugLine="Activity.LoadLayout(\"DACLayout\")";
 mostCurrent._activity.LoadLayout("DACLayout",mostCurrent.activityBA);
  }else {
-RDebugUtils.currentLine=17956870;
- //BA.debugLineNum = 17956870;BA.debugLine="Activity.LoadLayout(\"DACLayoutDark\")";
+RDebugUtils.currentLine=25559046;
+ //BA.debugLineNum = 25559046;BA.debugLine="Activity.LoadLayout(\"DACLayoutDark\")";
 mostCurrent._activity.LoadLayout("DACLayoutDark",mostCurrent.activityBA);
  };
  break; }
 case 1: {
-RDebugUtils.currentLine=17956873;
- //BA.debugLineNum = 17956873;BA.debugLine="If Starter.darkMode = False Then";
+RDebugUtils.currentLine=25559049;
+ //BA.debugLineNum = 25559049;BA.debugLine="If Starter.darkMode = False Then";
 if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=17956874;
- //BA.debugLineNum = 17956874;BA.debugLine="Activity.LoadLayout(\"DACLayout2\")";
+RDebugUtils.currentLine=25559050;
+ //BA.debugLineNum = 25559050;BA.debugLine="Activity.LoadLayout(\"DACLayout2\")";
 mostCurrent._activity.LoadLayout("DACLayout2",mostCurrent.activityBA);
  }else {
-RDebugUtils.currentLine=17956876;
- //BA.debugLineNum = 17956876;BA.debugLine="Activity.LoadLayout(\"DACLayoutDark2\")";
+RDebugUtils.currentLine=25559052;
+ //BA.debugLineNum = 25559052;BA.debugLine="Activity.LoadLayout(\"DACLayoutDark2\")";
 mostCurrent._activity.LoadLayout("DACLayoutDark2",mostCurrent.activityBA);
  };
  break; }
 case 2: {
-RDebugUtils.currentLine=17956879;
- //BA.debugLineNum = 17956879;BA.debugLine="If Starter.darkMode = False Then";
+RDebugUtils.currentLine=25559055;
+ //BA.debugLineNum = 25559055;BA.debugLine="If Starter.darkMode = False Then";
 if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=17956880;
- //BA.debugLineNum = 17956880;BA.debugLine="Activity.LoadLayout(\"DACLayout3\")";
+RDebugUtils.currentLine=25559056;
+ //BA.debugLineNum = 25559056;BA.debugLine="Activity.LoadLayout(\"DACLayout3\")";
 mostCurrent._activity.LoadLayout("DACLayout3",mostCurrent.activityBA);
  }else {
-RDebugUtils.currentLine=17956882;
- //BA.debugLineNum = 17956882;BA.debugLine="Activity.LoadLayout(\"DACLayoutDark3\")";
+RDebugUtils.currentLine=25559058;
+ //BA.debugLineNum = 25559058;BA.debugLine="Activity.LoadLayout(\"DACLayoutDark3\")";
 mostCurrent._activity.LoadLayout("DACLayoutDark3",mostCurrent.activityBA);
  };
  break; }
 }
 ;
-RDebugUtils.currentLine=17956886;
- //BA.debugLineNum = 17956886;BA.debugLine="deckname.Text = FlashcardActivity.item_longclick";
+RDebugUtils.currentLine=25559062;
+ //BA.debugLineNum = 25559062;BA.debugLine="deckname.Text = FlashcardActivity.item_longclick";
 mostCurrent._deckname.setText(BA.ObjectToCharSequence(mostCurrent._flashcardactivity._item_longclick /*String*/ ));
-RDebugUtils.currentLine=17956887;
- //BA.debugLineNum = 17956887;BA.debugLine="cards.Initialize";
+RDebugUtils.currentLine=25559063;
+ //BA.debugLineNum = 25559063;BA.debugLine="cards.Initialize";
 mostCurrent._cards.Initialize();
-RDebugUtils.currentLine=17956889;
- //BA.debugLineNum = 17956889;BA.debugLine="Dim chosendeck As Map = FlashcardActivity.deck.Ge";
+RDebugUtils.currentLine=25559065;
+ //BA.debugLineNum = 25559065;BA.debugLine="Dim chosendeck As Map = FlashcardActivity.deck.Ge";
 _chosendeck = new anywheresoftware.b4a.objects.collections.Map();
 _chosendeck = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(mostCurrent._flashcardactivity._deck /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)(mostCurrent._flashcardactivity._selecteddeck /*String*/ ))));
-RDebugUtils.currentLine=17956890;
- //BA.debugLineNum = 17956890;BA.debugLine="For Each subdeckname As String In chosendeck.Keys";
+RDebugUtils.currentLine=25559066;
+ //BA.debugLineNum = 25559066;BA.debugLine="For Each subdeckname As String In chosendeck.Keys";
 {
 final anywheresoftware.b4a.BA.IterableList group24 = _chosendeck.Keys();
 final int groupLen24 = group24.getSize()
@@ -447,12 +447,12 @@ final int groupLen24 = group24.getSize()
 ;
 for (; index24 < groupLen24;index24++){
 _subdeckname = BA.ObjectToString(group24.Get(index24));
-RDebugUtils.currentLine=17956891;
- //BA.debugLineNum = 17956891;BA.debugLine="Dim subcards As List = chosendeck.Get(subdecknam";
+RDebugUtils.currentLine=25559067;
+ //BA.debugLineNum = 25559067;BA.debugLine="Dim subcards As List = chosendeck.Get(subdecknam";
 _subcards = new anywheresoftware.b4a.objects.collections.List();
 _subcards = (anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_chosendeck.Get((Object)(_subdeckname))));
-RDebugUtils.currentLine=17956892;
- //BA.debugLineNum = 17956892;BA.debugLine="For Each card As Map In subcards";
+RDebugUtils.currentLine=25559068;
+ //BA.debugLineNum = 25559068;BA.debugLine="For Each card As Map In subcards";
 _card = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group26 = _subcards;
@@ -461,33 +461,33 @@ final int groupLen26 = group26.getSize()
 ;
 for (; index26 < groupLen26;index26++){
 _card = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group26.Get(index26)));
-RDebugUtils.currentLine=17956893;
- //BA.debugLineNum = 17956893;BA.debugLine="Dim newcard As Map";
+RDebugUtils.currentLine=25559069;
+ //BA.debugLineNum = 25559069;BA.debugLine="Dim newcard As Map";
 _newcard = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=17956894;
- //BA.debugLineNum = 17956894;BA.debugLine="newcard.Initialize";
+RDebugUtils.currentLine=25559070;
+ //BA.debugLineNum = 25559070;BA.debugLine="newcard.Initialize";
 _newcard.Initialize();
-RDebugUtils.currentLine=17956895;
- //BA.debugLineNum = 17956895;BA.debugLine="newcard.Put(\"Q\", card.Get(\"Q\"))";
+RDebugUtils.currentLine=25559071;
+ //BA.debugLineNum = 25559071;BA.debugLine="newcard.Put(\"Q\", card.Get(\"Q\"))";
 _newcard.Put((Object)("Q"),_card.Get((Object)("Q")));
-RDebugUtils.currentLine=17956896;
- //BA.debugLineNum = 17956896;BA.debugLine="newcard.Put(\"A\", card.Get(\"A\"))";
+RDebugUtils.currentLine=25559072;
+ //BA.debugLineNum = 25559072;BA.debugLine="newcard.Put(\"A\", card.Get(\"A\"))";
 _newcard.Put((Object)("A"),_card.Get((Object)("A")));
-RDebugUtils.currentLine=17956897;
- //BA.debugLineNum = 17956897;BA.debugLine="newcard.Put(\"subdeck\", subdeckname) 'get subdec";
+RDebugUtils.currentLine=25559073;
+ //BA.debugLineNum = 25559073;BA.debugLine="newcard.Put(\"subdeck\", subdeckname) 'get subdec";
 _newcard.Put((Object)("subdeck"),(Object)(_subdeckname));
-RDebugUtils.currentLine=17956898;
- //BA.debugLineNum = 17956898;BA.debugLine="cards.Add(newcard)";
+RDebugUtils.currentLine=25559074;
+ //BA.debugLineNum = 25559074;BA.debugLine="cards.Add(newcard)";
 mostCurrent._cards.Add((Object)(_newcard.getObject()));
  }
 };
  }
 };
-RDebugUtils.currentLine=17956902;
- //BA.debugLineNum = 17956902;BA.debugLine="ShowALLCards(cards)";
+RDebugUtils.currentLine=25559078;
+ //BA.debugLineNum = 25559078;BA.debugLine="ShowALLCards(cards)";
 _showallcards(mostCurrent._cards);
-RDebugUtils.currentLine=17956904;
- //BA.debugLineNum = 17956904;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25559080;
+ //BA.debugLineNum = 25559080;BA.debugLine="End Sub";
 return "";
 }
 public static String  _showallcards(anywheresoftware.b4a.objects.collections.List _cardslist) throws Exception{
@@ -501,145 +501,145 @@ anywheresoftware.b4a.objects.collections.Map _card = null;
 anywheresoftware.b4a.objects.PanelWrapper _p = null;
 anywheresoftware.b4a.objects.LabelWrapper _lbl2 = null;
 anywheresoftware.b4a.objects.LabelWrapper _lbl = null;
-RDebugUtils.currentLine=18022400;
- //BA.debugLineNum = 18022400;BA.debugLine="Sub ShowALLCards(CardsList As List)";
-RDebugUtils.currentLine=18022402;
- //BA.debugLineNum = 18022402;BA.debugLine="ScrollView1.Panel.RemoveAllViews";
+RDebugUtils.currentLine=25624576;
+ //BA.debugLineNum = 25624576;BA.debugLine="Sub ShowALLCards(CardsList As List)";
+RDebugUtils.currentLine=25624578;
+ //BA.debugLineNum = 25624578;BA.debugLine="ScrollView1.Panel.RemoveAllViews";
 mostCurrent._scrollview1.getPanel().RemoveAllViews();
-RDebugUtils.currentLine=18022404;
- //BA.debugLineNum = 18022404;BA.debugLine="Dim topPos As Int = 0";
+RDebugUtils.currentLine=25624580;
+ //BA.debugLineNum = 25624580;BA.debugLine="Dim topPos As Int = 0";
 _toppos = (int) (0);
-RDebugUtils.currentLine=18022405;
- //BA.debugLineNum = 18022405;BA.debugLine="Dim cardHeight As Int = 150dip 'height";
+RDebugUtils.currentLine=25624581;
+ //BA.debugLineNum = 25624581;BA.debugLine="Dim cardHeight As Int = 150dip 'height";
 _cardheight = anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (150));
-RDebugUtils.currentLine=18022407;
- //BA.debugLineNum = 18022407;BA.debugLine="For i = 0 To CardsList.Size -1";
+RDebugUtils.currentLine=25624583;
+ //BA.debugLineNum = 25624583;BA.debugLine="For i = 0 To CardsList.Size -1";
 {
 final int step4 = 1;
 final int limit4 = (int) (_cardslist.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit4 ;_i = _i + step4 ) {
-RDebugUtils.currentLine=18022408;
- //BA.debugLineNum = 18022408;BA.debugLine="Dim card As Map = CardsList.Get(i)";
+RDebugUtils.currentLine=25624584;
+ //BA.debugLineNum = 25624584;BA.debugLine="Dim card As Map = CardsList.Get(i)";
 _card = new anywheresoftware.b4a.objects.collections.Map();
 _card = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_cardslist.Get(_i)));
-RDebugUtils.currentLine=18022409;
- //BA.debugLineNum = 18022409;BA.debugLine="Dim p As Panel";
+RDebugUtils.currentLine=25624585;
+ //BA.debugLineNum = 25624585;BA.debugLine="Dim p As Panel";
 _p = new anywheresoftware.b4a.objects.PanelWrapper();
-RDebugUtils.currentLine=18022410;
- //BA.debugLineNum = 18022410;BA.debugLine="p.Initialize(\"\")";
+RDebugUtils.currentLine=25624586;
+ //BA.debugLineNum = 25624586;BA.debugLine="p.Initialize(\"\")";
 _p.Initialize(mostCurrent.activityBA,"");
-RDebugUtils.currentLine=18022411;
- //BA.debugLineNum = 18022411;BA.debugLine="p.Color = Colors.White";
+RDebugUtils.currentLine=25624587;
+ //BA.debugLineNum = 25624587;BA.debugLine="p.Color = Colors.White";
 _p.setColor(anywheresoftware.b4a.keywords.Common.Colors.White);
-RDebugUtils.currentLine=18022412;
- //BA.debugLineNum = 18022412;BA.debugLine="ScrollView1.Panel.AddView(p, 10dip, topPos, Scr";
+RDebugUtils.currentLine=25624588;
+ //BA.debugLineNum = 25624588;BA.debugLine="ScrollView1.Panel.AddView(p, 10dip, topPos, Scr";
 mostCurrent._scrollview1.getPanel().AddView((android.view.View)(_p.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10)),_toppos,(int) (mostCurrent._scrollview1.getWidth()-anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20))),_cardheight);
-RDebugUtils.currentLine=18022414;
- //BA.debugLineNum = 18022414;BA.debugLine="Dim lbl2 As Label";
+RDebugUtils.currentLine=25624590;
+ //BA.debugLineNum = 25624590;BA.debugLine="Dim lbl2 As Label";
 _lbl2 = new anywheresoftware.b4a.objects.LabelWrapper();
-RDebugUtils.currentLine=18022415;
- //BA.debugLineNum = 18022415;BA.debugLine="lbl2.Initialize(\"\")";
+RDebugUtils.currentLine=25624591;
+ //BA.debugLineNum = 25624591;BA.debugLine="lbl2.Initialize(\"\")";
 _lbl2.Initialize(mostCurrent.activityBA,"");
-RDebugUtils.currentLine=18022416;
- //BA.debugLineNum = 18022416;BA.debugLine="lbl2.Text = card.Get(\"subdeck\")";
+RDebugUtils.currentLine=25624592;
+ //BA.debugLineNum = 25624592;BA.debugLine="lbl2.Text = card.Get(\"subdeck\")";
 _lbl2.setText(BA.ObjectToCharSequence(_card.Get((Object)("subdeck"))));
-RDebugUtils.currentLine=18022417;
- //BA.debugLineNum = 18022417;BA.debugLine="lbl2.TextColor = Colors.Black";
+RDebugUtils.currentLine=25624593;
+ //BA.debugLineNum = 25624593;BA.debugLine="lbl2.TextColor = Colors.Black";
 _lbl2.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.Black);
-RDebugUtils.currentLine=18022418;
- //BA.debugLineNum = 18022418;BA.debugLine="lbl2.TextSize = 14";
+RDebugUtils.currentLine=25624594;
+ //BA.debugLineNum = 25624594;BA.debugLine="lbl2.TextSize = 14";
 _lbl2.setTextSize((float) (14));
-RDebugUtils.currentLine=18022419;
- //BA.debugLineNum = 18022419;BA.debugLine="lbl2.SingleLine = False";
+RDebugUtils.currentLine=25624595;
+ //BA.debugLineNum = 25624595;BA.debugLine="lbl2.SingleLine = False";
 _lbl2.setSingleLine(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=18022420;
- //BA.debugLineNum = 18022420;BA.debugLine="lbl2.Typeface = Typeface.DEFAULT_BOLD";
+RDebugUtils.currentLine=25624596;
+ //BA.debugLineNum = 25624596;BA.debugLine="lbl2.Typeface = Typeface.DEFAULT_BOLD";
 _lbl2.setTypeface(anywheresoftware.b4a.keywords.Common.Typeface.DEFAULT_BOLD);
-RDebugUtils.currentLine=18022421;
- //BA.debugLineNum = 18022421;BA.debugLine="p.AddView(lbl2, 10dip, 10dip, ScrollView1.Width";
+RDebugUtils.currentLine=25624597;
+ //BA.debugLineNum = 25624597;BA.debugLine="p.AddView(lbl2, 10dip, 10dip, ScrollView1.Width";
 _p.AddView((android.view.View)(_lbl2.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10)),(int) (mostCurrent._scrollview1.getWidth()-anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20))),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (30)));
-RDebugUtils.currentLine=18022423;
- //BA.debugLineNum = 18022423;BA.debugLine="Dim lbl As Label";
+RDebugUtils.currentLine=25624599;
+ //BA.debugLineNum = 25624599;BA.debugLine="Dim lbl As Label";
 _lbl = new anywheresoftware.b4a.objects.LabelWrapper();
-RDebugUtils.currentLine=18022424;
- //BA.debugLineNum = 18022424;BA.debugLine="lbl.Initialize(\"\")";
+RDebugUtils.currentLine=25624600;
+ //BA.debugLineNum = 25624600;BA.debugLine="lbl.Initialize(\"\")";
 _lbl.Initialize(mostCurrent.activityBA,"");
-RDebugUtils.currentLine=18022425;
- //BA.debugLineNum = 18022425;BA.debugLine="lbl.Text = \"Q: \" & card.Get(\"Q\") & CRLF & \"A: \"";
+RDebugUtils.currentLine=25624601;
+ //BA.debugLineNum = 25624601;BA.debugLine="lbl.Text = \"Q: \" & card.Get(\"Q\") & CRLF & \"A: \"";
 _lbl.setText(BA.ObjectToCharSequence("Q: "+BA.ObjectToString(_card.Get((Object)("Q")))+anywheresoftware.b4a.keywords.Common.CRLF+"A: "+BA.ObjectToString(_card.Get((Object)("A")))));
-RDebugUtils.currentLine=18022426;
- //BA.debugLineNum = 18022426;BA.debugLine="lbl.TextColor = Colors.black";
+RDebugUtils.currentLine=25624602;
+ //BA.debugLineNum = 25624602;BA.debugLine="lbl.TextColor = Colors.black";
 _lbl.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.Black);
-RDebugUtils.currentLine=18022427;
- //BA.debugLineNum = 18022427;BA.debugLine="lbl.TextSize = 12";
+RDebugUtils.currentLine=25624603;
+ //BA.debugLineNum = 25624603;BA.debugLine="lbl.TextSize = 12";
 _lbl.setTextSize((float) (12));
-RDebugUtils.currentLine=18022428;
- //BA.debugLineNum = 18022428;BA.debugLine="lbl.SingleLine = False";
+RDebugUtils.currentLine=25624604;
+ //BA.debugLineNum = 25624604;BA.debugLine="lbl.SingleLine = False";
 _lbl.setSingleLine(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=18022430;
- //BA.debugLineNum = 18022430;BA.debugLine="p.AddView(lbl, 10dip, 30dip, ScrollView1.Width";
+RDebugUtils.currentLine=25624606;
+ //BA.debugLineNum = 25624606;BA.debugLine="p.AddView(lbl, 10dip, 30dip, ScrollView1.Width";
 _p.AddView((android.view.View)(_lbl.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (30)),(int) (mostCurrent._scrollview1.getWidth()-anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20))),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (30)));
-RDebugUtils.currentLine=18022431;
- //BA.debugLineNum = 18022431;BA.debugLine="topPos = topPos + lbl.height + 10dip";
+RDebugUtils.currentLine=25624607;
+ //BA.debugLineNum = 25624607;BA.debugLine="topPos = topPos + lbl.height + 10dip";
 _toppos = (int) (_toppos+_lbl.getHeight()+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10)));
-RDebugUtils.currentLine=18022433;
- //BA.debugLineNum = 18022433;BA.debugLine="topPos = topPos + cardHeight + 10dip";
+RDebugUtils.currentLine=25624609;
+ //BA.debugLineNum = 25624609;BA.debugLine="topPos = topPos + cardHeight + 10dip";
 _toppos = (int) (_toppos+_cardheight+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10)));
  }
 };
-RDebugUtils.currentLine=18022435;
- //BA.debugLineNum = 18022435;BA.debugLine="ScrollView1.Panel.Height = topPos + 10dip";
+RDebugUtils.currentLine=25624611;
+ //BA.debugLineNum = 25624611;BA.debugLine="ScrollView1.Panel.Height = topPos + 10dip";
 mostCurrent._scrollview1.getPanel().setHeight((int) (_toppos+anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
-RDebugUtils.currentLine=18022437;
- //BA.debugLineNum = 18022437;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25624613;
+ //BA.debugLineNum = 25624613;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="deck_all_cards";
-RDebugUtils.currentLine=18153472;
- //BA.debugLineNum = 18153472;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=18153474;
- //BA.debugLineNum = 18153474;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25755648;
+ //BA.debugLineNum = 25755648;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=25755650;
+ //BA.debugLineNum = 25755650;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="deck_all_cards";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=18087936;
- //BA.debugLineNum = 18087936;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=18087937;
- //BA.debugLineNum = 18087937;BA.debugLine="ShowALLCards(cards)";
+RDebugUtils.currentLine=25690112;
+ //BA.debugLineNum = 25690112;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=25690113;
+ //BA.debugLineNum = 25690113;BA.debugLine="ShowALLCards(cards)";
 _showallcards(mostCurrent._cards);
-RDebugUtils.currentLine=18087938;
- //BA.debugLineNum = 18087938;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25690114;
+ //BA.debugLineNum = 25690114;BA.debugLine="End Sub";
 return "";
 }
 public static String  _addbtn_click() throws Exception{
 RDebugUtils.currentModule="deck_all_cards";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "addbtn_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "addbtn_click", null));}
-RDebugUtils.currentLine=18219008;
- //BA.debugLineNum = 18219008;BA.debugLine="Private Sub addbtn_Click";
-RDebugUtils.currentLine=18219009;
- //BA.debugLineNum = 18219009;BA.debugLine="StartActivity(Add_card_module)";
+RDebugUtils.currentLine=25821184;
+ //BA.debugLineNum = 25821184;BA.debugLine="Private Sub addbtn_Click";
+RDebugUtils.currentLine=25821185;
+ //BA.debugLineNum = 25821185;BA.debugLine="StartActivity(Add_card_module)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._add_card_module.getObject()));
-RDebugUtils.currentLine=18219010;
- //BA.debugLineNum = 18219010;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25821186;
+ //BA.debugLineNum = 25821186;BA.debugLine="End Sub";
 return "";
 }
 public static String  _backbtn_click() throws Exception{
 RDebugUtils.currentModule="deck_all_cards";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "backbtn_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "backbtn_click", null));}
-RDebugUtils.currentLine=18284544;
- //BA.debugLineNum = 18284544;BA.debugLine="Private Sub backbtn_Click";
-RDebugUtils.currentLine=18284545;
- //BA.debugLineNum = 18284545;BA.debugLine="Activity.finish";
+RDebugUtils.currentLine=25886720;
+ //BA.debugLineNum = 25886720;BA.debugLine="Private Sub backbtn_Click";
+RDebugUtils.currentLine=25886721;
+ //BA.debugLineNum = 25886721;BA.debugLine="Activity.finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=18284546;
- //BA.debugLineNum = 18284546;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25886722;
+ //BA.debugLineNum = 25886722;BA.debugLine="End Sub";
 return "";
 }
 }

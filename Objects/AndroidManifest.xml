@@ -100,7 +100,47 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
+			android:name=".subdeck_module"
+			android:label="Athena"
+			android:screenOrientation="portrait"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".add_card_module"
+			android:label="Athena"
+			android:screenOrientation="portrait"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".noteactivity"
+			android:label="Athena"
+			android:screenOrientation="portrait"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".editnote"
+			android:label="Athena"
+			android:screenOrientation="portrait"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
 			android:name=".active_recall"
+			android:label="Athena"
+			android:screenOrientation="portrait"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".add_card_module2"
 			android:label="Athena"
 			android:screenOrientation="portrait"
 			android:exported="true">
@@ -140,14 +180,6 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
-			android:name=".editnote"
-			android:label="Athena"
-			android:screenOrientation="portrait"
-			android:exported="true">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
 			android:name=".helpactivity"
 			android:label="Athena"
 			android:screenOrientation="portrait"
@@ -180,14 +212,6 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
-			android:name=".noteactivity"
-			android:label="Athena"
-			android:screenOrientation="portrait"
-			android:exported="true">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
 			android:name=".themeactivity"
 			android:label="Athena"
 			android:screenOrientation="portrait"
@@ -196,31 +220,7 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
-			android:name=".subdeck_module"
-			android:label="Athena"
-			android:screenOrientation="portrait"
-			android:exported="true">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
-			android:name=".add_card_module"
-			android:label="Athena"
-			android:screenOrientation="portrait"
-			android:exported="true">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
 			android:name=".card_module"
-			android:label="Athena"
-			android:screenOrientation="portrait"
-			android:exported="true">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
-			android:name=".add_card_module2"
 			android:label="Athena"
 			android:screenOrientation="portrait"
 			android:exported="true">

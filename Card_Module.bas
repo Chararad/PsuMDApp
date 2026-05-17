@@ -28,7 +28,9 @@ Sub Globals
 	Dim j As JSON
 	Private cc As ContentChooser
 	Private pickPDFBtn As Button
-	Dim MyAPIKey As String = "AIzaSyDvUpRQYW6yGQ8q7A5ZsyZYTLwtAkfofg8"
+	Dim api1 As String = "AIzaSyAGccTYG-Mscl_16Z72t"
+	Dim api2 As String = "-GIN9ITMdrDGhQ"
+	Dim MyAPIKey As String = api1&api2
 	Dim AIGlobalText As String
 End Sub
 

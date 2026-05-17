@@ -8,7 +8,7 @@ public class add_events_module_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,26);
+		Debug.PushSubsStack("Activity_Create (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,26);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 26;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -72,7 +72,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,64);
+		Debug.PushSubsStack("Activity_Pause (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,64);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 64;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -101,7 +101,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,52);
+		Debug.PushSubsStack("Activity_Resume (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,52);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","activity_resume");}
  BA.debugLineNum = 52;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(524288);
@@ -146,7 +146,7 @@ finally {
 		}}
 public static RemoteObject  _birthdayrb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("birthdayrb_CheckedChange (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,129);
+		Debug.PushSubsStack("birthdayrb_CheckedChange (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,129);
 if (RapidSub.canDelegate("birthdayrb_checkedchange")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","birthdayrb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 129;BA.debugLine="Private Sub birthdayrb_CheckedChange(Checked As Bo";
@@ -166,7 +166,7 @@ finally {
 		}}
 public static RemoteObject  _eventrb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("eventrb_CheckedChange (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,133);
+		Debug.PushSubsStack("eventrb_CheckedChange (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,133);
 if (RapidSub.canDelegate("eventrb_checkedchange")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","eventrb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 133;BA.debugLine="Private Sub eventrb_CheckedChange(Checked As Boole";
@@ -205,7 +205,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _mapinitializer() throws Exception{
 try {
-		Debug.PushSubsStack("MapInitializer (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,81);
+		Debug.PushSubsStack("MapInitializer (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,81);
 if (RapidSub.canDelegate("mapinitializer")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","mapinitializer");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _allevents = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -254,7 +254,7 @@ finally {
 		}}
 public static RemoteObject  _ooorb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("ooorb_CheckedChange (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,125);
+		Debug.PushSubsStack("ooorb_CheckedChange (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,125);
 if (RapidSub.canDelegate("ooorb_checkedchange")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","ooorb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 125;BA.debugLine="Private Sub ooorb_CheckedChange(Checked As Boolean";
@@ -283,7 +283,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _save_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("save_btn_Click (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,99);
+		Debug.PushSubsStack("save_btn_Click (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,99);
 if (RapidSub.canDelegate("save_btn_click")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","save_btn_click");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _getallevents = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -357,7 +357,7 @@ finally {
 		}}
 public static RemoteObject  _savecalendar() throws Exception{
 try {
-		Debug.PushSubsStack("SaveCalendar (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,77);
+		Debug.PushSubsStack("SaveCalendar (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,77);
 if (RapidSub.canDelegate("savecalendar")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","savecalendar");}
  BA.debugLineNum = 77;BA.debugLine="Sub SaveCalendar";
 Debug.ShouldStop(4096);
@@ -376,7 +376,7 @@ finally {
 		}}
 public static RemoteObject  _taskrb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("taskrb_CheckedChange (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,137);
+		Debug.PushSubsStack("taskrb_CheckedChange (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,137);
 if (RapidSub.canDelegate("taskrb_checkedchange")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","taskrb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 137;BA.debugLine="Private Sub taskrb_CheckedChange(Checked As Boolea";
@@ -396,7 +396,7 @@ finally {
 		}}
 public static RemoteObject  _x_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("x_btn_Click (add_events_module) ","add_events_module",10,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,73);
+		Debug.PushSubsStack("x_btn_Click (add_events_module) ","add_events_module",15,add_events_module.mostCurrent.activityBA,add_events_module.mostCurrent,73);
 if (RapidSub.canDelegate("x_btn_click")) { return b4a.example.add_events_module.remoteMe.runUserSub(false, "add_events_module","x_btn_click");}
  BA.debugLineNum = 73;BA.debugLine="Private Sub x_btn_Click";
 Debug.ShouldStop(256);

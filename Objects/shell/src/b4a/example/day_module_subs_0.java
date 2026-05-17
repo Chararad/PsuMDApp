@@ -155,7 +155,7 @@ Debug.ShouldStop(4096);
 _setupspinners();
  BA.debugLineNum = 111;BA.debugLine="Log(currentDate)";
 Debug.ShouldStop(16384);
-day_module.mostCurrent.__c.runVoidMethod ("LogImpl","36488122",day_module._currentdate,0);
+day_module.mostCurrent.__c.runVoidMethod ("LogImpl","310551354",day_module._currentdate,0);
  BA.debugLineNum = 113;BA.debugLine="End Sub";
 Debug.ShouldStop(65536);
 return RemoteObject.createImmutable("");
