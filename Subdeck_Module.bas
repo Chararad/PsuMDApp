@@ -4,7 +4,7 @@ ModulesStructureVersion=1
 Type=Activity
 Version=13.4
 @EndOfDesignText@
-	#Region  Activity Attributes 
+#Region  Activity Attributes 
 	#FullScreen: False
 	#IncludeTitle: False
 #End Region
@@ -37,15 +37,6 @@ Sub Globals
 	Private renamepanel As Panel
 	Private renameet As EditText
 	Private deleteconfirmation As Panel
-	Private topic_et As EditText
-	Private topic_panel As Panel
-	Dim j As JSON
-	Private cc As ContentChooser
-	Private pickPDFBtn As Button
-	Dim api1 As String = "AIzaSyAGccTYG-Mscl_16Z72t"
-	Dim api2 As String = "-GIN9ITMdrDGhQ"
-	Dim MyAPIKey As String = api1&api2
-	Dim AIGlobalText As String
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -77,7 +68,6 @@ Sub Activity_Create(FirstTime As Boolean)
 		LVSubdecks.SingleLineLayout.Label.textColor = Colors.White
 	End If
 	
-	cc.Initialize("CC")
 	'design for add button
 	Dim radius As Int = Addbtn.Width/2
 	Dim cd As ColorDrawable
@@ -288,185 +278,4 @@ End Sub
 
 Private Sub canceldelete_Click
 	deleteconfirmation.Visible = False
-End Sub
-
-Private Sub AI_cards_Click
-	If topic_panel.Visible = True Then
-		topic_panel.visible = False
-		Return
-	Else
-		topic_panel.Visible = True
-	End If
-	
-End Sub
-
-Private Sub topic_cancel_Click
-	topic_panel.Visible = False
-	topic_et.Text = ""
-End Sub
-
-Private Sub topic_btn_Click
-	If topic_et.Text = "" Then
-		Msgbox("Invalid Subdeck Topic", "Error")
-		Return
-	End If
-	
-	Dim getsubdeck As List
-	Dim tappeddeck As Map = FlashcardActivity.deck.Get(FlashcardActivity.selecteddeck)
-	For Each names As String In tappeddeck.keys
-		getsubdeck = tappeddeck.Get(selectedsubdeck)
-		If topic_et.Text = names Then
-			MsgboxAsync("Sub Deck Name Already Exist", "Error")
-			Return
-		End If
-	Next
-	
-	ProgressDialogShow("Generating Flashcards...")
-	
-	GenerateFlashCards(topic_et.Text)
-
-	topic_panel.Visible = False
-End Sub
-
-Sub GenerateFlashCards(Topic As String)
-	
-	Dim URL As String = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" & MyAPIKey
-	
-	Dim Job As HttpJob
-	Job.Initialize("Gemini", Me)
-	
-	Dim prompt As String = _
-	"Create flashcards from the Topic below." & _
-	"RULES:" & _
-	"- Return ONLY valid JSON" & _
-	"- No explanations" & _
-	"- No markdown" & _
-	"- Must have 20+ Flashcards" & _
-	"- Format must exactly follow this structure:" & _
-"{" & _
-	"""flashcards"": [" & _
-	"{" & _
-	"""question"": ""Question here""," & _
-	"""answer"": ""Answer here""" & _
-	"}" & _
-	"]" & _
-	"}" & _
-	"Topic:" & Topic
-	
-	Dim root As Map
-	root.Initialize
-	
-	Dim contents As List
-	contents.Initialize
-	
-	Dim contentItem As Map
-	contentItem.Initialize
-	
-	Dim parts As List
-	parts.Initialize
-	
-	Dim textPart As Map
-	textPart.Initialize
-	
-	textPart.Put("text", prompt)
-	parts.Add(textPart)
-	
-	contentItem.Put("parts", parts)
-	contents.Add(contentItem)
-	root.Put("contents", contents)
-	
-	Dim gen As JSONGenerator
-	gen.Initialize(root)
-	
-	Dim json As String = gen.ToString
-	
-	Log("REQUEST: ")
-	Log(json)
-	
-	Job.PostString(URL, json)
-	Job.GetRequest.SetContentType("application/json")
-	
-End Sub
-
-
-Sub JobDone (job As HttpJob)
-	ProgressDialogHide
-	If job.Success Then
-
-		Dim response As String = job.GetString
-		Log(response)
-
-		Dim jp As JSONParser
-		jp.Initialize(response)
-
-		Dim root As Map = jp.NextObject
-		Dim candidates As List = root.Get("candidates")
-		Dim candidate As Map = candidates.Get(0)
-		Dim content As Map = candidate.Get("content")
-		Dim parts As List = content.Get("parts")
-		Dim firstPart As Map = parts.Get(0)
-
-		Dim aiText As String = firstPart.Get("text")
-		AIGlobalText = aiText
-
-		File.WriteString(File.DirInternal, "cached_ai.txt", aiText)
-
-		Dim flashcards As List = ParseFlashcard(aiText)
-		
-		Dim tappeddeck As Map = FlashcardActivity.deck.Get(FlashcardActivity.selecteddeck)
-
-		LVSubdecks.AddSingleLine(topic_et.Text)
-		tappeddeck.Put(topic_et.Text, flashcards)
-		topic_et.Text = ""
-		SaveDecks
-
-	Else
-		Log(job.ErrorMessage)
-		Msgbox("Error making your AI Flashcards", "Error")
-	End If
-
-	job.Release
-End Sub
-
-
-Sub ParseFlashcard (jsonText As String) As List
-	
-	Dim flashcard As List
-	flashcard.Initialize
-	Try
-
-		Dim jp As JSONParser
-		jp.Initialize(jsonText)
-
-		Dim root As Map = jp.NextObject
-
-		Dim flashcards As List = root.Get("flashcards")
-
-		For Each card As Map In flashcards
-			
-			Dim cards As Map
-			cards.initialize
-
-			Dim question As String = card.Get("question")
-
-			Dim answer As String = card.Get("answer")
-			
-			cards.Put("Q", question)
-			cards.Put("A", answer)
-			flashcard.Add(cards)
-
-			Log("===================")
-			Log("QUESTION: " & question)
-			Log("ANSWER: " & answer)
-
-		Next
-
-	Catch
-
-		Log("INVALID JSON")
-
-	End Try
-	
-	
-	Return flashcard
 End Sub

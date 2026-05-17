@@ -352,14 +352,14 @@ Private Sub noteWindow(pW As Int, pH As Int)
 		Case 1
 			If Starter.darkMode Then
 				notePnl.Color = xui.Color_RGB(50, 50, 50)
-				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				notePnl.SetColorAndBorder(xui.Color_RGB(27, 98, 161), 2dip, xui.Color_RGB(16, 26, 95), 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "dark Skeumorphic Button blue.png"))
 				addnBtn.Background = bd
 				addnBtn.TextColor = Colors.White
 			Else
-				notePnl.Color = xui.Color_RGB(50, 50, 50)
-				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				notePnl.Color = xui.Color_RGB(255, 255, 255)
+				notePnl.SetColorAndBorder(xui.Color_RGB(51, 187, 152), 2dip, xui.Color_White, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "Skeumorphic Button 03.png"))
 				addnBtn.Background = bd
 				addnBtn.TextColor = Colors.White
 			End If
@@ -418,14 +418,14 @@ Private Sub canvasWindow(pW As Int, pH As Int)
 		Case 1
 			If Starter.darkMode Then
 				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
-				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				canvasPnl.SetColorAndBorder(xui.Color_RGB(27, 98, 161), 2dip, xui.Color_RGB(16, 26, 95), 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "dark Skeumorphic Button blue.png"))
 				addcBtn.Background = bd
 				addcBtn.TextColor = Colors.White
 			Else
-				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
-				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				canvasPnl.Color = xui.Color_RGB(255, 255, 255)
+				canvasPnl.SetColorAndBorder(xui.Color_RGB(51, 187, 152), 2dip, xui.Color_Black, 3dip)
+				bd.Initialize(LoadBitmap(File.DirAssets, "Skeumorphic Button 03.png"))
 				addcBtn.Background = bd
 				addcBtn.TextColor = Colors.White
 			End If

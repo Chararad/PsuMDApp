@@ -44,12 +44,12 @@ Sub Activity_Create(FirstTime As Boolean)
 		Case 1
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Schedule_ModuleLayout2")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				bd.Initialize(LoadBitmap(File.DirAssets, "Skeumorphic Pink .png"))
 				sched_btn.Background = bd
 				sched_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Schedule_ModuleLayoutDark2")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
+				bd.Initialize(LoadBitmap(File.DirAssets, "pink Skeumorphic Button DARK.png"))
 				sched_btn.Background = bd
 				sched_btn.TextColor = Colors.White
 			End If
@@ -109,11 +109,11 @@ Sub DrawSchedule
 				End If
 			Case 1
 				If Starter.darkMode Then
-					lbldate.Color = Colors.ARGB(120, 23, 20, 36)
-					lbldate.TextColor = Colors.Cyan
+					lbldate.Color = Colors.ARGB(120, 16, 26, 95)
+					lbldate.TextColor = Colors.White
 				Else
-					lbldate.Color = Colors.ARGB(120, 23, 20, 36)
-					lbldate.TextColor = Colors.Cyan
+					lbldate.Color = Colors.ARGB(200, 137, 162, 185)
+					lbldate.TextColor = Colors.White
 				End If
 			Case 2
 				If Starter.darkMode Then
