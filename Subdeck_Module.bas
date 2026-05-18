@@ -68,15 +68,15 @@ Sub Activity_Create(FirstTime As Boolean)
 		LVSubdecks.SingleLineLayout.Label.textColor = Colors.White
 	End If
 	
-	'design for add button
-	Dim radius As Int = Addbtn.Width/2
-	Dim cd As ColorDrawable
-	cd.Initialize(Colors.Gray, radius)
-	Addbtn.Background = cd
-	
 	'to label the deck chosen erlier
 	decknamelabel.Text = selecteddeck
 	
+	addpanel.Visible = False
+	addpanel2.Visible = False
+	AR_confirmationpanel.Visible = False
+	alterpanel.Visible = False
+	renamepanel.Visible = False
+	deleteconfirmation.Visible = False
 	
 	Refresh
 	
@@ -243,29 +243,29 @@ Private Sub cancelrename_Click
 End Sub
 
 Private Sub confirmrename_Click
-	
-	Dim getsubdeck As List
 	Dim tappeddeck As Map = FlashcardActivity.deck.Get(FlashcardActivity.selecteddeck)
+    
 	If renameet.Text = "" Then
 		MsgboxAsync("New Name must have a name", "Error")
 		Return
 	End If
-	For Each names As String In tappeddeck.keys
-		getsubdeck = tappeddeck.Get(selectedsubdeck)
+    
+	' Get the cards BEFORE the loop
+	Dim getsubdeck As List = tappeddeck.Get(selectedsubdeck)
+    
+	For Each names As String In tappeddeck.Keys
 		If renameet.Text = names Then
 			MsgboxAsync("Sub Deck Name Already Exist", "Error")
 			Return
 		End If
 	Next
+    
 	tappeddeck.Remove(selectedsubdeck)
 	tappeddeck.Put(renameet.Text, getsubdeck)
-	renameet.text = ""
+	renameet.Text = ""
 	SaveDecks
 	Refresh
 	renamepanel.Visible = False
-	renamepanel.Visible = False
-	
-	
 End Sub
 
 Private Sub confirmdelete_Click
