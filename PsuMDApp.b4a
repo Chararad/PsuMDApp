@@ -1093,15 +1093,18 @@ FileGroup98=New Group
 FileGroup99=Default Group
 Group=Default Group
 Library1=b4xgifview
-Library10=sd_xui_dragview
+Library10=sql
+Library11=xcustomlistview
+Library12=xui
+Library13=stringutils
 Library2=core
 Library3=javaobject
-Library4=keyvaluestore
-Library5=keyvaluestore2
-Library6=phone
-Library7=sql
-Library8=xcustomlistview
-Library9=xui
+Library4=json
+Library5=keyvaluestore
+Library6=keyvaluestore2
+Library7=okhttputils2
+Library8=phone
+Library9=sd_xui_dragview
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="35"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~SetApplicationAttribute(android:largeHeap, "true")~\n~'End of default text.~\n~
 Module1=active_recall
 Module10=day_module
@@ -1109,17 +1112,20 @@ Module11=deck_all_cards
 Module12=editnote
 Module13=FlashcardActivity
 Module14=helpActivity
-Module15=MainActivity
-Module16=musicActivity
-Module17=musicService
-Module18=navActivity
-Module19=noteActivity
+Module15=Home_Activity
+Module16=LogIn
+Module17=MainActivity
+Module18=musicActivity
+Module19=musicService
 Module2=Add_card_module
-Module20=Schedule_module
-Module21=Starter
-Module22=Subdeck_Module
-Module23=themeActivity
-Module24=todoActivity
+Module20=navActivity
+Module21=noteActivity
+Module22=Register
+Module23=Schedule_module
+Module24=Starter
+Module25=Subdeck_Module
+Module26=themeActivity
+Module27=todoActivity
 Module3=add_card_module2
 Module4=add_events_module
 Module5=all_active_recall
@@ -1128,8 +1134,8 @@ Module7=Card_Module
 Module8=clockActivity
 Module9=corkActivity
 NumberOfFiles=546
-NumberOfLibraries=10
-NumberOfModules=24
+NumberOfLibraries=13
+NumberOfModules=27
 Version=13.4
 @EndOfDesignText@
 #Region  Project Attributes 
@@ -1175,7 +1181,7 @@ Sub startLoad As ResumableSub
 		Sleep(100)
 	Loop
 	StartService(musicService)
-	StartActivity(MainActivity)
+	StartActivity(Home_Activity)
 	
 	Activity.Finish
 	Return True

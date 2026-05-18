@@ -23,6 +23,7 @@ Sub Process_Globals
 	Public deck As Map
 	Public finishedInit As Boolean = False
 	Public themeChanged As Boolean = False
+	Public SQL1 As SQL
 End Sub
 
 Sub Service_Create
@@ -56,6 +57,13 @@ Sub Service_Create
 	CopyTracksIfNeeded
 	
 	finishedInit = True
+	
+	SQL1.Initialize(File.DirInternal, "users.db", True)
+	SQL1.ExecNonQuery("CREATE TABLE IF NOT EXISTS users (" & _
+                      "id INTEGER PRIMARY KEY AUTOINCREMENT, " & _
+                      "email TEXT UNIQUE, " & _
+                      "name TEXT, " & _
+                      "password TEXT)")
 End Sub
 
 Sub Service_Start (StartingIntent As Intent)
