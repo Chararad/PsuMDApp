@@ -39,6 +39,9 @@ Sub Globals
 	Private progressNumber As Label
 	Private progressPercent As Label
 	Private progressBar As ProgressBar
+	
+	Dim pixeltf As Typeface
+	pixeltf = Typeface.LoadFromAssets("minecraft.ttf")
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -89,28 +92,55 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 Sub newAddTaskBtn
-	If Starter.darkMode Then
-		addTaskBtnPNL.Initialize("addTaskBtnPNL")
-		addTaskBtnPNL.SetLayout(0, 0, 235dip, 50dip)
-		addTaskBtnPNL.Color = Colors.ARGB(255, 17, 17, 17)
-	
-		addTaskBtn.Initialize("addTaskBtn")
-		addTaskBtn.Text = "+ add a task "
-		addTaskBtn.TextColor = Colors.DarkGray
-		addTaskBtnPNL.AddView(addTaskBtn, -10dip, 0dip, addTaskBtnPNL.Width, addTaskBtnPNL.Height)
-	
-		tasksList.Add(addTaskBtnPNL, "")
-	Else
 	addTaskBtnPNL.Initialize("addTaskBtnPNL")
-	addTaskBtnPNL.SetLayout(0, 0, 235dip, 50dip)
-	addTaskBtnPNL.Color = Colors.ARGB(255, 250, 250, 250)
-	
+	addTaskBtnPNL.SetLayout(10dip, 0dip, 200dip, 70dip)
+	addTaskBtnPNL.Color = Colors.ARGB(0, 255, 255, 255)
 	addTaskBtn.Initialize("addTaskBtn")
 	addTaskBtn.Text = "+ add a task "
-	addTaskBtnPNL.AddView(addTaskBtn, -10dip, 0dip, addTaskBtnPNL.Width, addTaskBtnPNL.Height)
-	
+	addTaskBtnPNL.AddView(addTaskBtn, 10dip, 20dip, addTaskBtnPNL.Width, 50dip)
 	tasksList.Add(addTaskBtnPNL, "")
-	End If
+	
+	Dim cd As ColorDrawable
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode Then
+				addTaskBtn.TextColor = Colors.DarkGray
+				cd.Initialize(Colors.ARGB(255, 59, 117, 151), 200) ' 200 = corner radius
+				addTaskBtn.Background = cd
+				addTaskBtn.TextColor = Colors.White
+			Else
+				addTaskBtnPNL.Color = Colors.Transparent
+				cd.Initialize(Colors.ARGB(255, 98, 43, 20), 200) ' 200 = corner radius
+				addTaskBtn.Background = cd
+				addTaskBtn.TextColor = Colors.White
+			End If
+		Case 1
+			If Starter.darkMode Then
+				addTaskBtn.TextColor = Colors.DarkGray
+				cd.Initialize(Colors.ARGB(120, 90, 105, 136), 200) ' 200 = corner radius
+				addTaskBtn.Background = cd
+				addTaskBtn.TextColor = Colors.White
+			Else
+				addTaskBtnPNL.Color = Colors.Transparent
+				cd.Initialize(Colors.ARGB(120, 255, 255, 255), 200) ' 200 = corner radius
+				addTaskBtn.Background = cd
+				addTaskBtn.TextColor = Colors.Black
+			End If
+		Case 2
+			addTaskBtn.Typeface = pixeltf
+			If Starter.darkMode Then
+				addTaskBtn.TextColor = Colors.DarkGray
+				cd.Initialize(Colors.ARGB(120, 90, 105, 136), 200) ' 200 = corner radius
+				addTaskBtn.Background = cd
+				addTaskBtn.TextColor = Colors.White
+			Else
+				addTaskBtnPNL.Color = Colors.ARGB(0, 232, 213, 179)
+				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				addTaskBtn.Background = cd
+				addTaskBtn.TextColor = Colors.Black
+			End If
+	End Select
+	
 End Sub
 
 Sub newListBtn_Click
@@ -355,28 +385,66 @@ Sub addTaskBtn_Click
 	tasksList.RemoveAt(tasksList.Size - 1)
 	
 	addTaskPanel.Initialize("addTaskPanel")
-	addTaskPanel.SetLayout(10dip, 0, 250dip, 100dip)
-	If Starter.darkMode Then
-		addTaskPanel.Color = Colors.ARGB(255, 17, 17, 17)
-	Else
-		addTaskPanel.Color = Colors.ARGB(255, 247, 247, 247)
-	End If
-	
+	addTaskPanel.SetLayout(10dip, 0, 250dip, 120dip)
+	addTaskPanel.Color = Colors.ARGB(0, 255, 255, 255)
 	
 	addTaskTextArea.Initialize("addTodoText")
 	addTaskTextArea.Hint = "Add a task..."
-	If Starter.darkMode Then
-		addTaskTextArea.HintColor = Colors.ARGB(255, 247, 247, 247)
-	Else
-		addTaskTextArea.HintColor = Colors.ARGB(255, 17, 17, 17)
-	End If
 	addTaskTextArea.Tag = Null
-		
+	
 	enterTaskBtn.Initialize("enterTaskBtn")
 	enterTaskBtn.Text = "Enter task"
 	
+	Dim cd As ColorDrawable
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode Then
+				addTaskTextArea.HintColor = Colors.ARGB(100, 247, 247, 247)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(255, 59, 117, 151), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			Else
+				addTaskTextArea.HintColor = Colors.ARGB(120, 184, 120, 46)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(120, 98, 43, 20), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			End If
+		Case 1
+			If Starter.darkMode Then
+				addTaskTextArea.HintColor = Colors.ARGB(100, 247, 247, 247)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(100, 255, 255, 255), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			Else
+				addTaskTextArea.HintColor = Colors.ARGB(255, 137, 162, 185)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(255, 137, 162, 185), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			End If
+		Case 2
+			addTaskTextArea.Typeface = pixeltf
+			enterTaskBtn.Typeface = pixeltf
+			If Starter.darkMode Then
+				addTaskTextArea.HintColor = Colors.ARGB(100, 247, 247, 247)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(120, 90, 105, 136), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			Else
+				addTaskTextArea.HintColor = Colors.ARGB(100, 17, 17, 17)
+				addTaskTextArea.TextColor = Colors.Black
+				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.Black
+			End If
+	End Select
+	
 	addTaskPanel.AddView(addTaskTextArea, 0, 0, addTaskBtnPNL.Width, 60dip)
-	addTaskPanel.AddView(enterTaskBtn, 0, 50dip, addTaskBtnPNL.Width, 40dip)
+	addTaskPanel.AddView(enterTaskBtn, 0, 70dip, addTaskBtnPNL.Width, 40dip)
 	
 	tasksList.Add(addTaskPanel, addTaskPanel)
 	
@@ -488,8 +556,8 @@ Sub showRenameTaskPanel(Index As Int, oldTask As String)
 	tasksList.RemoveAt(tasksList.Size - 1) ' remove "+ add a task" btn
 
 	addTaskPanel.Initialize("addTaskPanel")
-	addTaskPanel.SetLayout(10dip, 0, 250dip, 100dip)
-	addTaskPanel.Color = Colors.ARGB(255, 247, 247, 247)
+	addTaskPanel.SetLayout(10dip, 0, 250dip, 120dip)
+	addTaskPanel.Color = Colors.ARGB(0, 247, 247, 247)
 
 	addTaskTextArea.Initialize("addTodoText")
 	addTaskTextArea.Text = oldTask
@@ -501,9 +569,57 @@ Sub showRenameTaskPanel(Index As Int, oldTask As String)
 
 	enterTaskBtn.Initialize("enterTaskBtn")
 	enterTaskBtn.Text = "Rename task"
+	
+	Dim cd As ColorDrawable
+	Select Starter.themeNumber
+		Case 0
+			If Starter.darkMode Then
+				addTaskTextArea.HintColor = Colors.ARGB(100, 247, 247, 247)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			Else
+				addTaskTextArea.HintColor = Colors.ARGB(100, 17, 17, 17)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			End If
+		Case 1
+			If Starter.darkMode Then
+				addTaskTextArea.HintColor = Colors.ARGB(100, 247, 247, 247)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			Else
+				addTaskTextArea.HintColor = Colors.ARGB(100, 17, 17, 17)
+				addTaskTextArea.TextColor = Colors.Black
+				cd.Initialize(Colors.ARGB(255, 137, 162, 185), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.Black
+			End If
+		Case 2
+			addTaskTextArea.Typeface = pixeltf
+			enterTaskBtn.Typeface = pixeltf
+			If Starter.darkMode Then
+				addTaskTextArea.HintColor = Colors.ARGB(100, 247, 247, 247)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(120, 90, 105, 136), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.White
+			Else
+				addTaskTextArea.HintColor = Colors.ARGB(100, 17, 17, 17)
+				addTaskTextArea.TextColor = Colors.Black
+				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				enterTaskBtn.Background = cd
+				enterTaskBtn.TextColor = Colors.Black
+			End If
+	End Select
 
 	addTaskPanel.AddView(addTaskTextArea, 0, 0, addTaskBtnPNL.Width, 60dip)
-	addTaskPanel.AddView(enterTaskBtn, 0, 50dip, addTaskBtnPNL.Width, 40dip)
+	addTaskPanel.AddView(enterTaskBtn, 0, 70dip, addTaskBtnPNL.Width, 40dip)
 
 	tasksList.Add(addTaskPanel, addTaskPanel)
 

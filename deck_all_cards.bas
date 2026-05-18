@@ -76,7 +76,7 @@ Sub ShowALLCards(CardsList As List)
 			Dim card As Map = CardsList.Get(i)
 			Dim p As Panel
 			p.Initialize("")
-			p.Color = Colors.White
+			p.Color = Colors.Transparent
 			ScrollView1.Panel.AddView(p, 10dip, topPos, ScrollView1.Width - 20dip, cardHeight)
 		
 			Dim lbl2 As Label
