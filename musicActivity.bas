@@ -12,17 +12,113 @@ Version=13.4
 Sub Process_Globals
 	Private xui As XUI
 	Dim uiTimer As Timer
+	Private currentPage As Int
+	Private totalPages As Int = 3
+	Private chooser As ContentChooser
+	Private skipTutorial As Boolean = False
 End Sub
 
 Sub Globals
+	Private lblDesc As Label
+	Private btnnext As Button
+	Private chkDontShow As CheckBox
+	
 	Private SeekBar1 As SeekBar
 	Private songTitle As Label
 	Private pauseBtn As Button
 	Private songRuntime As Label
 	Private ListView1 As ListView
+	Private btnUpload As Button
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
+	chooser.Initialize("chooser")
+	currentPage = 0
+	
+	If skipTutorial Then
+		LoadMusicPlayer
+	Else
+		ShowTutorialPage
+	End If
+End Sub
+
+Sub ShowTutorialPage
+	Activity.RemoveAllViews
+	
+	' Description Label
+	lblDesc.Initialize("")
+	lblDesc.TextSize = 18
+	lblDesc.TextColor = Colors.RGB(20, 40, 80)
+	lblDesc.Gravity = Gravity.CENTER
+	lblDesc.Typeface = Typeface.DEFAULT_BOLD
+	lblDesc.SetLayout(20dip, 30dip, 100%x - 40dip, 60%y)
+	Activity.AddView(lblDesc, 20dip, 30dip, 100%x - 40dip, 60%y)
+	
+	' Checkbox
+	chkDontShow.Initialize("")
+	chkDontShow.Text = "🙈 Don't show this again"
+	chkDontShow.TextSize = 14
+	chkDontShow.Typeface = Typeface.DEFAULT
+	chkDontShow.SetLayout(20dip, 68%y, 200dip, 30dip)
+	Activity.AddView(chkDontShow, 20dip, 68%y, 200dip, 30dip)
+	
+	' Next Button
+	btnnext.Initialize("btnnext")
+	btnnext.TextSize = 16
+	btnnext.Color = Colors.RGB(100, 120, 180)
+	btnnext.TextColor = Colors.White
+	btnnext.Typeface = Typeface.DEFAULT_BOLD
+	btnnext.SetLayout(50dip, 75%y, 200dip, 50dip)
+	Activity.AddView(btnnext, 50dip, 75%y, 200dip, 50dip)
+	
+	' Tutorial Texts
+	If currentPage = 0 Then
+		lblDesc.Text = "🎵 WELCOME TO MUSIC PLAYER 🎵" & CRLF & CRLF & _
+		"Easily play, pause, skip " & CRLF & CRLF & _
+		"and enjoy all your music." & CRLF & CRLF & _
+		"Everything you need is right here."
+		btnnext.Text = "➡️ Next"
+		
+	else If currentPage = 1 Then
+		lblDesc.Text = "️ HOW TO USE THE BUTTONS: ️" & CRLF & CRLF & _
+		"⏮️  PREVIOUS  " & CRLF & CRLF & _
+		"  Click: Go back to last song" & CRLF & CRLF & _
+		"⏯️  PLAY/PAUSE" & CRLF & CRLF & _
+		"  Click: Start/stop music" & CRLF & CRLF & _
+		"⏭️  NEXT      " & CRLF & CRLF & _
+		"  Click: Next song" & CRLF & CRLF & _
+		"📜  SONG LIST " & CRLF & CRLF & _
+		"  Tap: Play song" 
+		btnnext.Text = "➡️ Next"
+		
+	else If currentPage = 2 Then
+		lblDesc.Text = "✅ ALL DONE! ✅" & CRLF & CRLF & _
+		"Now you know all features." & CRLF & CRLF & _
+		"Upload your own music" & CRLF & CRLF & _
+		"anytime from the Main player." & CRLF & CRLF & _
+		"Enjoy listening!"
+		btnnext.Text = "✅ Finish"
+	End If
+End Sub
+
+Sub btnnext_Click
+	currentPage = currentPage + 1
+	If currentPage < totalPages Then
+		ShowTutorialPage
+	Else
+
+		If chkDontShow.Checked = True Then
+			skipTutorial = True
+		Else
+			skipTutorial = False
+		End If
+		LoadMusicPlayer
+	End If
+End Sub
+
+Sub LoadMusicPlayer
+	Activity.RemoveAllViews
+	
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode = False Then
@@ -44,26 +140,60 @@ Sub Activity_Create(FirstTime As Boolean)
 			End If
 	End Select
     
-	' Populate ListView from service playlist
 	If musicService.mediaPlayer.IsInitialized = False Then
 		StartService(musicService)
 	End If
     
+	btnUpload.Initialize("btnUpload")
+	btnUpload.Text = "📤 UPLOAD MUSIC"
+	btnUpload.TextSize = 14
+	btnUpload.Color = Colors.RGB(40, 120, 200)
+	btnUpload.TextColor = Colors.White
+	btnUpload.Typeface = Typeface.DEFAULT_BOLD
+	btnUpload.SetLayout(50dip, 92%y, 200dip, 40dip)
+	Activity.AddView(btnUpload, 50dip, 92%y, 200dip, 40dip)
+	
+	' Load songs
 	For i = 0 To musicService.musicPlaylist.Size - 1
-		Dim title As String = musicService.musicPlaylist.Get(i)
-		title = title.SubString2(0, title.Length - 4)  ' remove .mp3
-		title = title.SubString(7)                      ' remove "tracks/"
+		Dim title As String
+		title = musicService.musicPlaylist.Get(i)
+		title = title.SubString2(0, title.Length - 4)
+		title = title.SubString(7)
 		ListView1.AddSingleLine((i + 1) & "   " & title)
 		If Starter.themeNumber = 2 And Starter.darkMode = True Then
 			ListView1.SingleLineLayout.Label.TextColor = Colors.White
-			Else
+		Else
 			ListView1.SingleLineLayout.Label.TextColor = Colors.RGB(24, 20, 37)
 		End If
 	Next
     
-	' UI update timer
 	uiTimer.Initialize("uiTimer", 500)
 	uiTimer.Enabled = True
+End Sub
+
+Sub btnUpload_Click
+	chooser.Show("audio/*", "Choose Music File")
+End Sub
+
+Sub chooser_Result (Success As Boolean, Dir As String, FileName As String)
+	If Success Then
+		Dim songName As String
+		songName = FileName.SubString(FileName.LastIndexOf("/") + 1)
+		ListView1.AddSingleLine(songName)
+		ToastMessageShow("✅ Added: " & songName, False)
+	End If
+End Sub
+
+Sub ListView1_ItemLongClick (Position As Int, Value As Object)
+	Msgbox("📝 DETAILED SONG INFO:" & CRLF & CRLF & _
+	"Title: " & Value & CRLF & _
+	"Duration: 03:45" & CRLF & _
+	"Size: 4.2 MB" & CRLF & _
+	"Path: Internal Storage/Music/", "Song Details")
+End Sub
+
+Sub ListView1_ItemClick(Position As Int, Value As Object)
+	CallSub2(musicService, "setSong", Position)
 End Sub
 
 Sub Activity_Resume
@@ -75,19 +205,20 @@ Sub Activity_Pause(UserClosed As Boolean)
 End Sub
 
 Sub formatSongDur(ms As Int) As String
-	Dim seconds As Int = ms / 1000
-	Dim minutes As Int = seconds / 60
+	Dim seconds As Int
+	Dim minutes As Int
+	seconds = ms / 1000
+	minutes = seconds / 60
 	seconds = seconds Mod 60
 	Return NumberFormat(minutes, 2, 0) & ":" & NumberFormat(seconds, 2, 0)
 End Sub
 
-' Updates UI from service state
 Sub uiTimer_Tick
 	If musicService.mediaPlayer.IsInitialized Then
-        
-		Dim title As String = musicService.musicPlaylist.Get(musicService.currentSong)
-		title = title.SubString2(0, title.Length - 4)  'remove .mp3
-		title = title.SubString(7) 'remove /tracks
+		Dim title As String
+		title = musicService.musicPlaylist.Get(musicService.currentSong)
+		title = title.SubString2(0, title.Length - 4)
+		title = title.SubString(7)
 		
 		SeekBar1.Max = musicService.mediaPlayer.Duration
 		SeekBar1.Value = musicService.mediaPlayer.Position
@@ -119,8 +250,4 @@ End Sub
 
 Sub pauseBtn_Click
 	CallSub(musicService, "pauseToggle")
-End Sub
-
-Sub ListView1_ItemClick(Position As Int, Value As Object)
-	CallSub2(musicService, "setSong", Position)
 End Sub
