@@ -16,6 +16,7 @@ Sub Process_Globals
 	Private totalPages As Int = 3
 	Private chooser As ContentChooser
 	Private skipTutorial As Boolean = False
+	Private saveCheckState As Boolean = False
 End Sub
 
 Sub Globals
@@ -29,6 +30,7 @@ Sub Globals
 	Private songRuntime As Label
 	Private ListView1 As ListView
 	Private btnUpload As Button
+	Private Panel1 As Panel
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -47,20 +49,23 @@ Sub ShowTutorialPage
 	
 	' Description Label
 	lblDesc.Initialize("")
-	lblDesc.TextSize = 18
+	lblDesc.TextSize = 20	
 	lblDesc.TextColor = Colors.RGB(20, 40, 80)
 	lblDesc.Gravity = Gravity.CENTER
 	lblDesc.Typeface = Typeface.DEFAULT_BOLD
 	lblDesc.SetLayout(20dip, 30dip, 100%x - 40dip, 60%y)
 	Activity.AddView(lblDesc, 20dip, 30dip, 100%x - 40dip, 60%y)
-	
+
 	' Checkbox
-	chkDontShow.Initialize("")
+	If currentPage = 2 Then
+	chkDontShow.Initialize("chkDontShow")
 	chkDontShow.Text = "🙈 Don't show this again"
 	chkDontShow.TextSize = 14
 	chkDontShow.Typeface = Typeface.DEFAULT
-	chkDontShow.SetLayout(20dip, 68%y, 200dip, 30dip)
-	Activity.AddView(chkDontShow, 20dip, 68%y, 200dip, 30dip)
+	chkDontShow.Checked = saveCheckState
+	chkDontShow.SetLayout(20dip, 55%y, 200dip, 30dip)
+	Activity.AddView(chkDontShow, 20dip, 55%y, 200dip, 30dip)
+	End If
 	
 	' Next Button
 	btnnext.Initialize("btnnext")
@@ -68,50 +73,46 @@ Sub ShowTutorialPage
 	btnnext.Color = Colors.RGB(100, 120, 180)
 	btnnext.TextColor = Colors.White
 	btnnext.Typeface = Typeface.DEFAULT_BOLD
-	btnnext.SetLayout(50dip, 75%y, 200dip, 50dip)
-	Activity.AddView(btnnext, 50dip, 75%y, 200dip, 50dip)
+	btnnext.SetLayout(50dip, 60%y, 200dip, 50dip)
+	Activity.AddView(btnnext, 50dip, 60%y, 200dip, 50dip)
 	
 	' Tutorial Texts
 	If currentPage = 0 Then
 		lblDesc.Text = "🎵 WELCOME TO MUSIC PLAYER 🎵" & CRLF & CRLF & _
 		"Easily play, pause, skip " & CRLF & CRLF & _
-		"and enjoy all your music." & CRLF & CRLF & _
-		"Everything you need is right here."
+		"and enjoy all your music " & CRLF & CRLF & _
+		"Everything you need is right here "
 		btnnext.Text = "➡️ Next"
 		
 	else If currentPage = 1 Then
-		lblDesc.Text = "️ HOW TO USE THE BUTTONS: ️" & CRLF & CRLF & _
-		"⏮️  PREVIOUS  " & CRLF & CRLF & _
-		"  Click: Go back to last song" & CRLF & CRLF & _
-		"⏯️  PLAY/PAUSE" & CRLF & CRLF & _
-		"  Click: Start/stop music" & CRLF & CRLF & _
-		"⏭️  NEXT      " & CRLF & CRLF & _
-		"  Click: Next song" & CRLF & CRLF & _
-		"📜  SONG LIST " & CRLF & CRLF & _
-		"  Tap: Play song" 
+		lblDesc.Text = "️HOW TO USE THE BUTTONS: ️" & CRLF & CRLF & _
+		"⏮️ PREVIOUS: Go back to last song " & CRLF & CRLF & _
+		"⏯️ PLAY/PAUSE: Start/stop music" & CRLF & CRLF & _
+		"⏭️ NEXT: Go to the next song" 
 		btnnext.Text = "➡️ Next"
 		
 	else If currentPage = 2 Then
 		lblDesc.Text = "✅ ALL DONE! ✅" & CRLF & CRLF & _
-		"Now you know all features." & CRLF & CRLF & _
+		"Now you know all features " & CRLF & CRLF & _
 		"Upload your own music" & CRLF & CRLF & _
-		"anytime from the Main player." & CRLF & CRLF & _
+		"Anytime from the Main player " & CRLF & CRLF & _
 		"Enjoy listening!"
 		btnnext.Text = "✅ Finish"
 	End If
 End Sub
-
 Sub btnnext_Click
 	currentPage = currentPage + 1
+	
 	If currentPage < totalPages Then
 		ShowTutorialPage
 	Else
-
-		If chkDontShow.Checked = True Then
+		
+		If chkDontShow.Checked Then
 			skipTutorial = True
 		Else
 			skipTutorial = False
 		End If
+		
 		LoadMusicPlayer
 	End If
 End Sub
@@ -185,7 +186,7 @@ Sub chooser_Result (Success As Boolean, Dir As String, FileName As String)
 End Sub
 
 Sub ListView1_ItemLongClick (Position As Int, Value As Object)
-	Msgbox("📝 DETAILED SONG INFO:" & CRLF & CRLF & _
+	MsgboxAsync ("📝 DETAILED SONG INFO:" & CRLF & CRLF & _
 	"Title: " & Value & CRLF & _
 	"Duration: 03:45" & CRLF & _
 	"Size: 4.2 MB" & CRLF & _
@@ -251,3 +252,4 @@ End Sub
 Sub pauseBtn_Click
 	CallSub(musicService, "pauseToggle")
 End Sub
+
