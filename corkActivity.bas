@@ -334,19 +334,20 @@ Private Sub noteWindow(pW As Int, pH As Int)
 	notePnl.Visible = False
 	
 	Dim bd As BitmapDrawable
+	Dim cd As ColorDrawable
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode Then
 				notePnl.Color = xui.Color_RGB(50, 50, 50)
-				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				addnBtn.Background = bd
-				addnBtn.TextColor = Colors.White
+				notePnl.SetColorAndBorder(xui.Color_RGB(187, 213, 218), 2dip, xui.Color_Black, 3dip)
+				cd.Initialize(Colors.ARGB(255, 59, 117, 151), 200)
+				addnBtn.Background = cd
+				addnBtn.TextColor = Colors.Black
 			Else
 				notePnl.Color = xui.Color_RGB(50, 50, 50)
-				notePnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				addnBtn.Background = bd
+				notePnl.SetColorAndBorder(xui.Color_RGB(227, 193, 159), 2dip, xui.Color_Black, 3dip)
+				cd.Initialize(Colors.ARGB(255, 98, 43, 20), 200)
+				addnBtn.Background = cd
 				addnBtn.TextColor = Colors.White
 			End If
 		Case 1
@@ -400,19 +401,20 @@ Private Sub canvasWindow(pW As Int, pH As Int)
 	canvasPnl.Visible = False
 	
 	Dim bd As BitmapDrawable
+	Dim cd As ColorDrawable
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode Then
 				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
-				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				addcBtn.Background = bd
+				canvasPnl.SetColorAndBorder(xui.Color_RGB(187, 213, 218), 2dip, xui.Color_Black, 3dip)
+				cd.Initialize(Colors.ARGB(255, 59, 117, 151), 200)
+				addcBtn.Background = cd
 				addcBtn.TextColor = Colors.White
 			Else
 				canvasPnl.Color = xui.Color_RGB(50, 50, 50)
-				canvasPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				addcBtn.Background = bd
+				canvasPnl.SetColorAndBorder(xui.Color_RGB(227, 193, 159), 2dip, xui.Color_Black, 3dip)
+				cd.Initialize(Colors.ARGB(255, 98, 43, 20), 200)
+				addcBtn.Background = cd
 				addcBtn.TextColor = Colors.White
 			End If
 		Case 1

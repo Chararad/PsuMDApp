@@ -55,17 +55,18 @@ End Sub
 Sub Activity_Create(FirstTime As Boolean)
 	
 	Dim bd As BitmapDrawable
+	Dim cd As ColorDrawable
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("CalendarActivityLayout")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				Month_btn.Background = bd
+				cd.Initialize(Colors.ARGB(125, 98, 43, 20), 200)
+				Month_btn.Background = cd
 				Month_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("CalendarActivityLayoutDark")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				Month_btn.Background = bd
+				cd.Initialize(Colors.ARGB(125, 59, 117, 151), 200)
+				Month_btn.Background = cd
 				Month_btn.TextColor = Colors.White
 			End If
 		Case 1
@@ -137,9 +138,9 @@ Sub Activity_Create(FirstTime As Boolean)
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode Then
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(59, 117, 151))
 			Else
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(98, 43, 20))
 			End If
 		Case 1
 			If Starter.darkMode Then
@@ -219,9 +220,9 @@ Sub DrawCalendar (month As Int, year As Int)
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode Then
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(59, 117, 151))
 			Else
-				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.Black)
+				cd.Initialize2(Colors.Transparent, 0, 2dip, Colors.RGB(98, 43, 20))
 			End If
 		Case 1
 			If Starter.darkMode Then

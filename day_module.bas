@@ -59,17 +59,18 @@ End Sub
 Sub Activity_Create(FirstTime As Boolean)
 	
 	Dim bd As BitmapDrawable
+	Dim cd As ColorDrawable
 	Select Starter.themeNumber
 		Case 0
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("Day_ModuleLayout")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				Day_btn.Background = bd
+				cd.Initialize(Colors.ARGB(125, 98, 43, 20), 200)
+				Day_btn.Background = cd
 				Day_btn.TextColor = Colors.White
 			Else
 				Activity.LoadLayout("Day_ModuleLayoutDark")
-				bd.Initialize(LoadBitmap(File.DirAssets, "calendarpbtn.png"))
-				Day_btn.Background = bd
+				cd.Initialize(Colors.ARGB(125, 59, 117, 151), 200)
+				Day_btn.Background = cd
 				Day_btn.TextColor = Colors.White
 			End If
 		Case 1

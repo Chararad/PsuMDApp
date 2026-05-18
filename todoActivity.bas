@@ -105,14 +105,14 @@ Sub newAddTaskBtn
 		Case 0
 			If Starter.darkMode Then
 				addTaskBtn.TextColor = Colors.DarkGray
-				cd.Initialize(Colors.ARGB(120, 90, 105, 136), 200) ' 200 = corner radius
+				cd.Initialize(Colors.ARGB(255, 59, 117, 151), 200) ' 200 = corner radius
 				addTaskBtn.Background = cd
 				addTaskBtn.TextColor = Colors.White
 			Else
-				addTaskBtnPNL.Color = Colors.ARGB(0, 232, 213, 179)
-				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				addTaskBtnPNL.Color = Colors.Transparent
+				cd.Initialize(Colors.ARGB(255, 98, 43, 20), 200) ' 200 = corner radius
 				addTaskBtn.Background = cd
-				addTaskBtn.TextColor = Colors.Black
+				addTaskBtn.TextColor = Colors.White
 			End If
 		Case 1
 			If Starter.darkMode Then
@@ -401,15 +401,15 @@ Sub addTaskBtn_Click
 			If Starter.darkMode Then
 				addTaskTextArea.HintColor = Colors.ARGB(100, 247, 247, 247)
 				addTaskTextArea.TextColor = Colors.White
-				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				cd.Initialize(Colors.ARGB(255, 59, 117, 151), 200) ' 200 = corner radius
 				enterTaskBtn.Background = cd
 				enterTaskBtn.TextColor = Colors.White
 			Else
-				addTaskTextArea.HintColor = Colors.ARGB(100, 17, 17, 17)
-				addTaskTextArea.TextColor = Colors.Black
-				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
+				addTaskTextArea.HintColor = Colors.ARGB(120, 184, 120, 46)
+				addTaskTextArea.TextColor = Colors.White
+				cd.Initialize(Colors.ARGB(120, 98, 43, 20), 200) ' 200 = corner radius
 				enterTaskBtn.Background = cd
-				enterTaskBtn.TextColor = Colors.Black
+				enterTaskBtn.TextColor = Colors.White
 			End If
 		Case 1
 			If Starter.darkMode Then
@@ -581,10 +581,10 @@ Sub showRenameTaskPanel(Index As Int, oldTask As String)
 				enterTaskBtn.TextColor = Colors.White
 			Else
 				addTaskTextArea.HintColor = Colors.ARGB(100, 17, 17, 17)
-				addTaskTextArea.TextColor = Colors.Black
+				addTaskTextArea.TextColor = Colors.White
 				cd.Initialize(Colors.ARGB(120, 184, 120, 46), 200) ' 200 = corner radius
 				enterTaskBtn.Background = cd
-				enterTaskBtn.TextColor = Colors.Black
+				enterTaskBtn.TextColor = Colors.White
 			End If
 		Case 1
 			If Starter.darkMode Then
