@@ -67,15 +67,15 @@ finally {
 		}}
 public static RemoteObject  _btnback_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnback_Click (login) ","login",9,login.mostCurrent.activityBA,login.mostCurrent,80);
+		Debug.PushSubsStack("btnback_Click (login) ","login",9,login.mostCurrent.activityBA,login.mostCurrent,91);
 if (RapidSub.canDelegate("btnback_click")) { return b4a.example.login.remoteMe.runUserSub(false, "login","btnback_click");}
- BA.debugLineNum = 80;BA.debugLine="Private Sub btnback_Click";
-Debug.ShouldStop(32768);
- BA.debugLineNum = 81;BA.debugLine="Activity.Finish";
-Debug.ShouldStop(65536);
+ BA.debugLineNum = 91;BA.debugLine="Private Sub btnback_Click";
+Debug.ShouldStop(67108864);
+ BA.debugLineNum = 92;BA.debugLine="Activity.Finish";
+Debug.ShouldStop(134217728);
 login.mostCurrent._activity.runVoidMethod ("Finish");
- BA.debugLineNum = 82;BA.debugLine="End Sub";
-Debug.ShouldStop(131072);
+ BA.debugLineNum = 93;BA.debugLine="End Sub";
+Debug.ShouldStop(268435456);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -86,41 +86,41 @@ finally {
 		}}
 public static RemoteObject  _btneyes_click() throws Exception{
 try {
-		Debug.PushSubsStack("btneyes_Click (login) ","login",9,login.mostCurrent.activityBA,login.mostCurrent,64);
+		Debug.PushSubsStack("btneyes_Click (login) ","login",9,login.mostCurrent.activityBA,login.mostCurrent,75);
 if (RapidSub.canDelegate("btneyes_click")) { return b4a.example.login.remoteMe.runUserSub(false, "login","btneyes_click");}
- BA.debugLineNum = 64;BA.debugLine="Private Sub btneyes_Click";
-Debug.ShouldStop(-2147483648);
- BA.debugLineNum = 65;BA.debugLine="btneyes.Height = 30dip";
-Debug.ShouldStop(1);
+ BA.debugLineNum = 75;BA.debugLine="Private Sub btneyes_Click";
+Debug.ShouldStop(1024);
+ BA.debugLineNum = 76;BA.debugLine="btneyes.Height = 30dip";
+Debug.ShouldStop(2048);
 login.mostCurrent._btneyes.runMethod(true,"setHeight",login.mostCurrent.__c.runMethod(true,"DipToCurrent",(Object)(BA.numberCast(int.class, 30))));
- BA.debugLineNum = 66;BA.debugLine="btneyes.Width = 30dip";
-Debug.ShouldStop(2);
+ BA.debugLineNum = 77;BA.debugLine="btneyes.Width = 30dip";
+Debug.ShouldStop(4096);
 login.mostCurrent._btneyes.runMethod(true,"setWidth",login.mostCurrent.__c.runMethod(true,"DipToCurrent",(Object)(BA.numberCast(int.class, 30))));
- BA.debugLineNum = 68;BA.debugLine="If isPasswordHidden Then";
-Debug.ShouldStop(8);
+ BA.debugLineNum = 79;BA.debugLine="If isPasswordHidden Then";
+Debug.ShouldStop(16384);
 if (login._ispasswordhidden.<Boolean>get().booleanValue()) { 
- BA.debugLineNum = 69;BA.debugLine="txtpassword.PasswordMode = False";
-Debug.ShouldStop(16);
+ BA.debugLineNum = 80;BA.debugLine="txtpassword.PasswordMode = False";
+Debug.ShouldStop(32768);
 login.mostCurrent._txtpassword.runVoidMethod ("setPasswordMode",login.mostCurrent.__c.getField(true,"False"));
- BA.debugLineNum = 70;BA.debugLine="btneyes.SetBackgroundImage(LoadBitmap(File.DirAs";
-Debug.ShouldStop(32);
+ BA.debugLineNum = 81;BA.debugLine="btneyes.SetBackgroundImage(LoadBitmap(File.DirAs";
+Debug.ShouldStop(65536);
 login.mostCurrent._btneyes.runVoidMethod ("SetBackgroundImageNew",(Object)((login.mostCurrent.__c.runMethod(false,"LoadBitmap",(Object)(login.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("open-eye.png"))).getObject())));
- BA.debugLineNum = 71;BA.debugLine="isPasswordHidden = False";
-Debug.ShouldStop(64);
+ BA.debugLineNum = 82;BA.debugLine="isPasswordHidden = False";
+Debug.ShouldStop(131072);
 login._ispasswordhidden = login.mostCurrent.__c.getField(true,"False");
  }else {
- BA.debugLineNum = 74;BA.debugLine="txtpassword.PasswordMode = True";
-Debug.ShouldStop(512);
+ BA.debugLineNum = 85;BA.debugLine="txtpassword.PasswordMode = True";
+Debug.ShouldStop(1048576);
 login.mostCurrent._txtpassword.runVoidMethod ("setPasswordMode",login.mostCurrent.__c.getField(true,"True"));
- BA.debugLineNum = 75;BA.debugLine="btneyes.SetBackgroundImage(LoadBitmap(File.DirAs";
-Debug.ShouldStop(1024);
+ BA.debugLineNum = 86;BA.debugLine="btneyes.SetBackgroundImage(LoadBitmap(File.DirAs";
+Debug.ShouldStop(2097152);
 login.mostCurrent._btneyes.runVoidMethod ("SetBackgroundImageNew",(Object)((login.mostCurrent.__c.runMethod(false,"LoadBitmap",(Object)(login.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("close-eye.png"))).getObject())));
- BA.debugLineNum = 76;BA.debugLine="isPasswordHidden = True";
-Debug.ShouldStop(2048);
+ BA.debugLineNum = 87;BA.debugLine="isPasswordHidden = True";
+Debug.ShouldStop(4194304);
 login._ispasswordhidden = login.mostCurrent.__c.getField(true,"True");
  };
- BA.debugLineNum = 78;BA.debugLine="End Sub";
-Debug.ShouldStop(8192);
+ BA.debugLineNum = 89;BA.debugLine="End Sub";
+Debug.ShouldStop(16777216);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -172,20 +172,20 @@ login.mostCurrent._txtemail.runMethodAndSync(true,"setText",BA.ObjectToCharSeque
  BA.debugLineNum = 53;BA.debugLine="txtpassword.Text = \"\"";
 Debug.ShouldStop(1048576);
 login.mostCurrent._txtpassword.runMethodAndSync(true,"setText",BA.ObjectToCharSequence(""));
- BA.debugLineNum = 54;BA.debugLine="StartActivity(MainActivity)";
-Debug.ShouldStop(2097152);
-login.mostCurrent.__c.runVoidMethod ("StartActivity",login.processBA,(Object)((login.mostCurrent._mainactivity.getObject())));
+ BA.debugLineNum = 63;BA.debugLine="StartActivity(tutorialActivity)";
+Debug.ShouldStop(1073741824);
+login.mostCurrent.__c.runVoidMethod ("StartActivity",login.processBA,(Object)((login.mostCurrent._tutorialactivity.getObject())));
  }else {
- BA.debugLineNum = 56;BA.debugLine="ToastMessageShow(\"Invalid email or password\", F";
-Debug.ShouldStop(8388608);
+ BA.debugLineNum = 67;BA.debugLine="ToastMessageShow(\"Invalid email or password\", F";
+Debug.ShouldStop(4);
 login.mostCurrent.__c.runVoidMethod ("ToastMessageShow",(Object)(BA.ObjectToCharSequence("Invalid email or password")),(Object)(login.mostCurrent.__c.getField(true,"False")));
- BA.debugLineNum = 57;BA.debugLine="Cursor1.Close";
-Debug.ShouldStop(16777216);
+ BA.debugLineNum = 68;BA.debugLine="Cursor1.Close";
+Debug.ShouldStop(8);
 _cursor1.runVoidMethod ("Close");
  };
  };
- BA.debugLineNum = 60;BA.debugLine="End Sub";
-Debug.ShouldStop(134217728);
+ BA.debugLineNum = 71;BA.debugLine="End Sub";
+Debug.ShouldStop(64);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -196,18 +196,18 @@ finally {
 		}}
 public static RemoteObject  _btnsignup_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnSignUp_Click (login) ","login",9,login.mostCurrent.activityBA,login.mostCurrent,84);
+		Debug.PushSubsStack("btnSignUp_Click (login) ","login",9,login.mostCurrent.activityBA,login.mostCurrent,95);
 if (RapidSub.canDelegate("btnsignup_click")) { return b4a.example.login.remoteMe.runUserSub(false, "login","btnsignup_click");}
- BA.debugLineNum = 84;BA.debugLine="Private Sub btnSignUp_Click";
-Debug.ShouldStop(524288);
- BA.debugLineNum = 85;BA.debugLine="StartActivity(Register)";
-Debug.ShouldStop(1048576);
+ BA.debugLineNum = 95;BA.debugLine="Private Sub btnSignUp_Click";
+Debug.ShouldStop(1073741824);
+ BA.debugLineNum = 96;BA.debugLine="StartActivity(Register)";
+Debug.ShouldStop(-2147483648);
 login.mostCurrent.__c.runVoidMethod ("StartActivity",login.processBA,(Object)((login.mostCurrent._register.getObject())));
- BA.debugLineNum = 86;BA.debugLine="Activity.Finish";
-Debug.ShouldStop(2097152);
+ BA.debugLineNum = 97;BA.debugLine="Activity.Finish";
+Debug.ShouldStop(1);
 login.mostCurrent._activity.runVoidMethod ("Finish");
- BA.debugLineNum = 87;BA.debugLine="End Sub";
-Debug.ShouldStop(4194304);
+ BA.debugLineNum = 98;BA.debugLine="End Sub";
+Debug.ShouldStop(2);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {

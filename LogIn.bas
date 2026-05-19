@@ -57,7 +57,18 @@ Private Sub btnlogin_Click
 			
 			txtemail.Text = ""
 			txtpassword.Text = ""
-			StartActivity(MainActivity)
+			
+			Dim skipTutorial As Boolean = False
+			If Starter.prefKvs.ContainsKey("skipTutorial") Then
+				skipTutorial = Starter.prefKvs.Get("skipTutorial")
+			End If
+	
+			If skipTutorial Then
+				StartActivity(MainActivity)
+			Else
+				StartActivity(tutorialActivity)
+			End If
+			
 		Else
 			ToastMessageShow("Invalid email or password", False)
 			Cursor1.Close

@@ -57,14 +57,7 @@ public boolean isSingleton() {
 public static RemoteObject __c = RemoteObject.declareNull("anywheresoftware.b4a.keywords.Common");
 public static RemoteObject _xui = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper.XUI");
 public static RemoteObject _uitimer = RemoteObject.declareNull("anywheresoftware.b4a.objects.Timer");
-public static RemoteObject _currentpage = RemoteObject.createImmutable(0);
-public static RemoteObject _totalpages = RemoteObject.createImmutable(0);
 public static RemoteObject _chooser = RemoteObject.declareNull("anywheresoftware.b4a.phone.Phone.ContentChooser");
-public static RemoteObject _skiptutorial = RemoteObject.createImmutable(false);
-public static RemoteObject _savecheckstate = RemoteObject.createImmutable(false);
-public static RemoteObject _lbldesc = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
-public static RemoteObject _btnnext = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
-public static RemoteObject _chkdontshow = RemoteObject.declareNull("anywheresoftware.b4a.objects.CompoundButtonWrapper.CheckBoxWrapper");
 public static RemoteObject _seekbar1 = RemoteObject.declareNull("anywheresoftware.b4a.objects.SeekBarWrapper");
 public static RemoteObject _songtitle = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 public static RemoteObject _pausebtn = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
@@ -83,7 +76,8 @@ public static b4a.example.clockactivity _clockactivity = null;
 public static b4a.example.home_activity _home_activity = null;
 public static b4a.example.login _login = null;
 public static b4a.example.register _register = null;
-public static b4a.example.musicservice _musicservice = null;
+public static b4a.example.tutorialactivity _tutorialactivity = null;
+public static b4a.example.helpactivity _helpactivity = null;
 public static b4a.example.active_recall _active_recall = null;
 public static b4a.example.add_card_module _add_card_module = null;
 public static b4a.example.add_card_module2 _add_card_module2 = null;
@@ -94,13 +88,13 @@ public static b4a.example.corkactivity _corkactivity = null;
 public static b4a.example.day_module _day_module = null;
 public static b4a.example.editnote _editnote = null;
 public static b4a.example.flashcardactivity _flashcardactivity = null;
-public static b4a.example.helpactivity _helpactivity = null;
+public static b4a.example.musicservice _musicservice = null;
 public static b4a.example.navactivity _navactivity = null;
 public static b4a.example.noteactivity _noteactivity = null;
 public static b4a.example.subdeck_module _subdeck_module = null;
 public static b4a.example.themeactivity _themeactivity = null;
 public static b4a.example.httputils2service _httputils2service = null;
   public Object[] GetGlobals() {
-		return new Object[] {"active_recall",Debug.moduleToString(b4a.example.active_recall.class),"Activity",musicactivity.mostCurrent._activity,"Add_card_module",Debug.moduleToString(b4a.example.add_card_module.class),"add_card_module2",Debug.moduleToString(b4a.example.add_card_module2.class),"add_events_module",Debug.moduleToString(b4a.example.add_events_module.class),"all_active_recall",Debug.moduleToString(b4a.example.all_active_recall.class),"btnnext",musicactivity.mostCurrent._btnnext,"btnUpload",musicactivity.mostCurrent._btnupload,"CalendarActivity",Debug.moduleToString(b4a.example.calendaractivity.class),"Card_Module",Debug.moduleToString(b4a.example.card_module.class),"chkDontShow",musicactivity.mostCurrent._chkdontshow,"chooser",musicactivity._chooser,"clockActivity",Debug.moduleToString(b4a.example.clockactivity.class),"corkActivity",Debug.moduleToString(b4a.example.corkactivity.class),"currentPage",musicactivity._currentpage,"day_module",Debug.moduleToString(b4a.example.day_module.class),"deck_all_cards",Debug.moduleToString(b4a.example.deck_all_cards.class),"editnote",Debug.moduleToString(b4a.example.editnote.class),"FlashcardActivity",Debug.moduleToString(b4a.example.flashcardactivity.class),"helpActivity",Debug.moduleToString(b4a.example.helpactivity.class),"Home_Activity",Debug.moduleToString(b4a.example.home_activity.class),"HttpUtils2Service",Debug.moduleToString(b4a.example.httputils2service.class),"lblDesc",musicactivity.mostCurrent._lbldesc,"ListView1",musicactivity.mostCurrent._listview1,"LogIn",Debug.moduleToString(b4a.example.login.class),"Main",Debug.moduleToString(b4a.example.main.class),"MainActivity",Debug.moduleToString(b4a.example.mainactivity.class),"musicService",Debug.moduleToString(b4a.example.musicservice.class),"navActivity",Debug.moduleToString(b4a.example.navactivity.class),"noteActivity",Debug.moduleToString(b4a.example.noteactivity.class),"Panel1",musicactivity.mostCurrent._panel1,"pauseBtn",musicactivity.mostCurrent._pausebtn,"Register",Debug.moduleToString(b4a.example.register.class),"saveCheckState",musicactivity._savecheckstate,"Schedule_module",Debug.moduleToString(b4a.example.schedule_module.class),"SeekBar1",musicactivity.mostCurrent._seekbar1,"skipTutorial",musicactivity._skiptutorial,"songRuntime",musicactivity.mostCurrent._songruntime,"songTitle",musicactivity.mostCurrent._songtitle,"Starter",Debug.moduleToString(b4a.example.starter.class),"Subdeck_Module",Debug.moduleToString(b4a.example.subdeck_module.class),"themeActivity",Debug.moduleToString(b4a.example.themeactivity.class),"todoActivity",Debug.moduleToString(b4a.example.todoactivity.class),"totalPages",musicactivity._totalpages,"uiTimer",musicactivity._uitimer,"xui",musicactivity._xui};
+		return new Object[] {"active_recall",Debug.moduleToString(b4a.example.active_recall.class),"Activity",musicactivity.mostCurrent._activity,"Add_card_module",Debug.moduleToString(b4a.example.add_card_module.class),"add_card_module2",Debug.moduleToString(b4a.example.add_card_module2.class),"add_events_module",Debug.moduleToString(b4a.example.add_events_module.class),"all_active_recall",Debug.moduleToString(b4a.example.all_active_recall.class),"btnUpload",musicactivity.mostCurrent._btnupload,"CalendarActivity",Debug.moduleToString(b4a.example.calendaractivity.class),"Card_Module",Debug.moduleToString(b4a.example.card_module.class),"chooser",musicactivity._chooser,"clockActivity",Debug.moduleToString(b4a.example.clockactivity.class),"corkActivity",Debug.moduleToString(b4a.example.corkactivity.class),"day_module",Debug.moduleToString(b4a.example.day_module.class),"deck_all_cards",Debug.moduleToString(b4a.example.deck_all_cards.class),"editnote",Debug.moduleToString(b4a.example.editnote.class),"FlashcardActivity",Debug.moduleToString(b4a.example.flashcardactivity.class),"helpActivity",Debug.moduleToString(b4a.example.helpactivity.class),"Home_Activity",Debug.moduleToString(b4a.example.home_activity.class),"HttpUtils2Service",Debug.moduleToString(b4a.example.httputils2service.class),"ListView1",musicactivity.mostCurrent._listview1,"LogIn",Debug.moduleToString(b4a.example.login.class),"Main",Debug.moduleToString(b4a.example.main.class),"MainActivity",Debug.moduleToString(b4a.example.mainactivity.class),"musicService",Debug.moduleToString(b4a.example.musicservice.class),"navActivity",Debug.moduleToString(b4a.example.navactivity.class),"noteActivity",Debug.moduleToString(b4a.example.noteactivity.class),"Panel1",musicactivity.mostCurrent._panel1,"pauseBtn",musicactivity.mostCurrent._pausebtn,"Register",Debug.moduleToString(b4a.example.register.class),"Schedule_module",Debug.moduleToString(b4a.example.schedule_module.class),"SeekBar1",musicactivity.mostCurrent._seekbar1,"songRuntime",musicactivity.mostCurrent._songruntime,"songTitle",musicactivity.mostCurrent._songtitle,"Starter",Debug.moduleToString(b4a.example.starter.class),"Subdeck_Module",Debug.moduleToString(b4a.example.subdeck_module.class),"themeActivity",Debug.moduleToString(b4a.example.themeactivity.class),"todoActivity",Debug.moduleToString(b4a.example.todoactivity.class),"tutorialActivity",Debug.moduleToString(b4a.example.tutorialactivity.class),"uiTimer",musicactivity._uitimer,"xui",musicactivity._xui};
 }
 }

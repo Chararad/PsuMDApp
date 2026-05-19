@@ -8,7 +8,7 @@ public class editnote_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,26);
+		Debug.PushSubsStack("Activity_Create (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,26);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 26;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -91,7 +91,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,63);
+		Debug.PushSubsStack("Activity_Pause (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,63);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 63;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -112,7 +112,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,59);
+		Debug.PushSubsStack("Activity_Resume (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,59);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","activity_resume");}
  BA.debugLineNum = 59;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(67108864);
@@ -128,7 +128,7 @@ finally {
 		}}
 public static RemoteObject  _ai_notes_click() throws Exception{
 try {
-		Debug.PushSubsStack("AI_notes_Click (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,96);
+		Debug.PushSubsStack("AI_notes_Click (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,96);
 if (RapidSub.canDelegate("ai_notes_click")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","ai_notes_click");}
  BA.debugLineNum = 96;BA.debugLine="Private Sub AI_notes_Click";
 Debug.ShouldStop(-2147483648);
@@ -147,7 +147,7 @@ finally {
 		}}
 public static RemoteObject  _cc_result(RemoteObject _success,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("CC_RESULT (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,101);
+		Debug.PushSubsStack("CC_RESULT (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,101);
 if (RapidSub.canDelegate("cc_result")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","cc_result", _success, _dir, _filename);}
 Debug.locals.put("Success", _success);
 Debug.locals.put("dir", _dir);
@@ -159,20 +159,20 @@ Debug.ShouldStop(32);
 if (_success.<Boolean>get().booleanValue()) { 
  BA.debugLineNum = 103;BA.debugLine="Log(\"Selected: \" & dir & \" / \" & fileName)";
 Debug.ShouldStop(64);
-editnote.mostCurrent.__c.runVoidMethod ("LogImpl","521233666",RemoteObject.concat(RemoteObject.createImmutable("Selected: "),_dir,RemoteObject.createImmutable(" / "),_filename),0);
+editnote.mostCurrent.__c.runVoidMethod ("LogImpl","222085634",RemoteObject.concat(RemoteObject.createImmutable("Selected: "),_dir,RemoteObject.createImmutable(" / "),_filename),0);
  BA.debugLineNum = 104;BA.debugLine="File.Copy(dir, fileName, File.DirInternal, \"temp";
 Debug.ShouldStop(128);
 editnote.mostCurrent.__c.getField(false,"File").runVoidMethod ("Copy",(Object)(_dir),(Object)(_filename),(Object)(editnote.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirInternal")),(Object)(RemoteObject.createImmutable("temp.pdf")));
  BA.debugLineNum = 105;BA.debugLine="Log(\"PDF saved\")";
 Debug.ShouldStop(256);
-editnote.mostCurrent.__c.runVoidMethod ("LogImpl","521233668",RemoteObject.createImmutable("PDF saved"),0);
+editnote.mostCurrent.__c.runVoidMethod ("LogImpl","222085636",RemoteObject.createImmutable("PDF saved"),0);
  BA.debugLineNum = 106;BA.debugLine="GenerateNotesFromPDF";
 Debug.ShouldStop(512);
 _generatenotesfrompdf();
  }else {
  BA.debugLineNum = 108;BA.debugLine="Log(\"User Cancelled\")";
 Debug.ShouldStop(2048);
-editnote.mostCurrent.__c.runVoidMethod ("LogImpl","521233671",RemoteObject.createImmutable("User Cancelled"),0);
+editnote.mostCurrent.__c.runVoidMethod ("LogImpl","222085639",RemoteObject.createImmutable("User Cancelled"),0);
  };
  BA.debugLineNum = 110;BA.debugLine="End Sub";
 Debug.ShouldStop(8192);
@@ -186,7 +186,7 @@ finally {
 		}}
 public static RemoteObject  _generatenotesfrompdf() throws Exception{
 try {
-		Debug.PushSubsStack("GenerateNotesFromPDF (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,112);
+		Debug.PushSubsStack("GenerateNotesFromPDF (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,112);
 if (RapidSub.canDelegate("generatenotesfrompdf")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","generatenotesfrompdf");}
 RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.InputStreamWrapper");
 RemoteObject _bytes = null;
@@ -351,7 +351,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _jobdone(RemoteObject _job) throws Exception{
 try {
-		Debug.PushSubsStack("JobDone (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,181);
+		Debug.PushSubsStack("JobDone (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,181);
 if (RapidSub.canDelegate("jobdone")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","jobdone", _job);}
 RemoteObject _response = RemoteObject.createImmutable("");
 RemoteObject _jp = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.JSONParser");
@@ -412,10 +412,10 @@ Debug.ShouldStop(64);
 _notes = BA.ObjectToString(_firstpart.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("text")))));Debug.locals.put("notes", _notes);Debug.locals.put("notes", _notes);
  BA.debugLineNum = 201;BA.debugLine="Log(\"NOTES OUTPUT:\")";
 Debug.ShouldStop(256);
-editnote.mostCurrent.__c.runVoidMethod ("LogImpl","521364756",RemoteObject.createImmutable("NOTES OUTPUT:"),0);
+editnote.mostCurrent.__c.runVoidMethod ("LogImpl","222216724",RemoteObject.createImmutable("NOTES OUTPUT:"),0);
  BA.debugLineNum = 202;BA.debugLine="Log(notes)";
 Debug.ShouldStop(512);
-editnote.mostCurrent.__c.runVoidMethod ("LogImpl","521364757",_notes,0);
+editnote.mostCurrent.__c.runVoidMethod ("LogImpl","222216725",_notes,0);
  BA.debugLineNum = 205;BA.debugLine="If contentTxt.Text.Trim = \"\" Then";
 Debug.ShouldStop(4096);
 if (RemoteObject.solveBoolean("=",editnote.mostCurrent._contenttxt.runMethod(true,"getText").runMethod(true,"trim"),BA.ObjectToString(""))) { 
@@ -434,7 +434,7 @@ editnote.mostCurrent.__c.getField(false,"File").runVoidMethod ("WriteString",(Ob
  }else {
  BA.debugLineNum = 217;BA.debugLine="Log(\"ERROR: \" & job.ErrorMessage)";
 Debug.ShouldStop(16777216);
-editnote.mostCurrent.__c.runVoidMethod ("LogImpl","521364772",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_job.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+editnote.mostCurrent.__c.runVoidMethod ("LogImpl","222216740",RemoteObject.concat(RemoteObject.createImmutable("ERROR: "),_job.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  };
  BA.debugLineNum = 220;BA.debugLine="job.Release";
 Debug.ShouldStop(134217728);
@@ -458,7 +458,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _savebtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("saveBtn_Click (editnote) ","editnote",21,editnote.mostCurrent.activityBA,editnote.mostCurrent,67);
+		Debug.PushSubsStack("saveBtn_Click (editnote) ","editnote",22,editnote.mostCurrent.activityBA,editnote.mostCurrent,67);
 if (RapidSub.canDelegate("savebtn_click")) { return b4a.example.editnote.remoteMe.runUserSub(false, "editnote","savebtn_click");}
 RemoteObject _n = RemoteObject.declareNull("b4a.example.main._mynote");
  BA.debugLineNum = 67;BA.debugLine="Sub saveBtn_Click";

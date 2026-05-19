@@ -74,7 +74,16 @@ Private Sub btnregister_Click
 			txtpassword_regis.Text = ""
 			txtconfirm_password.Text = ""
 
-			StartActivity(MainActivity)
+			Dim skipTutorial As Boolean = False
+			If Starter.prefKvs.ContainsKey("skipTutorial") Then
+				skipTutorial = Starter.prefKvs.Get("skipTutorial")
+			End If
+	
+			If skipTutorial Then
+				StartActivity(MainActivity)
+			Else
+				StartActivity(tutorialActivity)
+			End If
 		Catch
 			ToastMessageShow("Registration failed: Account exist", False)
 		End Try

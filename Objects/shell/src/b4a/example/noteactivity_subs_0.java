@@ -8,7 +8,7 @@ public class noteactivity_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,21);
+		Debug.PushSubsStack("Activity_Create (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,21);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 21;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -69,7 +69,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,49);
+		Debug.PushSubsStack("Activity_Pause (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,49);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 49;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -86,7 +86,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,45);
+		Debug.PushSubsStack("Activity_Resume (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,45);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","activity_resume");}
  BA.debugLineNum = 45;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(4096);
@@ -105,7 +105,7 @@ finally {
 		}}
 public static RemoteObject  _addbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("addBtn_Click (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,108);
+		Debug.PushSubsStack("addBtn_Click (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,108);
 if (RapidSub.canDelegate("addbtn_click")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","addbtn_click");}
  BA.debugLineNum = 108;BA.debugLine="Sub addBtn_Click";
 Debug.ShouldStop(2048);
@@ -133,7 +133,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _noteclv_itemclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("noteClv_ItemClick (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,53);
+		Debug.PushSubsStack("noteClv_ItemClick (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,53);
 if (RapidSub.canDelegate("noteclv_itemclick")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","noteclv_itemclick", _index, _value);}
 RemoteObject _selectednote = RemoteObject.declareNull("b4a.example.main._mynote");
 Debug.locals.put("Index", _index);
@@ -161,7 +161,7 @@ finally {
 		}}
 public static void  _noteclv_itemlongclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("noteClv_ItemLongClick (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,63);
+		Debug.PushSubsStack("noteClv_ItemLongClick (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,63);
 if (RapidSub.canDelegate("noteclv_itemlongclick")) { b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","noteclv_itemlongclick", _index, _value); return;}
 ResumableSub_noteClv_ItemLongClick rsub = new ResumableSub_noteClv_ItemLongClick(null,_index,_value);
 rsub.resume(null, null);
@@ -188,7 +188,7 @@ RemoteObject _res = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("noteClv_ItemLongClick (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,63);
+		Debug.PushSubsStack("noteClv_ItemLongClick (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,63);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -264,7 +264,7 @@ public static void  _msgbox_result(RemoteObject _res) throws Exception{
 }
 public static RemoteObject  _notecvl_itemclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("noteCvl_ItemClick (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,112);
+		Debug.PushSubsStack("noteCvl_ItemClick (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,112);
 if (RapidSub.canDelegate("notecvl_itemclick")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","notecvl_itemclick", _index, _value);}
 Debug.locals.put("Index", _index);
 Debug.locals.put("Value", _value);
@@ -291,7 +291,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _refreshlist(RemoteObject _searchquery) throws Exception{
 try {
-		Debug.PushSubsStack("RefreshList (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,75);
+		Debug.PushSubsStack("RefreshList (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,75);
 if (RapidSub.canDelegate("refreshlist")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","refreshlist", _searchquery);}
 RemoteObject _allnotes = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _keys = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -383,7 +383,7 @@ finally {
 		}}
 public static RemoteObject  _searchtxt_textchanged(RemoteObject _old,RemoteObject _new) throws Exception{
 try {
-		Debug.PushSubsStack("searchTxt_TextChanged (noteactivity) ","noteactivity",25,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,104);
+		Debug.PushSubsStack("searchTxt_TextChanged (noteactivity) ","noteactivity",26,noteactivity.mostCurrent.activityBA,noteactivity.mostCurrent,104);
 if (RapidSub.canDelegate("searchtxt_textchanged")) { return b4a.example.noteactivity.remoteMe.runUserSub(false, "noteactivity","searchtxt_textchanged", _old, _new);}
 Debug.locals.put("Old", _old);
 Debug.locals.put("New", _new);

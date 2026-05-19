@@ -16,7 +16,7 @@ main,activity_resume,0,0,33,35
 starter,finishedinit
 
 ,startload
-main,startload,0,0,37,48
+main,startload,0,0,37,49
 starter,finishedinit
 
 
@@ -576,19 +576,19 @@ login,activity_resume,0,0,29,31
 
 
 
-login,btnback_click,0,0,80,82
+login,btnback_click,0,0,91,93
 
 
 
-login,btneyes_click,0,0,64,78
+login,btneyes_click,0,0,75,89
 ,btneyes,,ispasswordhidden,,txtpassword
 ,ispasswordhidden
 
-login,btnlogin_click,1,0,38,60
+login,btnlogin_click,1,1,38,71
 ,txtemail,,txtpassword,starter,sql1
 
 
-login,btnsignup_click,0,0,84,87
+login,btnsignup_click,0,0,95,98
 
 
 
@@ -612,24 +612,24 @@ register,activity_resume,0,0,33,35
 
 
 
-register,btnback_click,0,0,100,102
+register,btnback_click,0,0,109,111
 
 
 
-register,btnconfirm_pass_click,0,0,104,119
+register,btnconfirm_pass_click,0,0,113,128
 ,btnconfirm_pass,,ispasswordhidden,,txtconfirm_password
 ,ispasswordhidden
 
-register,btneyes_regis_click,0,0,84,98
+register,btneyes_regis_click,0,0,93,107
 ,btneyes_regis,,ispasswordhidden,,txtpassword_regis
 ,ispasswordhidden
 
-register,btnlogin_click,0,0,79,82
+register,btnlogin_click,0,0,88,91
 
 
 
-register,btnregister_click,1,0,42,77
-,txtemail,,txtpassword_regis,,txtname,,txtconfirm_password,starter,sql1
+register,btnregister_click,1,0,42,86
+,txtemail,,txtpassword_regis,,txtname,,txtconfirm_password,starter,sql1,starter,prefkvs
 
 
 register,globals,0,1,12,23
@@ -640,14 +640,82 @@ register,process_globals,0,1,6,10
 
 
 
+musicactivity,activity_create,1,0,22,25
+,chooser,starter,themenumber,starter,darkmode,,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1,musicservice,mediaplayer,musicservice,musicplaylist,,uitimer
+,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1
+,loadmusicplayer,,getdisplaytitle
+musicactivity,loadmusicplayer,1,0,27,72
+starter,themenumber,starter,darkmode,,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1,musicservice,mediaplayer,musicservice,musicplaylist,,uitimer
+,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1
+,getdisplaytitle
+musicactivity,activity_pause,0,0,180,182
+
+
+
+musicactivity,activity_resume,0,0,176,178
+
+
+
+musicactivity,btnupload_click,0,0,93,95
+,chooser
+
+
+musicactivity,chooser_result,0,0,97,149
+musicservice,musicplaylist,,listview1
+
+,getdisplaytitle
+musicactivity,getdisplaytitle,0,0,76,91
+
+
+
+musicactivity,formatsongdur,0,0,184,191
+
+
+
+musicactivity,globals,0,1,12,20
+
+
+
+musicactivity,listview1_itemclick,0,0,172,174
+musicservice,currentsong,musicservice,mediaplayer,musicservice,musicplaylist
+musicservice,currentsong
+musicservice,setsong,musicservice,playsong
+musicactivity,listview1_itemlongclick,0,0,151,170
+musicservice,musicplaylist
+
+,getdisplaytitle
+musicactivity,nextbtn_click,0,0,220,222
+musicservice,currentsong,musicservice,musicplaylist,musicservice,mediaplayer
+musicservice,currentsong
+musicservice,nextsong,musicservice,playsong
+musicactivity,pausebtn_click,0,0,228,230
+musicservice,mediaplayer
+
+musicservice,pausetoggle
+musicactivity,prevbtn_click,0,0,224,226
+musicservice,currentsong,musicservice,musicplaylist,musicservice,mediaplayer
+musicservice,currentsong
+musicservice,prevsong,musicservice,playsong
+musicactivity,process_globals,0,1,6,10
+
+
+
+musicactivity,seekbar1_valuechanged,0,0,214,218
+musicservice,mediaplayer
+
+
+musicactivity,uitimer_tick,0,0,193,212
+musicservice,mediaplayer,musicservice,musicplaylist,musicservice,currentsong,,seekbar1,,songruntime,,songtitle,,pausebtn
+
+,getdisplaytitle,,formatsongdur
+musicservice,setsong,0,0,60,63
+,currentsong,,mediaplayer,,musicplaylist
+,currentsong
+,playsong
 musicservice,nextsong,0,0,101,107
 ,currentsong,,musicplaylist,,mediaplayer
 ,currentsong
 ,playsong
-musicservice,playsong,0,0,65,89
-,mediaplayer,,musicplaylist,,currentsong
-
-
 musicservice,pausetoggle,0,0,52,58
 ,mediaplayer
 
@@ -656,6 +724,10 @@ musicservice,prevsong,0,0,109,115
 ,currentsong,,musicplaylist,,mediaplayer
 ,currentsong
 ,playsong
+musicservice,playsong,0,0,65,89
+,mediaplayer,,musicplaylist,,currentsong
+
+
 musicservice,process_globals,0,1,6,11
 
 
@@ -676,90 +748,78 @@ musicservice,waitstarter,0,0,117,127
 starter,finishedinit,,mediaplayer,,musicplaylist,,currentsong
 
 ,playsong
-musicservice,setsong,0,0,60,63
-,currentsong,,mediaplayer,,musicplaylist
-,currentsong
-,playsong
 musicservice,songtimer_tick,0,0,91,99
 ,mediaplayer,,currentsong,,musicplaylist
 ,currentsong
 ,nextsong,,playsong
-musicactivity,activity_create,1,0,30,39
-,chooser,,currentpage,,skiptutorial,starter,themenumber,starter,darkmode,,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1,musicservice,mediaplayer,musicservice,musicplaylist,,uitimer,,lbldesc,,chkdontshow,,savecheckstate,,btnnext
-,currentpage,,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1
-,loadmusicplayer,,showtutorialpage,,getdisplaytitle
-musicactivity,loadmusicplayer,1,0,115,160
-starter,themenumber,starter,darkmode,,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1,musicservice,mediaplayer,musicservice,musicplaylist,,uitimer
-,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1
-,getdisplaytitle
-musicactivity,showtutorialpage,1,0,41,96
-,lbldesc,,currentpage,,chkdontshow,,savecheckstate,,btnnext
+tutorialactivity,activity_create,1,0,26,29
+,bodylbl,,btnback,,btnnext,,chkdontshow,,headerlbl,,pageindicator,,tutorialimg,,tutorialpage,,xui
+,bodylbl,,btnback,,btnnext,,chkdontshow,,headerlbl,,pageindicator,,tutorialimg,,tutorialpage
+,showtutorialpage
+tutorialactivity,showtutorialpage,0,0,39,300
+,tutorialpage,,headerlbl,,bodylbl,,tutorialimg,,xui,,pageindicator,,chkdontshow,,btnback,,btnnext
+,tutorialpage
 
-
-musicactivity,activity_pause,0,0,268,270
+tutorialactivity,activity_pause,0,0,35,37
 
 
 
-musicactivity,activity_resume,0,0,264,266
+tutorialactivity,activity_resume,0,0,31,33
 
 
 
-musicactivity,btnnext_click,1,0,98,113
-,currentpage,,totalpages,,chkdontshow,,skiptutorial,,lbldesc,,savecheckstate,,btnnext,starter,themenumber,starter,darkmode,,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1,musicservice,mediaplayer,musicservice,musicplaylist,,uitimer
-,currentpage,,skiptutorial,,btnupload,,listview1,,pausebtn,,seekbar1,,songruntime,,songtitle,,panel1
-,showtutorialpage,,loadmusicplayer,,getdisplaytitle
-musicactivity,btnupload_click,0,0,181,183
-,chooser
-
-
-musicactivity,chooser_result,0,0,185,237
-musicservice,musicplaylist,,listview1
-
-,getdisplaytitle
-musicactivity,getdisplaytitle,0,0,164,179
+tutorialactivity,btnback_click,0,0,314,318
+,tutorialpage,,headerlbl,,bodylbl,,tutorialimg,,xui,,pageindicator,,chkdontshow,,btnback,,btnnext
+,tutorialpage
+,showtutorialpage
+tutorialactivity,btnnext_click,0,0,302,312
+,tutorialpage,,chkdontshow,starter,prefkvs,,headerlbl,,bodylbl,,tutorialimg,,xui,,pageindicator,,btnback,,btnnext
+,tutorialpage
+,showtutorialpage
+tutorialactivity,globals,0,1,13,24
 
 
 
-musicactivity,formatsongdur,0,0,272,279
+tutorialactivity,process_globals,0,1,6,11
+,tutorialpage
+,tutorialpage
+
+helpactivity,activity_create,1,0,27,50
+starter,themenumber,starter,darkmode,,backbtn,,descriptionlbl,,helpimage,,iconbutton1,,iconbutton2,,iconbutton3,,nextbtn,,titlelbl,,helppage,,xui
+,backbtn,,descriptionlbl,,helpimage,,iconbutton1,,iconbutton2,,iconbutton3,,nextbtn,,titlelbl,,helppage
+,showhelppage
+helpactivity,showhelppage,0,0,60,223
+,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
+,helppage
+
+helpactivity,activity_pause,0,0,56,58
 
 
 
-musicactivity,globals,0,1,16,28
+helpactivity,activity_resume,0,0,52,54
 
 
 
-musicactivity,listview1_itemclick,0,0,260,262
-musicservice,currentsong,musicservice,mediaplayer,musicservice,musicplaylist
-musicservice,currentsong
-musicservice,setsong,musicservice,playsong
-musicactivity,listview1_itemlongclick,0,0,239,258
-musicservice,musicplaylist
-
-,getdisplaytitle
-musicactivity,nextbtn_click,0,0,308,310
-musicservice,currentsong,musicservice,musicplaylist,musicservice,mediaplayer
-musicservice,currentsong
-musicservice,nextsong,musicservice,playsong
-musicactivity,pausebtn_click,0,0,316,318
-musicservice,mediaplayer
-
-musicservice,pausetoggle
-musicactivity,prevbtn_click,0,0,312,314
-musicservice,currentsong,musicservice,musicplaylist,musicservice,mediaplayer
-musicservice,currentsong
-musicservice,prevsong,musicservice,playsong
-musicactivity,process_globals,0,1,6,14
-,totalpages,,skiptutorial,,savecheckstate
-,totalpages,,skiptutorial,,savecheckstate
-
-musicactivity,seekbar1_valuechanged,0,0,302,306
-musicservice,mediaplayer
+helpactivity,backbtn_click,0,0,231,235
+,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
+,helppage
+,showhelppage
+helpactivity,closehelp_click,0,0,237,239
 
 
-musicactivity,uitimer_tick,0,0,281,300
-musicservice,mediaplayer,musicservice,musicplaylist,musicservice,currentsong,,seekbar1,,songruntime,,songtitle,,pausebtn
 
-,getdisplaytitle,,formatsongdur
+helpactivity,globals,0,1,13,25
+
+
+
+helpactivity,nextbtn_click,0,0,225,229
+,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
+,helppage
+,showhelppage
+helpactivity,process_globals,0,1,6,11
+,helppage
+,helppage
+
 active_recall,activity_create,1,0,29,67
 starter,themenumber,starter,darkmode,,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,flashcardactivity,deck,flashcardactivity,selecteddeck,,cards,subdeck_module,selectedsubdeck,,currentindex
 ,answer,,deckname_label,,nextbtn,,pb,,progress,,question,,showanswerbtn,,cards,,currentindex
@@ -1551,42 +1611,6 @@ flashcardactivity,process_globals,0,1,6,17
 flashcardactivity,rename_deck_click,0,0,177,180
 ,decksettingpanel,,renamepanel
 
-
-helpactivity,activity_create,1,0,27,50
-starter,themenumber,starter,darkmode,,backbtn,,descriptionlbl,,helpimage,,iconbutton1,,iconbutton2,,iconbutton3,,nextbtn,,titlelbl,,helppage,,xui
-,backbtn,,descriptionlbl,,helpimage,,iconbutton1,,iconbutton2,,iconbutton3,,nextbtn,,titlelbl,,helppage
-,showhelppage
-helpactivity,showhelppage,0,0,60,223
-,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
-,helppage
-
-helpactivity,activity_pause,0,0,56,58
-
-
-
-helpactivity,activity_resume,0,0,52,54
-
-
-
-helpactivity,backbtn_click,0,0,231,235
-,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
-,helppage
-,showhelppage
-helpactivity,closehelp_click,0,0,237,239
-
-
-
-helpactivity,globals,0,1,13,25
-
-
-
-helpactivity,nextbtn_click,0,0,225,229
-,helppage,,titlelbl,,descriptionlbl,starter,darkmode,,helpimage,,xui,,iconbutton1,,iconbutton2,,iconbutton3,,backbtn,,nextbtn
-,helppage
-,showhelppage
-helpactivity,process_globals,0,1,6,11
-,helppage
-,helppage
 
 navactivity,activity_create,1,0,18,40
 starter,themenumber,starter,darkmode

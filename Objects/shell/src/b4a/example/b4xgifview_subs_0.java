@@ -8,7 +8,7 @@ public class b4xgifview_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xgifview) ","b4xgifview",28,__ref.getField(false, "ba"),__ref,106);
+		Debug.PushSubsStack("Base_Resize (b4xgifview) ","b4xgifview",29,__ref.getField(false, "ba"),__ref,106);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xgifview","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -48,7 +48,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4xgifview) ","b4xgifview",28,__ref.getField(false, "ba"),__ref,22);
+		Debug.PushSubsStack("DesignerCreateView (b4xgifview) ","b4xgifview",29,__ref.getField(false, "ba"),__ref,22);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4xgifview","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -82,7 +82,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xgifview) ","b4xgifview",28,__ref.getField(false, "ba"),__ref,17);
+		Debug.PushSubsStack("Initialize (b4xgifview) ","b4xgifview",29,__ref.getField(false, "ba"),__ref,17);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xgifview","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -108,7 +108,7 @@ finally {
 		}}
 public static RemoteObject  _resizebasedonimage(RemoteObject __ref,RemoteObject _xiv,RemoteObject _bmpratio) throws Exception{
 try {
-		Debug.PushSubsStack("ResizeBasedOnImage (b4xgifview) ","b4xgifview",28,__ref.getField(false, "ba"),__ref,93);
+		Debug.PushSubsStack("ResizeBasedOnImage (b4xgifview) ","b4xgifview",29,__ref.getField(false, "ba"),__ref,93);
 if (RapidSub.canDelegate("resizebasedonimage")) { return __ref.runUserSub(false, "b4xgifview","resizebasedonimage", __ref, _xiv, _bmpratio);}
 RemoteObject _viewratio = RemoteObject.createImmutable(0f);
 RemoteObject _height = RemoteObject.createImmutable(0);
@@ -156,7 +156,7 @@ finally {
 		}}
 public static RemoteObject  _setbitmap(RemoteObject __ref,RemoteObject _obj) throws Exception{
 try {
-		Debug.PushSubsStack("SetBitmap (b4xgifview) ","b4xgifview",28,__ref.getField(false, "ba"),__ref,81);
+		Debug.PushSubsStack("SetBitmap (b4xgifview) ","b4xgifview",29,__ref.getField(false, "ba"),__ref,81);
 if (RapidSub.canDelegate("setbitmap")) { return __ref.runUserSub(false, "b4xgifview","setbitmap", __ref, _obj);}
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 RemoteObject _w = RemoteObject.createImmutable(0);
@@ -198,7 +198,7 @@ finally {
 		}}
 public static RemoteObject  _setgif(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("SetGif (b4xgifview) ","b4xgifview",28,__ref.getField(false, "ba"),__ref,41);
+		Debug.PushSubsStack("SetGif (b4xgifview) ","b4xgifview",29,__ref.getField(false, "ba"),__ref,41);
 if (RapidSub.canDelegate("setgif")) { return __ref.runUserSub(false, "b4xgifview","setgif", __ref, _dir, _filename);}
 Debug.locals.put("Dir", _dir);
 Debug.locals.put("FileName", _filename);
@@ -227,7 +227,7 @@ finally {
 		}}
 public static RemoteObject  _setgif2(RemoteObject __ref,RemoteObject _data) throws Exception{
 try {
-		Debug.PushSubsStack("SetGif2 (b4xgifview) ","b4xgifview",28,__ref.getField(false, "ba"),__ref,55);
+		Debug.PushSubsStack("SetGif2 (b4xgifview) ","b4xgifview",29,__ref.getField(false, "ba"),__ref,55);
 if (RapidSub.canDelegate("setgif2")) { return __ref.runUserSub(false, "b4xgifview","setgif2", __ref, _data);}
 Debug.locals.put("Data", _data);
  BA.debugLineNum = 55;BA.debugLine="Public Sub SetGif2 (Data() As Byte)";

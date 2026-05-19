@@ -362,8 +362,9 @@ public b4a.example.deck_all_cards _deck_all_cards = null;
 public b4a.example.clockactivity _clockactivity = null;
 public b4a.example.home_activity _home_activity = null;
 public b4a.example.login _login = null;
-public b4a.example.musicservice _musicservice = null;
 public b4a.example.musicactivity _musicactivity = null;
+public b4a.example.tutorialactivity _tutorialactivity = null;
+public b4a.example.helpactivity _helpactivity = null;
 public b4a.example.active_recall _active_recall = null;
 public b4a.example.add_card_module _add_card_module = null;
 public b4a.example.add_card_module2 _add_card_module2 = null;
@@ -374,7 +375,7 @@ public b4a.example.corkactivity _corkactivity = null;
 public b4a.example.day_module _day_module = null;
 public b4a.example.editnote _editnote = null;
 public b4a.example.flashcardactivity _flashcardactivity = null;
-public b4a.example.helpactivity _helpactivity = null;
+public b4a.example.musicservice _musicservice = null;
 public b4a.example.navactivity _navactivity = null;
 public b4a.example.noteactivity _noteactivity = null;
 public b4a.example.subdeck_module _subdeck_module = null;
@@ -532,6 +533,7 @@ String _email = "";
 String _password = "";
 String _name = "";
 String _confirm = "";
+boolean _skiptutorial = false;
 RDebugUtils.currentLine=9502720;
  //BA.debugLineNum = 9502720;BA.debugLine="Private Sub btnregister_Click";
 RDebugUtils.currentLine=9502721;
@@ -595,18 +597,36 @@ RDebugUtils.currentLine=9502747;
  //BA.debugLineNum = 9502747;BA.debugLine="txtconfirm_password.Text = \"\"";
 mostCurrent._txtconfirm_password.setText(BA.ObjectToCharSequence(""));
 RDebugUtils.currentLine=9502749;
- //BA.debugLineNum = 9502749;BA.debugLine="StartActivity(MainActivity)";
+ //BA.debugLineNum = 9502749;BA.debugLine="Dim skipTutorial As Boolean = False";
+_skiptutorial = anywheresoftware.b4a.keywords.Common.False;
+RDebugUtils.currentLine=9502750;
+ //BA.debugLineNum = 9502750;BA.debugLine="If Starter.prefKvs.ContainsKey(\"skipTutorial\")";
+if (mostCurrent._starter._prefkvs /*b4a.example3.keyvaluestore*/ ._containskey("skipTutorial")) { 
+RDebugUtils.currentLine=9502751;
+ //BA.debugLineNum = 9502751;BA.debugLine="skipTutorial = Starter.prefKvs.Get(\"skipTutori";
+_skiptutorial = BA.ObjectToBoolean(mostCurrent._starter._prefkvs /*b4a.example3.keyvaluestore*/ ._get("skipTutorial"));
+ };
+RDebugUtils.currentLine=9502754;
+ //BA.debugLineNum = 9502754;BA.debugLine="If skipTutorial Then";
+if (_skiptutorial) { 
+RDebugUtils.currentLine=9502755;
+ //BA.debugLineNum = 9502755;BA.debugLine="StartActivity(MainActivity)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mainactivity.getObject()));
+ }else {
+RDebugUtils.currentLine=9502757;
+ //BA.debugLineNum = 9502757;BA.debugLine="StartActivity(tutorialActivity)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._tutorialactivity.getObject()));
+ };
  } 
-       catch (Exception e23) {
-			processBA.setLastException(e23);RDebugUtils.currentLine=9502751;
- //BA.debugLineNum = 9502751;BA.debugLine="ToastMessageShow(\"Registration failed: Account";
+       catch (Exception e31) {
+			processBA.setLastException(e31);RDebugUtils.currentLine=9502760;
+ //BA.debugLineNum = 9502760;BA.debugLine="ToastMessageShow(\"Registration failed: Account";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Registration failed: Account exist"),anywheresoftware.b4a.keywords.Common.False);
  };
  }}}}
 ;
-RDebugUtils.currentLine=9502755;
- //BA.debugLineNum = 9502755;BA.debugLine="End Sub";
+RDebugUtils.currentLine=9502764;
+ //BA.debugLineNum = 9502764;BA.debugLine="End Sub";
 return "";
 }
 }

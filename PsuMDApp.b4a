@@ -495,19 +495,20 @@ File542=trash deafult.png
 File543=Trash.png
 File544=Trash3.png
 File545=trashbin.png
-File546=typeeventspnl.png
-File547=typeeventspnld.png
-File548=untitled design (1).png
-File549=welcome.png
+File546=tutorialLayout.bal
+File547=typeeventspnl.png
+File548=typeeventspnld.png
+File549=untitled design (1).png
 File55=addsdbtnp.png
-File550=wreath.png
-File551=wreath2.png
-File552=wreath3.png
-File553=x dark deafault button.png
-File554=x deafault button.png
-File555=x.png
-File556=xpress.png
-File557=xwhite.png
+File550=welcome.png
+File551=wreath.png
+File552=wreath2.png
+File553=wreath3.png
+File554=x dark deafault button.png
+File555=x deafault button.png
+File556=x.png
+File557=xpress.png
+File558=xwhite.png
 File56=addsubdeckpnl.png
 File57=addsubdeckpnld.png
 File58=addtaskpnl.png
@@ -1052,9 +1053,9 @@ FileGroup542=Default Group
 FileGroup543=Default Group
 FileGroup544=Default Group
 FileGroup545=Default Group
-FileGroup546=New Group
+FileGroup546=Default Group
 FileGroup547=New Group
-FileGroup548=Default Group
+FileGroup548=New Group
 FileGroup549=Default Group
 FileGroup55=New Group
 FileGroup550=Default Group
@@ -1065,6 +1066,7 @@ FileGroup554=Default Group
 FileGroup555=Default Group
 FileGroup556=Default Group
 FileGroup557=Default Group
+FileGroup558=Default Group
 FileGroup56=New Group
 FileGroup57=New Group
 FileGroup58=New Group
@@ -1148,6 +1150,7 @@ Module24=Starter
 Module25=Subdeck_Module
 Module26=themeActivity
 Module27=todoActivity
+Module28=tutorialActivity
 Module3=add_card_module2
 Module4=add_events_module
 Module5=all_active_recall
@@ -1155,9 +1158,9 @@ Module6=CalendarActivity
 Module7=Card_Module
 Module8=clockActivity
 Module9=corkActivity
-NumberOfFiles=557
+NumberOfFiles=558
 NumberOfLibraries=13
-NumberOfModules=27
+NumberOfModules=28
 Version=13.4
 @EndOfDesignText@
 #Region  Project Attributes 
@@ -1203,8 +1206,9 @@ Sub startLoad As ResumableSub
 		Sleep(100)
 	Loop
 	StartService(musicService)
-	StartActivity(Home_Activity)
 	
+	' Check whether the user has previously opted out of the tutorial
+	StartActivity(Home_Activity)
 	Activity.Finish
 	Return True
 End Sub

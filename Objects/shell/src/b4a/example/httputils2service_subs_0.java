@@ -8,7 +8,7 @@ public class httputils2service_subs_0 {
 
 public static RemoteObject  _completejob(RemoteObject _taskid,RemoteObject _success,RemoteObject _errormessage) throws Exception{
 try {
-		Debug.PushSubsStack("CompleteJob (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,152);
+		Debug.PushSubsStack("CompleteJob (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,152);
 if (RapidSub.canDelegate("completejob")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","completejob", _taskid, _success, _errormessage);}
 RemoteObject _job = RemoteObject.declareNull("b4a.example.httpjob");
 Debug.locals.put("TaskId", _taskid);
@@ -24,7 +24,7 @@ Debug.ShouldStop(268435456);
 if (RemoteObject.solveBoolean("n",_job)) { 
  BA.debugLineNum = 158;BA.debugLine="Log(\"HttpUtils2Service: job completed multiple t";
 Debug.ShouldStop(536870912);
-httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","530212102",RemoteObject.concat(RemoteObject.createImmutable("HttpUtils2Service: job completed multiple times - "),_taskid),0);
+httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","231195142",RemoteObject.concat(RemoteObject.createImmutable("HttpUtils2Service: job completed multiple times - "),_taskid),0);
  BA.debugLineNum = 159;BA.debugLine="Return";
 Debug.ShouldStop(1073741824);
 if (true) return RemoteObject.createImmutable("");
@@ -53,7 +53,7 @@ finally {
 		}}
 public static RemoteObject  _hc_responseerror(RemoteObject _response,RemoteObject _reason,RemoteObject _statuscode,RemoteObject _taskid) throws Exception{
 try {
-		Debug.PushSubsStack("hc_ResponseError (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,115);
+		Debug.PushSubsStack("hc_ResponseError (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,115);
 if (RapidSub.canDelegate("hc_responseerror")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","hc_responseerror", _response, _reason, _statuscode, _taskid);}
 RemoteObject _job = RemoteObject.declareNull("b4a.example.httpjob");
 Debug.locals.put("Response", _response);
@@ -64,7 +64,7 @@ Debug.locals.put("TaskId", _taskid);
 Debug.ShouldStop(262144);
  BA.debugLineNum = 117;BA.debugLine="Log($\"ResponseError. Reason: ${Reason}, Response:";
 Debug.ShouldStop(1048576);
-httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","530146562",(RemoteObject.concat(RemoteObject.createImmutable("ResponseError. Reason: "),httputils2service.mostCurrent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_reason))),RemoteObject.createImmutable(", Response: "),httputils2service.mostCurrent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_response.runMethod(true,"getErrorResponse")))),RemoteObject.createImmutable(""))),0);
+httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","231129602",(RemoteObject.concat(RemoteObject.createImmutable("ResponseError. Reason: "),httputils2service.mostCurrent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_reason))),RemoteObject.createImmutable(", Response: "),httputils2service.mostCurrent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("")),(Object)((_response.runMethod(true,"getErrorResponse")))),RemoteObject.createImmutable(""))),0);
  BA.debugLineNum = 119;BA.debugLine="Response.Release";
 Debug.ShouldStop(4194304);
 _response.runVoidMethod ("Release");
@@ -76,7 +76,7 @@ Debug.ShouldStop(16777216);
 if (RemoteObject.solveBoolean("n",_job)) { 
  BA.debugLineNum = 122;BA.debugLine="Log(\"HttpUtils2Service (hc_ResponseError): job c";
 Debug.ShouldStop(33554432);
-httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","530146567",RemoteObject.concat(RemoteObject.createImmutable("HttpUtils2Service (hc_ResponseError): job completed multiple times - "),_taskid),0);
+httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","231129607",RemoteObject.concat(RemoteObject.createImmutable("HttpUtils2Service (hc_ResponseError): job completed multiple times - "),_taskid),0);
  BA.debugLineNum = 123;BA.debugLine="Return";
 Debug.ShouldStop(67108864);
 if (true) return RemoteObject.createImmutable("");
@@ -107,7 +107,7 @@ finally {
 		}}
 public static RemoteObject  _hc_responsesuccess(RemoteObject _response,RemoteObject _taskid) throws Exception{
 try {
-		Debug.PushSubsStack("hc_ResponseSuccess (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,92);
+		Debug.PushSubsStack("hc_ResponseSuccess (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,92);
 if (RapidSub.canDelegate("hc_responsesuccess")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","hc_responsesuccess", _response, _taskid);}
 RemoteObject _job = RemoteObject.declareNull("b4a.example.httpjob");
 RemoteObject _out = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper");
@@ -123,7 +123,7 @@ Debug.ShouldStop(536870912);
 if (RemoteObject.solveBoolean("n",_job)) { 
  BA.debugLineNum = 95;BA.debugLine="Log(\"HttpUtils2Service (hc_ResponseSuccess): job";
 Debug.ShouldStop(1073741824);
-httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","530015491",RemoteObject.concat(RemoteObject.createImmutable("HttpUtils2Service (hc_ResponseSuccess): job completed multiple times - "),_taskid),0);
+httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","230998531",RemoteObject.concat(RemoteObject.createImmutable("HttpUtils2Service (hc_ResponseSuccess): job completed multiple times - "),_taskid),0);
  BA.debugLineNum = 96;BA.debugLine="Return";
 Debug.ShouldStop(-2147483648);
 if (true) return RemoteObject.createImmutable("");
@@ -163,7 +163,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _receiver_receive(RemoteObject _firsttime,RemoteObject _startingintent) throws Exception{
 try {
-		Debug.PushSubsStack("Receiver_Receive (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,58);
+		Debug.PushSubsStack("Receiver_Receive (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,58);
 if (RapidSub.canDelegate("receiver_receive")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","receiver_receive", _firsttime, _startingintent);}
 Debug.locals.put("FirstTime", _firsttime);
 Debug.locals.put("StartingIntent", _startingintent);
@@ -188,7 +188,7 @@ finally {
 		}}
 public static RemoteObject  _response_streamfinish(RemoteObject _success,RemoteObject _taskid) throws Exception{
 try {
-		Debug.PushSubsStack("Response_StreamFinish (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,107);
+		Debug.PushSubsStack("Response_StreamFinish (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,107);
 if (RapidSub.canDelegate("response_streamfinish")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","response_streamfinish", _success, _taskid);}
 Debug.locals.put("Success", _success);
 Debug.locals.put("TaskId", _taskid);
@@ -217,7 +217,7 @@ finally {
 		}}
 public static RemoteObject  _service_create() throws Exception{
 try {
-		Debug.PushSubsStack("Service_Create (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,27);
+		Debug.PushSubsStack("Service_Create (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,27);
 if (RapidSub.canDelegate("service_create")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","service_create");}
  BA.debugLineNum = 27;BA.debugLine="Sub Service_Create";
 Debug.ShouldStop(67108864);
@@ -237,10 +237,10 @@ httputils2service.mostCurrent.__c.getField(false,"File").runVoidMethod ("Delete"
        catch (Exception e6) {
 			BA.rdebugUtils.runVoidMethod("setLastException",httputils2service.processBA, e6.toString()); BA.debugLineNum = 34;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(2);
-httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","529687815",BA.ObjectToString(httputils2service.mostCurrent.__c.runMethod(false,"LastException",httputils2service.processBA)),0);
+httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","230670855",BA.ObjectToString(httputils2service.mostCurrent.__c.runMethod(false,"LastException",httputils2service.processBA)),0);
  BA.debugLineNum = 35;BA.debugLine="Log(\"Switching to File.DirInternal\")";
 Debug.ShouldStop(4);
-httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","529687816",RemoteObject.createImmutable("Switching to File.DirInternal"),0);
+httputils2service.mostCurrent.__c.runVoidMethod ("LogImpl","230670856",RemoteObject.createImmutable("Switching to File.DirInternal"),0);
  BA.debugLineNum = 36;BA.debugLine="TempFolder = File.DirInternal";
 Debug.ShouldStop(8);
 httputils2service._tempfolder = httputils2service.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirInternal");
@@ -267,7 +267,7 @@ finally {
 		}}
 public static RemoteObject  _service_destroy() throws Exception{
 try {
-		Debug.PushSubsStack("Service_Destroy (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,68);
+		Debug.PushSubsStack("Service_Destroy (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,68);
 if (RapidSub.canDelegate("service_destroy")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","service_destroy");}
  BA.debugLineNum = 68;BA.debugLine="Sub Service_Destroy";
 Debug.ShouldStop(8);
@@ -283,7 +283,7 @@ finally {
 		}}
 public static RemoteObject  _service_start(RemoteObject _startingintent) throws Exception{
 try {
-		Debug.PushSubsStack("Service_Start (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,64);
+		Debug.PushSubsStack("Service_Start (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,64);
 if (RapidSub.canDelegate("service_start")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","service_start", _startingintent);}
 Debug.locals.put("StartingIntent", _startingintent);
  BA.debugLineNum = 64;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
@@ -300,7 +300,7 @@ finally {
 		}}
 public static RemoteObject  _submitjob(RemoteObject _job) throws Exception{
 try {
-		Debug.PushSubsStack("SubmitJob (httputils2service) ","httputils2service",30,httputils2service.processBA,httputils2service.mostCurrent,74);
+		Debug.PushSubsStack("SubmitJob (httputils2service) ","httputils2service",31,httputils2service.processBA,httputils2service.mostCurrent,74);
 if (RapidSub.canDelegate("submitjob")) { return b4a.example.httputils2service.remoteMe.runUserSub(false, "httputils2service","submitjob", _job);}
 RemoteObject _taskid = RemoteObject.createImmutable(0);
 Debug.locals.put("job", _job);

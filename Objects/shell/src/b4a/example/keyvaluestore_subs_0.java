@@ -17,7 +17,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _close(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Close (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,168);
+		Debug.PushSubsStack("Close (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,168);
 if (RapidSub.canDelegate("close")) { return __ref.runUserSub(false, "keyvaluestore","close", __ref);}
  BA.debugLineNum = 168;BA.debugLine="Public Sub Close";
 Debug.JustUpdateDeviceLine();
@@ -36,7 +36,7 @@ finally {
 		}}
 public static RemoteObject  _containskey(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
-		Debug.PushSubsStack("ContainsKey (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,155);
+		Debug.PushSubsStack("ContainsKey (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,155);
 if (RapidSub.canDelegate("containskey")) { return __ref.runUserSub(false, "keyvaluestore","containskey", __ref, _key);}
 Debug.locals.put("Key", _key);
  BA.debugLineNum = 155;BA.debugLine="Public Sub ContainsKey(Key As String) As Boolean";
@@ -56,7 +56,7 @@ finally {
 		}}
 public static RemoteObject  _createtable(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateTable (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,174);
+		Debug.PushSubsStack("CreateTable (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,174);
 if (RapidSub.canDelegate("createtable")) { return __ref.runUserSub(false, "keyvaluestore","createtable", __ref);}
  BA.debugLineNum = 174;BA.debugLine="Private Sub CreateTable";
 Debug.JustUpdateDeviceLine();
@@ -75,7 +75,7 @@ finally {
 		}}
 public static RemoteObject  _deleteall(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("DeleteAll (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,161);
+		Debug.PushSubsStack("DeleteAll (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,161);
 if (RapidSub.canDelegate("deleteall")) { return __ref.runUserSub(false, "keyvaluestore","deleteall", __ref);}
  BA.debugLineNum = 161;BA.debugLine="Public Sub DeleteAll";
 Debug.JustUpdateDeviceLine();
@@ -97,7 +97,7 @@ finally {
 		}}
 public static RemoteObject  _get(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
-		Debug.PushSubsStack("Get (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,21);
+		Debug.PushSubsStack("Get (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,21);
 if (RapidSub.canDelegate("get")) { return __ref.runUserSub(false, "keyvaluestore","get", __ref, _key);}
 RemoteObject _rs = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.ResultSetWrapper");
 RemoteObject _result = RemoteObject.declareNull("Object");
@@ -136,7 +136,7 @@ finally {
 		}}
 public static RemoteObject  _getbitmap(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
-		Debug.PushSubsStack("GetBitmap (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,121);
+		Debug.PushSubsStack("GetBitmap (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,121);
 if (RapidSub.canDelegate("getbitmap")) { return __ref.runUserSub(false, "keyvaluestore","getbitmap", __ref, _key);}
 RemoteObject _b = null;
 RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.InputStreamWrapper");
@@ -181,7 +181,7 @@ finally {
 		}}
 public static RemoteObject  _getdefault(RemoteObject __ref,RemoteObject _key,RemoteObject _defaultvalue) throws Exception{
 try {
-		Debug.PushSubsStack("GetDefault (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,83);
+		Debug.PushSubsStack("GetDefault (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,83);
 if (RapidSub.canDelegate("getdefault")) { return __ref.runUserSub(false, "keyvaluestore","getdefault", __ref, _key, _defaultvalue);}
 RemoteObject _res = RemoteObject.declareNull("Object");
 Debug.locals.put("Key", _key);
@@ -210,7 +210,7 @@ finally {
 		}}
 public static RemoteObject  _getmapasync(RemoteObject __ref,RemoteObject _keys) throws Exception{
 try {
-		Debug.PushSubsStack("GetMapAsync (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,36);
+		Debug.PushSubsStack("GetMapAsync (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,36);
 if (RapidSub.canDelegate("getmapasync")) { return __ref.runUserSub(false, "keyvaluestore","getmapasync", __ref, _keys);}
 ResumableSub_GetMapAsync rsub = new ResumableSub_GetMapAsync(null,__ref,_keys);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -247,7 +247,7 @@ int limit4;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("GetMapAsync (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,36);
+		Debug.PushSubsStack("GetMapAsync (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,36);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -439,7 +439,7 @@ case 23:
 this.state = 24;
  BA.debugLineNum = 59;BA.debugLine="Log(LastException)";
 Debug.JustUpdateDeviceLine();
-parent.__c.runVoidMethod ("LogImpl","928835863",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+parent.__c.runVoidMethod ("LogImpl","929818903",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  if (true) break;
 
 case 24:
@@ -470,7 +470,7 @@ public static void  _myser_bytestoobject(RemoteObject __ref,RemoteObject _succes
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,7);
+		Debug.PushSubsStack("Initialize (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,7);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "keyvaluestore","initialize", __ref, _ba, _dir, _filename);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -500,7 +500,7 @@ finally {
 		}}
 public static RemoteObject  _listkeys(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("ListKeys (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,143);
+		Debug.PushSubsStack("ListKeys (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,143);
 if (RapidSub.canDelegate("listkeys")) { return __ref.runUserSub(false, "keyvaluestore","listkeys", __ref);}
 RemoteObject _c = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.ResultSetWrapper");
 RemoteObject _res = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -542,7 +542,7 @@ finally {
 		}}
 public static RemoteObject  _put(RemoteObject __ref,RemoteObject _key,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("Put (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,17);
+		Debug.PushSubsStack("Put (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,17);
 if (RapidSub.canDelegate("put")) { return __ref.runUserSub(false, "keyvaluestore","put", __ref, _key, _value);}
 Debug.locals.put("Key", _key);
 Debug.locals.put("Value", _value);
@@ -563,7 +563,7 @@ finally {
 		}}
 public static RemoteObject  _putbitmap(RemoteObject __ref,RemoteObject _key,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("PutBitmap (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,113);
+		Debug.PushSubsStack("PutBitmap (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,113);
 if (RapidSub.canDelegate("putbitmap")) { return __ref.runUserSub(false, "keyvaluestore","putbitmap", __ref, _key, _value);}
 RemoteObject _out = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper");
 Debug.locals.put("Key", _key);
@@ -597,7 +597,7 @@ finally {
 		}}
 public static RemoteObject  _putmapasync(RemoteObject __ref,RemoteObject _map) throws Exception{
 try {
-		Debug.PushSubsStack("PutMapAsync (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,67);
+		Debug.PushSubsStack("PutMapAsync (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,67);
 if (RapidSub.canDelegate("putmapasync")) { return __ref.runUserSub(false, "keyvaluestore","putmapasync", __ref, _map);}
 ResumableSub_PutMapAsync rsub = new ResumableSub_PutMapAsync(null,__ref,_map);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -632,7 +632,7 @@ int groupLen1;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("PutMapAsync (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,67);
+		Debug.PushSubsStack("PutMapAsync (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,67);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -720,7 +720,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 75;BA.debugLine="Log(\"Failed to serialize object: \" & Map.Get(ke";
 Debug.JustUpdateDeviceLine();
-parent.__c.runVoidMethod ("LogImpl","928901384",RemoteObject.concat(RemoteObject.createImmutable("Failed to serialize object: "),_map.runMethod(false,"Get",(Object)((_key)))),0);
+parent.__c.runVoidMethod ("LogImpl","929884424",RemoteObject.concat(RemoteObject.createImmutable("Failed to serialize object: "),_map.runMethod(false,"Get",(Object)((_key)))),0);
  if (true) break;
 
 case 9:
@@ -772,7 +772,7 @@ public static void  _sql_nonquerycomplete(RemoteObject __ref,RemoteObject _succe
 }
 public static RemoteObject  _remove(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
-		Debug.PushSubsStack("Remove (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,138);
+		Debug.PushSubsStack("Remove (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,138);
 if (RapidSub.canDelegate("remove")) { return __ref.runUserSub(false, "keyvaluestore","remove", __ref, _key);}
 Debug.locals.put("Key", _key);
  BA.debugLineNum = 138;BA.debugLine="Public Sub Remove(Key As String)";
@@ -792,7 +792,7 @@ finally {
 		}}
 public static RemoteObject  _vacuum(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Vacuum (keyvaluestore) ","keyvaluestore",29,__ref.getField(false, "ba"),__ref,179);
+		Debug.PushSubsStack("Vacuum (keyvaluestore) ","keyvaluestore",30,__ref.getField(false, "ba"),__ref,179);
 if (RapidSub.canDelegate("vacuum")) { return __ref.runUserSub(false, "keyvaluestore","vacuum", __ref);}
  BA.debugLineNum = 179;BA.debugLine="Public Sub Vacuum";
 Debug.JustUpdateDeviceLine();

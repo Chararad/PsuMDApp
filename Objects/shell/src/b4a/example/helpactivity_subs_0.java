@@ -8,7 +8,7 @@ public class helpactivity_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (helpactivity) ","helpactivity",23,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,27);
+		Debug.PushSubsStack("Activity_Create (helpactivity) ","helpactivity",13,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,27);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.helpactivity.remoteMe.runUserSub(false, "helpactivity","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 27;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -72,7 +72,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (helpactivity) ","helpactivity",23,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,56);
+		Debug.PushSubsStack("Activity_Pause (helpactivity) ","helpactivity",13,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,56);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.helpactivity.remoteMe.runUserSub(false, "helpactivity","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 56;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -89,7 +89,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (helpactivity) ","helpactivity",23,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,52);
+		Debug.PushSubsStack("Activity_Resume (helpactivity) ","helpactivity",13,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,52);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.helpactivity.remoteMe.runUserSub(false, "helpactivity","activity_resume");}
  BA.debugLineNum = 52;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(524288);
@@ -105,7 +105,7 @@ finally {
 		}}
 public static RemoteObject  _backbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("backBtn_Click (helpactivity) ","helpactivity",23,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,231);
+		Debug.PushSubsStack("backBtn_Click (helpactivity) ","helpactivity",13,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,231);
 if (RapidSub.canDelegate("backbtn_click")) { return b4a.example.helpactivity.remoteMe.runUserSub(false, "helpactivity","backbtn_click");}
  BA.debugLineNum = 231;BA.debugLine="Sub backBtn_Click";
 Debug.ShouldStop(64);
@@ -128,7 +128,7 @@ finally {
 		}}
 public static RemoteObject  _closehelp_click() throws Exception{
 try {
-		Debug.PushSubsStack("closeHelp_Click (helpactivity) ","helpactivity",23,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,237);
+		Debug.PushSubsStack("closeHelp_Click (helpactivity) ","helpactivity",13,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,237);
 if (RapidSub.canDelegate("closehelp_click")) { return b4a.example.helpactivity.remoteMe.runUserSub(false, "helpactivity","closehelp_click");}
  BA.debugLineNum = 237;BA.debugLine="Sub closeHelp_Click";
 Debug.ShouldStop(4096);
@@ -168,7 +168,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _nextbtn_click() throws Exception{
 try {
-		Debug.PushSubsStack("nextBtn_Click (helpactivity) ","helpactivity",23,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,225);
+		Debug.PushSubsStack("nextBtn_Click (helpactivity) ","helpactivity",13,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,225);
 if (RapidSub.canDelegate("nextbtn_click")) { return b4a.example.helpactivity.remoteMe.runUserSub(false, "helpactivity","nextbtn_click");}
  BA.debugLineNum = 225;BA.debugLine="Sub nextBtn_Click";
 Debug.ShouldStop(1);
@@ -200,7 +200,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _showhelppage(RemoteObject _page) throws Exception{
 try {
-		Debug.PushSubsStack("showHelpPage (helpactivity) ","helpactivity",23,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,60);
+		Debug.PushSubsStack("showHelpPage (helpactivity) ","helpactivity",13,helpactivity.mostCurrent.activityBA,helpactivity.mostCurrent,60);
 if (RapidSub.canDelegate("showhelppage")) { return b4a.example.helpactivity.remoteMe.runUserSub(false, "helpactivity","showhelppage", _page);}
 Debug.locals.put("page", _page);
  BA.debugLineNum = 60;BA.debugLine="Sub showHelpPage(page As Int)";
@@ -260,7 +260,7 @@ Debug.ShouldStop(65536);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 82;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(131072);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("calendarui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dcalendarui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 83;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(262144);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1249.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -273,7 +273,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 87;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(4194304);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dcalendarui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("calendarui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 88;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(8388608);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1252.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -297,7 +297,7 @@ Debug.ShouldStop(1073741824);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 96;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(-2147483648);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("clockui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dclockui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 97;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(1);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1255.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -310,7 +310,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 101;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(16);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dclockui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("clockui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 102;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(32);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1258.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -334,7 +334,7 @@ Debug.ShouldStop(4096);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 110;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(8192);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("corkboardui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dcorkboardui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 111;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(16384);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1261.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -347,7 +347,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 115;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(262144);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dcorkboardui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("corkboardui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 116;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(524288);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1264.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -371,7 +371,7 @@ Debug.ShouldStop(67108864);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 124;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(134217728);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("flashcardsui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dflashcardsui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 125;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(268435456);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1267.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -384,7 +384,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 129;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(1);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dflashcardui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("flashcardui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 130;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(2);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1270.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -408,7 +408,7 @@ Debug.ShouldStop(256);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 138;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(512);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("musicplayerui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dmusicplayerui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 139;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(1024);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1273.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -421,7 +421,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 143;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(16384);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dmusicplayerui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("musicplayerui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 144;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(32768);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1276.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -445,7 +445,7 @@ Debug.ShouldStop(4194304);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 152;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(8388608);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("notepadui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dnotepadui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 153;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(16777216);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1279.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -458,7 +458,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 157;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(268435456);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dnotepadui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("notepadui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 158;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(536870912);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1282.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -482,7 +482,7 @@ Debug.ShouldStop(16);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 166;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(32);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("todoui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dtodoui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 167;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(64);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1285.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -495,7 +495,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 171;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(1024);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dtodoui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("todoui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 172;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(2048);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1288.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -519,7 +519,7 @@ Debug.ShouldStop(262144);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 180;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(524288);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("themesui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dthemesui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 181;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(1048576);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1291.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -532,7 +532,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 185;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(16777216);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dthemesui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("themesui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 186;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(33554432);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1294.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -556,7 +556,7 @@ Debug.ShouldStop(1);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 194;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(2);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("lampui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dlampui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 195;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(4);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1297.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -569,7 +569,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 199;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(64);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dlampui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("lampui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 200;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(128);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("IMG_1298.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -593,7 +593,7 @@ Debug.ShouldStop(16384);
 if (RemoteObject.solveBoolean("=",helpactivity.mostCurrent._starter._darkmode /*RemoteObject*/ ,helpactivity.mostCurrent.__c.getField(true,"False"))) { 
  BA.debugLineNum = 208;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(32768);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("navigationui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dnavigationui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 209;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(65536);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("star.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
@@ -606,7 +606,7 @@ helpactivity.mostCurrent._iconbutton3.runMethod(false,"setBitmap",(helpactivity.
  }else {
  BA.debugLineNum = 213;BA.debugLine="helpimage.Bitmap = xui.LoadBitmapResize(File.D";
 Debug.ShouldStop(1048576);
-helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dnavigationui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
+helpactivity.mostCurrent._helpimage.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("navigationui.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));
  BA.debugLineNum = 214;BA.debugLine="iconButton1.Bitmap = xui.LoadBitmapResize(File";
 Debug.ShouldStop(2097152);
 helpactivity.mostCurrent._iconbutton1.runMethod(false,"setBitmap",(helpactivity._xui.runMethod(false,"LoadBitmapResize",(Object)(helpactivity.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(BA.ObjectToString("dstar.png")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getWidth")),(Object)(helpactivity.mostCurrent._helpimage.runMethod(true,"getHeight")),(Object)(helpactivity.mostCurrent.__c.getField(true,"True"))).getObject()));

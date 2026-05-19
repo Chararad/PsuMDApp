@@ -347,14 +347,7 @@ public static void initializeProcessGlobals() {
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public static anywheresoftware.b4a.objects.Timer _uitimer = null;
-public static int _currentpage = 0;
-public static int _totalpages = 0;
 public static anywheresoftware.b4a.phone.Phone.ContentChooser _chooser = null;
-public static boolean _skiptutorial = false;
-public static boolean _savecheckstate = false;
-public anywheresoftware.b4a.objects.LabelWrapper _lbldesc = null;
-public anywheresoftware.b4a.objects.ButtonWrapper _btnnext = null;
-public anywheresoftware.b4a.objects.CompoundButtonWrapper.CheckBoxWrapper _chkdontshow = null;
 public anywheresoftware.b4a.objects.SeekBarWrapper _seekbar1 = null;
 public anywheresoftware.b4a.objects.LabelWrapper _songtitle = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _pausebtn = null;
@@ -373,7 +366,8 @@ public b4a.example.clockactivity _clockactivity = null;
 public b4a.example.home_activity _home_activity = null;
 public b4a.example.login _login = null;
 public b4a.example.register _register = null;
-public b4a.example.musicservice _musicservice = null;
+public b4a.example.tutorialactivity _tutorialactivity = null;
+public b4a.example.helpactivity _helpactivity = null;
 public b4a.example.active_recall _active_recall = null;
 public b4a.example.add_card_module _add_card_module = null;
 public b4a.example.add_card_module2 _add_card_module2 = null;
@@ -384,7 +378,7 @@ public b4a.example.corkactivity _corkactivity = null;
 public b4a.example.day_module _day_module = null;
 public b4a.example.editnote _editnote = null;
 public b4a.example.flashcardactivity _flashcardactivity = null;
-public b4a.example.helpactivity _helpactivity = null;
+public b4a.example.musicservice _musicservice = null;
 public b4a.example.navactivity _navactivity = null;
 public b4a.example.noteactivity _noteactivity = null;
 public b4a.example.subdeck_module _subdeck_module = null;
@@ -394,27 +388,16 @@ public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=10682368;
- //BA.debugLineNum = 10682368;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=10682369;
- //BA.debugLineNum = 10682369;BA.debugLine="chooser.Initialize(\"chooser\")";
+RDebugUtils.currentLine=9961472;
+ //BA.debugLineNum = 9961472;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=9961473;
+ //BA.debugLineNum = 9961473;BA.debugLine="chooser.Initialize(\"chooser\")";
 _chooser.Initialize("chooser");
-RDebugUtils.currentLine=10682370;
- //BA.debugLineNum = 10682370;BA.debugLine="currentPage = 0";
-_currentpage = (int) (0);
-RDebugUtils.currentLine=10682372;
- //BA.debugLineNum = 10682372;BA.debugLine="If skipTutorial Then";
-if (_skiptutorial) { 
-RDebugUtils.currentLine=10682373;
- //BA.debugLineNum = 10682373;BA.debugLine="LoadMusicPlayer";
+RDebugUtils.currentLine=9961474;
+ //BA.debugLineNum = 9961474;BA.debugLine="LoadMusicPlayer";
 _loadmusicplayer();
- }else {
-RDebugUtils.currentLine=10682375;
- //BA.debugLineNum = 10682375;BA.debugLine="ShowTutorialPage";
-_showtutorialpage();
- };
-RDebugUtils.currentLine=10682377;
- //BA.debugLineNum = 10682377;BA.debugLine="End Sub";
+RDebugUtils.currentLine=9961475;
+ //BA.debugLineNum = 9961475;BA.debugLine="End Sub";
 return "";
 }
 public static String  _loadmusicplayer() throws Exception{
@@ -424,282 +407,136 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "loadmusicplayer", false))
 int _i = 0;
 String _rawpath = "";
 String _displaytitle = "";
-RDebugUtils.currentLine=10878976;
- //BA.debugLineNum = 10878976;BA.debugLine="Sub LoadMusicPlayer";
-RDebugUtils.currentLine=10878977;
- //BA.debugLineNum = 10878977;BA.debugLine="Activity.RemoveAllViews";
+RDebugUtils.currentLine=10027008;
+ //BA.debugLineNum = 10027008;BA.debugLine="Sub LoadMusicPlayer";
+RDebugUtils.currentLine=10027009;
+ //BA.debugLineNum = 10027009;BA.debugLine="Activity.RemoveAllViews";
 mostCurrent._activity.RemoveAllViews();
-RDebugUtils.currentLine=10878979;
- //BA.debugLineNum = 10878979;BA.debugLine="Select Starter.themeNumber";
+RDebugUtils.currentLine=10027011;
+ //BA.debugLineNum = 10027011;BA.debugLine="Select Starter.themeNumber";
 switch (BA.switchObjectToInt(mostCurrent._starter._themenumber /*int*/ ,(int) (0),(int) (1),(int) (2))) {
 case 0: {
-RDebugUtils.currentLine=10878981;
- //BA.debugLineNum = 10878981;BA.debugLine="If Starter.darkMode = False Then";
+RDebugUtils.currentLine=10027013;
+ //BA.debugLineNum = 10027013;BA.debugLine="If Starter.darkMode = False Then";
 if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=10878982;
- //BA.debugLineNum = 10878982;BA.debugLine="Activity.LoadLayout(\"musicLayout\")";
+RDebugUtils.currentLine=10027014;
+ //BA.debugLineNum = 10027014;BA.debugLine="Activity.LoadLayout(\"musicLayout\")";
 mostCurrent._activity.LoadLayout("musicLayout",mostCurrent.activityBA);
  }else {
-RDebugUtils.currentLine=10878984;
- //BA.debugLineNum = 10878984;BA.debugLine="Activity.LoadLayout(\"musicLayoutDark\")";
+RDebugUtils.currentLine=10027016;
+ //BA.debugLineNum = 10027016;BA.debugLine="Activity.LoadLayout(\"musicLayoutDark\")";
 mostCurrent._activity.LoadLayout("musicLayoutDark",mostCurrent.activityBA);
  };
  break; }
 case 1: {
-RDebugUtils.currentLine=10878987;
- //BA.debugLineNum = 10878987;BA.debugLine="If Starter.darkMode = False Then";
+RDebugUtils.currentLine=10027019;
+ //BA.debugLineNum = 10027019;BA.debugLine="If Starter.darkMode = False Then";
 if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=10878988;
- //BA.debugLineNum = 10878988;BA.debugLine="Activity.LoadLayout(\"musicLayout2\")";
+RDebugUtils.currentLine=10027020;
+ //BA.debugLineNum = 10027020;BA.debugLine="Activity.LoadLayout(\"musicLayout2\")";
 mostCurrent._activity.LoadLayout("musicLayout2",mostCurrent.activityBA);
  }else {
-RDebugUtils.currentLine=10878990;
- //BA.debugLineNum = 10878990;BA.debugLine="Activity.LoadLayout(\"musicLayoutDark2\")";
+RDebugUtils.currentLine=10027022;
+ //BA.debugLineNum = 10027022;BA.debugLine="Activity.LoadLayout(\"musicLayoutDark2\")";
 mostCurrent._activity.LoadLayout("musicLayoutDark2",mostCurrent.activityBA);
  };
  break; }
 case 2: {
-RDebugUtils.currentLine=10878993;
- //BA.debugLineNum = 10878993;BA.debugLine="If Starter.darkMode = False Then";
+RDebugUtils.currentLine=10027025;
+ //BA.debugLineNum = 10027025;BA.debugLine="If Starter.darkMode = False Then";
 if (mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=10878994;
- //BA.debugLineNum = 10878994;BA.debugLine="Activity.LoadLayout(\"musicLayout3\")";
+RDebugUtils.currentLine=10027026;
+ //BA.debugLineNum = 10027026;BA.debugLine="Activity.LoadLayout(\"musicLayout3\")";
 mostCurrent._activity.LoadLayout("musicLayout3",mostCurrent.activityBA);
  }else {
-RDebugUtils.currentLine=10878996;
- //BA.debugLineNum = 10878996;BA.debugLine="Activity.LoadLayout(\"musicLayoutDark3\")";
+RDebugUtils.currentLine=10027028;
+ //BA.debugLineNum = 10027028;BA.debugLine="Activity.LoadLayout(\"musicLayoutDark3\")";
 mostCurrent._activity.LoadLayout("musicLayoutDark3",mostCurrent.activityBA);
  };
  break; }
 }
 ;
-RDebugUtils.currentLine=10879000;
- //BA.debugLineNum = 10879000;BA.debugLine="If musicService.mediaPlayer.IsInitialized = False";
+RDebugUtils.currentLine=10027032;
+ //BA.debugLineNum = 10027032;BA.debugLine="If musicService.mediaPlayer.IsInitialized = False";
 if (mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .IsInitialized()==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=10879001;
- //BA.debugLineNum = 10879001;BA.debugLine="StartService(musicService)";
+RDebugUtils.currentLine=10027033;
+ //BA.debugLineNum = 10027033;BA.debugLine="StartService(musicService)";
 anywheresoftware.b4a.keywords.Common.StartService(processBA,(Object)(mostCurrent._musicservice.getObject()));
  };
-RDebugUtils.currentLine=10879006;
- //BA.debugLineNum = 10879006;BA.debugLine="For i = 0 To musicService.musicPlaylist.Size - 1";
+RDebugUtils.currentLine=10027038;
+ //BA.debugLineNum = 10027038;BA.debugLine="For i = 0 To musicService.musicPlaylist.Size - 1";
 {
 final int step25 = 1;
 final int limit25 = (int) (mostCurrent._musicservice._musicplaylist /*anywheresoftware.b4a.objects.collections.List*/ .getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit25 ;_i = _i + step25 ) {
-RDebugUtils.currentLine=10879007;
- //BA.debugLineNum = 10879007;BA.debugLine="Dim rawPath As String";
+RDebugUtils.currentLine=10027039;
+ //BA.debugLineNum = 10027039;BA.debugLine="Dim rawPath As String";
 _rawpath = "";
-RDebugUtils.currentLine=10879008;
- //BA.debugLineNum = 10879008;BA.debugLine="rawPath = musicService.musicPlaylist.Get(i)";
+RDebugUtils.currentLine=10027040;
+ //BA.debugLineNum = 10027040;BA.debugLine="rawPath = musicService.musicPlaylist.Get(i)";
 _rawpath = BA.ObjectToString(mostCurrent._musicservice._musicplaylist /*anywheresoftware.b4a.objects.collections.List*/ .Get(_i));
-RDebugUtils.currentLine=10879009;
- //BA.debugLineNum = 10879009;BA.debugLine="Dim displayTitle As String";
+RDebugUtils.currentLine=10027041;
+ //BA.debugLineNum = 10027041;BA.debugLine="Dim displayTitle As String";
 _displaytitle = "";
-RDebugUtils.currentLine=10879010;
- //BA.debugLineNum = 10879010;BA.debugLine="displayTitle = getDisplayTitle(rawPath)";
+RDebugUtils.currentLine=10027042;
+ //BA.debugLineNum = 10027042;BA.debugLine="displayTitle = getDisplayTitle(rawPath)";
 _displaytitle = _getdisplaytitle(_rawpath);
-RDebugUtils.currentLine=10879011;
- //BA.debugLineNum = 10879011;BA.debugLine="ListView1.AddSingleLine((i + 1) & \"   \" & displa";
+RDebugUtils.currentLine=10027043;
+ //BA.debugLineNum = 10027043;BA.debugLine="ListView1.AddSingleLine((i + 1) & \"   \" & displa";
 mostCurrent._listview1.AddSingleLine(BA.ObjectToCharSequence(BA.NumberToString((_i+1))+"   "+_displaytitle));
-RDebugUtils.currentLine=10879012;
- //BA.debugLineNum = 10879012;BA.debugLine="If Starter.themeNumber = 2 And Starter.darkMode";
+RDebugUtils.currentLine=10027044;
+ //BA.debugLineNum = 10027044;BA.debugLine="If Starter.themeNumber = 2 And Starter.darkMode";
 if (mostCurrent._starter._themenumber /*int*/ ==2 && mostCurrent._starter._darkmode /*boolean*/ ==anywheresoftware.b4a.keywords.Common.True) { 
-RDebugUtils.currentLine=10879013;
- //BA.debugLineNum = 10879013;BA.debugLine="ListView1.SingleLineLayout.Label.TextColor = Co";
+RDebugUtils.currentLine=10027045;
+ //BA.debugLineNum = 10027045;BA.debugLine="ListView1.SingleLineLayout.Label.TextColor = Co";
 mostCurrent._listview1.getSingleLineLayout().Label.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.White);
  }else {
-RDebugUtils.currentLine=10879015;
- //BA.debugLineNum = 10879015;BA.debugLine="ListView1.SingleLineLayout.Label.TextColor = Co";
+RDebugUtils.currentLine=10027047;
+ //BA.debugLineNum = 10027047;BA.debugLine="ListView1.SingleLineLayout.Label.TextColor = Co";
 mostCurrent._listview1.getSingleLineLayout().Label.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.RGB((int) (24),(int) (20),(int) (37)));
  };
  }
 };
-RDebugUtils.currentLine=10879019;
- //BA.debugLineNum = 10879019;BA.debugLine="uiTimer.Initialize(\"uiTimer\", 500)";
+RDebugUtils.currentLine=10027051;
+ //BA.debugLineNum = 10027051;BA.debugLine="uiTimer.Initialize(\"uiTimer\", 500)";
 _uitimer.Initialize(processBA,"uiTimer",(long) (500));
-RDebugUtils.currentLine=10879020;
- //BA.debugLineNum = 10879020;BA.debugLine="uiTimer.Enabled = True";
+RDebugUtils.currentLine=10027052;
+ //BA.debugLineNum = 10027052;BA.debugLine="uiTimer.Enabled = True";
 _uitimer.setEnabled(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=10879021;
- //BA.debugLineNum = 10879021;BA.debugLine="End Sub";
-return "";
-}
-public static String  _showtutorialpage() throws Exception{
-RDebugUtils.currentModule="musicactivity";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "showtutorialpage", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "showtutorialpage", null));}
-RDebugUtils.currentLine=10747904;
- //BA.debugLineNum = 10747904;BA.debugLine="Sub ShowTutorialPage";
-RDebugUtils.currentLine=10747905;
- //BA.debugLineNum = 10747905;BA.debugLine="Activity.RemoveAllViews";
-mostCurrent._activity.RemoveAllViews();
-RDebugUtils.currentLine=10747908;
- //BA.debugLineNum = 10747908;BA.debugLine="lblDesc.Initialize(\"\")";
-mostCurrent._lbldesc.Initialize(mostCurrent.activityBA,"");
-RDebugUtils.currentLine=10747909;
- //BA.debugLineNum = 10747909;BA.debugLine="lblDesc.TextSize = 20";
-mostCurrent._lbldesc.setTextSize((float) (20));
-RDebugUtils.currentLine=10747910;
- //BA.debugLineNum = 10747910;BA.debugLine="lblDesc.TextColor = Colors.RGB(20, 40, 80)";
-mostCurrent._lbldesc.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.RGB((int) (20),(int) (40),(int) (80)));
-RDebugUtils.currentLine=10747911;
- //BA.debugLineNum = 10747911;BA.debugLine="lblDesc.Gravity = Gravity.CENTER";
-mostCurrent._lbldesc.setGravity(anywheresoftware.b4a.keywords.Common.Gravity.CENTER);
-RDebugUtils.currentLine=10747912;
- //BA.debugLineNum = 10747912;BA.debugLine="lblDesc.Typeface = Typeface.DEFAULT_BOLD";
-mostCurrent._lbldesc.setTypeface(anywheresoftware.b4a.keywords.Common.Typeface.DEFAULT_BOLD);
-RDebugUtils.currentLine=10747913;
- //BA.debugLineNum = 10747913;BA.debugLine="lblDesc.SetLayout(20dip, 30dip, 100%x - 40dip, 60";
-mostCurrent._lbldesc.SetLayout(anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (30)),(int) (anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA)-anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (40))),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (60),mostCurrent.activityBA));
-RDebugUtils.currentLine=10747914;
- //BA.debugLineNum = 10747914;BA.debugLine="Activity.AddView(lblDesc, 20dip, 30dip, 100%x - 4";
-mostCurrent._activity.AddView((android.view.View)(mostCurrent._lbldesc.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (30)),(int) (anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA)-anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (40))),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (60),mostCurrent.activityBA));
-RDebugUtils.currentLine=10747917;
- //BA.debugLineNum = 10747917;BA.debugLine="If currentPage = 2 Then";
-if (_currentpage==2) { 
-RDebugUtils.currentLine=10747918;
- //BA.debugLineNum = 10747918;BA.debugLine="chkDontShow.Initialize(\"chkDontShow\")";
-mostCurrent._chkdontshow.Initialize(mostCurrent.activityBA,"chkDontShow");
-RDebugUtils.currentLine=10747919;
- //BA.debugLineNum = 10747919;BA.debugLine="chkDontShow.Text = \"🙈 Don't show this again\"";
-mostCurrent._chkdontshow.setText(BA.ObjectToCharSequence("🙈 Don't show this again"));
-RDebugUtils.currentLine=10747920;
- //BA.debugLineNum = 10747920;BA.debugLine="chkDontShow.TextSize = 14";
-mostCurrent._chkdontshow.setTextSize((float) (14));
-RDebugUtils.currentLine=10747921;
- //BA.debugLineNum = 10747921;BA.debugLine="chkDontShow.Typeface = Typeface.DEFAULT";
-mostCurrent._chkdontshow.setTypeface(anywheresoftware.b4a.keywords.Common.Typeface.DEFAULT);
-RDebugUtils.currentLine=10747922;
- //BA.debugLineNum = 10747922;BA.debugLine="chkDontShow.Checked = saveCheckState";
-mostCurrent._chkdontshow.setChecked(_savecheckstate);
-RDebugUtils.currentLine=10747923;
- //BA.debugLineNum = 10747923;BA.debugLine="chkDontShow.SetLayout(20dip, 55%y, 200dip, 30dip)";
-mostCurrent._chkdontshow.SetLayout(anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20)),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (55),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (200)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (30)));
-RDebugUtils.currentLine=10747924;
- //BA.debugLineNum = 10747924;BA.debugLine="Activity.AddView(chkDontShow, 20dip, 55%y, 200dip";
-mostCurrent._activity.AddView((android.view.View)(mostCurrent._chkdontshow.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20)),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (55),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (200)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (30)));
- };
-RDebugUtils.currentLine=10747928;
- //BA.debugLineNum = 10747928;BA.debugLine="btnnext.Initialize(\"btnnext\")";
-mostCurrent._btnnext.Initialize(mostCurrent.activityBA,"btnnext");
-RDebugUtils.currentLine=10747929;
- //BA.debugLineNum = 10747929;BA.debugLine="btnnext.TextSize = 16";
-mostCurrent._btnnext.setTextSize((float) (16));
-RDebugUtils.currentLine=10747930;
- //BA.debugLineNum = 10747930;BA.debugLine="btnnext.Color = Colors.RGB(100, 120, 180)";
-mostCurrent._btnnext.setColor(anywheresoftware.b4a.keywords.Common.Colors.RGB((int) (100),(int) (120),(int) (180)));
-RDebugUtils.currentLine=10747931;
- //BA.debugLineNum = 10747931;BA.debugLine="btnnext.TextColor = Colors.White";
-mostCurrent._btnnext.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.White);
-RDebugUtils.currentLine=10747932;
- //BA.debugLineNum = 10747932;BA.debugLine="btnnext.Typeface = Typeface.DEFAULT_BOLD";
-mostCurrent._btnnext.setTypeface(anywheresoftware.b4a.keywords.Common.Typeface.DEFAULT_BOLD);
-RDebugUtils.currentLine=10747933;
- //BA.debugLineNum = 10747933;BA.debugLine="btnnext.SetLayout(50dip, 60%y, 200dip, 50dip)";
-mostCurrent._btnnext.SetLayout(anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (50)),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (60),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (200)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (50)));
-RDebugUtils.currentLine=10747934;
- //BA.debugLineNum = 10747934;BA.debugLine="Activity.AddView(btnnext, 50dip, 60%y, 200dip, 50";
-mostCurrent._activity.AddView((android.view.View)(mostCurrent._btnnext.getObject()),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (50)),anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (60),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (200)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (50)));
-RDebugUtils.currentLine=10747937;
- //BA.debugLineNum = 10747937;BA.debugLine="If currentPage = 0 Then";
-if (_currentpage==0) { 
-RDebugUtils.currentLine=10747938;
- //BA.debugLineNum = 10747938;BA.debugLine="lblDesc.Text = \"🎵 WELCOME TO MUSIC PLAYER 🎵\" &";
-mostCurrent._lbldesc.setText(BA.ObjectToCharSequence("🎵 WELCOME TO MUSIC PLAYER 🎵"+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Easily play, pause, skip "+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"and enjoy all your music "+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Everything you need is right here "));
-RDebugUtils.currentLine=10747942;
- //BA.debugLineNum = 10747942;BA.debugLine="btnnext.Text = \"➡️ Next\"";
-mostCurrent._btnnext.setText(BA.ObjectToCharSequence("➡️ Next"));
- }else 
-{RDebugUtils.currentLine=10747944;
- //BA.debugLineNum = 10747944;BA.debugLine="else If currentPage = 1 Then";
-if (_currentpage==1) { 
-RDebugUtils.currentLine=10747945;
- //BA.debugLineNum = 10747945;BA.debugLine="lblDesc.Text = \"️HOW TO USE THE BUTTONS: ️\" & CR";
-mostCurrent._lbldesc.setText(BA.ObjectToCharSequence("️HOW TO USE THE BUTTONS: ️"+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"⏮️ PREVIOUS: Go back to last song "+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"⏯️ PLAY/PAUSE: Start/stop music"+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"⏭️ NEXT: Go to the next song"));
-RDebugUtils.currentLine=10747949;
- //BA.debugLineNum = 10747949;BA.debugLine="btnnext.Text = \"➡️ Next\"";
-mostCurrent._btnnext.setText(BA.ObjectToCharSequence("➡️ Next"));
- }else 
-{RDebugUtils.currentLine=10747951;
- //BA.debugLineNum = 10747951;BA.debugLine="else If currentPage = 2 Then";
-if (_currentpage==2) { 
-RDebugUtils.currentLine=10747952;
- //BA.debugLineNum = 10747952;BA.debugLine="lblDesc.Text = \"✅ ALL DONE! ✅\" & CRLF & CRLF & _";
-mostCurrent._lbldesc.setText(BA.ObjectToCharSequence("✅ ALL DONE! ✅"+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Now you know all features "+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Upload your own music"+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Anytime from the Main player "+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Enjoy listening!"));
-RDebugUtils.currentLine=10747957;
- //BA.debugLineNum = 10747957;BA.debugLine="btnnext.Text = \"✅ Finish\"";
-mostCurrent._btnnext.setText(BA.ObjectToCharSequence("✅ Finish"));
- }}}
-;
-RDebugUtils.currentLine=10747959;
- //BA.debugLineNum = 10747959;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10027053;
+ //BA.debugLineNum = 10027053;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="musicactivity";
-RDebugUtils.currentLine=11337728;
- //BA.debugLineNum = 11337728;BA.debugLine="Sub Activity_Pause(UserClosed As Boolean)";
-RDebugUtils.currentLine=11337730;
- //BA.debugLineNum = 11337730;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10485760;
+ //BA.debugLineNum = 10485760;BA.debugLine="Sub Activity_Pause(UserClosed As Boolean)";
+RDebugUtils.currentLine=10485762;
+ //BA.debugLineNum = 10485762;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=11272192;
- //BA.debugLineNum = 11272192;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=11272194;
- //BA.debugLineNum = 11272194;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btnnext_click() throws Exception{
-RDebugUtils.currentModule="musicactivity";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnnext_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnnext_click", null));}
-RDebugUtils.currentLine=10813440;
- //BA.debugLineNum = 10813440;BA.debugLine="Sub btnnext_Click";
-RDebugUtils.currentLine=10813441;
- //BA.debugLineNum = 10813441;BA.debugLine="currentPage = currentPage + 1";
-_currentpage = (int) (_currentpage+1);
-RDebugUtils.currentLine=10813443;
- //BA.debugLineNum = 10813443;BA.debugLine="If currentPage < totalPages Then";
-if (_currentpage<_totalpages) { 
-RDebugUtils.currentLine=10813444;
- //BA.debugLineNum = 10813444;BA.debugLine="ShowTutorialPage";
-_showtutorialpage();
- }else {
-RDebugUtils.currentLine=10813447;
- //BA.debugLineNum = 10813447;BA.debugLine="If chkDontShow.Checked Then";
-if (mostCurrent._chkdontshow.getChecked()) { 
-RDebugUtils.currentLine=10813448;
- //BA.debugLineNum = 10813448;BA.debugLine="skipTutorial = True";
-_skiptutorial = anywheresoftware.b4a.keywords.Common.True;
- }else {
-RDebugUtils.currentLine=10813450;
- //BA.debugLineNum = 10813450;BA.debugLine="skipTutorial = False";
-_skiptutorial = anywheresoftware.b4a.keywords.Common.False;
- };
-RDebugUtils.currentLine=10813453;
- //BA.debugLineNum = 10813453;BA.debugLine="LoadMusicPlayer";
-_loadmusicplayer();
- };
-RDebugUtils.currentLine=10813455;
- //BA.debugLineNum = 10813455;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10420224;
+ //BA.debugLineNum = 10420224;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=10420226;
+ //BA.debugLineNum = 10420226;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnupload_click() throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnupload_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnupload_click", null));}
-RDebugUtils.currentLine=11010048;
- //BA.debugLineNum = 11010048;BA.debugLine="Sub btnUpload_Click";
-RDebugUtils.currentLine=11010049;
- //BA.debugLineNum = 11010049;BA.debugLine="chooser.Show(\"audio/*\", \"Choose Music File\")";
+RDebugUtils.currentLine=10158080;
+ //BA.debugLineNum = 10158080;BA.debugLine="Sub btnUpload_Click";
+RDebugUtils.currentLine=10158081;
+ //BA.debugLineNum = 10158081;BA.debugLine="chooser.Show(\"audio/*\", \"Choose Music File\")";
 _chooser.Show(processBA,"audio/*","Choose Music File");
-RDebugUtils.currentLine=11010050;
- //BA.debugLineNum = 11010050;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10158082;
+ //BA.debugLineNum = 10158082;BA.debugLine="End Sub";
 return "";
 }
 public static String  _chooser_result(boolean _success,String _dir,String _filename) throws Exception{
@@ -712,95 +549,95 @@ String _destdir = "";
 String _cachedpath = "";
 String _displaytitle = "";
 int _idx = 0;
-RDebugUtils.currentLine=11075584;
- //BA.debugLineNum = 11075584;BA.debugLine="Sub chooser_Result (Success As Boolean, Dir As Str";
-RDebugUtils.currentLine=11075585;
- //BA.debugLineNum = 11075585;BA.debugLine="If Success Then";
+RDebugUtils.currentLine=10223616;
+ //BA.debugLineNum = 10223616;BA.debugLine="Sub chooser_Result (Success As Boolean, Dir As Str";
+RDebugUtils.currentLine=10223617;
+ //BA.debugLineNum = 10223617;BA.debugLine="If Success Then";
 if (_success) { 
-RDebugUtils.currentLine=11075593;
- //BA.debugLineNum = 11075593;BA.debugLine="Dim fullUri As String";
+RDebugUtils.currentLine=10223625;
+ //BA.debugLineNum = 10223625;BA.debugLine="Dim fullUri As String";
 _fulluri = "";
-RDebugUtils.currentLine=11075594;
- //BA.debugLineNum = 11075594;BA.debugLine="fullUri = Dir & FileName";
+RDebugUtils.currentLine=10223626;
+ //BA.debugLineNum = 10223626;BA.debugLine="fullUri = Dir & FileName";
 _fulluri = _dir+_filename;
-RDebugUtils.currentLine=11075598;
- //BA.debugLineNum = 11075598;BA.debugLine="Dim destName As String";
+RDebugUtils.currentLine=10223630;
+ //BA.debugLineNum = 10223630;BA.debugLine="Dim destName As String";
 _destname = "";
-RDebugUtils.currentLine=11075599;
- //BA.debugLineNum = 11075599;BA.debugLine="destName = fullUri.SubString(fullUri.LastIndexOf";
+RDebugUtils.currentLine=10223631;
+ //BA.debugLineNum = 10223631;BA.debugLine="destName = fullUri.SubString(fullUri.LastIndexOf";
 _destname = _fulluri.substring((int) (_fulluri.lastIndexOf("/")+1));
-RDebugUtils.currentLine=11075600;
- //BA.debugLineNum = 11075600;BA.debugLine="destName = destName.Replace(\"%20\", \" \")";
+RDebugUtils.currentLine=10223632;
+ //BA.debugLineNum = 10223632;BA.debugLine="destName = destName.Replace(\"%20\", \" \")";
 _destname = _destname.replace("%20"," ");
-RDebugUtils.currentLine=11075601;
- //BA.debugLineNum = 11075601;BA.debugLine="destName = destName.Replace(\"%26\", \"&\")";
+RDebugUtils.currentLine=10223633;
+ //BA.debugLineNum = 10223633;BA.debugLine="destName = destName.Replace(\"%26\", \"&\")";
 _destname = _destname.replace("%26","&");
-RDebugUtils.currentLine=11075602;
- //BA.debugLineNum = 11075602;BA.debugLine="destName = destName.Replace(\"%27\", \"'\")";
+RDebugUtils.currentLine=10223634;
+ //BA.debugLineNum = 10223634;BA.debugLine="destName = destName.Replace(\"%27\", \"'\")";
 _destname = _destname.replace("%27","'");
-RDebugUtils.currentLine=11075603;
- //BA.debugLineNum = 11075603;BA.debugLine="destName = destName.Replace(\"%28\", \"(\")";
+RDebugUtils.currentLine=10223635;
+ //BA.debugLineNum = 10223635;BA.debugLine="destName = destName.Replace(\"%28\", \"(\")";
 _destname = _destname.replace("%28","(");
-RDebugUtils.currentLine=11075604;
- //BA.debugLineNum = 11075604;BA.debugLine="destName = destName.Replace(\"%29\", \")\")";
+RDebugUtils.currentLine=10223636;
+ //BA.debugLineNum = 10223636;BA.debugLine="destName = destName.Replace(\"%29\", \")\")";
 _destname = _destname.replace("%29",")");
-RDebugUtils.currentLine=11075605;
- //BA.debugLineNum = 11075605;BA.debugLine="destName = destName.Replace(\"%2C\", \",\")";
+RDebugUtils.currentLine=10223637;
+ //BA.debugLineNum = 10223637;BA.debugLine="destName = destName.Replace(\"%2C\", \",\")";
 _destname = _destname.replace("%2C",",");
-RDebugUtils.currentLine=11075608;
- //BA.debugLineNum = 11075608;BA.debugLine="If destName.EndsWith(\".mp3\") = False And destNam";
+RDebugUtils.currentLine=10223640;
+ //BA.debugLineNum = 10223640;BA.debugLine="If destName.EndsWith(\".mp3\") = False And destNam";
 if (_destname.endsWith(".mp3")==anywheresoftware.b4a.keywords.Common.False && _destname.endsWith(".MP3")==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=11075609;
- //BA.debugLineNum = 11075609;BA.debugLine="destName = destName & \".mp3\"";
+RDebugUtils.currentLine=10223641;
+ //BA.debugLineNum = 10223641;BA.debugLine="destName = destName & \".mp3\"";
 _destname = _destname+".mp3";
  };
-RDebugUtils.currentLine=11075613;
- //BA.debugLineNum = 11075613;BA.debugLine="Dim destDir As String";
+RDebugUtils.currentLine=10223645;
+ //BA.debugLineNum = 10223645;BA.debugLine="Dim destDir As String";
 _destdir = "";
-RDebugUtils.currentLine=11075614;
- //BA.debugLineNum = 11075614;BA.debugLine="destDir = File.DirInternalCache";
+RDebugUtils.currentLine=10223646;
+ //BA.debugLineNum = 10223646;BA.debugLine="destDir = File.DirInternalCache";
 _destdir = anywheresoftware.b4a.keywords.Common.File.getDirInternalCache();
-RDebugUtils.currentLine=11075616;
- //BA.debugLineNum = 11075616;BA.debugLine="Try";
-try {RDebugUtils.currentLine=11075617;
- //BA.debugLineNum = 11075617;BA.debugLine="File.Copy(Dir, FileName, destDir, destName)";
+RDebugUtils.currentLine=10223648;
+ //BA.debugLineNum = 10223648;BA.debugLine="Try";
+try {RDebugUtils.currentLine=10223649;
+ //BA.debugLineNum = 10223649;BA.debugLine="File.Copy(Dir, FileName, destDir, destName)";
 anywheresoftware.b4a.keywords.Common.File.Copy(_dir,_filename,_destdir,_destname);
  } 
        catch (Exception e20) {
-			processBA.setLastException(e20);RDebugUtils.currentLine=11075619;
- //BA.debugLineNum = 11075619;BA.debugLine="ToastMessageShow(\"❌ Could not copy file: \" & La";
+			processBA.setLastException(e20);RDebugUtils.currentLine=10223651;
+ //BA.debugLineNum = 10223651;BA.debugLine="ToastMessageShow(\"❌ Could not copy file: \" & La";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("❌ Could not copy file: "+anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage()),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=11075620;
- //BA.debugLineNum = 11075620;BA.debugLine="Return";
+RDebugUtils.currentLine=10223652;
+ //BA.debugLineNum = 10223652;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=11075624;
- //BA.debugLineNum = 11075624;BA.debugLine="Dim cachedPath As String";
+RDebugUtils.currentLine=10223656;
+ //BA.debugLineNum = 10223656;BA.debugLine="Dim cachedPath As String";
 _cachedpath = "";
-RDebugUtils.currentLine=11075625;
- //BA.debugLineNum = 11075625;BA.debugLine="cachedPath = destDir & \"/\" & destName";
+RDebugUtils.currentLine=10223657;
+ //BA.debugLineNum = 10223657;BA.debugLine="cachedPath = destDir & \"/\" & destName";
 _cachedpath = _destdir+"/"+_destname;
-RDebugUtils.currentLine=11075626;
- //BA.debugLineNum = 11075626;BA.debugLine="musicService.musicPlaylist.Add(cachedPath)";
+RDebugUtils.currentLine=10223658;
+ //BA.debugLineNum = 10223658;BA.debugLine="musicService.musicPlaylist.Add(cachedPath)";
 mostCurrent._musicservice._musicplaylist /*anywheresoftware.b4a.objects.collections.List*/ .Add((Object)(_cachedpath));
-RDebugUtils.currentLine=11075629;
- //BA.debugLineNum = 11075629;BA.debugLine="Dim displayTitle As String";
+RDebugUtils.currentLine=10223661;
+ //BA.debugLineNum = 10223661;BA.debugLine="Dim displayTitle As String";
 _displaytitle = "";
-RDebugUtils.currentLine=11075630;
- //BA.debugLineNum = 11075630;BA.debugLine="displayTitle = getDisplayTitle(cachedPath)";
+RDebugUtils.currentLine=10223662;
+ //BA.debugLineNum = 10223662;BA.debugLine="displayTitle = getDisplayTitle(cachedPath)";
 _displaytitle = _getdisplaytitle(_cachedpath);
-RDebugUtils.currentLine=11075631;
- //BA.debugLineNum = 11075631;BA.debugLine="Dim idx As Int = musicService.musicPlaylist.Size";
+RDebugUtils.currentLine=10223663;
+ //BA.debugLineNum = 10223663;BA.debugLine="Dim idx As Int = musicService.musicPlaylist.Size";
 _idx = mostCurrent._musicservice._musicplaylist /*anywheresoftware.b4a.objects.collections.List*/ .getSize();
-RDebugUtils.currentLine=11075632;
- //BA.debugLineNum = 11075632;BA.debugLine="ListView1.AddSingleLine(idx & \"   \" & displayTit";
+RDebugUtils.currentLine=10223664;
+ //BA.debugLineNum = 10223664;BA.debugLine="ListView1.AddSingleLine(idx & \"   \" & displayTit";
 mostCurrent._listview1.AddSingleLine(BA.ObjectToCharSequence(BA.NumberToString(_idx)+"   "+_displaytitle));
-RDebugUtils.currentLine=11075634;
- //BA.debugLineNum = 11075634;BA.debugLine="ToastMessageShow(\"✅ Added: \" & displayTitle, Fal";
+RDebugUtils.currentLine=10223666;
+ //BA.debugLineNum = 10223666;BA.debugLine="ToastMessageShow(\"✅ Added: \" & displayTitle, Fal";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("✅ Added: "+_displaytitle),anywheresoftware.b4a.keywords.Common.False);
  };
-RDebugUtils.currentLine=11075636;
- //BA.debugLineNum = 11075636;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10223668;
+ //BA.debugLineNum = 10223668;BA.debugLine="End Sub";
 return "";
 }
 public static String  _getdisplaytitle(String _rawpath) throws Exception{
@@ -808,44 +645,44 @@ RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "getdisplaytitle", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "getdisplaytitle", new Object[] {_rawpath}));}
 String _name = "";
-RDebugUtils.currentLine=10944512;
- //BA.debugLineNum = 10944512;BA.debugLine="Sub getDisplayTitle(rawPath As String) As String";
-RDebugUtils.currentLine=10944513;
- //BA.debugLineNum = 10944513;BA.debugLine="Dim name As String";
+RDebugUtils.currentLine=10092544;
+ //BA.debugLineNum = 10092544;BA.debugLine="Sub getDisplayTitle(rawPath As String) As String";
+RDebugUtils.currentLine=10092545;
+ //BA.debugLineNum = 10092545;BA.debugLine="Dim name As String";
 _name = "";
-RDebugUtils.currentLine=10944514;
- //BA.debugLineNum = 10944514;BA.debugLine="name = rawPath.SubString(rawPath.LastIndexOf(\"/\")";
+RDebugUtils.currentLine=10092546;
+ //BA.debugLineNum = 10092546;BA.debugLine="name = rawPath.SubString(rawPath.LastIndexOf(\"/\")";
 _name = _rawpath.substring((int) (_rawpath.lastIndexOf("/")+1));
-RDebugUtils.currentLine=10944516;
- //BA.debugLineNum = 10944516;BA.debugLine="If name.EndsWith(\".mp3\") Or name.EndsWith(\".MP3\")";
+RDebugUtils.currentLine=10092548;
+ //BA.debugLineNum = 10092548;BA.debugLine="If name.EndsWith(\".mp3\") Or name.EndsWith(\".MP3\")";
 if (_name.endsWith(".mp3") || _name.endsWith(".MP3")) { 
-RDebugUtils.currentLine=10944517;
- //BA.debugLineNum = 10944517;BA.debugLine="name = name.SubString2(0, name.Length - 4)";
+RDebugUtils.currentLine=10092549;
+ //BA.debugLineNum = 10092549;BA.debugLine="name = name.SubString2(0, name.Length - 4)";
 _name = _name.substring((int) (0),(int) (_name.length()-4));
  };
-RDebugUtils.currentLine=10944520;
- //BA.debugLineNum = 10944520;BA.debugLine="name = name.Replace(\"%20\", \" \")";
+RDebugUtils.currentLine=10092552;
+ //BA.debugLineNum = 10092552;BA.debugLine="name = name.Replace(\"%20\", \" \")";
 _name = _name.replace("%20"," ");
-RDebugUtils.currentLine=10944521;
- //BA.debugLineNum = 10944521;BA.debugLine="name = name.Replace(\"%26\", \"&\")";
+RDebugUtils.currentLine=10092553;
+ //BA.debugLineNum = 10092553;BA.debugLine="name = name.Replace(\"%26\", \"&\")";
 _name = _name.replace("%26","&");
-RDebugUtils.currentLine=10944522;
- //BA.debugLineNum = 10944522;BA.debugLine="name = name.Replace(\"%27\", \"'\")";
+RDebugUtils.currentLine=10092554;
+ //BA.debugLineNum = 10092554;BA.debugLine="name = name.Replace(\"%27\", \"'\")";
 _name = _name.replace("%27","'");
-RDebugUtils.currentLine=10944523;
- //BA.debugLineNum = 10944523;BA.debugLine="name = name.Replace(\"%28\", \"(\")";
+RDebugUtils.currentLine=10092555;
+ //BA.debugLineNum = 10092555;BA.debugLine="name = name.Replace(\"%28\", \"(\")";
 _name = _name.replace("%28","(");
-RDebugUtils.currentLine=10944524;
- //BA.debugLineNum = 10944524;BA.debugLine="name = name.Replace(\"%29\", \")\")";
+RDebugUtils.currentLine=10092556;
+ //BA.debugLineNum = 10092556;BA.debugLine="name = name.Replace(\"%29\", \")\")";
 _name = _name.replace("%29",")");
-RDebugUtils.currentLine=10944525;
- //BA.debugLineNum = 10944525;BA.debugLine="name = name.Replace(\"%2C\", \",\")";
+RDebugUtils.currentLine=10092557;
+ //BA.debugLineNum = 10092557;BA.debugLine="name = name.Replace(\"%2C\", \",\")";
 _name = _name.replace("%2C",",");
-RDebugUtils.currentLine=10944526;
- //BA.debugLineNum = 10944526;BA.debugLine="Return name";
+RDebugUtils.currentLine=10092558;
+ //BA.debugLineNum = 10092558;BA.debugLine="Return name";
 if (true) return _name;
-RDebugUtils.currentLine=10944527;
- //BA.debugLineNum = 10944527;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10092559;
+ //BA.debugLineNum = 10092559;BA.debugLine="End Sub";
 return "";
 }
 public static String  _formatsongdur(int _ms) throws Exception{
@@ -854,41 +691,41 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "formatsongdur", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "formatsongdur", new Object[] {_ms}));}
 int _seconds = 0;
 int _minutes = 0;
-RDebugUtils.currentLine=11403264;
- //BA.debugLineNum = 11403264;BA.debugLine="Sub formatSongDur(ms As Int) As String";
-RDebugUtils.currentLine=11403265;
- //BA.debugLineNum = 11403265;BA.debugLine="Dim seconds As Int";
+RDebugUtils.currentLine=10551296;
+ //BA.debugLineNum = 10551296;BA.debugLine="Sub formatSongDur(ms As Int) As String";
+RDebugUtils.currentLine=10551297;
+ //BA.debugLineNum = 10551297;BA.debugLine="Dim seconds As Int";
 _seconds = 0;
-RDebugUtils.currentLine=11403266;
- //BA.debugLineNum = 11403266;BA.debugLine="Dim minutes As Int";
+RDebugUtils.currentLine=10551298;
+ //BA.debugLineNum = 10551298;BA.debugLine="Dim minutes As Int";
 _minutes = 0;
-RDebugUtils.currentLine=11403267;
- //BA.debugLineNum = 11403267;BA.debugLine="seconds = ms / 1000";
+RDebugUtils.currentLine=10551299;
+ //BA.debugLineNum = 10551299;BA.debugLine="seconds = ms / 1000";
 _seconds = (int) (_ms/(double)1000);
-RDebugUtils.currentLine=11403268;
- //BA.debugLineNum = 11403268;BA.debugLine="minutes = seconds / 60";
+RDebugUtils.currentLine=10551300;
+ //BA.debugLineNum = 10551300;BA.debugLine="minutes = seconds / 60";
 _minutes = (int) (_seconds/(double)60);
-RDebugUtils.currentLine=11403269;
- //BA.debugLineNum = 11403269;BA.debugLine="seconds = seconds Mod 60";
+RDebugUtils.currentLine=10551301;
+ //BA.debugLineNum = 10551301;BA.debugLine="seconds = seconds Mod 60";
 _seconds = (int) (_seconds%60);
-RDebugUtils.currentLine=11403270;
- //BA.debugLineNum = 11403270;BA.debugLine="Return NumberFormat(minutes, 2, 0) & \":\" & Number";
+RDebugUtils.currentLine=10551302;
+ //BA.debugLineNum = 10551302;BA.debugLine="Return NumberFormat(minutes, 2, 0) & \":\" & Number";
 if (true) return anywheresoftware.b4a.keywords.Common.NumberFormat(_minutes,(int) (2),(int) (0))+":"+anywheresoftware.b4a.keywords.Common.NumberFormat(_seconds,(int) (2),(int) (0));
-RDebugUtils.currentLine=11403271;
- //BA.debugLineNum = 11403271;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10551303;
+ //BA.debugLineNum = 10551303;BA.debugLine="End Sub";
 return "";
 }
 public static String  _listview1_itemclick(int _position,Object _value) throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "listview1_itemclick", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "listview1_itemclick", new Object[] {_position,_value}));}
-RDebugUtils.currentLine=11206656;
- //BA.debugLineNum = 11206656;BA.debugLine="Sub ListView1_ItemClick(Position As Int, Value As";
-RDebugUtils.currentLine=11206657;
- //BA.debugLineNum = 11206657;BA.debugLine="CallSub2(musicService, \"setSong\", Position)";
+RDebugUtils.currentLine=10354688;
+ //BA.debugLineNum = 10354688;BA.debugLine="Sub ListView1_ItemClick(Position As Int, Value As";
+RDebugUtils.currentLine=10354689;
+ //BA.debugLineNum = 10354689;BA.debugLine="CallSub2(musicService, \"setSong\", Position)";
 anywheresoftware.b4a.keywords.Common.CallSubDebug2(processBA,(Object)(mostCurrent._musicservice.getObject()),"setSong",(Object)(_position));
-RDebugUtils.currentLine=11206658;
- //BA.debugLineNum = 11206658;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10354690;
+ //BA.debugLineNum = 10354690;BA.debugLine="End Sub";
 return "";
 }
 public static String  _listview1_itemlongclick(int _position,Object _value) throws Exception{
@@ -898,95 +735,95 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "listview1_itemlongclick", fals
 String _rawpath = "";
 String _displaytitle = "";
 String _sourcelabel = "";
-RDebugUtils.currentLine=11141120;
- //BA.debugLineNum = 11141120;BA.debugLine="Sub ListView1_ItemLongClick (Position As Int, Valu";
-RDebugUtils.currentLine=11141122;
- //BA.debugLineNum = 11141122;BA.debugLine="Dim rawPath As String";
+RDebugUtils.currentLine=10289152;
+ //BA.debugLineNum = 10289152;BA.debugLine="Sub ListView1_ItemLongClick (Position As Int, Valu";
+RDebugUtils.currentLine=10289154;
+ //BA.debugLineNum = 10289154;BA.debugLine="Dim rawPath As String";
 _rawpath = "";
-RDebugUtils.currentLine=11141123;
- //BA.debugLineNum = 11141123;BA.debugLine="rawPath = musicService.musicPlaylist.Get(Position";
+RDebugUtils.currentLine=10289155;
+ //BA.debugLineNum = 10289155;BA.debugLine="rawPath = musicService.musicPlaylist.Get(Position";
 _rawpath = BA.ObjectToString(mostCurrent._musicservice._musicplaylist /*anywheresoftware.b4a.objects.collections.List*/ .Get(_position));
-RDebugUtils.currentLine=11141124;
- //BA.debugLineNum = 11141124;BA.debugLine="Dim displayTitle As String";
+RDebugUtils.currentLine=10289156;
+ //BA.debugLineNum = 10289156;BA.debugLine="Dim displayTitle As String";
 _displaytitle = "";
-RDebugUtils.currentLine=11141125;
- //BA.debugLineNum = 11141125;BA.debugLine="displayTitle = getDisplayTitle(rawPath)";
+RDebugUtils.currentLine=10289157;
+ //BA.debugLineNum = 10289157;BA.debugLine="displayTitle = getDisplayTitle(rawPath)";
 _displaytitle = _getdisplaytitle(_rawpath);
-RDebugUtils.currentLine=11141128;
- //BA.debugLineNum = 11141128;BA.debugLine="Dim sourceLabel As String";
+RDebugUtils.currentLine=10289160;
+ //BA.debugLineNum = 10289160;BA.debugLine="Dim sourceLabel As String";
 _sourcelabel = "";
-RDebugUtils.currentLine=11141129;
- //BA.debugLineNum = 11141129;BA.debugLine="If rawPath.StartsWith(\"tracks/\") Then";
+RDebugUtils.currentLine=10289161;
+ //BA.debugLineNum = 10289161;BA.debugLine="If rawPath.StartsWith(\"tracks/\") Then";
 if (_rawpath.startsWith("tracks/")) { 
-RDebugUtils.currentLine=11141130;
- //BA.debugLineNum = 11141130;BA.debugLine="sourceLabel = \"Built-in / Assets\"";
+RDebugUtils.currentLine=10289162;
+ //BA.debugLineNum = 10289162;BA.debugLine="sourceLabel = \"Built-in / Assets\"";
 _sourcelabel = "Built-in / Assets";
  }else {
-RDebugUtils.currentLine=11141132;
- //BA.debugLineNum = 11141132;BA.debugLine="sourceLabel = rawPath";
+RDebugUtils.currentLine=10289164;
+ //BA.debugLineNum = 10289164;BA.debugLine="sourceLabel = rawPath";
 _sourcelabel = _rawpath;
  };
-RDebugUtils.currentLine=11141135;
- //BA.debugLineNum = 11141135;BA.debugLine="MsgboxAsync (\"📝 SONG INFO:\" & CRLF & CRLF & _";
+RDebugUtils.currentLine=10289167;
+ //BA.debugLineNum = 10289167;BA.debugLine="MsgboxAsync (\"📝 SONG INFO:\" & CRLF & CRLF & _";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("📝 SONG INFO:"+anywheresoftware.b4a.keywords.Common.CRLF+anywheresoftware.b4a.keywords.Common.CRLF+"Title: "+_displaytitle+anywheresoftware.b4a.keywords.Common.CRLF+"Track #: "+BA.NumberToString((_position+1))+anywheresoftware.b4a.keywords.Common.CRLF+"Path: "+_sourcelabel),BA.ObjectToCharSequence("Song Details"),processBA);
-RDebugUtils.currentLine=11141139;
- //BA.debugLineNum = 11141139;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10289171;
+ //BA.debugLineNum = 10289171;BA.debugLine="End Sub";
 return "";
 }
 public static String  _nextbtn_click() throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "nextbtn_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "nextbtn_click", null));}
-RDebugUtils.currentLine=11599872;
- //BA.debugLineNum = 11599872;BA.debugLine="Sub nextBtn_Click";
-RDebugUtils.currentLine=11599873;
- //BA.debugLineNum = 11599873;BA.debugLine="CallSub(musicService, \"nextSong\")";
+RDebugUtils.currentLine=10747904;
+ //BA.debugLineNum = 10747904;BA.debugLine="Sub nextBtn_Click";
+RDebugUtils.currentLine=10747905;
+ //BA.debugLineNum = 10747905;BA.debugLine="CallSub(musicService, \"nextSong\")";
 anywheresoftware.b4a.keywords.Common.CallSubDebug(processBA,(Object)(mostCurrent._musicservice.getObject()),"nextSong");
-RDebugUtils.currentLine=11599874;
- //BA.debugLineNum = 11599874;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10747906;
+ //BA.debugLineNum = 10747906;BA.debugLine="End Sub";
 return "";
 }
 public static String  _pausebtn_click() throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "pausebtn_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pausebtn_click", null));}
-RDebugUtils.currentLine=11730944;
- //BA.debugLineNum = 11730944;BA.debugLine="Sub pauseBtn_Click";
-RDebugUtils.currentLine=11730945;
- //BA.debugLineNum = 11730945;BA.debugLine="CallSub(musicService, \"pauseToggle\")";
+RDebugUtils.currentLine=10878976;
+ //BA.debugLineNum = 10878976;BA.debugLine="Sub pauseBtn_Click";
+RDebugUtils.currentLine=10878977;
+ //BA.debugLineNum = 10878977;BA.debugLine="CallSub(musicService, \"pauseToggle\")";
 anywheresoftware.b4a.keywords.Common.CallSubDebug(processBA,(Object)(mostCurrent._musicservice.getObject()),"pauseToggle");
-RDebugUtils.currentLine=11730946;
- //BA.debugLineNum = 11730946;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10878978;
+ //BA.debugLineNum = 10878978;BA.debugLine="End Sub";
 return "";
 }
 public static String  _prevbtn_click() throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "prevbtn_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "prevbtn_click", null));}
-RDebugUtils.currentLine=11665408;
- //BA.debugLineNum = 11665408;BA.debugLine="Sub prevBtn_Click";
-RDebugUtils.currentLine=11665409;
- //BA.debugLineNum = 11665409;BA.debugLine="CallSub(musicService, \"prevSong\")";
+RDebugUtils.currentLine=10813440;
+ //BA.debugLineNum = 10813440;BA.debugLine="Sub prevBtn_Click";
+RDebugUtils.currentLine=10813441;
+ //BA.debugLineNum = 10813441;BA.debugLine="CallSub(musicService, \"prevSong\")";
 anywheresoftware.b4a.keywords.Common.CallSubDebug(processBA,(Object)(mostCurrent._musicservice.getObject()),"prevSong");
-RDebugUtils.currentLine=11665410;
- //BA.debugLineNum = 11665410;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10813442;
+ //BA.debugLineNum = 10813442;BA.debugLine="End Sub";
 return "";
 }
 public static String  _seekbar1_valuechanged(int _value,boolean _userchanged) throws Exception{
 RDebugUtils.currentModule="musicactivity";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "seekbar1_valuechanged", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "seekbar1_valuechanged", new Object[] {_value,_userchanged}));}
-RDebugUtils.currentLine=11534336;
- //BA.debugLineNum = 11534336;BA.debugLine="Sub SeekBar1_ValueChanged(Value As Int, UserChange";
-RDebugUtils.currentLine=11534337;
- //BA.debugLineNum = 11534337;BA.debugLine="If UserChanged Then";
+RDebugUtils.currentLine=10682368;
+ //BA.debugLineNum = 10682368;BA.debugLine="Sub SeekBar1_ValueChanged(Value As Int, UserChange";
+RDebugUtils.currentLine=10682369;
+ //BA.debugLineNum = 10682369;BA.debugLine="If UserChanged Then";
 if (_userchanged) { 
-RDebugUtils.currentLine=11534338;
- //BA.debugLineNum = 11534338;BA.debugLine="musicService.mediaPlayer.Position = Value";
+RDebugUtils.currentLine=10682370;
+ //BA.debugLineNum = 10682370;BA.debugLine="musicService.mediaPlayer.Position = Value";
 mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .setPosition(_value);
  };
-RDebugUtils.currentLine=11534340;
- //BA.debugLineNum = 11534340;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10682372;
+ //BA.debugLineNum = 10682372;BA.debugLine="End Sub";
 return "";
 }
 public static String  _uitimer_tick() throws Exception{
@@ -995,52 +832,52 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "uitimer_tick", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "uitimer_tick", null));}
 String _rawpath = "";
 String _title = "";
-RDebugUtils.currentLine=11468800;
- //BA.debugLineNum = 11468800;BA.debugLine="Sub uiTimer_Tick";
-RDebugUtils.currentLine=11468801;
- //BA.debugLineNum = 11468801;BA.debugLine="If musicService.mediaPlayer.IsInitialized Then";
+RDebugUtils.currentLine=10616832;
+ //BA.debugLineNum = 10616832;BA.debugLine="Sub uiTimer_Tick";
+RDebugUtils.currentLine=10616833;
+ //BA.debugLineNum = 10616833;BA.debugLine="If musicService.mediaPlayer.IsInitialized Then";
 if (mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .IsInitialized()) { 
-RDebugUtils.currentLine=11468802;
- //BA.debugLineNum = 11468802;BA.debugLine="Dim rawPath As String";
+RDebugUtils.currentLine=10616834;
+ //BA.debugLineNum = 10616834;BA.debugLine="Dim rawPath As String";
 _rawpath = "";
-RDebugUtils.currentLine=11468803;
- //BA.debugLineNum = 11468803;BA.debugLine="rawPath = musicService.musicPlaylist.Get(musicSe";
+RDebugUtils.currentLine=10616835;
+ //BA.debugLineNum = 10616835;BA.debugLine="rawPath = musicService.musicPlaylist.Get(musicSe";
 _rawpath = BA.ObjectToString(mostCurrent._musicservice._musicplaylist /*anywheresoftware.b4a.objects.collections.List*/ .Get(mostCurrent._musicservice._currentsong /*int*/ ));
-RDebugUtils.currentLine=11468804;
- //BA.debugLineNum = 11468804;BA.debugLine="Dim title As String";
+RDebugUtils.currentLine=10616836;
+ //BA.debugLineNum = 10616836;BA.debugLine="Dim title As String";
 _title = "";
-RDebugUtils.currentLine=11468805;
- //BA.debugLineNum = 11468805;BA.debugLine="title = getDisplayTitle(rawPath)";
+RDebugUtils.currentLine=10616837;
+ //BA.debugLineNum = 10616837;BA.debugLine="title = getDisplayTitle(rawPath)";
 _title = _getdisplaytitle(_rawpath);
-RDebugUtils.currentLine=11468807;
- //BA.debugLineNum = 11468807;BA.debugLine="SeekBar1.Max = musicService.mediaPlayer.Duration";
+RDebugUtils.currentLine=10616839;
+ //BA.debugLineNum = 10616839;BA.debugLine="SeekBar1.Max = musicService.mediaPlayer.Duration";
 mostCurrent._seekbar1.setMax(mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .getDuration());
-RDebugUtils.currentLine=11468808;
- //BA.debugLineNum = 11468808;BA.debugLine="SeekBar1.Value = musicService.mediaPlayer.Positi";
+RDebugUtils.currentLine=10616840;
+ //BA.debugLineNum = 10616840;BA.debugLine="SeekBar1.Value = musicService.mediaPlayer.Positi";
 mostCurrent._seekbar1.setValue(mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .getPosition());
-RDebugUtils.currentLine=11468809;
- //BA.debugLineNum = 11468809;BA.debugLine="songRuntime.Text = formatSongDur(musicService.me";
+RDebugUtils.currentLine=10616841;
+ //BA.debugLineNum = 10616841;BA.debugLine="songRuntime.Text = formatSongDur(musicService.me";
 mostCurrent._songruntime.setText(BA.ObjectToCharSequence(_formatsongdur(mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .getPosition())+" / "+_formatsongdur(mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .getDuration())));
-RDebugUtils.currentLine=11468810;
- //BA.debugLineNum = 11468810;BA.debugLine="songTitle.Text = title";
+RDebugUtils.currentLine=10616842;
+ //BA.debugLineNum = 10616842;BA.debugLine="songTitle.Text = title";
 mostCurrent._songtitle.setText(BA.ObjectToCharSequence(_title));
-RDebugUtils.currentLine=11468812;
- //BA.debugLineNum = 11468812;BA.debugLine="If musicService.mediaPlayer.IsPlaying Then";
+RDebugUtils.currentLine=10616844;
+ //BA.debugLineNum = 10616844;BA.debugLine="If musicService.mediaPlayer.IsPlaying Then";
 if (mostCurrent._musicservice._mediaplayer /*anywheresoftware.b4a.objects.MediaPlayerWrapper*/ .IsPlaying()) { 
-RDebugUtils.currentLine=11468813;
- //BA.debugLineNum = 11468813;BA.debugLine="pauseBtn.Text = \"❚❚\"";
+RDebugUtils.currentLine=10616845;
+ //BA.debugLineNum = 10616845;BA.debugLine="pauseBtn.Text = \"❚❚\"";
 mostCurrent._pausebtn.setText(BA.ObjectToCharSequence("❚❚"));
  }else {
-RDebugUtils.currentLine=11468815;
- //BA.debugLineNum = 11468815;BA.debugLine="pauseBtn.Text = \"▶\"";
+RDebugUtils.currentLine=10616847;
+ //BA.debugLineNum = 10616847;BA.debugLine="pauseBtn.Text = \"▶\"";
 mostCurrent._pausebtn.setText(BA.ObjectToCharSequence("▶"));
-RDebugUtils.currentLine=11468816;
- //BA.debugLineNum = 11468816;BA.debugLine="pauseBtn.TextSize = 24";
+RDebugUtils.currentLine=10616848;
+ //BA.debugLineNum = 10616848;BA.debugLine="pauseBtn.TextSize = 24";
 mostCurrent._pausebtn.setTextSize((float) (24));
  };
  };
-RDebugUtils.currentLine=11468819;
- //BA.debugLineNum = 11468819;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10616851;
+ //BA.debugLineNum = 10616851;BA.debugLine="End Sub";
 return "";
 }
 }

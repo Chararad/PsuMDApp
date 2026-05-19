@@ -8,7 +8,7 @@ public class day_module_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,53);
+		Debug.PushSubsStack("Activity_Create (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,53);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","activity_create", _firsttime);}
 RemoteObject _bd = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.BitmapDrawable");
 RemoteObject _cd = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.ColorDrawable");
@@ -159,7 +159,7 @@ Debug.ShouldStop(8192);
 _setupspinners();
  BA.debugLineNum = 112;BA.debugLine="Log(currentDate)";
 Debug.ShouldStop(32768);
-day_module.mostCurrent.__c.runVoidMethod ("LogImpl","518087995",day_module._currentdate,0);
+day_module.mostCurrent.__c.runVoidMethod ("LogImpl","218939963",day_module._currentdate,0);
  BA.debugLineNum = 114;BA.debugLine="End Sub";
 Debug.ShouldStop(131072);
 return RemoteObject.createImmutable("");
@@ -172,7 +172,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,465);
+		Debug.PushSubsStack("Activity_Pause (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,465);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 465;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -189,7 +189,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,457);
+		Debug.PushSubsStack("Activity_Resume (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,457);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","activity_resume");}
  BA.debugLineNum = 457;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(256);
@@ -218,7 +218,7 @@ finally {
 		}}
 public static RemoteObject  _addevent_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("Addevent_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,488);
+		Debug.PushSubsStack("Addevent_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,488);
 if (RapidSub.canDelegate("addevent_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","addevent_btn_click");}
  BA.debugLineNum = 488;BA.debugLine="Private Sub Addevent_btn_Click";
 Debug.ShouldStop(128);
@@ -243,7 +243,7 @@ finally {
 		}}
 public static RemoteObject  _addnew_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("addnew_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,494);
+		Debug.PushSubsStack("addnew_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,494);
 if (RapidSub.canDelegate("addnew_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","addnew_btn_click");}
  BA.debugLineNum = 494;BA.debugLine="Private Sub addnew_btn_Click";
 Debug.ShouldStop(8192);
@@ -272,7 +272,7 @@ finally {
 		}}
 public static RemoteObject  _addtask_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("Addtask_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,505);
+		Debug.PushSubsStack("Addtask_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,505);
 if (RapidSub.canDelegate("addtask_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","addtask_btn_click");}
  BA.debugLineNum = 505;BA.debugLine="Private Sub Addtask_btn_Click";
 Debug.ShouldStop(16777216);
@@ -297,7 +297,7 @@ finally {
 		}}
 public static RemoteObject  _birthday_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("birthday_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,511);
+		Debug.PushSubsStack("birthday_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,511);
 if (RapidSub.canDelegate("birthday_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","birthday_btn_click");}
  BA.debugLineNum = 511;BA.debugLine="Private Sub birthday_btn_Click";
 Debug.ShouldStop(1073741824);
@@ -322,7 +322,7 @@ finally {
 		}}
 public static RemoteObject  _birthdayrb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("birthdayrb_CheckedChange (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,616);
+		Debug.PushSubsStack("birthdayrb_CheckedChange (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,616);
 if (RapidSub.canDelegate("birthdayrb_checkedchange")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","birthdayrb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 616;BA.debugLine="Private Sub birthdayrb_CheckedChange(Checked As Bo";
@@ -342,7 +342,7 @@ finally {
 		}}
 public static RemoteObject  _canceldelete_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("cancelDelete_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,565);
+		Debug.PushSubsStack("cancelDelete_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,565);
 if (RapidSub.canDelegate("canceldelete_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","canceldelete_btn_click");}
  BA.debugLineNum = 565;BA.debugLine="Private Sub cancelDelete_btn_Click";
 Debug.ShouldStop(1048576);
@@ -361,7 +361,7 @@ finally {
 		}}
 public static RemoteObject  _canceledit_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("cancelEdit_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,538);
+		Debug.PushSubsStack("cancelEdit_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,538);
 if (RapidSub.canDelegate("canceledit_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","canceledit_btn_click");}
  BA.debugLineNum = 538;BA.debugLine="Private Sub cancelEdit_btn_Click";
 Debug.ShouldStop(33554432);
@@ -380,7 +380,7 @@ finally {
 		}}
 public static RemoteObject  _canceltldelete_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("cancelTLdelete_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,588);
+		Debug.PushSubsStack("cancelTLdelete_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,588);
 if (RapidSub.canDelegate("canceltldelete_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","canceltldelete_btn_click");}
  BA.debugLineNum = 588;BA.debugLine="Private Sub cancelTLdelete_btn_Click";
 Debug.ShouldStop(2048);
@@ -399,7 +399,7 @@ finally {
 		}}
 public static RemoteObject  _confirmdelete_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("confirmdelete_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,569);
+		Debug.PushSubsStack("confirmdelete_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,569);
 if (RapidSub.canDelegate("confirmdelete_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","confirmdelete_btn_click");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _allevents = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -440,7 +440,7 @@ finally {
 		}}
 public static RemoteObject  _day_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("Day_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,479);
+		Debug.PushSubsStack("Day_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,479);
 if (RapidSub.canDelegate("day_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","day_btn_click");}
  BA.debugLineNum = 479;BA.debugLine="Private Sub Day_btn_Click";
 Debug.ShouldStop(1073741824);
@@ -459,7 +459,7 @@ finally {
 		}}
 public static RemoteObject  _deleteevent_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("DeleteEvent_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,534);
+		Debug.PushSubsStack("DeleteEvent_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,534);
 if (RapidSub.canDelegate("deleteevent_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","deleteevent_btn_click");}
  BA.debugLineNum = 534;BA.debugLine="Private Sub DeleteEvent_btn_Click";
 Debug.ShouldStop(2097152);
@@ -478,7 +478,7 @@ finally {
 		}}
 public static RemoteObject  _deletetlconfirm_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("deleteTLconfirm_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,592);
+		Debug.PushSubsStack("deleteTLconfirm_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,592);
 if (RapidSub.canDelegate("deletetlconfirm_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","deletetlconfirm_btn_click");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _timeline = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -546,7 +546,7 @@ finally {
 		}}
 public static RemoteObject  _deletetlevent_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("deleteTLevent_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,584);
+		Debug.PushSubsStack("deleteTLevent_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,584);
 if (RapidSub.canDelegate("deletetlevent_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","deletetlevent_btn_click");}
  BA.debugLineNum = 584;BA.debugLine="Private Sub deleteTLevent_btn_Click";
 Debug.ShouldStop(128);
@@ -565,7 +565,7 @@ finally {
 		}}
 public static RemoteObject  _drawhourlabels() throws Exception{
 try {
-		Debug.PushSubsStack("DrawHourLabels (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,193);
+		Debug.PushSubsStack("DrawHourLabels (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,193);
 if (RapidSub.canDelegate("drawhourlabels")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","drawhourlabels");}
 RemoteObject _rowh = RemoteObject.createImmutable(0);
 int _h = 0;
@@ -681,7 +681,7 @@ finally {
 		}}
 public static RemoteObject  _drawmainevents() throws Exception{
 try {
-		Debug.PushSubsStack("DrawMainEvents (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,130);
+		Debug.PushSubsStack("DrawMainEvents (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,130);
 if (RapidSub.canDelegate("drawmainevents")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","drawmainevents");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _allevents = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -770,7 +770,7 @@ finally {
 		}}
 public static RemoteObject  _drawtimelineevents() throws Exception{
 try {
-		Debug.PushSubsStack("DrawTimelineEvents (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,260);
+		Debug.PushSubsStack("DrawTimelineEvents (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,260);
 if (RapidSub.canDelegate("drawtimelineevents")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","drawtimelineevents");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _timeline = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -903,7 +903,7 @@ finally {
 		}}
 public static RemoteObject  _editeventinfo_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("editeventinfo_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,523);
+		Debug.PushSubsStack("editeventinfo_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,523);
 if (RapidSub.canDelegate("editeventinfo_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","editeventinfo_btn_click");}
  BA.debugLineNum = 523;BA.debugLine="Private Sub editeventinfo_btn_Click";
 Debug.ShouldStop(1024);
@@ -928,7 +928,7 @@ finally {
 		}}
 public static RemoteObject  _eventrb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("eventrb_CheckedChange (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,620);
+		Debug.PushSubsStack("eventrb_CheckedChange (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,620);
 if (RapidSub.canDelegate("eventrb_checkedchange")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","eventrb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 620;BA.debugLine="Private Sub eventrb_CheckedChange(Checked As Boole";
@@ -948,7 +948,7 @@ finally {
 		}}
 public static RemoteObject  _gettimestring(RemoteObject _h) throws Exception{
 try {
-		Debug.PushSubsStack("GetTimeString (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,235);
+		Debug.PushSubsStack("GetTimeString (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,235);
 if (RapidSub.canDelegate("gettimestring")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","gettimestring", _h);}
 RemoteObject _num = RemoteObject.createImmutable(0);
 RemoteObject _ampm = RemoteObject.createImmutable("");
@@ -1087,7 +1087,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _hour_click() throws Exception{
 try {
-		Debug.PushSubsStack("hour_click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,321);
+		Debug.PushSubsStack("hour_click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,321);
 if (RapidSub.canDelegate("hour_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","hour_click");}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
 RemoteObject _tappedindex = RemoteObject.createImmutable("");
@@ -1160,7 +1160,7 @@ finally {
 		}}
 public static RemoteObject  _identifycolor(RemoteObject _typeofevent) throws Exception{
 try {
-		Debug.PushSubsStack("IdentifyColor (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,173);
+		Debug.PushSubsStack("IdentifyColor (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,173);
 if (RapidSub.canDelegate("identifycolor")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","identifycolor", _typeofevent);}
 RemoteObject _mycolor = RemoteObject.createImmutable(0);
 Debug.locals.put("typeofevent", _typeofevent);
@@ -1213,7 +1213,7 @@ finally {
 		}}
 public static RemoteObject  _mainevent_click() throws Exception{
 try {
-		Debug.PushSubsStack("mainEvent_click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,157);
+		Debug.PushSubsStack("mainEvent_click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,157);
 if (RapidSub.canDelegate("mainevent_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","mainevent_click");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _allevents = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -1270,7 +1270,7 @@ finally {
 		}}
 public static RemoteObject  _mapinitializer() throws Exception{
 try {
-		Debug.PushSubsStack("MapInitializer (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,352);
+		Debug.PushSubsStack("MapInitializer (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,352);
 if (RapidSub.canDelegate("mapinitializer")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","mapinitializer");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _allevents = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -1319,7 +1319,7 @@ finally {
 		}}
 public static RemoteObject  _menu_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("menu_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,470);
+		Debug.PushSubsStack("menu_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,470);
 if (RapidSub.canDelegate("menu_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","menu_btn_click");}
  BA.debugLineNum = 470;BA.debugLine="Private Sub menu_btn_Click";
 Debug.ShouldStop(2097152);
@@ -1338,7 +1338,7 @@ finally {
 		}}
 public static RemoteObject  _month_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("Month_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,483);
+		Debug.PushSubsStack("Month_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,483);
 if (RapidSub.canDelegate("month_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","month_btn_click");}
  BA.debugLineNum = 483;BA.debugLine="Private Sub Month_btn_Click";
 Debug.ShouldStop(4);
@@ -1360,7 +1360,7 @@ finally {
 		}}
 public static RemoteObject  _ooo_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("ooo_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,517);
+		Debug.PushSubsStack("ooo_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,517);
 if (RapidSub.canDelegate("ooo_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","ooo_btn_click");}
  BA.debugLineNum = 517;BA.debugLine="Private Sub ooo_btn_Click";
 Debug.ShouldStop(16);
@@ -1385,7 +1385,7 @@ finally {
 		}}
 public static RemoteObject  _ooorb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("ooorb_CheckedChange (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,612);
+		Debug.PushSubsStack("ooorb_CheckedChange (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,612);
 if (RapidSub.canDelegate("ooorb_checkedchange")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","ooorb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 612;BA.debugLine="Private Sub ooorb_CheckedChange(Checked As Boolean";
@@ -1418,7 +1418,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _savecalendar() throws Exception{
 try {
-		Debug.PushSubsStack("SaveCalendar (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,126);
+		Debug.PushSubsStack("SaveCalendar (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,126);
 if (RapidSub.canDelegate("savecalendar")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","savecalendar");}
  BA.debugLineNum = 126;BA.debugLine="Sub SaveCalendar";
 Debug.ShouldStop(536870912);
@@ -1437,7 +1437,7 @@ finally {
 		}}
 public static RemoteObject  _saveedit_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("saveEdit_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,542);
+		Debug.PushSubsStack("saveEdit_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,542);
 if (RapidSub.canDelegate("saveedit_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","saveedit_btn_click");}
  BA.debugLineNum = 542;BA.debugLine="Private Sub saveEdit_btn_Click";
 Debug.ShouldStop(536870912);
@@ -1497,7 +1497,7 @@ finally {
 		}}
 public static RemoteObject  _savetl_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("saveTL_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,370);
+		Debug.PushSubsStack("saveTL_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,370);
 if (RapidSub.canDelegate("savetl_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","savetl_btn_click");}
 RemoteObject _eventmap = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _timeline = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -1623,7 +1623,7 @@ finally {
 		}}
 public static RemoteObject  _sched_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("sched_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,474);
+		Debug.PushSubsStack("sched_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,474);
 if (RapidSub.canDelegate("sched_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","sched_btn_click");}
  BA.debugLineNum = 474;BA.debugLine="Private Sub sched_btn_Click";
 Debug.ShouldStop(33554432);
@@ -1645,7 +1645,7 @@ finally {
 		}}
 public static RemoteObject  _setdate(RemoteObject _tagdate) throws Exception{
 try {
-		Debug.PushSubsStack("SetDate (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,418);
+		Debug.PushSubsStack("SetDate (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,418);
 if (RapidSub.canDelegate("setdate")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","setdate", _tagdate);}
 RemoteObject _parts = null;
 RemoteObject _year = RemoteObject.createImmutable("");
@@ -1802,7 +1802,7 @@ finally {
 		}}
 public static RemoteObject  _setupspinners() throws Exception{
 try {
-		Debug.PushSubsStack("SetUpSpinners (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,116);
+		Debug.PushSubsStack("SetUpSpinners (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,116);
 if (RapidSub.canDelegate("setupspinners")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","setupspinners");}
 RemoteObject _hours = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 int _i = 0;
@@ -1846,7 +1846,7 @@ finally {
 		}}
 public static RemoteObject  _taskrb_checkedchange(RemoteObject _checked) throws Exception{
 try {
-		Debug.PushSubsStack("taskrb_CheckedChange (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,624);
+		Debug.PushSubsStack("taskrb_CheckedChange (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,624);
 if (RapidSub.canDelegate("taskrb_checkedchange")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","taskrb_checkedchange", _checked);}
 Debug.locals.put("Checked", _checked);
  BA.debugLineNum = 624;BA.debugLine="Private Sub taskrb_CheckedChange(Checked As Boolea";
@@ -1866,7 +1866,7 @@ finally {
 		}}
 public static RemoteObject  _timelineevent_click() throws Exception{
 try {
-		Debug.PushSubsStack("timelineEvent_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,298);
+		Debug.PushSubsStack("timelineEvent_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,298);
 if (RapidSub.canDelegate("timelineevent_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","timelineevent_click");}
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 RemoteObject _ev = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -1935,7 +1935,7 @@ finally {
 		}}
 public static RemoteObject  _updatetimeline() throws Exception{
 try {
-		Debug.PushSubsStack("UpdateTimeLine (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,187);
+		Debug.PushSubsStack("UpdateTimeLine (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,187);
 if (RapidSub.canDelegate("updatetimeline")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","updatetimeline");}
  BA.debugLineNum = 187;BA.debugLine="Sub UpdateTimeLine";
 Debug.ShouldStop(67108864);
@@ -1960,7 +1960,7 @@ finally {
 		}}
 public static RemoteObject  _x_eventinfo_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("x_EventInfo_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,529);
+		Debug.PushSubsStack("x_EventInfo_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,529);
 if (RapidSub.canDelegate("x_eventinfo_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","x_eventinfo_btn_click");}
  BA.debugLineNum = 529;BA.debugLine="Private Sub x_EventInfo_btn_Click";
 Debug.ShouldStop(65536);
@@ -1982,7 +1982,7 @@ finally {
 		}}
 public static RemoteObject  _x_tlevent_btn_click() throws Exception{
 try {
-		Debug.PushSubsStack("x_TLevent_btn_Click (day_module) ","day_module",20,day_module.mostCurrent.activityBA,day_module.mostCurrent,579);
+		Debug.PushSubsStack("x_TLevent_btn_Click (day_module) ","day_module",21,day_module.mostCurrent.activityBA,day_module.mostCurrent,579);
 if (RapidSub.canDelegate("x_tlevent_btn_click")) { return b4a.example.day_module.remoteMe.runUserSub(false, "day_module","x_tlevent_btn_click");}
  BA.debugLineNum = 579;BA.debugLine="Private Sub x_TLevent_btn_Click";
 Debug.ShouldStop(4);
