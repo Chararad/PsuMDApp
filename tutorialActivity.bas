@@ -89,8 +89,19 @@ Sub showTutorialPage(page As Int)
 			               "Long-press any button to see its name and a step-by-step walkthrough " & _
 			               "of how to use that specific feature."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpnav.png", tutorialImg.Width, tutorialImg.Height, True)
-
+			
 		Case 4
+			headerLbl.Text = "Leaderboard"
+			bodyLbl.Text = "Navigation Button — your ranking board for flashcard progress." & CRLF & _
+			               "Tap the star button for to see every player's XP, streak, and their ranking!" & CRLF & _
+			               "Daily, Weekly, All-Time — pick your battleground. Tap any TAB To switch views." & _
+						   "Top card — the #1 spot, front and center." & _
+						   "The current leader gets the big card up top. That could be you." & CRLF & CRLF & _
+			               "Ranking — XP wins, streak breaks ties. More XP = higher rank. Same XP?" & _
+						   "Longer streak goes first. Still tied? Better correct rate wins."
+			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpnav.png", tutorialImg.Width, tutorialImg.Height, True)
+
+		Case 5
 			headerLbl.Text = "Lamp — Dark / Light Mode"
 			bodyLbl.Text = "Tap the Lamp to instantly switch between Light Mode and Dark Mode." & CRLF & CRLF & _
 			               "Whether you're studying under the morning sun or pulling a late-night session, " & _
@@ -99,7 +110,7 @@ Sub showTutorialPage(page As Int)
 			               "One tap, and your whole environment transforms."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helplamp.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 5
+		Case 6
 			headerLbl.Text = "Music Player  (1/2)"
 			bodyLbl.Text = "Tap the record player and lo-fi music fills the room — instantly setting " & _
 			               "the mood for deep focus." & CRLF & CRLF & _
@@ -110,7 +121,7 @@ Sub showTutorialPage(page As Int)
 			               "  • Playlist — tap any song in the list to play it directly."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpmusic.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 6
+		Case 7
 			headerLbl.Text = "Music Player  (2/2)"
 			bodyLbl.Text = "Athena's music library has grown — more curated lo-fi tracks are now built in." & CRLF & CRLF & _
 			               "Have a song that puts you in the zone? Upload it directly into the app " & _
@@ -118,7 +129,7 @@ Sub showTutorialPage(page As Int)
 			               "Your study playlist, your rules."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpmusic.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 7
+		Case 8
 			headerLbl.Text = "Clock & Pomodoro  (1/2)"
 			bodyLbl.Text = "The Clock is more than a timepiece — it is your productivity partner." & CRLF & CRLF & _
 			               "Real-time clock:" & CRLF & _
@@ -130,7 +141,7 @@ Sub showTutorialPage(page As Int)
 			               "After four Pomodoro cycles you automatically earn a longer rest."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpclock.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 8
+		Case 9
 			headerLbl.Text = "Clock & Pomodoro  (2/2)"
 			bodyLbl.Text = "Controls:" & CRLF & _
 			               "  • Start / Pause — begin or pause the current session." & CRLF & _
@@ -141,7 +152,7 @@ Sub showTutorialPage(page As Int)
 			               "Stay focused, rest when earned, and keep the cycle going."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpclock.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 9
+		Case 10
 			headerLbl.Text = "Flashcards  (1/3)"
 			bodyLbl.Text = "Tap the Books to open Flashcards — your ultimate memory tool." & CRLF & CRLF & _
 			               "Deck management:" & CRLF & _
@@ -151,7 +162,7 @@ Sub showTutorialPage(page As Int)
 			               "Confirmation is always required before anything is permanently removed."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpflashcard.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 10
+		Case 11
 			headerLbl.Text = "Flashcards  (2/3)"
 			bodyLbl.Text = "Reviewing a deck:" & CRLF & _
 			               "  • Answer — flip the card to reveal the answer." & CRLF & _
@@ -163,7 +174,7 @@ Sub showTutorialPage(page As Int)
 			               "A progress bar and percentage show how far you have made it through a deck."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpflashcard.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 11
+		Case 12
 			headerLbl.Text = "Flashcards  (3/3)"
 			bodyLbl.Text = "Athena's AI can do the heavy lifting for you." & CRLF & CRLF & _
 			               "Upload a file — a PDF, a document, or your lecture notes — and the AI reads " & _
@@ -172,7 +183,7 @@ Sub showTutorialPage(page As Int)
 			               "Because your convenience matters too."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpflashcard.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 12
+		Case 13
 			headerLbl.Text = "Calendar  (1/3)"
 			bodyLbl.Text = "Tap the Calendar to open your personal time designer." & CRLF & CRLF & _
 			               "By default you land on Month View — your big-picture overview of everything ahead." & CRLF & CRLF & _
@@ -182,7 +193,7 @@ Sub showTutorialPage(page As Int)
 			               "  • Month View — full calendar grid; use the Arrow button to change month/year."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpcalendar.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 13
+		Case 14
 			headerLbl.Text = "Calendar  (2/3)"
 			bodyLbl.Text = "Adding events:" & CRLF & _
 			               "  • Tap any date to open that day's hour-by-hour timeline." & CRLF & _
@@ -195,7 +206,7 @@ Sub showTutorialPage(page As Int)
 			               "Always tap Save to confirm — or Delete if plans change."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpcalendar.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 14
+		Case 15
 			headerLbl.Text = "Calendar  (3/3)"
 			bodyLbl.Text = "Schedules are no longer just personal." & CRLF & CRLF & _
 			               "Group Collaboration lets you create a group with classmates or coworkers " & _
@@ -204,7 +215,7 @@ Sub showTutorialPage(page As Int)
 			               "Never miss a group deadline again."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpcalendar.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 15
+		Case 16
 			headerLbl.Text = "To-Do List  (1/2)"
 			bodyLbl.Text = "Tap the PC Screen to open the To-Do List — your accountability partner." & CRLF & CRLF & _
 			               "Structured checkboxes keep every item actionable." & CRLF & CRLF & _
@@ -215,7 +226,7 @@ Sub showTutorialPage(page As Int)
 			               "Navigate between lists easily from the side panel."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helptodo.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 16
+		Case 17
 			headerLbl.Text = "To-Do List  (2/2)"
 			bodyLbl.Text = "Progress tracker:" & CRLF & _
 			               "As you tick off tasks, the percentage tracker updates in real time — " & _
@@ -226,7 +237,7 @@ Sub showTutorialPage(page As Int)
 			               "and make sure no one falls behind."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helptodo.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 17
+		Case 18
 			headerLbl.Text = "Notepad  (1/2)"
 			bodyLbl.Text = "Tap the Notepad to capture the details that matter most." & CRLF & CRLF & _
 			               "Creating a note:" & CRLF & _
@@ -238,7 +249,7 @@ Sub showTutorialPage(page As Int)
 			               "  • Use the search bar — type a title or tag and your note appears instantly."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpnotepad.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 18
+		Case 19
 			headerLbl.Text = "Notepad  (2/2)"
 			bodyLbl.Text = "Athena's AI can summarize for you." & CRLF & CRLF & _
 			               "Upload a file or paste a block of text, and the AI reads it and generates " & _
@@ -247,7 +258,7 @@ Sub showTutorialPage(page As Int)
 			               "structured, accessible, and always within reach."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpnotepad.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 19
+		Case 20
 			headerLbl.Text = "Corkboard  (1/2)"
 			bodyLbl.Text = "Tap the Corkboard — your digital canvas, fully customizable and personal." & CRLF & CRLF & _
 			               "What you can add:" & CRLF & _
@@ -256,7 +267,7 @@ Sub showTutorialPage(page As Int)
 			               "  • Canvas — draw freely with colored pens; sketch ideas or map out concepts."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpcorkboard.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 20
+		Case 21
 			headerLbl.Text = "Corkboard  (2/2)"
 			bodyLbl.Text = "The Corkboard is where organization meets creativity." & CRLF & CRLF & _
 			               "Arrange, move, and rearrange everything exactly the way you want — " & _
@@ -264,7 +275,7 @@ Sub showTutorialPage(page As Int)
 			               "It is not just a workspace. It is a reflection of how you think."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpcorkboard.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 21
+		Case 22
 			headerLbl.Text = "Themes"
 			bodyLbl.Text = "Your workspace should feel like yours." & CRLF & CRLF & _
 			               "Tap the Plant or the Stuffed Toy on the upper-right shelf to instantly " & _
@@ -276,7 +287,7 @@ Sub showTutorialPage(page As Int)
 			               "One tap and your environment refreshes — lively, inspiring, and uniquely you."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helptheme.png", tutorialImg.Width, tutorialImg.Height, True)
 
-		Case 22
+		Case 23
 			headerLbl.Text = "You're All Set!"
 			bodyLbl.Text = "That is everything Athena has to offer." & CRLF & CRLF & _
 			               "No more juggling apps. No more wasted time." & CRLF & _
@@ -289,16 +300,16 @@ Sub showTutorialPage(page As Int)
 
 	End Select
 
-	pageIndicator.Text = (page + 1) & " / 23"
+	pageIndicator.Text = (page + 1) & " / 24"
 
 	' Show checkbox on last page only
-	chkDontShow.Visible = (page = 22)
+	chkDontShow.Visible = (page = 23)
 
 	' Back button
 	btnBack.Enabled = (page > 0)
 
 	' Next / Finish label
-	If page = 22 Then
+	If page = 23 Then
 		btnNext.Text = "Finish"
 	Else
 		btnNext.Text = "Next"
@@ -306,7 +317,7 @@ Sub showTutorialPage(page As Int)
 End Sub
 
 Sub btnNext_Click
-	If tutorialPage < 22 Then
+	If tutorialPage < 23 Then
 		showTutorialPage(tutorialPage + 1)
 	Else
 		If chkDontShow.Checked Then

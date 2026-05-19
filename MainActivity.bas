@@ -244,6 +244,10 @@ Private Sub helpBtn_Click
 	StartActivity(helpActivity)
 End Sub
 
+Private Sub statsBtn_Click
+	StartActivity(Leaderboard)
+End Sub
+
 Private Sub infoPnlClose_Click
 	infoPnl.Visible = False
 End Sub
@@ -442,3 +446,5 @@ Private Sub navBtn_LongClick
 		Return
 	End If
 End Sub
+
+
