@@ -54,7 +54,7 @@ Sub Activity_Create(FirstTime As Boolean)
 			If Starter.darkMode = False Then
 				Activity.LoadLayout("leaderboard")
 			Else
-				Activity.LoadLayout("leaderboard")
+				Activity.LoadLayout("leaderboarddark")
 			End If
 		Case 1
 			If Starter.darkMode = False Then
