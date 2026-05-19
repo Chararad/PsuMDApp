@@ -92,14 +92,14 @@ Sub showTutorialPage(page As Int)
 			
 		Case 4
 			headerLbl.Text = "Leaderboard"
-			bodyLbl.Text = "Navigation Button — your ranking board for flashcard progress." & CRLF & _
-			               "Tap the star button for to see every player's XP, streak, and their ranking!" & CRLF & _
-			               "Daily, Weekly, All-Time — pick your battleground. Tap any TAB To switch views." & _
+			bodyLbl.Text = "Leaderboard Button — your ranking board for flashcard progress." & CRLF & CRLF & _
+			               "Tap the star button for to see every player's XP, streak, and their ranking!" & CRLF & CRLF & _
+			               "Daily, Weekly, All-Time — pick your battleground. Tap any TAB To switch views." & CRLF & CRLF & _
 						   "Top card — the #1 spot, front and center." & _
 						   "The current leader gets the big card up top. That could be you." & CRLF & CRLF & _
-			               "Ranking — XP wins, streak breaks ties. More XP = higher rank. Same XP?" & _
+			               "Ranking — XP wins, streak breaks ties. More XP = higher rank. Same XP? " & _
 						   "Longer streak goes first. Still tied? Better correct rate wins."
-			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpnav.png", tutorialImg.Width, tutorialImg.Height, True)
+			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helplb.png", tutorialImg.Width, tutorialImg.Height, True)
 
 		Case 5
 			headerLbl.Text = "Lamp — Dark / Light Mode"

@@ -127,12 +127,12 @@ Sub showHelpPage(page As Int)
 			titleLbl.Text = "Flashcards"
 			descriptionLbl.Text = "The flashcard feature organizes your cards into decks and subdecks, and you have the freedom to add, rename, or delete any of them — with a confirmation before anything gets deleted for good. Cards are automatically shuffled so every session feels fresh. A progress bar and percentage track how far you've made it through a deck, and when you're ready to dive back in, two buttons have you covered — restart the entire deck from scratch, or continue right where you left off."
 			If Starter.darkMode = False Then
-				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dflashcardsui.png", helpimage.Width, helpimage.Height, True)
+				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dflashcardsui2.png", helpimage.Width, helpimage.Height, True)
 				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "IMG_1267.png", helpimage.Width, helpimage.Height, True)
 				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "IMG_1266.png", helpimage.Width, helpimage.Height, True)
 				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "IMG_1265.png", helpimage.Width, helpimage.Height, True)
 			Else
-				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "flashcardui.png", helpimage.Width, helpimage.Height, True)
+				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "flashcardui2.png", helpimage.Width, helpimage.Height, True)
 				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "IMG_1270.png", helpimage.Width, helpimage.Height, True)
 				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "IMG_1269.png", helpimage.Width, helpimage.Height, True)
 				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "IMG_1268.png", helpimage.Width, helpimage.Height, True)
@@ -221,15 +221,29 @@ Sub showHelpPage(page As Int)
 				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "menu.png", helpimage.Width, helpimage.Height, True)
 				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
 			End If
+		Case 11
+			titleLbl.Text = "Leaderboard"
+			descriptionLbl.Text = "Leaderboard — see who's on top. Track XP, streaks, And correct rates across Daily, Weekly, And All-Time. Study more, rank higher, And climb your way To #1."
+			If Starter.darkMode = False Then
+				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "leaderboarddark3.png", helpimage.Width, helpimage.Height, True)
+				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star.png", helpimage.Width, helpimage.Height, True)
+				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "lbbutton.png", helpimage.Width, helpimage.Height, True)
+				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "star.png", helpimage.Width, helpimage.Height, True)
+			Else
+				helpimage.Bitmap = xui.LoadBitmapResize(File.DirAssets, "leaderboard3.png", helpimage.Width, helpimage.Height, True)
+				iconButton1.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
+				iconButton2.Bitmap = xui.LoadBitmapResize(File.DirAssets, "lbbutton.png", helpimage.Width, helpimage.Height, True)
+				iconButton3.Bitmap = xui.LoadBitmapResize(File.DirAssets, "dstar.png", helpimage.Width, helpimage.Height, True)
+			End If
 	End Select
     
 	' Disable buttons at limits
 	backBtn.Enabled = (page > 0)
-	nextBtn.Enabled = (page < 10)
+	nextBtn.Enabled = (page < 11)
 End Sub
 
 Sub nextBtn_Click
-	If helpPage < 10 Then
+	If helpPage < 11 Then
 		showHelpPage(helpPage + 1)
 	End If
 End Sub

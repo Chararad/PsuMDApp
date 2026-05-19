@@ -90,6 +90,11 @@ Private Sub themeBtn_Click
 	StartActivity(themeActivity)
 End Sub
 
+Private Sub lbBtn_Click
+	StartActivity(Leaderboard)
+End Sub
+
 Private Sub exitBtn_Click
 	Activity.Finish
 End Sub
+
