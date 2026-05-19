@@ -100,6 +100,7 @@ Sub ShowTutorialPage
 		btnnext.Text = "✅ Finish"
 	End If
 End Sub
+
 Sub btnnext_Click
 	currentPage = currentPage + 1
 	
@@ -144,14 +145,15 @@ Sub LoadMusicPlayer
 	If musicService.mediaPlayer.IsInitialized = False Then
 		StartService(musicService)
 	End If
+    
 	
-	' Load songs
+	' Load songs into ListView
 	For i = 0 To musicService.musicPlaylist.Size - 1
-		Dim title As String
-		title = musicService.musicPlaylist.Get(i)
-		title = title.SubString2(0, title.Length - 4)
-		title = title.SubString(7)
-		ListView1.AddSingleLine((i + 1) & "   " & title)
+		Dim rawPath As String
+		rawPath = musicService.musicPlaylist.Get(i)
+		Dim displayTitle As String
+		displayTitle = getDisplayTitle(rawPath)
+		ListView1.AddSingleLine((i + 1) & "   " & displayTitle)
 		If Starter.themeNumber = 2 And Starter.darkMode = True Then
 			ListView1.SingleLineLayout.Label.TextColor = Colors.White
 		Else
@@ -163,25 +165,102 @@ Sub LoadMusicPlayer
 	uiTimer.Enabled = True
 End Sub
 
+' Returns a clean display title from either a bundled "tracks/name.mp3"
+' or a full user-uploaded path like "/storage/.../My Song.mp3"
+Sub getDisplayTitle(rawPath As String) As String
+	Dim name As String
+	name = rawPath.SubString(rawPath.LastIndexOf("/") + 1)
+	' Remove .mp3 extension
+	If name.EndsWith(".mp3") Or name.EndsWith(".MP3") Then
+		name = name.SubString2(0, name.Length - 4)
+	End If
+	' Decode %20 and other URI-encoded characters back to spaces/symbols
+	name = name.Replace("%20", " ")
+	name = name.Replace("%26", "&")
+	name = name.Replace("%27", "'")
+	name = name.Replace("%28", "(")
+	name = name.Replace("%29", ")")
+	name = name.Replace("%2C", ",")
+	Return name
+End Sub
+
 Sub btnUpload_Click
 	chooser.Show("audio/*", "Choose Music File")
 End Sub
 
 Sub chooser_Result (Success As Boolean, Dir As String, FileName As String)
 	If Success Then
-		Dim songName As String
-		songName = FileName.SubString(FileName.LastIndexOf("/") + 1)
-		ListView1.AddSingleLine(songName)
-		ToastMessageShow("✅ Added: " & songName, False)
+		' ContentChooser returns a content:// URI, not a real file path.
+		' MediaPlayer cannot open a content URI directly, so we copy the
+		' file into DirInternalCache (which we can always read/write) and
+		' store that real path in the playlist instead.
+
+		' Derive a safe filename from whatever the chooser gave us.
+		' Dir + FileName together form the full content URI string in B4A.
+		Dim fullUri As String
+		fullUri = Dir & FileName
+
+		' Use the last path segment as the destination filename,
+		' decoding common URI-encoded characters.
+		Dim destName As String
+		destName = fullUri.SubString(fullUri.LastIndexOf("/") + 1)
+		destName = destName.Replace("%20", " ")
+		destName = destName.Replace("%26", "&")
+		destName = destName.Replace("%27", "'")
+		destName = destName.Replace("%28", "(")
+		destName = destName.Replace("%29", ")")
+		destName = destName.Replace("%2C", ",")
+
+		' Ensure the filename ends with .mp3 so MediaPlayer recognises it
+		If destName.EndsWith(".mp3") = False And destName.EndsWith(".MP3") = False Then
+			destName = destName & ".mp3"
+		End If
+
+		' Copy from the content URI into our private cache folder
+		Dim destDir As String
+		destDir = File.DirInternalCache
+
+		Try
+			File.Copy(Dir, FileName, destDir, destName)
+		Catch
+			ToastMessageShow("❌ Could not copy file: " & LastException.Message, True)
+			Return
+		End Try
+
+		' Store the real cached path in the playlist
+		Dim cachedPath As String
+		cachedPath = destDir & "/" & destName
+		musicService.musicPlaylist.Add(cachedPath)
+
+		' Show a clean title in the ListView
+		Dim displayTitle As String
+		displayTitle = getDisplayTitle(cachedPath)
+		Dim idx As Int = musicService.musicPlaylist.Size
+		ListView1.AddSingleLine(idx & "   " & displayTitle)
+
+		ToastMessageShow("✅ Added: " & displayTitle, False)
 	End If
 End Sub
 
 Sub ListView1_ItemLongClick (Position As Int, Value As Object)
-	MsgboxAsync ("📝 DETAILED SONG INFO:" & CRLF & CRLF & _
-	"Title: " & Value & CRLF & _
-	"Duration: 03:45" & CRLF & _
-	"Size: 4.2 MB" & CRLF & _
-	"Path: Internal Storage/Music/", "Song Details")
+	' Show real song info from the playlist
+	Dim rawPath As String
+	rawPath = musicService.musicPlaylist.Get(Position)
+	Dim displayTitle As String
+	displayTitle = getDisplayTitle(rawPath)
+
+	' Determine source label
+	Dim sourceLabel As String
+	If rawPath.StartsWith("tracks/") Then
+		sourceLabel = "Built-in / Assets"
+	Else
+		sourceLabel = rawPath
+	End If
+
+	MsgboxAsync ("📝 SONG INFO:" & CRLF & CRLF & _
+		"Title: " & displayTitle & CRLF & _
+		"Track #: " & (Position + 1) & CRLF & _
+		"Path: " & sourceLabel, "Song Details")
 End Sub
 
 Sub ListView1_ItemClick(Position As Int, Value As Object)
@@ -207,10 +286,10 @@ End Sub
 
 Sub uiTimer_Tick
 	If musicService.mediaPlayer.IsInitialized Then
+		Dim rawPath As String
+		rawPath = musicService.musicPlaylist.Get(musicService.currentSong)
 		Dim title As String
-		title = musicService.musicPlaylist.Get(musicService.currentSong)
-		title = title.SubString2(0, title.Length - 4)
-		title = title.SubString(7)
+		title = getDisplayTitle(rawPath)
 		
 		SeekBar1.Max = musicService.mediaPlayer.Duration
 		SeekBar1.Value = musicService.mediaPlayer.Position
@@ -243,4 +322,3 @@ End Sub
 Sub pauseBtn_Click
 	CallSub(musicService, "pauseToggle")
 End Sub
-

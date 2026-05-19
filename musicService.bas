@@ -72,10 +72,25 @@ Sub playSong
 	If mediaPlayer.IsInitialized Then
 		mediaPlayer.Stop
 	End If
-	Dim trackName As String = musicPlaylist.Get(currentSong)
-	Dim fileName As String = trackName.SubString(trackName.LastIndexOf("/") + 1)
-	' Play from internal storage instead of assets
-	mediaPlayer.Load(File.DirInternal & "/tracks", fileName)
+
+	Dim trackPath As String
+	trackPath = musicPlaylist.Get(currentSong)
+
+	If trackPath.StartsWith("tracks/") Then
+		' Bundled asset — load from internal storage tracks folder
+		Dim fileName As String
+		fileName = trackPath.SubString(trackPath.LastIndexOf("/") + 1)
+		mediaPlayer.Load(File.DirInternal & "/tracks", fileName)
+	Else
+		' User-uploaded file — already copied to DirInternalCache, so
+		' trackPath is a real absolute path we can split and load directly.
+		Dim uploadDir As String
+		Dim uploadFile As String
+		uploadDir = trackPath.SubString2(0, trackPath.LastIndexOf("/"))
+		uploadFile = trackPath.SubString(trackPath.LastIndexOf("/") + 1)
+		mediaPlayer.Load(uploadDir, uploadFile)
+	End If
+
 	mediaPlayer.Play
 End Sub
 
