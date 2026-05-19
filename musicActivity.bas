@@ -144,15 +144,6 @@ Sub LoadMusicPlayer
 	If musicService.mediaPlayer.IsInitialized = False Then
 		StartService(musicService)
 	End If
-    
-	btnUpload.Initialize("btnUpload")
-	btnUpload.Text = "📤 UPLOAD MUSIC"
-	btnUpload.TextSize = 14
-	btnUpload.Color = Colors.RGB(40, 120, 200)
-	btnUpload.TextColor = Colors.White
-	btnUpload.Typeface = Typeface.DEFAULT_BOLD
-	btnUpload.SetLayout(50dip, 92%y, 200dip, 40dip)
-	Activity.AddView(btnUpload, 50dip, 92%y, 200dip, 40dip)
 	
 	' Load songs
 	For i = 0 To musicService.musicPlaylist.Size - 1
