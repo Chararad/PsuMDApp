@@ -24,6 +24,7 @@ Sub Process_Globals
 	Public finishedInit As Boolean = False
 	Public themeChanged As Boolean = False
 	Public SQL1 As SQL
+	Public currentUserID As String
 End Sub
 
 Sub Service_Create

@@ -53,6 +53,7 @@ Private Sub btnlogin_Click
         
 		If Cursor1.RowCount > 0 Then
 			ToastMessageShow("Login successful", False)
+			Starter.currentUserID = Starter.SQL1.ExecQuery2("SELECT id FROM users WHERE email=?", Array As String(email))
 			Cursor1.Close
 			
 			txtemail.Text = ""
