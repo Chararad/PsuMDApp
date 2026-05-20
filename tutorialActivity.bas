@@ -48,10 +48,7 @@ Sub showTutorialPage(page As Int)
 	Select page
 		Case 0
 			headerLbl.Text = "Welcome to Athena!"
-			bodyLbl.Text = "In legend, Athena is the goddess of wisdom — and wisdom is never rushed." & CRLF & CRLF & _
-			               "She stepped back, took note of everything, and came back with more than before." & CRLF & CRLF & _
-			               "Athena is your all-in-one study companion: a single hub built to keep you " & _
-			               "organized, focused, and ahead — no juggling apps, no wasted space."
+			bodyLbl.Text = "Welcome to Athena — your all-in-one study companion. She's here to keep you focused, organized, and inspired. Before we get started, let's show you around."
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpwreath.png", tutorialImg.Width, tutorialImg.Height, True)
 
 		Case 1
@@ -289,13 +286,8 @@ Sub showTutorialPage(page As Int)
 
 		Case 23
 			headerLbl.Text = "You're All Set!"
-			bodyLbl.Text = "That is everything Athena has to offer." & CRLF & CRLF & _
-			               "No more juggling apps. No more wasted time." & CRLF & _
-			               "Just one hub, one companion, built to keep you organized, motivated, and ahead." & CRLF & CRLF & _
-			               "Athena is not just an app — she is your complete study ecosystem." & CRLF & CRLF & _
-			               "Rise up and unlock your true potential, warrior of the mind." & CRLF & CRLF & _
-			               "Tick  ""Don't show again""  below to skip this guide on future launches." & CRLF & _
-			               "You can always reopen it from the Help screen."
+			bodyLbl.Text = "Everything you need is right at your fingertips — now go use Athena to your heart and brain's content." & CRLF & CRLF & _
+			               "Tick ""Don't show again"" below To skip this guide on future launches. You always have the Help Screen And Long Press feature If you ever need help. " & CRLF &"
 			tutorialImg.Bitmap = xui.LoadBitmapResize(File.DirAssets, "helpwreath.png", tutorialImg.Width, tutorialImg.Height, True)
 
 	End Select

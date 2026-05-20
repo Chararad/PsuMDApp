@@ -117,25 +117,25 @@ End Sub
 
 Private Sub SetupMockData
 	'Daily
-	InsertUserToDB("DAILY", "Mika", 320, 7, 93)
-	InsertUserToDB("DAILY", "Rei", 295, 5, 90)
-	InsertUserToDB("DAILY", "Noah", 280, 4, 88)
-	InsertUserToDB("DAILY", "Ava", 250, 3, 86)
-	InsertUserToDB("DAILY", "Luna", 220, 2, 82)
+	InsertUserToDB("DAILY", "Mika", 320, 7, 57)
+	InsertUserToDB("DAILY", "Rei", 295, 5, 55)
+	InsertUserToDB("DAILY", "Noah", 280, 4, 54)
+	InsertUserToDB("DAILY", "Ava", 250, 3, 49)
+	InsertUserToDB("DAILY", "Luna", 220, 2, 47)
 
 	'Weekly
-	InsertUserToDB("WEEKLY", "Mika", 1760, 19, 92)
-	InsertUserToDB("WEEKLY", "Ava", 1690, 13, 91)
-	InsertUserToDB("WEEKLY", "Rei", 1610, 11, 89)
-	InsertUserToDB("WEEKLY", "Noah", 1495, 9, 87)
-	InsertUserToDB("WEEKLY", "Luna", 1420, 8, 85)
+	InsertUserToDB("WEEKLY", "Mika", 1760, 19, 76)
+	InsertUserToDB("WEEKLY", "Ava", 1690, 13, 74)
+	InsertUserToDB("WEEKLY", "Rei", 1610, 11, 71)
+	InsertUserToDB("WEEKLY", "Noah", 1495, 9, 67)
+	InsertUserToDB("WEEKLY", "Luna", 1420, 8, 66)
 
 	'All Time
-	InsertUserToDB("ALLTIME", "Ava", 12850, 41, 90)
-	InsertUserToDB("ALLTIME", "Mika", 12110, 37, 91)
-	InsertUserToDB("ALLTIME", "Noah", 11680, 29, 88)
-	InsertUserToDB("ALLTIME", "Rei", 11300, 24, 87)
-	InsertUserToDB("ALLTIME", "Luna", 10950, 22, 86)
+	InsertUserToDB("ALLTIME", "Ava", 12850, 41, 94)
+	InsertUserToDB("ALLTIME", "Mika", 12110, 37, 90)
+	InsertUserToDB("ALLTIME", "Noah", 11680, 29, 86)
+	InsertUserToDB("ALLTIME", "Rei", 11300, 24, 83)
+	InsertUserToDB("ALLTIME", "Luna", 10950, 22, 81)
 End Sub
 
 Private Sub CreateUser(n As String, xp As Int, st As Int, cr As Int) As UserScore
@@ -359,9 +359,9 @@ Private Sub btnInsert_Click
 		Return
 	End If
 
-	'CorrectRate isn't part of user input; use 0 as default.
-	AddUserScore(CurrentMode, n, xp, st, 0)
-
+	Dim correctRate As Int = Min(Min((xp * 0.05), 80) + (st * 0.5), 100)
+	AddUserScore(CurrentMode, n, xp, st, correctRate)
+	
 	edtName.Text = ""
 	edtXP.Text = ""
 	edtStreak.Text = ""

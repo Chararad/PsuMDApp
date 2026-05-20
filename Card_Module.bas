@@ -79,7 +79,11 @@ Sub ShowSubdeckCards(cardsList As List)
 		Dim card As Map = cardsList.Get(i)
 		Dim p As Panel
 		p.Initialize("")
-		p.Color = Colors.Transparent
+		If Starter.darkMode = False Then
+			p.Color = Colors.White
+		Else
+			p.Color = Colors.Black
+		End If
 		ScrollView1.Panel.AddView(p, 10dip, topPos, ScrollView1.Width - 20dip, cardHeight)
 	
 		Dim lbl As Label

@@ -161,13 +161,13 @@ End Sub
 Private Sub showInfoPopup
 
 	infoPnl = xui.CreatePanel("infoPnl")
-	Activity.AddView(infoPnl, 75dip, 225dip, 300dip, 220dip)
+	Activity.AddView(infoPnl, 75dip, 205dip, 300dip, 340dip)
 	infoPnl.SetColorAndBorder(xui.Color_White, 2dip, xui.Color_Black, 3dip)
 
 	Dim closeBtn As Button
 	closeBtn.Initialize("infoPnlClose")
 	closeBtn.Text = "x"
-	closeBtn.TextSize = 6
+	closeBtn.TextSize = 7
 	infoPnl.AddView(closeBtn, 265dip, 8dip, 28dip, 28dip)
 
 	infoTitleLbl.Initialize("")
@@ -179,12 +179,12 @@ Private Sub showInfoPopup
 	infoDescLbl.TextSize = 10
 	infoDescLbl.Gravity = Gravity.TOP
 	infoDescLbl.SingleLine = False
-	infoPnl.AddView(infoDescLbl, 12dip, 52dip, 276dip, 140dip)
+	infoPnl.AddView(infoDescLbl, 12dip, 43dip, 276dip, 280dip)
 
 	infoPageLbl.Initialize("")
 	infoPageLbl.Gravity = Gravity.CENTER_HORIZONTAL
 	infoPageLbl.TextSize = 10
-	infoPnl.AddView(infoPageLbl, 95dip, 184dip, 110dip, 22dip)
+	infoPnl.AddView(infoPageLbl, 95dip, 184dip, 110dip, 35dip)
 
 
 	showInfoPage(0)
@@ -194,33 +194,89 @@ Private Sub showInfoPage(page As Int)
 	infoPage = page
 	Select page
 		Case 0
+			infoDescLbl.TextSize = 12
 			infoTitleLbl.Text = "Calendar"
-			infoDescLbl.Text = "The calendar comes in three views to match however you like to plan. The Schedule view lets you see all your upcoming days at a glance, with major events and to-do items laid out on a timeline. The Day view shows you the full timeline for a single day, where you can add events, tasks, or birthdays, and color-coded backgrounds make each type of entry easy to tell apart. The Month view presents the classic calendar layout, complete with a month and year spinner to jump around quickly, a sneak peek of events on each day's cell, and neighboring dates filling in the empty cells so the grid always looks complete."
+			infoDescLbl.Text = "1. Tap the Calendar on the home screen to open the Scheduling System." & CRLF & _
+								"2. You'll land on the Month View by default — a full overview of your calendar." & CRLF & _
+								"3. Use the Menu Button (upper left) to switch between Month, Day, and Schedule views." & CRLF & _
+								"4. Tap any date to open a detailed hour-by-hour timeline for that day." & CRLF & _
+								"5. Select any time slot to begin creating a schedule entry." & CRLF & _
+								"6. Tap the + Icon and choose from: Add Event, Add Task, Birthday, or Out of Office." & CRLF & _
+								"7. Press Save to confirm, or Delete to remove an existing entry." & CRLF & _
+								"8. Use the Arrow Down Button to navigate between months and years." & CRLF & _
+								"9. To share your schedule with a group, tap the group tab and tap the join/create button and enter or create your group."
 		Case 1
+			infoDescLbl.TextSize = 14
 			infoTitleLbl.Text = "Clock"
-			infoDescLbl.Text = "The clock keeps you on time and on task all in one place. A format button lets you switch between clock displays to whatever you prefer. It also comes with a built-in Pomodoro timer to help you stay focused and productive, and if the default durations don't work for you, you can freely adjust them to fit your own rhythm."
+			infoDescLbl.Text = "1. Tap the Clock on the home screen To open the Pomodoro timer." & CRLF & _
+								"2. Press Start To begin a 25-minute focus session." & CRLF & _
+								"3. When the session ends, the timer automatically shifts to a short break (3 mins) Or long break (10 mins)." & CRLF & _
+								"4. Use the Next button To manually switch between Pomodoro, short break, And long break modes." & CRLF & _
+								"5. Press Pause anytime To pause the timer." & CRLF & _
+								"6. Tap Settings To customize the length of each session To your preference." & CRLF & _
+								"7. You can also switch the clock display format from within Settings."
 		Case 2
+			infoDescLbl.TextSize = 16
 			infoTitleLbl.Text = "Corkboard"
-			infoDescLbl.Text = "The corkboard gives you a creative space to pin your thoughts and ideas. You can place sticky notes in a variety of colors to keep things visually organized and easy to tell apart. Images from your gallery can be attached right onto the board for extra context or inspiration. And when words and notes aren't enough, you can open up a drawable canvas with a selection of colored pens and sketch, doodle, or diagram anything you have in mind."
+			infoDescLbl.Text = "1. Tap the Corkboard on the home screen to open your digital canvas." & CRLF & _
+								"2. Tap the Note Button to add a sticky note — type your reminder or idea and place it anywhere on the board." & CRLF & _
+								"3. Tap the Image Button to pin a photo or image onto the board." & CRLF & _
+								"4. Tap the Canvas Tool to draw, sketch, or map out ideas freehand." & CRLF & _
+								"5. Press and drag any element to reposition it wherever you like." & CRLF & _
+								"6. Arrange your board however feels right — there's no wrong way to use it."
 		Case 3
+			infoDescLbl.TextSize = 10
 			infoTitleLbl.Text = "Flashcards"
-			infoDescLbl.Text = "The flashcard feature organizes your cards into decks and subdecks, and you have the freedom to add, rename, or delete any of them — with a confirmation before anything gets deleted for good. Cards are automatically shuffled so every session feels fresh. A progress bar and percentage track how far you've made it through a deck, and when you're ready to dive back in, two buttons have you covered — restart the entire deck from scratch, or continue right where you left off."
+			infoDescLbl.Text = "1. Tap the Books on the home screen to open the Flashcards feature." & CRLF & _
+							"2. Tap the + Icon to create a new deck — enter a name and save." & CRLF & _
+							"3. Long-press a deck to access options: Add Card, Browse Cards, Rename, Create Subdeck, or Delete." & CRLF & _
+							"4. To add a card, open a deck and tap the + Icon — enter the question on one side and the answer on the other." & CRLF & _
+							"5. To review, open a deck and tap a card — press Show Answer to flip it." & CRLF & _
+							"6. Use the Next button to move to the next card, or Refresh to restart the set." & CRLF & _
+							"7. Use Active Recall mode To challenge yourself To remember the answer before flipping." & CRLF & _
+							"8. To edit r remove a card, long-press it And select your action." & CRLF & _
+							"9. To generate flashcards from a File, tap the Files To Flashcard button on any subdeck, upload your document, and Athena will build a full deck For you automatically." & CRLF & _
+							"10. To generate flashcards from a topic, tap the AI cards And subdecks button on any deck, and Athena will build the rest for you."
 		Case 4
+			infoDescLbl.TextSize = 16
 			infoTitleLbl.Text = "Music Player"
-			infoDescLbl.Text = "The music player plays the music on startup, meaning the app greets you with songs! Filled with chill, lo-fi tracks, you have the freedom to choose what track you want to play--either through the previous/next song buttons, or through the list of songs below where you can click on whatever chooses your fancy. There's a segment of the song that you want to listen to again or you want to zoom through a certain bit of a song? The seek bar presents itself to you where you can navigate within the music.  "
+			infoDescLbl.Text = "1. Tap the Music Player on the home screen to open it." & CRLF & _
+								"2. Press Play to start the lo-fi music." & CRLF & _
+								"3. Use the Select option to choose a specific track from the library." & CRLF & _
+								"4. Press Next to skip to the next track." & CRLF & _
+								"5. Press Pause anytime to stop the music." & CRLF & _
+								"6. Scroll through the expanded music library for more track options." & CRLF & _
+								"7. To add your own music, tap the Upload Music button and select a song from your device."
 		Case 5
+			infoDescLbl.TextSize = 14
 			infoTitleLbl.Text = "Notepad"
-			infoDescLbl.Text = "The notepad keeps all your notes in one tidy list that's easy to browse through. A search bar lets you quickly find any note by its title or tags, so nothing ever gets lost in the pile. Adding a new note is simple — just give it a title, attach some tags to keep things organized, and write away to your heart's content."
+			infoDescLbl.Text = "1. Tap the Notepad on the home screen to open the Notes feature." & CRLF & _
+								"2. Press the + Button to create a new note." & CRLF & _
+								"3. Enter a title, add relevant tags, then type your content in the body field." & CRLF & _
+								"4. Press Save when you're done." & CRLF & _
+								"5. To find a note, use the search bar — type the title or a tag and your note appears instantly." & CRLF & _
+								"6. To delete a note, long-press it and tap Yes to confirm." & CRLF & _
+								"7. To generate summarized notes from a file, tap Insert PDF button, upload your file, and let Athena do the rest."
 		Case 6
+			infoDescLbl.TextSize = 14
 			infoTitleLbl.Text = "To-do List"
-			infoDescLbl.Text = "The to-do list enables you to create lists with titles and, especially, tasks you want or are obligated to do. You are able to keep a lot of lists that you can easily navigate through the left side of your screen. The task section is a checklist of your tasks that you input, and once achieved, you can tick it off the list. The to-do list will also show you your progress in the list."
+			infoDescLbl.Text = "1. Tap the PC Screen on the home screen to open the To-Do List." & CRLF & _
+								"2. Press + New List to create a new list." & CRLF & _
+								"3. Open the list and tap the input field to add a task." & CRLF & _
+								"4. Type your task and press Enter to save it." & CRLF & _
+								"5. Tap the checkbox beside a task to mark it as complete — watch your progress percentage go up." & CRLF & _
+								"6. To delete a task or list, long-press it and confirm deletion." & CRLF & _
+								"7. To share your to-do list with a group, tap the group tab and tap the join/create button and enter or create your group."
 		Case 7
+			infoDescLbl.TextSize = 22
 			infoTitleLbl.Text = "Themes"
 			infoDescLbl.Text = "Themes let you put your own fun twist on the app. Choose from a range of styles and color schemes to dress up your experience, making the space you study and plan in feel a little more like yours."
 		Case 8
+			infoDescLbl.TextSize = 22
 			infoTitleLbl.Text = "Lamp"
 			infoDescLbl.Text = "The lamp gives you control over how the app looks in any lighting. Switch effortlessly between light mode for bright environments and dark mode for low-light settings, so your eyes stay comfortable no matter when or where you're working."
 		Case 9
+			infoDescLbl.TextSize = 22
 			infoTitleLbl.Text = "Navigation"
 			infoDescLbl.Text = "Navigation is your home base for getting around the app. All of the app's features are laid out in one accessible spot, with clearly labeled and easy-to-read buttons so you can jump to wherever you need to be without any hassle."
 
